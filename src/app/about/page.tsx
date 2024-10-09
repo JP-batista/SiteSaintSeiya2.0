@@ -14,7 +14,7 @@ export default function AboutPage() {
           Olá! Meu nome é <strong>João Pedro Ribeiro Batista Araújo</strong>. Sou um desenvolvedor apaixonado por tecnologia, sempre em busca de aprender novas habilidades e enfrentar desafios. Desde jovem, tenho um grande interesse por programação e desenvolvimento web. A ideia de criar este site nasceu da minha paixão por <strong>Saint Seiya</strong> e o desejo de aplicar meus conhecimentos em desenvolvimento front-end.
         </p>
         <p className="text-gray-300 mt-4 text-lg">
-          Sou formado em <strong>Ciência da Computação</strong> e atualmente trabalho como desenvolvedor full-stack. Este site é uma demonstração das minhas habilidades e da minha paixão por desenvolvimento.
+          Estou cursando <strong>Engenharia de Software</strong> atualmente no quarto periodo. Este site é uma demonstração das minhas habilidades e da minha paixão por desenvolvimento.
         </p>
       </section>
 
