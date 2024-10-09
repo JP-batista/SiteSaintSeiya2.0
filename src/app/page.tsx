@@ -54,12 +54,14 @@ export default function HomePage() {
           </Link>
 
           {/* Card 3 - Sobre o Autor */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-            <h3 className="text-2xl font-bold text-yellow-400 mb-4">Sobre o Autor</h3>
-            <p className="text-gray-300 text-lg">
-              Saiba mais sobre o criador do site e o que motivou este projeto.
-            </p>
-          </div>
+          <Link href="/about">
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+              <h3 className="text-2xl font-bold text-yellow-400 mb-4">Sobre o Autor</h3>
+              <p className="text-gray-300 text-lg">
+                Saiba mais sobre o criador do site e o que motivou este projeto.
+              </p>
+            </div>
+          </Link>
         </div>
       </section>
 
