@@ -12,7 +12,7 @@ export default function Navbar() {
             <img
               src="https://i.pinimg.com/originals/cf/38/b3/cf38b3ac9fc826e5e8b9c620f570fa4e.png"
               alt="Logo Os Cavaleiros do Zodíaco"
-              className="w-20 h-auto mr-4 hover:scale-105 transition-transform duration-300"
+              className="w-28 h-auto mr-4 hover:scale-105 transition-transform duration-300"
             />
             <strong>Os Cavaleiros do Zodíaco </strong>
           </Link>
