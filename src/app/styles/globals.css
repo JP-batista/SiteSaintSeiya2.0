@@ -1,0 +1,18 @@
+/* src/app/styles/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-white;
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://i.pinimg.com/originals/84/1b/c0/841bc0ef61518645f58293d7b2167f57.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+body {
+    padding-top: 80px; /* Ajuste conforme a altura da barra de navegação */
+  }
