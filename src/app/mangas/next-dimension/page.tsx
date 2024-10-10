@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function NextDimensionMangaPage() {
   return (
-    <div className="min-h-screen p-8 bg-gray-900 text-white">
+    <div className="min-h-screen p-8 text-white">
       <h1 className="text-4xl font-extrabold text-yellow-500 mb-8 text-center">Next Dimension</h1>
       <p className="text-gray-300 mb-8">
         A continuação direta do mangá clássico, explorando o retorno de Hades e novos desafios para Seiya e os outros cavaleiros de Atena.

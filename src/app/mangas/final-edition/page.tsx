@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function FinalEditionMangaPage() {
   return (
-    <div className="min-h-screen p-8 bg-gray-900 text-white">
+    <div className="min-h-screen p-8 text-white">
       <h1 className="text-4xl font-extrabold text-yellow-500 mb-8 text-center">Final Edition</h1>
       <p className="text-gray-300 mb-8">
         Uma edição especial que revisita a saga clássica com novas ilustrações e aprimoramentos, trazendo uma nova experiência para os fãs da série.
