@@ -1,15 +1,24 @@
-// src/app/quiz/page.tsx
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation'; // Importa useRouter para redirecionar
 import { questions } from '../data/questions'; // Sua base de dados de perguntas
 
+// Defina o tipo para as perguntas
+type Question = {
+  difficulty: string;
+  question: string;
+  options: string[];
+  answer: string;
+};
+
 export default function QuizPage() {
-  const [name, setName] = useState('');
+  const [name, setName] = useState(''); 
   const [quizStarted, setQuizStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
-  const [selectedQuestions, setSelectedQuestions] = useState([]);
+
+  // Inicialize o estado com o tipo adequado para as perguntas
+  const [selectedQuestions, setSelectedQuestions] = useState<Question[]>([]);
   const router = useRouter(); // Instancia o roteador para redirecionar
 
   // Função para iniciar o quiz
@@ -20,7 +29,7 @@ export default function QuizPage() {
   };
 
   // Função para lidar com a seleção de resposta
-  const handleAnswer = (isCorrect) => {
+  const handleAnswer = (isCorrect: boolean) => {
     if (isCorrect) setScore(score + 1);
     if (currentQuestion + 1 < selectedQuestions.length) {
       setCurrentQuestion(currentQuestion + 1);
