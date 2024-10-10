@@ -1,42 +1,40 @@
 // src/app/layout.tsx
-
-"use client"; // Adiciona esta linha para indicar que o componente é um Client Component
-
-import { useState, useEffect } from 'react'; // useState e useEffect são válidos apenas em Client Components
+'use client';
+import { useState, useEffect } from 'react';
 import './styles/globals.css';
 import Navbar from './components/Navbar';
-import Header from './components/Header'; // Importando o Header
+import Header from './components/Header';
+import { getFavoriteCharacter } from './utils/favoriteCharacter'; // Função utilitária para pegar o personagem favorito do localStorage
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [theme, setTheme] = useState('santuary'); // Estado para o tema
+  const [theme, setTheme] = useState('santuary');
+  const [favoriteCharacter, setFavoriteCharacter] = useState<string | null>(null);
 
-  // Carrega o tema salvo no localStorage (opcional)
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      setTheme(savedTheme);
+    // Recupera o personagem favorito do localStorage ao carregar a página
+    const storedFavorite = getFavoriteCharacter();
+    if (storedFavorite) {
+      setFavoriteCharacter(storedFavorite);
+      setTheme(storedFavorite); // Usa o nome do personagem para definir o tema baseado no personagem favorito
     }
   }, []);
 
-  // Função para alternar temas e salvar no localStorage
   const handleThemeChange = (newTheme: string) => {
     setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
   };
 
   return (
     <html lang="pt-BR">
-      <body className={`${theme} bg-gray-900 text-white font-sans`}>
-        {/* Navbar com controle de tema */}
+      <body className={`${theme}`}>
         <Navbar onThemeChange={handleThemeChange} />
-        {/* Header com a logo */}
         <Header />
-        {/* Conteúdo da página */}
-        <div className="container mx-auto p-4">{children}</div>
+        <div className="container mx-auto p-4">
+          {children}
+        </div>
       </body>
     </html>
   );

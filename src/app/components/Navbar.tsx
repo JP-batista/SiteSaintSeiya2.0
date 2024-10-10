@@ -1,17 +1,25 @@
 // src/app/components/Navbar.tsx
 
+import { useState } from 'react'; // Importar o hook useState
 import Link from 'next/link';
-import { useState } from 'react';
 
-export default function Navbar() {
-  const [favoriteCharacter, setFavoriteCharacter] = useState('Seiya');
+export default function Navbar({ onThemeChange }: { onThemeChange: (theme: string) => void }) {
+  const themes = ['santuary', 'asgard', 'poseidon', 'hades'];
+  const [currentTheme, setCurrentTheme] = useState('santuary');
+  const [isDropdownOpen, setDropdownOpen] = useState(false); // Estado para controlar a expansão do dropdown
 
-  const handleCharacterChange = (character: string) => {
-    setFavoriteCharacter(character);
-    // Salvar a escolha no localStorage para persistência
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('favoriteCharacter', character);
-    }
+  const toggleTheme = () => {
+    const nextTheme = themes[(themes.indexOf(currentTheme) + 1) % themes.length];
+    setCurrentTheme(nextTheme);
+    onThemeChange(nextTheme);
+  };
+
+  const handleMouseEnter = () => {
+    setDropdownOpen(true); // Abre o dropdown ao passar o mouse por cima
+  };
+
+  const handleMouseLeave = () => {
+    setDropdownOpen(false); // Fecha o dropdown ao tirar o mouse de cima
   };
 
   return (
@@ -25,7 +33,7 @@ export default function Navbar() {
               alt="Logo Os Cavaleiros do Zodíaco"
               className="w-28 h-auto mr-4 hover:scale-105 transition-transform duration-300"
             />
-            <strong>Os Cavaleiros do Zodíaco </strong>
+            <strong>Os Cavaleiros do Zodíaco</strong>
           </Link>
         </div>
 
@@ -44,45 +52,47 @@ export default function Navbar() {
             Login
           </Link>
 
-          {/* Dropdown de Seleção de Personagem */}
-          <div className="relative">
-            <button className="text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-              Escolha seu Personagem Favorito
+          {/* Dropdown Menu - Abre ao passar o mouse */}
+          <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <button className="hover:text-yellow-300 transition-colors duration-300">
+              Explorar Mais
             </button>
-            <div className="absolute mt-2 w-48 bg-gray-800 rounded-lg shadow-lg">
-              <button
-                className="block w-full px-4 py-2 text-left text-gray-300 hover:bg-gray-700"
-                onClick={() => handleCharacterChange('Seiya')}
-              >
-                Seiya de Pégaso
-              </button>
-              <button
-                className="block w-full px-4 py-2 text-left text-gray-300 hover:bg-gray-700"
-                onClick={() => handleCharacterChange('Shiryu')}
-              >
-                Shiryu de Dragão
-              </button>
-              <button
-                className="block w-full px-4 py-2 text-left text-gray-300 hover:bg-gray-700"
-                onClick={() => handleCharacterChange('Hyoga')}
-              >
-                Hyoga de Cisne
-              </button>
-              <button
-                className="block w-full px-4 py-2 text-left text-gray-300 hover:bg-gray-700"
-                onClick={() => handleCharacterChange('Ikki')}
-              >
-                Ikki de Fênix
-              </button>
-              <button
-                className="block w-full px-4 py-2 text-left text-gray-300 hover:bg-gray-700"
-                onClick={() => handleCharacterChange('Shun')}
-              >
-                Shun de Andrômeda
-              </button>
-            </div>
+            {isDropdownOpen && (
+              <div className="absolute top-full mt-2 w-48 bg-gray-900 shadow-lg rounded-lg">
+                <Link href="/mangas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Mangás
+                </Link>
+                <Link href="/soundtrack" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Trilha Sonora
+                </Link>
+                <Link href="/videos/battle-videos" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Vídeos de Batalhas
+                </Link>
+                <Link href="/timeline" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Linha do Tempo
+                </Link>
+                <Link href="/quiz" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Quiz
+                </Link>
+                <Link href="/videos/lost-canvas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Lost Canvas
+                </Link>
+                <Link href="/encyclopedia" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Enciclopédia
+                </Link>
+              </div>
+            )}
           </div>
         </nav>
+
+        {/* Botão de troca de tema */}
+        <button
+          onClick={toggleTheme}
+          className="bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300"
+        >
+          Trocar para {themes[(themes.indexOf(currentTheme) + 1) % themes.length].charAt(0).toUpperCase() +
+            themes[(themes.indexOf(currentTheme) + 1) % themes.length].slice(1)}
+        </button>
       </div>
     </header>
   );

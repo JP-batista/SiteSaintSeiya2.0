@@ -157,7 +157,7 @@ export default function HomePage() {
       </section>
       {/* Footer */}
       <footer className="text-center my-12">
-        <Link href="/stories" className="bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold text-lg hover:bg-yellow-600 transition-colors duration-300">
+        <Link href="/timeline" className="bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold text-lg hover:bg-yellow-600 transition-colors duration-300">
           Explore Todos as Sagas
         </Link>
       </footer>
@@ -209,6 +209,33 @@ export default function HomePage() {
         <div className="text-center mt-8">
           <Link href="/mangas" className="bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold text-lg hover:bg-yellow-600 transition-colors duration-300">
             Ver Todos os Mangás
+          </Link>
+        </div>
+      </section>
+      <section className="my-16">
+        <h2 className="text-4xl font-extrabold text-yellow-400 text-center mb-10">Trilhas Sonoras</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {/* ... outras funcionalidades ... */}
+
+          {/* Card para Trilha Sonora */}
+          <Link href="/soundtrack">
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+              <h3 className="text-2xl font-bold text-yellow-400 mb-4">Trilha Sonora</h3>
+              <p className="text-gray-300 text-lg">
+                Ouça as músicas épicas de Saint Seiya enquanto explora o site.
+              </p>
+            </div>
+          </Link>
+        </div>
+      </section>
+      {/* Seção Principal */}
+      <section className="text-center my-12">
+        <h1 className="text-6xl font-extrabold text-yellow-500 mb-4">Bem-vindo ao Mundo de Saint Seiya</h1>
+        <p className="text-gray-300 text-xl mb-8">Explore batalhas épicas, sagas lendárias e muito mais.</p>
+        
+        <div className="flex justify-center space-x-6">
+          <Link href="/videos/battle-videos" className="bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold text-lg hover:bg-yellow-600 transition-colors duration-300">
+            Ver Vídeos de Batalhas
           </Link>
         </div>
       </section>

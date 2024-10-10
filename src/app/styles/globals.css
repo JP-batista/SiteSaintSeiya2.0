@@ -42,19 +42,20 @@
   background-color: black; /* Fallback */
 }
 
-/* Modo Noturno */
-.dark {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-/* Modo Claro */
-.light {
-  background-color: #ffffff;
-  color: #000000;
-}
-
 /* Padding para ajustar a navbar e o conteúdo */
 body {
   padding-top: 80px; /* Ajuste conforme necessário para a altura da barra de navegação */
+}
+
+/* Temas de Personagens Favoritos */
+.seiya {
+  background-color: #FF6347; /* Cor personalizada para Seiya */
+}
+
+.shiryu {
+  background-color: #2E8B57; /* Cor personalizada para Shiryu */
+}
+
+.hyoga {
+  background-color: #4682B4; /* Cor personalizada para Hyoga */
 }
