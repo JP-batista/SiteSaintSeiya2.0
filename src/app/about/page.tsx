@@ -95,7 +95,7 @@ export default function AboutPage() {
         <h2 className="text-4xl text-yellow-300 mb-6">Nos Siga nas Redes Sociais</h2>
         <div className="flex justify-center space-x-8">
           <a
-            href="https://twitter.com"
+            href="https://x.com/JP_Eissoai"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-100 hover:text-yellow-400 transition-colors duration-300 text-lg"
@@ -111,12 +111,12 @@ export default function AboutPage() {
             Instagram
           </a>
           <a
-            href="https://facebook.com"
+            href="https://br.pinterest.com/joaopedroribeirobatistaaraujo/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-100 hover:text-yellow-400 transition-colors duration-300 text-lg"
           >
-            Facebook
+            Pinterest
           </a>
         </div>
       </section>

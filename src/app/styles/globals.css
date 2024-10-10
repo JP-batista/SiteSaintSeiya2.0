@@ -1,18 +1,60 @@
-/* src/app/styles/globals.css */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-gray-900 text-white;
-  font-family: 'Arial', sans-serif;
+/* Tema Santuário */
+.santuary {
   background-image: url('https://i.pinimg.com/originals/84/1b/c0/841bc0ef61518645f58293d7b2167f57.png');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  color: white;
+  background-color: black; /* Fallback */
 }
 
+/* Tema Asgard */
+.asgard {
+  background-image: url('https://i.pinimg.com/originals/e4/b4/7d/e4b47d2e3d2c6c067a4b8b1a9aa198bd.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  background-color: black; /* Fallback */
+}
+
+/* Tema Poseidon */
+.poseidon {
+  background-image: url('https://i.pinimg.com/originals/2e/58/3c/2e583c9172c76ce826137b4bc607dff9.jpg'); /* Substitua pela URL correta */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  background-color: black; /* Fallback */
+}
+
+/* Tema Hades */
+.hades {
+  background-image: url('https://i.pinimg.com/originals/4c/b0/26/4cb0260e9d660951f17edd51558e4ca8.jpg'); /* Substitua pela URL correta */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  background-color: black; /* Fallback */
+}
+
+/* Modo Noturno */
+.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Modo Claro */
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Padding para ajustar a navbar e o conteúdo */
 body {
-    padding-top: 80px; /* Ajuste conforme a altura da barra de navegação */
-  }
+  padding-top: 80px; /* Ajuste conforme necessário para a altura da barra de navegação */
+}
