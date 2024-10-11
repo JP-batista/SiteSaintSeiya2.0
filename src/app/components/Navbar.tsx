@@ -7,6 +7,7 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
   const themes = ['santuary', 'asgard', 'poseidon', 'hades'];
   const [currentTheme, setCurrentTheme] = useState('santuary');
   const [isDropdownOpen, setDropdownOpen] = useState(false); // Estado para controlar a expansão do dropdown
+  const [isMenuOpen, setMenuOpen] = useState(false); // Estado para o menu mobile
 
   const toggleTheme = () => {
     const nextTheme = themes[(themes.indexOf(currentTheme) + 1) % themes.length];
@@ -20,6 +21,10 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
 
   const handleMouseLeave = () => {
     setDropdownOpen(false); // Fecha o dropdown ao tirar o mouse de cima
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen); // Alterna a visibilidade do menu no mobile
   };
 
   return (
@@ -37,27 +42,36 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
           </Link>
         </div>
 
-        {/* Navegação */}
-        <nav className="flex space-x-6 text-yellow-400 text-lg font-semibold">
-          <Link href="/" className="hover:text-yellow-300 transition-colors duration-300">
+        {/* Menu de Hambúrguer para telas pequenas */}
+        <div className="block md:hidden">
+          <button onClick={toggleMenu} className="text-yellow-400 focus:outline-none">
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+            </svg>
+          </button>
+        </div>
+
+        {/* Navegação principal */}
+        <nav className={`md:flex md:space-x-6 text-yellow-400 text-lg font-semibold ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
+          <Link href="/" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
             Home
           </Link>
-          <Link href="/characters" className="hover:text-yellow-300 transition-colors duration-300">
+          <Link href="/characters" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
             Personagens
           </Link>
-          <Link href="/about" className="hover:text-yellow-300 transition-colors duration-300">
+          <Link href="/about" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
             Sobre
           </Link>
-          <Link href="/login" className="hover:text-yellow-300 transition-colors duration-300">
+          <Link href="/login" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
             Login
           </Link>
-          <Link href="/products" className="hover:text-yellow-300 transition-colors duration-300">
+          <Link href="/products" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
             Produtos
           </Link>
 
           {/* Dropdown Menu - Abre ao passar o mouse */}
           <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <button className="hover:text-yellow-300 transition-colors duration-300">
+            <button className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
               Explorar Mais
             </button>
             {isDropdownOpen && (
@@ -94,12 +108,57 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
         {/* Botão de troca de tema */}
         <button
           onClick={toggleTheme}
-          className="bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300"
+          className="hidden md:block bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300"
         >
           Trocar para {themes[(themes.indexOf(currentTheme) + 1) % themes.length].charAt(0).toUpperCase() +
             themes[(themes.indexOf(currentTheme) + 1) % themes.length].slice(1)}
         </button>
       </div>
+
+      {/* Menu de navegação que abre no mobile */}
+      {isMenuOpen && (
+        <nav className="md:hidden bg-gray-900 p-4">
+          <Link href="/" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
+            Home
+          </Link>
+          <Link href="/characters" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
+            Personagens
+          </Link>
+          <Link href="/about" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
+            Sobre
+          </Link>
+          <Link href="/login" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
+            Login
+          </Link>
+          <Link href="/products" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
+            Produtos
+          </Link>
+          <Link href="/mangas" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
+            Mangás
+          </Link>
+          <Link href="/soundtrack" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
+            Trilha Sonora
+          </Link>
+          <Link href="/videos/battle-videos" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
+            Vídeos de Batalhas
+          </Link>
+          <Link href="/timeline" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
+            Linha do Tempo
+          </Link>
+          <Link href="/quiz" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
+            Quiz
+          </Link>
+          <Link href="/videos/lost-canvas" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
+            Lost Canvas
+          </Link>
+          <Link href="/galeria" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
+            Minha Galeria
+          </Link>
+          <Link href="/hipermito" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
+            Hipermito
+          </Link>
+        </nav>
+      )}
     </header>
   );
 }
