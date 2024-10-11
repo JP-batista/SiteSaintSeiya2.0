@@ -59,3 +59,13 @@ body {
 .hyoga {
   background-color: #4682B4; /* Cor personalizada para Hyoga */
 }
+
+/* Hide scrollbar in the carousel container */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}

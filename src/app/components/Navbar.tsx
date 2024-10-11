@@ -83,6 +83,9 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
                 <Link href="/galeria" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
                   Minha Galeria
                 </Link>
+                <Link href="/hipermito" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Hipermito
+                </Link>
               </div>
             )}
           </div>
