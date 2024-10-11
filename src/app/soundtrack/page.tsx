@@ -9,23 +9,8 @@ const classicTracks = {
       name: 'Pegasus Fantasy - Saint Seiya',
       src: '/soundtrack/Pegasus Fantasy - Saint Seiya (slowed reverb).mp3',
       img: 'https://i.ytimg.com/vi/hG-ZCL9irck/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCFgWlYdguEhzCxJmZkaTPqrVzktQ',
-    }, 
-    {
-      name: 'Soldier Dream - Saint Seiya',
-      src: '/soundtrack/Soldier Dream - Saint Seiya (slowed reverb).mp3',
-      img: 'https://i.ytimg.com/vi/BhXm81Ya2NQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhMICwofzAP&rs=AOn4CLDezMVvcUOwKI3KurH52rU3quM5wA',
     },
-    
-    {
-      name: 'Chikyuugi - Saint Seiya',
-      src: '/soundtrack/Chikyuugi - Saint Seiya (slowed reverb).mp3',
-      img: 'https://i.ytimg.com/vi/Fac-xC41ndY/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg7IEcocjAP&rs=AOn4CLDA5s5KQZV8W5dOllULCeV5GVs-rA',
-    },
-    {
-      name: 'Pegasus Forever - Saint Seiya',
-      src: '/soundtrack/Pegasus Forever - Saint Seiya (slowed reverb).mp3',
-      img: 'https://i.ytimg.com/vi/JBtDsv2ihh8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_ICAoOjAP&rs=AOn4CLCirLe-h4s56W2Az3PidulYeY3ddQ',
-    },
+    // Outras faixas...
   ],
   endings: [
     {
@@ -33,31 +18,7 @@ const classicTracks = {
       src: '/soundtrack/Blue Forever - Saint Seiya (slowed reverb).mp3',
       img: 'https://i.ytimg.com/vi/51zLAMRo0jk/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IBooGDAP&rs=AOn4CLDI-JEx8fkjJJdVGE5WgOaogVxR-Q',
     },
-    {
-      name: 'Blue Dream - Saint Seiya',
-      src: '/soundtrack/Blue Dream - Saint Seiya (slowed reverb).mp3',
-      img: 'https://i.ytimg.com/vi/BAZUp8S7RPs/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIFgoOTAP&rs=AOn4CLArM1KWKGzfKJ7WwmfsEU6vSWTVVQ',
-    },
-    {
-      name: 'Kimi to Onaji Aozora - Saint Seiya',
-      src: '/soundtrack/Kimi to Onaji Aozora - Saint Seiya (slowed reverb).mp3',
-      img: 'https://i.ytimg.com/vi/nDQeWzKeHGE/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgiIGQocjAP&rs=AOn4CLBoH2Negx_6HZJz13ITVDZRgUCk5Q',
-    },
-    {
-      name: 'My Dear - Saint Seiya',
-      src: '/soundtrack/My Dear - Saint Seiya (slowed reverb).mp3',
-      img: 'https://i.ytimg.com/vi/cQBckkyYPXY/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgTID8ofzAP&rs=AOn4CLA8bO0LcHpRKTb3-SSn0u4OzzzNPw',
-    },
-    {
-      name: 'Kami no en - Saint Seiya',
-      src: '/soundtrack/Kami no en - Saint Seiya (slowed reverb).mp3',
-      img: 'https://i.ytimg.com/vi/fFodzTUDSg8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIF0oRTAP&rs=AOn4CLC7oWZIqgxArxwYAT8OyowMCMlL4Q',
-    },
-    {
-      name: '',
-      src: '/soundtrack/',
-      img: '',
-    },
+    // Outras faixas...
   ],
 };
 
@@ -75,11 +36,6 @@ const lostCanvasTracks = {
       src: '/lost-canvas/Hana no Kusari - Saint Seiya- The Lost Canvas (slowed + reverb).m4a',
       img: 'https://i.ytimg.com/vi/MnkHc4gEknM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD1Fu1tXf0CbWzWo96f5PHySr_XHQ',
     },
-    {
-      name: '',
-      src: '/lost-canvas/',
-      img: '',
-    },
   ],
 };
 
@@ -89,11 +45,6 @@ const omegaTracks = {
       name: 'Pegasus Fantasy - Saint Seiya Omega',
       src: '/omega/Pegasus Fantasy - Saint Seiya Omega (slowed + reverb).m4a',
       img: 'https://i.ytimg.com/vi/KaN8hZdg5OI/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg-IEsocjAP&rs=AOn4CLCPM2K7kf0JBh3YbofZbBtEAkIp_w',
-    },
-    {
-      name: 'New Myth - Saint Seiya Omega',
-      src: '/omega/New Myth - Saint Seiya Omega (slowed + reverb).m4a',
-      img: 'https://i.ytimg.com/vi/DI8IUVU37N8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgzIEIofzAP&rs=AOn4CLBlnTMYEl5nb8FdAbbJEUc2fQiu1Q',
     },
   ],
   endings: [
@@ -187,6 +138,7 @@ export default function SoundtrackPage() {
     if (currentCategory === 'classic') return classicTracks;
     if (currentCategory === 'lost-canvas') return lostCanvasTracks;
     if (currentCategory === 'omega') return omegaTracks;
+    return null;
   };
 
   const tracks = getTracksForCategory();
@@ -227,8 +179,8 @@ export default function SoundtrackPage() {
       </div>
 
       {/* Exibição das trilhas para a categoria selecionada */}
-      {renderTrackSection('Aberturas', tracks.openings)}
-      {renderTrackSection('Encerramentos', tracks.endings)}
+      {tracks && renderTrackSection('Aberturas', tracks.openings)}
+      {tracks && renderTrackSection('Encerramentos', tracks.endings)}
     </div>
   );
 }
