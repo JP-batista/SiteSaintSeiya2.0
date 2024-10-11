@@ -2,15 +2,29 @@
 
 import { useState, useRef, useEffect } from 'react';
 
-// Definições das músicas
 const classicTracks = {
   openings: [
     {
       name: 'Pegasus Fantasy - Saint Seiya',
       src: '/soundtrack/Pegasus Fantasy - Saint Seiya (slowed reverb).mp3',
       img: 'https://i.ytimg.com/vi/hG-ZCL9irck/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCFgWlYdguEhzCxJmZkaTPqrVzktQ',
+    }, 
+    {
+      name: 'Soldier Dream - Saint Seiya',
+      src: '/soundtrack/Soldier Dream - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/BhXm81Ya2NQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhMICwofzAP&rs=AOn4CLDezMVvcUOwKI3KurH52rU3quM5wA',
     },
-    // Outras faixas...
+    
+    {
+      name: 'Chikyuugi - Saint Seiya',
+      src: '/soundtrack/Chikyuugi - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/Fac-xC41ndY/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg7IEcocjAP&rs=AOn4CLDA5s5KQZV8W5dOllULCeV5GVs-rA',
+    },
+    {
+      name: 'Pegasus Forever - Saint Seiya',
+      src: '/soundtrack/Pegasus Forever - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/JBtDsv2ihh8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_ICAoOjAP&rs=AOn4CLCirLe-h4s56W2Az3PidulYeY3ddQ',
+    },
   ],
   endings: [
     {
@@ -18,7 +32,31 @@ const classicTracks = {
       src: '/soundtrack/Blue Forever - Saint Seiya (slowed reverb).mp3',
       img: 'https://i.ytimg.com/vi/51zLAMRo0jk/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IBooGDAP&rs=AOn4CLDI-JEx8fkjJJdVGE5WgOaogVxR-Q',
     },
-    // Outras faixas...
+    {
+      name: 'Blue Dream - Saint Seiya',
+      src: '/soundtrack/Blue Dream - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/BAZUp8S7RPs/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIFgoOTAP&rs=AOn4CLArM1KWKGzfKJ7WwmfsEU6vSWTVVQ',
+    },
+    {
+      name: 'Kimi to Onaji Aozora - Saint Seiya',
+      src: '/soundtrack/Kimi to Onaji Aozora - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/nDQeWzKeHGE/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgiIGQocjAP&rs=AOn4CLBoH2Negx_6HZJz13ITVDZRgUCk5Q',
+    },
+    {
+      name: 'My Dear - Saint Seiya',
+      src: '/soundtrack/My Dear - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/cQBckkyYPXY/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgTID8ofzAP&rs=AOn4CLA8bO0LcHpRKTb3-SSn0u4OzzzNPw',
+    },
+    {
+      name: 'Kami no en - Saint Seiya',
+      src: '/soundtrack/Kami no en - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/fFodzTUDSg8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIF0oRTAP&rs=AOn4CLC7oWZIqgxArxwYAT8OyowMCMlL4Q',
+    },
+    {
+      name: '',
+      src: '/soundtrack/',
+      img: '',
+    },
   ],
 };
 
