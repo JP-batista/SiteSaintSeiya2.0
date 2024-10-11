@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import './styles/globals.css';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';  // Importando o Footer
 import Header from './components/Header';
 import { getFavoriteCharacter } from './utils/favoriteCharacter'; // Função utilitária para pegar o personagem favorito do localStorage
 
@@ -35,6 +36,7 @@ export default function RootLayout({
         <div className="container mx-auto p-4">
           {children}
         </div>
+        <Footer /> {/* Incluindo o Footer aqui */}
       </body>
     </html>
   );
