@@ -51,6 +51,9 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
           <Link href="/login" className="hover:text-yellow-300 transition-colors duration-300">
             Login
           </Link>
+          <Link href="/products" className="hover:text-yellow-300 transition-colors duration-300">
+            Produtos
+          </Link>
 
           {/* Dropdown Menu - Abre ao passar o mouse */}
           <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -76,9 +79,6 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
                 </Link>
                 <Link href="/videos/lost-canvas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
                   Lost Canvas
-                </Link>
-                <Link href="/encyclopedia" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                  Enciclopédia
                 </Link>
                 <Link href="/galeria" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
                   Minha Galeria
