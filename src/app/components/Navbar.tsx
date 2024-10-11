@@ -36,9 +36,9 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
             <img
               src="https://i.pinimg.com/originals/cf/38/b3/cf38b3ac9fc826e5e8b9c620f570fa4e.png"
               alt="Logo Os Cavaleiros do Zodíaco"
-              className="w-28 h-auto mr-4 hover:scale-105 transition-transform duration-300"
+              className="w-20 h-auto mr-2 hover:scale-105 transition-transform duration-300"
             />
-            <strong>Os Cavaleiros do Zodíaco</strong>
+            <strong className="text-lg md:text-2xl">Os Cavaleiros do Zodíaco</strong>
           </Link>
         </div>
 
@@ -70,7 +70,7 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
           </Link>
 
           {/* Dropdown Menu - Abre ao passar o mouse */}
-          <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div className="relative md:block" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <button className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
               Explorar Mais
             </button>
@@ -117,22 +117,7 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
 
       {/* Menu de navegação que abre no mobile */}
       {isMenuOpen && (
-        <nav className="md:hidden bg-gray-900 p-4">
-          <Link href="/" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-            Home
-          </Link>
-          <Link href="/characters" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-            Personagens
-          </Link>
-          <Link href="/about" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-            Sobre
-          </Link>
-          <Link href="/login" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-            Login
-          </Link>
-          <Link href="/products" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-            Produtos
-          </Link>
+        <nav className="md:hidden bg-gray-900 p-4 space-y-2">
           <Link href="/mangas" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
             Mangás
           </Link>
@@ -157,6 +142,13 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
           <Link href="/hipermito" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
             Hipermito
           </Link>
+          <button
+            onClick={toggleTheme}
+            className="w-full bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300 mt-4"
+          >
+            Trocar para {themes[(themes.indexOf(currentTheme) + 1) % themes.length].charAt(0).toUpperCase() +
+              themes[(themes.indexOf(currentTheme) + 1) % themes.length].slice(1)}
+          </button>
         </nav>
       )}
     </header>
