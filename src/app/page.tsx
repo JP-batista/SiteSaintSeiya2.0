@@ -44,7 +44,7 @@ export default function HomePage() {
           </Link>
 
           {/* Card 3 - Linha do Tempo Interativa */}
-          <Link href="#timeline" className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+          <Link href="/timeline" className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
             <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Linha do Tempo Interativa</h3>
             <p className="text-gray-300 text-md md:text-lg">
               Navegue pelas sagas e veja como elas se conectam na história dos Cavaleiros do Zodíaco.
@@ -148,6 +148,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+        <div className="text-center mt-8">
+          <Link href="/timeline" className="bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold text-lg hover:bg-yellow-600 transition-colors duration-300">
+            Ver Linha do Tempo Completa
+          </Link>
+        </div>
 
       {/* Mangás Section */}
       <section className="my-16">

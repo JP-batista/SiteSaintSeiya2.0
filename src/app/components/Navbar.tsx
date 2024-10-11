@@ -62,9 +62,6 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
           <Link href="/about" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
             Sobre
           </Link>
-          <Link href="/login" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
-            Login
-          </Link>
           <Link href="/products" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
             Produtos
           </Link>
@@ -103,6 +100,9 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
               </div>
             )}
           </div>
+          <Link href="/login" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
+            Login
+          </Link>
         </nav>
 
         {/* Botão de troca de tema */}

@@ -55,7 +55,6 @@ export default function HipermitoPage() {
     'RUMO AO HADES',
   ];
 
-  // Alterando o estado inicial para 'mainInfo' e 'mainInfoSections[0]' como padrão
   const [selectedSection, setSelectedSection] = useState(mainInfoSections[0]);
   const [currentCarousel, setCurrentCarousel] = useState<'allEras' | 'mainInfo'>('mainInfo');
 
@@ -104,19 +103,19 @@ export default function HipermitoPage() {
   const sectionsToDisplay = currentCarousel === 'allEras' ? allErasSections : mainInfoSections;
 
   return (
-    <div className="min-h-screen p-8 text-white">
-      <h1 className="text-4xl font-extrabold text-yellow-500 text-center mb-12 animate-fade-in-down">
+    <div className="min-h-screen p-4 md:p-8 text-white ">
+      <h1 className="text-3xl md:text-4xl font-extrabold text-yellow-500 text-center mb-8 md:mb-12 animate-fade-in-down">
         O Hipermito - Saint Seiya
       </h1>
 
       {/* Botões para alternar entre carrosséis */}
-      <div className="flex justify-center space-x-4 mb-8">
+      <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
         <button
           onClick={() => {
             setCurrentCarousel('mainInfo');
             setSelectedSection(mainInfoSections[0]);
           }}
-          className={`px-6 py-3 rounded-lg text-lg font-semibold shadow-md transition-transform duration-300 hover:scale-110 ${
+          className={`px-4 sm:px-6 py-3 rounded-lg text-base sm:text-lg font-semibold shadow-md transition-transform duration-300 hover:scale-110 ${
             currentCarousel === 'mainInfo' ? 'bg-yellow-500 text-gray-900' : 'bg-gray-700 text-yellow-400'
           }`}
         >
@@ -127,7 +126,7 @@ export default function HipermitoPage() {
             setCurrentCarousel('allEras');
             setSelectedSection(allErasSections[0]);
           }}
-          className={`px-6 py-3 rounded-lg text-lg font-semibold shadow-md transition-transform duration-300 hover:scale-110 ${
+          className={`px-4 sm:px-6 py-3 rounded-lg text-base sm:text-lg font-semibold shadow-md transition-transform duration-300 hover:scale-110 ${
             currentCarousel === 'allEras' ? 'bg-yellow-500 text-gray-900' : 'bg-gray-700 text-yellow-400'
           }`}
         >
@@ -136,7 +135,7 @@ export default function HipermitoPage() {
       </div>
 
       {/* Botões de controle do carrossel */}
-      <div className="relative flex items-center justify-between mb-8 px-16">
+      <div className="relative flex items-center justify-between mb-8 px-4 md:px-16">
         {/* Botão para ir ao início */}
         <button
           onClick={scrollToStart}
@@ -149,14 +148,14 @@ export default function HipermitoPage() {
         {/* Container do carrossel */}
         <div
           id="carousel-container"
-          className="flex space-x-6 overflow-x-auto no-scrollbar items-center py-4 mx-8"
+          className="flex space-x-4 sm:space-x-6 overflow-x-auto no-scrollbar items-center py-4 mx-4 sm:mx-8"
           style={{ scrollBehavior: 'smooth' }}
         >
           {sectionsToDisplay.map((section) => (
             <button
               key={section}
               onClick={() => setSelectedSection(section)}
-              className={`whitespace-nowrap px-6 py-3 rounded-lg text-lg font-semibold shadow-md transition-transform duration-300 hover:scale-110 hover:bg-yellow-500 hover:text-gray-900 ${
+              className={`whitespace-nowrap px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-sm sm:text-lg font-semibold shadow-md transition-transform duration-300 hover:scale-110 hover:bg-yellow-500 hover:text-gray-900 ${
                 selectedSection === section
                   ? 'bg-yellow-500 text-gray-900 scale-110'
                   : 'bg-gray-700 text-yellow-400'
@@ -176,7 +175,6 @@ export default function HipermitoPage() {
           Fim
         </button>
       </div>
-
       {/* Exibição do conteúdo da seção selecionada */}
       <div className="bg-gray-800 p-6 rounded-lg shadow-lg animate-fade-in-up">
         <h2 className="text-2xl font-bold mb-4">{selectedSection}</h2>

@@ -1,56 +1,112 @@
-'use client'; // Marcação para o Next.js
+'use client';
 
 import { useState, useRef, useEffect } from 'react';
 
-const tracks = [
-  {
-    name: 'Pegasus Fantasy - Saint Seiya',
-    src: '/soundtrack/Pegasus Fantasy - Saint Seiya (slowed reverb).mp3',
-    img: 'https://i.ytimg.com/vi/hG-ZCL9irck/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCFgWlYdguEhzCxJmZkaTPqrVzktQ',
-  },
-  {
-    name: 'Blue Forever - Saint Seiya',
-    src: '/soundtrack/Blue Forever - Saint Seiya (slowed reverb).mp3',
-    img: 'https://i.ytimg.com/vi/51zLAMRo0jk/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IBooGDAP&rs=AOn4CLDI-JEx8fkjJJdVGE5WgOaogVxR-Q',
-  },
-  {
-    name: 'Soldier Dream - Saint Seiya',
-    src: '/soundtrack/Soldier Dream - Saint Seiya (slowed reverb).mp3',
-    img: 'https://i.ytimg.com/vi/BhXm81Ya2NQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhMICwofzAP&rs=AOn4CLDezMVvcUOwKI3KurH52rU3quM5wA',
-  },
-  {
-    name: 'Blue Dream - Saint Seiya',
-    src: '/soundtrack/Blue Dream - Saint Seiya (slowed reverb).mp3',
-    img: 'https://i.ytimg.com/vi/BAZUp8S7RPs/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIFgoOTAP&rs=AOn4CLArM1KWKGzfKJ7WwmfsEU6vSWTVVQ',
-  },
-  {
-    name: 'Chikyuugi - Saint Seiya',
-    src: '/soundtrack/Chikyuugi - Saint Seiya (slowed reverb).mp3',
-    img: 'https://i.ytimg.com/vi/Fac-xC41ndY/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg7IEcocjAP&rs=AOn4CLDA5s5KQZV8W5dOllULCeV5GVs-rA',
-  },
-  {
-    name: 'Kimi to Onaji Aozora - Saint Seiya',
-    src: '/soundtrack/Kimi to Onaji Aozora - Saint Seiya (slowed reverb).mp3',
-    img: 'https://i.ytimg.com/vi/nDQeWzKeHGE/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgiIGQocjAP&rs=AOn4CLBoH2Negx_6HZJz13ITVDZRgUCk5Q',
-  },
-  {
-    name: 'Pegasus Forever - Saint Seiya',
-    src: '/soundtrack/Pegasus Forever - Saint Seiya (slowed reverb).mp3',
-    img: 'https://i.ytimg.com/vi/JBtDsv2ihh8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_ICAoOjAP&rs=AOn4CLCirLe-h4s56W2Az3PidulYeY3ddQ',
-  },
-  {
-    name: 'My Dear - Saint Seiya',
-    src: '/soundtrack/My Dear - Saint Seiya (slowed reverb).mp3',
-    img: 'https://i.ytimg.com/vi/cQBckkyYPXY/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgTID8ofzAP&rs=AOn4CLA8bO0LcHpRKTb3-SSn0u4OzzzNPw',
-  }, 
-  {
-    name: 'Kami no en - Saint Seiya',
-    src: '/soundtrack/Kami no en - Saint Seiya (slowed reverb).mp3',
-    img: 'https://i.ytimg.com/vi/fFodzTUDSg8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIF0oRTAP&rs=AOn4CLC7oWZIqgxArxwYAT8OyowMCMlL4Q',
-  },
-];
+// Definições das músicas
+const classicTracks = {
+  openings: [
+    {
+      name: 'Pegasus Fantasy - Saint Seiya',
+      src: '/soundtrack/Pegasus Fantasy - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/hG-ZCL9irck/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCFgWlYdguEhzCxJmZkaTPqrVzktQ',
+    }, 
+    {
+      name: 'Soldier Dream - Saint Seiya',
+      src: '/soundtrack/Soldier Dream - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/BhXm81Ya2NQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhMICwofzAP&rs=AOn4CLDezMVvcUOwKI3KurH52rU3quM5wA',
+    },
+    
+    {
+      name: 'Chikyuugi - Saint Seiya',
+      src: '/soundtrack/Chikyuugi - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/Fac-xC41ndY/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg7IEcocjAP&rs=AOn4CLDA5s5KQZV8W5dOllULCeV5GVs-rA',
+    },
+    {
+      name: 'Pegasus Forever - Saint Seiya',
+      src: '/soundtrack/Pegasus Forever - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/JBtDsv2ihh8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_ICAoOjAP&rs=AOn4CLCirLe-h4s56W2Az3PidulYeY3ddQ',
+    },
+  ],
+  endings: [
+    {
+      name: 'Blue Forever - Saint Seiya',
+      src: '/soundtrack/Blue Forever - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/51zLAMRo0jk/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IBooGDAP&rs=AOn4CLDI-JEx8fkjJJdVGE5WgOaogVxR-Q',
+    },
+    {
+      name: 'Blue Dream - Saint Seiya',
+      src: '/soundtrack/Blue Dream - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/BAZUp8S7RPs/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIFgoOTAP&rs=AOn4CLArM1KWKGzfKJ7WwmfsEU6vSWTVVQ',
+    },
+    {
+      name: 'Kimi to Onaji Aozora - Saint Seiya',
+      src: '/soundtrack/Kimi to Onaji Aozora - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/nDQeWzKeHGE/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgiIGQocjAP&rs=AOn4CLBoH2Negx_6HZJz13ITVDZRgUCk5Q',
+    },
+    {
+      name: 'My Dear - Saint Seiya',
+      src: '/soundtrack/My Dear - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/cQBckkyYPXY/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgTID8ofzAP&rs=AOn4CLA8bO0LcHpRKTb3-SSn0u4OzzzNPw',
+    },
+    {
+      name: 'Kami no en - Saint Seiya',
+      src: '/soundtrack/Kami no en - Saint Seiya (slowed reverb).mp3',
+      img: 'https://i.ytimg.com/vi/fFodzTUDSg8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIF0oRTAP&rs=AOn4CLC7oWZIqgxArxwYAT8OyowMCMlL4Q',
+    },
+    {
+      name: '',
+      src: '/soundtrack/',
+      img: '',
+    },
+  ],
+};
+
+const lostCanvasTracks = {
+  openings: [
+    {
+      name: 'The Realm of Athena - Saint Seiya - The Lost Canvas',
+      src: '/lost-canvas/The Realm of Athena - Saint Seiya- The Lost Canvas (slowed + reverb).m4a',
+      img: 'https://i.ytimg.com/vi/alMTBrhmxR4/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhDIFMocjAP&rs=AOn4CLC2IZAW6KS76CmfylC9ikoa74aWLA',
+    },
+  ],
+  endings: [
+    {
+      name: 'Hana no Kusari - Saint Seiya - The Lost Canvas',
+      src: '/lost-canvas/Hana no Kusari - Saint Seiya- The Lost Canvas (slowed + reverb).m4a',
+      img: 'https://i.ytimg.com/vi/MnkHc4gEknM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD1Fu1tXf0CbWzWo96f5PHySr_XHQ',
+    },
+    {
+      name: '',
+      src: '/lost-canvas/',
+      img: '',
+    },
+  ],
+};
+
+const omegaTracks = {
+  openings: [
+    {
+      name: 'Pegasus Fantasy - Saint Seiya Omega',
+      src: '/omega/Pegasus Fantasy - Saint Seiya Omega (slowed + reverb).m4a',
+      img: 'https://i.ytimg.com/vi/KaN8hZdg5OI/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg-IEsocjAP&rs=AOn4CLCPM2K7kf0JBh3YbofZbBtEAkIp_w',
+    },
+    {
+      name: 'New Myth - Saint Seiya Omega',
+      src: '/omega/New Myth - Saint Seiya Omega (slowed + reverb).m4a',
+      img: 'https://i.ytimg.com/vi/DI8IUVU37N8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgzIEIofzAP&rs=AOn4CLBlnTMYEl5nb8FdAbbJEUc2fQiu1Q',
+    },
+  ],
+  endings: [
+    {
+      name: '',
+      src: '/omega/',
+      img: '',
+    },
+  ],
+};
 
 export default function SoundtrackPage() {
+  const [currentCategory, setCurrentCategory] = useState<'classic' | 'lost-canvas' | 'omega'>('classic');
   const [currentTrack, setCurrentTrack] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0); // Estado para a barra de progresso
@@ -76,7 +132,6 @@ export default function SoundtrackPage() {
     }
   };
 
-  // Função para atualizar a barra de progresso
   const handleTimeUpdate = () => {
     if (audioRef.current) {
       const currentTime = audioRef.current.currentTime;
@@ -86,7 +141,6 @@ export default function SoundtrackPage() {
     }
   };
 
-  // Função para pular para uma parte da música ao clicar na barra de progresso
   const handleProgressClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     if (audioRef.current) {
       const { left, width } = e.currentTarget.getBoundingClientRect();
@@ -96,21 +150,15 @@ export default function SoundtrackPage() {
     }
   };
 
-  return (
-    <div className="min-h-screen p-8 text-white">
-      <h1 className="text-4xl font-extrabold text-yellow-400 text-center mb-10">Trilha Sonora de Saint Seiya</h1>
-
-      {/* Elemento de áudio que reproduz a música */}
-      <audio ref={audioRef} controls style={{ display: 'none' }} onTimeUpdate={handleTimeUpdate} />
-
-      {/* Renderização das faixas de áudio */}
+  const renderTrackSection = (title: string, tracks: any[]) => (
+    <section className="mb-8">
+      <h2 className="text-3xl font-extrabold text-yellow-400 text-center mb-6">{title}</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {tracks.map((track) => (
           <div key={track.name} className="bg-gray-800 p-4 rounded-lg shadow-lg text-center">
             <img src={track.img} alt={track.name} className="w-full h-auto rounded-lg mb-4" />
             <h3 className="text-2xl text-yellow-300 mb-2">{track.name}</h3>
 
-            {/* Barra de progresso clicável */}
             {currentTrack === track.src && (
               <div
                 className="relative w-full bg-gray-700 rounded-lg h-2 mb-4 cursor-pointer"
@@ -123,7 +171,6 @@ export default function SoundtrackPage() {
               </div>
             )}
 
-            {/* Botões de tocar e pausar */}
             <button
               onClick={() => handlePlayPause(track.src)}
               className="bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300"
@@ -133,6 +180,55 @@ export default function SoundtrackPage() {
           </div>
         ))}
       </div>
+    </section>
+  );
+
+  const getTracksForCategory = () => {
+    if (currentCategory === 'classic') return classicTracks;
+    if (currentCategory === 'lost-canvas') return lostCanvasTracks;
+    if (currentCategory === 'omega') return omegaTracks;
+  };
+
+  const tracks = getTracksForCategory();
+
+  return (
+    <div className="min-h-screen p-8 text-white">
+      <h1 className="text-4xl font-extrabold text-yellow-400 text-center mb-10">Trilha Sonora de Saint Seiya</h1>
+
+      {/* Elemento de áudio que reproduz a música */}
+      <audio ref={audioRef} controls style={{ display: 'none' }} onTimeUpdate={handleTimeUpdate} />
+
+      {/* Botões de navegação entre as categorias */}
+      <div className="flex justify-center space-x-4 mb-8">
+        <button
+          onClick={() => setCurrentCategory('classic')}
+          className={`px-6 py-3 rounded-lg text-lg font-semibold shadow-md transition-transform duration-300 hover:scale-110 ${
+            currentCategory === 'classic' ? 'bg-yellow-500 text-gray-900' : 'bg-gray-700 text-yellow-400'
+          }`}
+        >
+          Clássico
+        </button>
+        <button
+          onClick={() => setCurrentCategory('lost-canvas')}
+          className={`px-6 py-3 rounded-lg text-lg font-semibold shadow-md transition-transform duration-300 hover:scale-110 ${
+            currentCategory === 'lost-canvas' ? 'bg-yellow-500 text-gray-900' : 'bg-gray-700 text-yellow-400'
+          }`}
+        >
+          Lost Canvas
+        </button>
+        <button
+          onClick={() => setCurrentCategory('omega')}
+          className={`px-6 py-3 rounded-lg text-lg font-semibold shadow-md transition-transform duration-300 hover:scale-110 ${
+            currentCategory === 'omega' ? 'bg-yellow-500 text-gray-900' : 'bg-gray-700 text-yellow-400'
+          }`}
+        >
+          Omega
+        </button>
+      </div>
+
+      {/* Exibição das trilhas para a categoria selecionada */}
+      {renderTrackSection('Aberturas', tracks.openings)}
+      {renderTrackSection('Encerramentos', tracks.endings)}
     </div>
   );
 }
