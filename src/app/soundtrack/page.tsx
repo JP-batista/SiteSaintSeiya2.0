@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 
+// Definições das músicas
 const classicTracks = {
   openings: [
     {
@@ -164,7 +165,11 @@ const lostCanvasTracks = {
     },
   ],
   others: [
-
+    {
+      name: 'Constellation Cloth - Saint Seiya Omega',
+      src: '/omega/outras/Constellation Cloth - Saint Seiya Omega (slowed + reverb).m4a',
+      img: 'https://i.ytimg.com/vi/sbn0_9Hf4PQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IBMoPTAP&rs=AOn4CLAVFtgE9WYeIC-XknmLmUq5JLxnow',
+    },
   ]
 };
 
@@ -183,9 +188,9 @@ const omegaTracks = {
   ],
   endings: [
     {
-      name: '',
-      src: '/omega/',
-      img: '',
+      name: 'Constellation Cloth - Saint Seiya Omega',
+      src: '/omega/outras/Constellation Cloth - Saint Seiya Omega (slowed + reverb).m4a',
+      img: 'https://i.ytimg.com/vi/sbn0_9Hf4PQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IBMoPTAP&rs=AOn4CLAVFtgE9WYeIC-XknmLmUq5JLxnow',
     },
   ],
   others: [
@@ -315,7 +320,7 @@ export default function SoundtrackPage() {
     if (currentCategory === 'classic') return classicTracks;
     if (currentCategory === 'lost-canvas') return lostCanvasTracks;
     if (currentCategory === 'omega') return omegaTracks;
-    return null;
+
   };
 
   const tracks = getTracksForCategory();
@@ -356,9 +361,9 @@ export default function SoundtrackPage() {
       </div>
 
       {/* Exibição das trilhas para a categoria selecionada */}
-      {tracks && renderTrackSection('Aberturas', tracks.openings)}
-      {tracks && renderTrackSection('Encerramentos', tracks.endings)}
-      {tracks && renderTrackSection('Trilhas', tracks.others)}
+      {renderTrackSection('Aberturas', tracks.openings)}
+      {renderTrackSection('Encerramentos', tracks.endings)}
+      {renderTrackSection('Trilhas', tracks.others)}
     </div>
   );
 }
