@@ -165,9 +165,12 @@ export default function HomePage() {
               className="w-60 h-auto rounded-lg mb-4"
             />
             <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Saint Seiya: Clássico</h3>
-            <p className="text-gray-300 text-md md:text-lg">
+            <p className="text-gray-300 mb-4">
               O mangá clássico que iniciou toda a saga, criado por Masami Kurumada em 1986.
             </p>
+            <Link href="/mangas/classico" className="bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300">
+              Ver Mais
+            </Link>
           </div>
 
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
@@ -177,9 +180,12 @@ export default function HomePage() {
               className="w-60 h-auto rounded-lg mb-4"
             />
             <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Saint Seiya: The Lost Canvas</h3>
-            <p className="text-gray-300 text-md md:text-lg">
+            <p className="text-gray-300 mb-4">
               A saga que retrata a Guerra Santa anterior ao arco do Santuário.
             </p>
+            <Link href="/mangas/lost-canvas" className="bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300">
+              Ver Mais
+            </Link>
           </div>
 
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
@@ -189,9 +195,12 @@ export default function HomePage() {
               className="w-60 h-auto rounded-lg mb-4"
             />
             <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Saint Seiya: Next Dimension</h3>
-            <p className="text-gray-300 text-md md:text-lg">
+            <p className="text-gray-300 mb-4">
               A sequência oficial do mangá clássico, escrita e ilustrada por Masami Kurumada.
             </p>
+            <Link href="/mangas/next-dimension" className="bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300">
+              Ver Mais
+            </Link>
           </div>
         </div>
 
