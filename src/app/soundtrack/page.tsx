@@ -165,11 +165,7 @@ const lostCanvasTracks = {
     },
   ],
   others: [
-    {
-      name: 'Constellation Cloth - Saint Seiya Omega',
-      src: '/omega/outras/Constellation Cloth - Saint Seiya Omega (slowed + reverb).mp3',
-      img: 'https://i.ytimg.com/vi/sbn0_9Hf4PQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IBMoPTAP&rs=AOn4CLAVFtgE9WYeIC-XknmLmUq5JLxnow',
-    },
+    
   ]
 };
 
