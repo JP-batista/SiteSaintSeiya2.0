@@ -361,9 +361,9 @@ export default function SoundtrackPage() {
       </div>
 
       {/* Exibição das trilhas para a categoria selecionada */}
-      {renderTrackSection('Aberturas', tracks.openings)}
-      {renderTrackSection('Encerramentos', tracks.endings)}
-      {renderTrackSection('Trilhas', tracks.others)}
+      {tracks && renderTrackSection('Aberturas', tracks?.openings)}
+      {tracks && renderTrackSection('Encerramentos', tracks?.endings)}
+      {tracks && renderTrackSection('Trilhas', tracks?.others)}
     </div>
   );
 }
