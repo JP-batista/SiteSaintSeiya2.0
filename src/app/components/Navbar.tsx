@@ -86,31 +86,37 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
                 isDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
               }`}
             >
-              <button className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                Mangás
-              </button>
-              <button className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                Trilha Sonora
-              </button>
-              <button className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                Vídeos de Batalhas
-              </button>
-              <button className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                Linha do Tempo
-              </button>
-              <button className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                Quiz
-              </button>
-              <button className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                Lost Canvas
-              </button>
-              <button className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                Minha Galeria
-              </button>
-              <button className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                Hipermito
-              </button>
-            </div>
+              <div className="absolute top-full mt-2 w-48 bg-gray-900 shadow-lg rounded-lg">
+                <Link href="/mangas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Mangás
+                </Link>
+                <Link href="/soundtrack" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Trilha Sonora
+                </Link>
+                <Link href="/videos/battle-videos" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Vídeos de Batalhas
+                </Link>
+                <Link href="/timeline" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Linha do Tempo
+                </Link>
+                <Link href="/quiz" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Quiz
+                </Link>
+                <Link href="/videos/lost-canvas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Lost Canvas
+                </Link>
+                <Link href="/galeria" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Minha Galeria
+                </Link>
+                <Link href="/hipermito" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Hipermito
+                </Link>
+                <Link href="/contato" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  Contatos
+                </Link>
+              </div>
+          </div>
+            
           </div>
           <a href="/login" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
             Login
@@ -166,3 +172,5 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
     </header>
   );
 }
+
+

@@ -1,6 +1,7 @@
 'use client'; // Marcação necessária para o Next.js
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link'; // Importando o componente Link para navegação
 
 export default function SaintSeiya() {
   const Santuario = [
@@ -2713,6 +2714,11 @@ export default function SaintSeiya() {
             </div>
           )}
         </div>
+      </div>
+      <div className="text-center mt-8">
+        <Link href="/mangas" className="bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold text-lg hover:bg-yellow-600 transition-colors duration-300">
+          Voltar para Mangás
+        </Link>
       </div>
     </div>
   );
