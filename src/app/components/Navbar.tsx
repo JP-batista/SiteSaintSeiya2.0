@@ -2,7 +2,7 @@ import { useState, useRef } from 'react'; // Importar o hook useState e useRef
 import Link from 'next/link';
 
 export default function Navbar({ onThemeChange }: { onThemeChange: (theme: string) => void }) {
-  const themes = ['santuary', 'asgard', 'poseidon', 'hades'];
+  const themes = ['santuary', 'ruinas', 'asgard', 'relogio',];
   const [currentTheme, setCurrentTheme] = useState('santuary');
   const [isDropdownOpen, setDropdownOpen] = useState(false); // Estado para controlar o dropdown
   const [isMenuOpen, setMenuOpen] = useState(false); // Estado para o menu mobile

@@ -22,9 +22,9 @@
   background-color: black; /* Fallback */
 }
 
-/* Tema Poseidon */
-.poseidon {
-  background-image: url('https://i.pinimg.com/originals/2e/58/3c/2e583c9172c76ce826137b4bc607dff9.jpg'); /* Substitua pela URL correta */
+/* Tema Hades */
+.relogio {
+  background-image: url('https://i.pinimg.com/originals/f4/8d/55/f48d55f7ba274bdbc921a7204e842f63.png'); /* Substitua pela URL correta */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -32,9 +32,35 @@
   background-color: black; /* Fallback */
 }
 
-/* Tema Hades */
-.hades {
-  background-image: url('https://i.pinimg.com/originals/4c/b0/26/4cb0260e9d660951f17edd51558e4ca8.jpg'); /* Substitua pela URL correta */
+.ruinas {
+  background-image: url('https://i.pinimg.com/originals/5a/df/0e/5adf0e10d5808bbfe0498273fdbbea05.jpg'); /* Substitua pela URL correta */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  background-color: black; /* Fallback */
+}
+
+.contelações {
+  background-image: url('https://i.pinimg.com/originals/4a/f3/74/4af374c418022b50b667280cecba2917.jpg'); /* Substitua pela URL correta */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  background-color: black; /* Fallback */
+}
+
+.asgardPrime {
+  background-image: url('https://blackcompany.com.br/wp-content/uploads/2024/08/Saint-Seiya.png'); /* Substitua pela URL correta */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  background-color: black; /* Fallback */
+}
+
+.SantuarioPrime {
+  background-image: url('https://m.media-amazon.com/images/S/pv-target-images/6a67d3229c528dd33f11e18b784f6a2eb70dff4055f82646381a21a24e35647c.jpg'); /* Substitua pela URL correta */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
