@@ -2,6 +2,21 @@
 import { useState, useEffect } from "react";
 import characters from "../data/characters"; // Certifique-se de que os dados dos personagens estão aqui
 
+// Definindo o tipo dos personagens para melhorar a tipagem
+type Character = {
+  nome: string;
+  idade: string;
+  altura: string;
+  genero: string;
+  peso: string;
+  signo: string;
+  localDeTreinamento: string;
+  patente: string;
+  exercito: string;
+  saga: string;
+  imgSrc: string;
+};
+
 export default function GamePage() {
   // Função auxiliar para salvar no localStorage
   const saveToLocalStorage = (key: string, value: any) => {
@@ -14,33 +29,36 @@ export default function GamePage() {
     return saved ? JSON.parse(saved) : defaultValue;
   };
 
-  const [selectedCharacter, setSelectedCharacter] = useState(() =>
+  const [selectedCharacter, setSelectedCharacter] = useState<Character>(() =>
     loadFromLocalStorage(
       "selectedCharacter",
       characters[Math.floor(Math.random() * characters.length)]
     )
   );
-  const [input, setInput] = useState("");
-  const [attempts, setAttempts] = useState(() =>
+  const [input, setInput] = useState<string>("");
+  const [attempts, setAttempts] = useState<any[]>(() =>
     loadFromLocalStorage("attempts", [])
   );
-  const [won, setWon] = useState(false);
-  const [showAnswer, setShowAnswer] = useState(false); // Estado para controlar desistência
-  const [suggestions, setSuggestions] = useState([]);
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [won, setWon] = useState<boolean>(false);
+  const [showAnswer, setShowAnswer] = useState<boolean>(false); // Estado para controlar desistência
+  const [suggestions, setSuggestions] = useState<Character[]>([]);
+  const [showDropdown, setShowDropdown] = useState<boolean>(false);
 
+  // Função para converter altura de string para número
   const parseHeight = (height: string) =>
     parseFloat(height.replace(",", ".").replace(" m", ""));
 
+  // Comparação de números (idade, peso)
   const compareNumber = (value: number, target: number) => {
     if (value === target) return "green";
     return value > target ? "down" : "up"; // Setas para indicar maior ou menor
   };
 
+  // Comparação de alturas (que são strings)
   const compareHeight = (value: string, target: string) => {
     const val = parseHeight(value);
     const tgt = parseHeight(target);
-    if (isNaN(val) || isNaN(tgt)) return "red"; // Caso falte algum dado de altura
+    if (isNaN(val) || isNaN(tgt)) return "ignore"; // Caso falte algum dado de altura
     if (val === tgt) return "green";
     return val > tgt ? "down" : "up";
   };
@@ -56,7 +74,7 @@ export default function GamePage() {
     if (!input.trim()) return;
 
     const guess = characters.find(
-      (char) => char.nome.toLowerCase() === input.toLowerCase()
+      (char: Character) => char.nome.toLowerCase() === input.toLowerCase()
     );
 
     if (!guess) {
@@ -67,29 +85,28 @@ export default function GamePage() {
     const correct = guess.nome === selectedCharacter.nome;
 
     const comparison = {
-        nome: input,
-        idade: isNaN(parseInt(guess.idade)) || isNaN(parseInt(selectedCharacter.idade))
+      nome: input,
+      idade:
+        isNaN(parseInt(guess.idade)) || isNaN(parseInt(selectedCharacter.idade))
           ? "ignore" // Desconsidera a idade se não for um número
           : compareNumber(parseInt(guess.idade), parseInt(selectedCharacter.idade)),
-        altura: isNaN(parseFloat(guess.altura)) || isNaN(parseFloat(selectedCharacter.altura))
+      altura:
+        isNaN(parseHeight(guess.altura)) || isNaN(parseHeight(selectedCharacter.altura))
           ? "ignore" // Desconsidera a altura se não for um número
           : compareHeight(guess.altura, selectedCharacter.altura),
-        genero: guess.genero === selectedCharacter.genero ? "green" : "red",
-        peso: isNaN(parseFloat(guess.peso)) || isNaN(parseFloat(selectedCharacter.peso))
+      genero: guess.genero === selectedCharacter.genero ? "green" : "red",
+      peso:
+        isNaN(parseFloat(guess.peso)) || isNaN(parseFloat(selectedCharacter.peso))
           ? "ignore" // Desconsidera o peso se não for um número
           : compareNumber(parseFloat(guess.peso), parseFloat(selectedCharacter.peso)),
-        signo: guess.signo === selectedCharacter.signo ? "green" : "red",
-        localDeTreinamento: guess.localDeTreinamento === selectedCharacter.localDeTreinamento
-          ? "green"
-          : "red",
-        patente: guess.patente === selectedCharacter.patente ? "green" : "red",
-        exercito: guess.exercito === selectedCharacter.exercito ? "green" : "red",
-        saga: guess.saga === selectedCharacter.saga ? "green" : "red",
-        imgSrc: guess.imgSrc,
-        guessCharacter: guess,
-      };
-      
-      
+      signo: guess.signo === selectedCharacter.signo ? "green" : "red",
+      localDeTreinamento: guess.localDeTreinamento === selectedCharacter.localDeTreinamento ? "green" : "red",
+      patente: guess.patente === selectedCharacter.patente ? "green" : "red",
+      exercito: guess.exercito === selectedCharacter.exercito ? "green" : "red",
+      saga: guess.saga === selectedCharacter.saga ? "green" : "red",
+      imgSrc: guess.imgSrc,
+      guessCharacter: guess,
+    };
 
     if (correct) setWon(true);
 
@@ -112,7 +129,7 @@ export default function GamePage() {
     setInput(value);
 
     if (value.trim()) {
-      const filteredSuggestions = characters.filter((char) =>
+      const filteredSuggestions = characters.filter((char: Character) =>
         char.nome.toLowerCase().includes(value.toLowerCase())
       );
       setSuggestions(filteredSuggestions);
@@ -123,7 +140,7 @@ export default function GamePage() {
     }
   };
 
-  const handleSuggestionClick = (suggestion: { nome: string }) => {
+  const handleSuggestionClick = (suggestion: Character) => {
     setInput(suggestion.nome);
     setShowDropdown(false);
   };
