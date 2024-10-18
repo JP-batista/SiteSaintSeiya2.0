@@ -67,22 +67,29 @@ export default function GamePage() {
     const correct = guess.nome === selectedCharacter.nome;
 
     const comparison = {
-      nome: input,
-      idade: compareNumber(guess.idade, selectedCharacter.idade),
-      altura: compareHeight(guess.altura, selectedCharacter.altura),
-      genero: guess.genero === selectedCharacter.genero ? "green" : "red",
-      peso: compareNumber(guess.peso, selectedCharacter.peso),
-      signo: guess.signo === selectedCharacter.signo ? "green" : "red",
-      localDeTreinamento:
-        guess.localDeTreinamento === selectedCharacter.localDeTreinamento
+        nome: input,
+        idade: isNaN(parseInt(guess.idade)) || isNaN(parseInt(selectedCharacter.idade))
+          ? "ignore" // Desconsidera a idade se não for um número
+          : compareNumber(parseInt(guess.idade), parseInt(selectedCharacter.idade)),
+        altura: isNaN(parseFloat(guess.altura)) || isNaN(parseFloat(selectedCharacter.altura))
+          ? "ignore" // Desconsidera a altura se não for um número
+          : compareHeight(guess.altura, selectedCharacter.altura),
+        genero: guess.genero === selectedCharacter.genero ? "green" : "red",
+        peso: isNaN(parseFloat(guess.peso)) || isNaN(parseFloat(selectedCharacter.peso))
+          ? "ignore" // Desconsidera o peso se não for um número
+          : compareNumber(parseFloat(guess.peso), parseFloat(selectedCharacter.peso)),
+        signo: guess.signo === selectedCharacter.signo ? "green" : "red",
+        localDeTreinamento: guess.localDeTreinamento === selectedCharacter.localDeTreinamento
           ? "green"
           : "red",
-      patente: guess.patente === selectedCharacter.patente ? "green" : "red",
-      exercito: guess.exercito === selectedCharacter.exercito ? "green" : "red",
-      saga: guess.saga === selectedCharacter.saga ? "green" : "red", // Comparação do novo campo "saga"
-      imgSrc: guess.imgSrc,
-      guessCharacter: guess,
-    };
+        patente: guess.patente === selectedCharacter.patente ? "green" : "red",
+        exercito: guess.exercito === selectedCharacter.exercito ? "green" : "red",
+        saga: guess.saga === selectedCharacter.saga ? "green" : "red",
+        imgSrc: guess.imgSrc,
+        guessCharacter: guess,
+      };
+      
+      
 
     if (correct) setWon(true);
 
