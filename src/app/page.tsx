@@ -20,6 +20,12 @@ export default function HomePage() {
           <Link href="/about" className="bg-gray-700 text-yellow-500 px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-md md:text-lg hover:bg-gray-600 transition-colors duration-300">
             Sobre o Projeto
           </Link>
+          <Link href="/quiz" className="bg-gray-700 text-yellow-500 px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-md md:text-lg hover:bg-gray-600 transition-colors duration-300">
+            Quiz Saint Seiya
+          </Link>
+          <Link href="/game" className="bg-gray-700 text-yellow-500 px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-md md:text-lg hover:bg-gray-600 transition-colors duration-300">
+            DLE Saint Seiya
+          </Link>
         </div>
       </section>
 

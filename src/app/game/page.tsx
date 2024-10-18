@@ -4,12 +4,12 @@ import characters from "../data/characters"; // Certifique-se de que os dados do
 
 export default function GamePage() {
   // Função auxiliar para salvar no localStorage
-  const saveToLocalStorage = (key, value) => {
+  const saveToLocalStorage = (key: string, value: any) => {
     localStorage.setItem(key, JSON.stringify(value));
   };
 
   // Função auxiliar para carregar do localStorage
-  const loadFromLocalStorage = (key, defaultValue) => {
+  const loadFromLocalStorage = (key: string, defaultValue: any) => {
     const saved = localStorage.getItem(key);
     return saved ? JSON.parse(saved) : defaultValue;
   };
@@ -29,15 +29,15 @@ export default function GamePage() {
   const [suggestions, setSuggestions] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
 
-  const parseHeight = (height) =>
+  const parseHeight = (height: string) =>
     parseFloat(height.replace(",", ".").replace(" m", ""));
 
-  const compareNumber = (value, target) => {
+  const compareNumber = (value: number, target: number) => {
     if (value === target) return "green";
     return value > target ? "down" : "up"; // Setas para indicar maior ou menor
   };
 
-  const compareHeight = (value, target) => {
+  const compareHeight = (value: string, target: string) => {
     const val = parseHeight(value);
     const tgt = parseHeight(target);
     if (isNaN(val) || isNaN(tgt)) return "red"; // Caso falte algum dado de altura
@@ -51,7 +51,7 @@ export default function GamePage() {
     saveToLocalStorage("attempts", attempts);
   }, [selectedCharacter, attempts]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!input.trim()) return;
 
@@ -100,7 +100,7 @@ export default function GamePage() {
     localStorage.removeItem("attempts");
   };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setInput(value);
 
@@ -116,12 +116,12 @@ export default function GamePage() {
     }
   };
 
-  const handleSuggestionClick = (suggestion) => {
+  const handleSuggestionClick = (suggestion: { nome: string }) => {
     setInput(suggestion.nome);
     setShowDropdown(false);
   };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "ArrowDown" && suggestions.length > 0) {
       setInput(suggestions[0].nome);
     }
@@ -370,6 +370,41 @@ export default function GamePage() {
               </table>
             </div>
           </div>
+          <div className="mt-6 bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold mb-4 text-center text-yellow-400">Indicadores de cor</h3>
+            <div className="flex items-center justify-around space-x-4">
+                
+                <div className="flex flex-col items-center">
+                <div className="w-10 h-10 flex items-center justify-center rounded-lg ">
+                    <span className="text-white text-xl">✔️</span>
+                </div>
+                <span className="text-sm text-white mt-2">Correto</span>
+                </div>
+                
+                <div className="flex flex-col items-center">
+                <div className="w-10 h-10 flex items-center justify-center rounded-lg ">
+                    <span className="text-white text-xl">❌</span>
+                </div>
+                <span className="text-sm text-white mt-2">Incorreto</span>
+                </div>
+                
+                <div className="flex flex-col items-center">
+                <div className="w-10 h-10 flex items-center justify-center rounded-lg ">
+                    <span className="text-white text-xl">🔼</span>
+                </div>
+                <span className="text-sm text-white mt-2">Mais alto</span>
+                </div>
+                
+                <div className="flex flex-col items-center">
+                <div className="w-10 h-10  flex items-center justify-center rounded-lg ">
+                    <span className="text-white text-xl">🔽</span>
+                </div>
+                <span className="text-sm text-white mt-2">Mais baixo</span>
+                </div>
+
+            </div>
+            </div>
+
 
           {/* Botão de desistência no final da página */}
           <button
@@ -433,7 +468,7 @@ export default function GamePage() {
           {/* Mostrar todas as tentativas e o total */}
           <div className="mt-8 w-full max-w-3xl">
             <h3 className="text-2xl mb-4 text-center">Tentativas:</h3>
-            <div className="overflow-auto">
+            <div className="">
               <table className="w-full text-left border-collapse table-auto bg-gray-700 rounded-lg shadow-lg">
                 <thead>
                   <tr className="text-yellow-500 border-b-2 border-yellow-500">

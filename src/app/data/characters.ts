@@ -1674,7 +1674,7 @@ const characters = [
         signo: "Desconhecido",
         localDeTreinamento: "Desconhecido",
         patente: "Cavaleiro Negro",
-        exercito: "Cavaleiros Negros",
+        exercito: "Exército de Athena",
         saga: "Santuario",
         imgSrc: "/dle/kenuma.jpg"
     },
@@ -1795,8 +1795,6 @@ const characters = [
         saga: "Prologo do Céu",
         imgSrc: "/dle/tohma.jpg"
     },
-
-
     {
         nome: "Belzebu de Serafim",
         idade: "Desconhecida",
