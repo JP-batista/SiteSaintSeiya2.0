@@ -111,6 +111,9 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
                 <Link href="/hipermito" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
                   Hipermito
                 </Link>
+                <Link href="/game" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
+                  DLE Saint Seiya
+                </Link>
               </div>
           </div>
             
