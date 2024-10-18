@@ -20,13 +20,18 @@ type Character = {
 export default function GamePage() {
   // Função auxiliar para salvar no localStorage
   const saveToLocalStorage = (key: string, value: any) => {
-    localStorage.setItem(key, JSON.stringify(value));
+    if (typeof window !== "undefined") {
+      localStorage.setItem(key, JSON.stringify(value));
+    }
   };
 
   // Função auxiliar para carregar do localStorage
   const loadFromLocalStorage = (key: string, defaultValue: any) => {
-    const saved = localStorage.getItem(key);
-    return saved ? JSON.parse(saved) : defaultValue;
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem(key);
+      return saved ? JSON.parse(saved) : defaultValue;
+    }
+    return defaultValue;
   };
 
   const [selectedCharacter, setSelectedCharacter] = useState<Character>(() =>
@@ -163,7 +168,6 @@ export default function GamePage() {
     localStorage.removeItem("selectedCharacter");
     localStorage.removeItem("attempts");
   };
-
   return (
     <div className="min-h-screen text-white flex flex-col items-center justify-center p-6">
       <h1 className="text-5xl font-bold mb-8 text-yellow-400">
