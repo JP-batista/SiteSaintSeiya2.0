@@ -40,9 +40,9 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <img
-              src="https://i.pinimg.com/originals/cf/38/b3/cf38b3ac9fc826e5e8b9c620f570fa4e.png"
+              src="/spinners/zodiac-wheel/zodiac-wheel-spinner-white.gif"
               alt="Logo Os Cavaleiros do Zodíaco"
-              className="w-20 h-auto mr-2 hover:scale-105 transition-transform duration-300"
+              className="w-16 h-auto mr-2 hover:scale-105 transition-transform duration-300"
             />
             <strong className="text-lg md:text-2xl">Os Cavaleiros do Zodíaco</strong>
           </Link>
