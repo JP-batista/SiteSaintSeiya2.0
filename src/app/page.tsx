@@ -1,10 +1,14 @@
 // src/app/page.tsx
-
+import Head from 'next/head';
 import Link from 'next/link'; // Importando o componente Link para navegação
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-transparent p-4 md:p-8">
+      <Head>
+        <title>Saint Seiya</title>
+        <meta name="description" content="Descrição da página" />
+      </Head>
       {/* Hero Section */}
       <section className="text-center my-12">
         <h1 className="text-4xl md:text-6xl font-extrabold text-yellow-500 mb-4 animate-fade-in-down">
