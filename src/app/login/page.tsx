@@ -1,4 +1,3 @@
-// src/app/login/page.tsx
 "use client"; // Marca este componente como Client Component
 
 import { useState } from 'react';
@@ -22,11 +21,11 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="text-4xl text-yellow-400 mb-6 text-center font-bold">Login</h1>
-      <div className="max-w-md mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
+    <div className="flex items-center justify-center ">
+      <div className="max-w-md w-full bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h1 className="text-4xl text-yellow-400 mb-6 text-center font-bold">Login</h1>
         <form onSubmit={handleSubmit}>
-          <div className="mb-4">
+          <div className="mb-6">
             <label className="block text-gray-300 text-sm font-bold mb-2" htmlFor="username">
               Usuário
             </label>
@@ -35,10 +34,11 @@ export default function LoginPage() {
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)} // Atualiza o estado do campo "usuário"
-              className="w-full p-3 bg-gray-900 text-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full p-3 bg-gray-900 text-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 transition duration-300 ease-in-out"
+              placeholder="Digite seu usuário"
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <label className="block text-gray-300 text-sm font-bold mb-2" htmlFor="password">
               Senha
             </label>
@@ -47,12 +47,13 @@ export default function LoginPage() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)} // Atualiza o estado do campo "senha"
-              className="w-full p-3 bg-gray-900 text-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full p-3 bg-gray-900 text-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 transition duration-300 ease-in-out"
+              placeholder="Digite sua senha"
             />
           </div>
           <button
             type="submit"
-            className="w-full bg-yellow-500 text-black font-bold py-2 rounded-lg hover:bg-yellow-400 transition-colors duration-300"
+            className="w-full bg-yellow-500 text-black font-bold py-2 rounded-lg hover:bg-yellow-400 transition-colors duration-300 shadow-lg hover:shadow-xl"
           >
             Entrar
           </button>

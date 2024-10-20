@@ -36,9 +36,8 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
   return (
     <header className="bg-gray-900 bg-opacity-75 shadow-lg backdrop-blur-md fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        {/* Logo menor para navegação */}
         <div className="flex items-center">
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center" aria-label="Logo Os Cavaleiros do Zodíaco">
             <img
               src="/spinners/zodiac-wheel/zodiac-wheel-spinner-white.gif"
               alt="Logo Os Cavaleiros do Zodíaco"
@@ -48,37 +47,22 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
           </Link>
         </div>
 
-        {/* Menu de Hambúrguer para telas pequenas */}
         <div className="block md:hidden">
-          <button onClick={toggleMenu} className="text-yellow-400 focus:outline-none">
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <button onClick={toggleMenu} className="text-yellow-400 focus:outline-none" aria-label="Menu">
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
             </svg>
           </button>
         </div>
 
-        {/* Navegação principal */}
         <nav className={`md:flex md:space-x-6 text-yellow-400 text-lg font-semibold ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-          <Link href="/" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
-            Home
-          </Link>
-          <Link href="/characters" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
-            Personagens
-          </Link>
-          <Link href="/about" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
-            Sobre
-          </Link>
-          <Link href="/hipermito" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
-            Hipermito
-          </Link>
+          <Link href="/" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300" aria-label="Home">Home</Link>
+          <Link href="/characters" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300" aria-label="Personagens">Personagens</Link>
+          <Link href="/about" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300" aria-label="Sobre">Sobre</Link>
+          <Link href="/hipermito" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300" aria-label="Hipermito">Hipermito</Link>
 
-          {/* Dropdown Menu - Abre ao passar o mouse */}
-          <div
-            className="relative"
-            onMouseEnter={handleMouseEnter} // Abre o dropdown ao passar o mouse
-            onMouseLeave={handleMouseLeave} // Fecha o dropdown após 2 segundos se o mouse sair
-          >
-            <button className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
+          <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <button className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300" aria-label="Explorar Mais">
               Explorar Mais
             </button>
             <div
@@ -86,83 +70,44 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
                 isDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
               }`}
             >
-              <div className="absolute top-full mt-2 w-48 bg-gray-900 shadow-lg rounded-lg">
-                <Link href="/mangas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                  Mangás
-                </Link>
-                <Link href="/soundtrack" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                  Trilha Sonora
-                </Link>
-                <Link href="/videos/battle-videos" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                  Vídeos de Batalhas
-                </Link>
-                <Link href="/timeline" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                  Linha do Tempo
-                </Link>
-                <Link href="/quiz" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                  Quiz
-                </Link>
-                <Link href="/videos/lost-canvas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                  Lost Canvas
-                </Link>
-                <Link href="/galeria" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                  Minha Galeria
-                </Link>
-                <Link href="/game" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                  DLE Saint Seiya
-                </Link>
-              </div>
+              <Link href="/mangas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Mangás">Mangás</Link>
+              <Link href="/soundtrack" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Trilha Sonora">Trilha Sonora</Link>
+              <Link href="/videos/battle-videos" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Vídeos de Batalhas">Vídeos de Batalhas</Link>
+              <Link href="/timeline" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Linha do Tempo">Linha do Tempo</Link>
+              <Link href="/quiz" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Quiz">Quiz</Link>
+              <Link href="/videos/lost-canvas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Lost Canvas">Lost Canvas</Link>
+              <Link href="/galeria" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Minha Galeria">Minha Galeria</Link>
+              <Link href="/game" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="DLE Saint Seiya">DLE Saint Seiya</Link>
+            </div>
           </div>
-            
-          </div>
-          <a href="/login" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
-            Login
-          </a>
+          <Link href="/login" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300" aria-label="Login">Login</Link>
         </nav>
 
-        {/* Botão de troca de tema */}
         <button
           onClick={toggleTheme}
           className="hidden md:block bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300"
+          aria-label={`Trocar para ${themes[(themes.indexOf(currentTheme) + 1) % themes.length].charAt(0).toUpperCase() + themes[(themes.indexOf(currentTheme) + 1) % themes.length].slice(1)}`}
         >
-          Trocar para {themes[(themes.indexOf(currentTheme) + 1) % themes.length].charAt(0).toUpperCase() +
-            themes[(themes.indexOf(currentTheme) + 1) % themes.length].slice(1)}
+          Trocar para {themes[(themes.indexOf(currentTheme) + 1) % themes.length].charAt(0).toUpperCase() + themes[(themes.indexOf(currentTheme) + 1) % themes.length].slice(1)}
         </button>
       </div>
 
-      {/* Menu de navegação que abre no mobile */}
       {isMenuOpen && (
         <nav className="md:hidden bg-gray-900 p-4 space-y-2">
-          <button className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-            Mangás
-          </button>
-          <button className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-            Trilha Sonora
-          </button>
-          <button className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-            Vídeos de Batalhas
-          </button>
-          <button className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-            Linha do Tempo
-          </button>
-          <button className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-            Quiz
-          </button>
-          <button className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-            Lost Canvas
-          </button>
-          <button className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-            Minha Galeria
-          </button>
-          <button className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300">
-            Hipermito
-          </button>
+          <Link href="/mangas" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Mangás">Mangás</Link>
+          <Link href="/soundtrack" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Trilha Sonora">Trilha Sonora</Link>
+          <Link href="/videos/battle-videos" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Vídeos de Batalhas">Vídeos de Batalhas</Link>
+          <Link href="/timeline" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Linha do Tempo">Linha do Tempo</Link>
+          <Link href="/quiz" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Quiz">Quiz</Link>
+          <Link href="/videos/lost-canvas" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Lost Canvas">Lost Canvas</Link>
+          <Link href="/galeria" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Minha Galeria">Minha Galeria</Link>
+          <Link href="/hipermito" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Hipermito">Hipermito</Link>
           <button
             onClick={toggleTheme}
             className="w-full bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300 mt-4"
+            aria-label={`Trocar para ${themes[(themes.indexOf(currentTheme) + 1) % themes.length].charAt(0).toUpperCase() + themes[(themes.indexOf(currentTheme) + 1) % themes.length].slice(1)}`}
           >
-            Trocar para {themes[(themes.indexOf(currentTheme) + 1) % themes.length].charAt(0).toUpperCase() +
-              themes[(themes.indexOf(currentTheme) + 1) % themes.length].slice(1)}
+            Trocar para {themes[(themes.indexOf(currentTheme) + 1) % themes.length].charAt(0).toUpperCase() + themes[(themes.indexOf(currentTheme) + 1) % themes.length].slice(1)}
           </button>
         </nav>
       )}

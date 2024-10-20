@@ -18,21 +18,68 @@ export default function HomePage() {
           Explore os Cavaleiros do Zodíaco, suas sagas épicas, batalhas e personagens lendários.
         </p>
         <div className="flex justify-center space-x-4 md:space-x-6">
-          <Link href="/characters" className="bg-yellow-500 text-gray-900 px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-md md:text-lg hover:bg-yellow-600 transition-colors duration-300">
-            Ver Personagens
+          {/* Ver Personagens */}
+          <Link href="/characters">
+            <div className="text-yellow-400 bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-yellow-500 hover:text-gray-900 transition-all duration-300 ease-in-out transform hover:scale-105">
+              <img
+                src="/logos/helmet-pegasus.svg"
+                alt="Personagens"
+                className="mx-auto w-20 h-auto mb-4"
+              />
+              <h2 className="text-2xl font-bold">Ver Personagens</h2>
+              <p className="text-gray-300">
+                Explore os cavaleiros do zodíaco, suas sagas e poderes.
+              </p>
+            </div>
           </Link>
-          <Link href="/about" className="bg-gray-700 text-yellow-500 px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-md md:text-lg hover:bg-gray-600 transition-colors duration-300">
-            Sobre o Projeto
+
+          {/* Quiz Saint Seiya */}
+          <Link href="/quiz">
+            <div className="text-yellow-400 bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-yellow-500 hover:text-gray-900 transition-all duration-300 ease-in-out transform hover:scale-105">
+              <img
+                src="/logos/helmet-draco.svg"
+                alt="Quiz Saint Seiya"
+                className="mx-auto w-32 h-auto mb-4"
+              />
+              <h2 className="text-2xl font-bold">Quiz Saint Seiya</h2>
+              <p className="text-gray-300 mt-2">
+                Teste seus conhecimentos sobre o universo dos Cavaleiros.
+              </p>
+            </div>
           </Link>
-          <Link href="/quiz" className="bg-gray-700 text-yellow-500 px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-md md:text-lg hover:bg-gray-600 transition-colors duration-300">
-            Quiz Saint Seiya
+
+          {/* Jogo DLE Saint Seiya */}
+          <Link href="/game">
+            <div className="text-yellow-400 bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-yellow-500 hover:text-gray-900 transition-all duration-300 ease-in-out transform hover:scale-105">
+              <img
+                src="/logos/helmet-cygnus.svg"
+                alt="DLE Saint Seiya"
+                className="mx-auto w-24 h-auto mb-4"
+              />
+              <h2 className="text-2xl font-bold">Jogo DLE Saint Seiya</h2>
+              <p className="text-gray-300 mt-2">
+                Adivinhe os cavaleiros com base em dicas e características.
+              </p>
+            </div>
           </Link>
-          <Link href="/game" className="bg-gray-700 text-yellow-500 px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-md md:text-lg hover:bg-gray-600 transition-colors duration-300">
-            DLE Saint Seiya
+
+          {/* Sobre o Projeto */}
+          <Link href="/about">
+            <div className="text-yellow-400 bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-yellow-500 hover:text-gray-900 transition-all duration-300 ease-in-out transform hover:scale-105">
+              <img
+                src="/logos/helmet-andromeda.svg"
+                alt="Sobre o Projeto"
+                className="mx-auto w-20 h-auto mb-4"
+              />
+              <h2 className="text-2xl font-bold">Sobre o Projeto</h2>
+              <p className="text-gray-300 mt-2">
+                Saiba mais sobre a criação e o desenvolvimento deste site.
+              </p>
+            </div>
           </Link>
         </div>
       </section>
-
+      
       {/* Funcionalidades do site */}
       <section className="my-16">
         <h2 className="text-3xl md:text-4xl font-extrabold text-yellow-400 text-center mb-10">Funcionalidades do Site</h2>
