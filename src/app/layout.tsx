@@ -1,4 +1,3 @@
-// src/app/layout.tsx
 'use client';
 import { useState, useEffect } from 'react';
 import './styles/globals.css';
@@ -30,6 +29,9 @@ export default function RootLayout({
 
   return (
     <html lang="pt-BR">
+      <head>
+        <title>Saint Seiya</title> {/* Adicionando o título da página */}
+      </head>
       <body className={`${theme}`}>
         <Navbar onThemeChange={handleThemeChange} />
         <Header />
