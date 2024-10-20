@@ -19,17 +19,17 @@ export default function SeiyaProfile() {
           <p><strong>Armadura:</strong> Armadura de Bronze de Pégaso</p>
           
           <h2 className="text-2xl font-bold mt-6 mb-4">Habilidades</h2>
-          <p>Seiya é conhecido pelo uso de sua técnica "Meteoro de Pégaso", onde lança centenas de golpes de uma só vez.</p>
-          
+          <p>Seiya é conhecido por sua técnica "Meteoro de Pégaso", onde lança centenas de golpes de uma só vez.</p>
+
           <h2 className="text-2xl font-bold mt-6 mb-4">História</h2>
-          <p>Seiya é o Cavaleiro de Pégaso e protagonista da série. Ele sempre protege Atena e enfrenta muitos desafios para defender a Terra.</p>
-          
+          <p>Seiya é o Cavaleiro de Pégaso e protagonista da série. Ele é um guerreiro destemido que está sempre pronto para proteger Atena e enfrentar qualquer desafio.</p>
+
           <h2 className="text-2xl font-bold mt-6 mb-4">Principais Batalhas</h2>
           <ul>
             <li>Batalha contra Ikki de Fênix</li>
             <li>Batalha nas 12 casas</li>
           </ul>
-          
+
           <h2 className="text-2xl font-bold mt-6 mb-4">Armaduras</h2>
           <ul>
             <li>Armadura de Bronze de Pégaso</li>
@@ -42,8 +42,20 @@ export default function SeiyaProfile() {
       <div className="mt-10">
         <h2 className="text-2xl font-bold mb-4">Galeria</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <img src="https://i.pinimg.com/originals/f4/78/66/f47866e3aa44f46a7857548f22526aa7.png" alt="Seiya" className="w-full h-auto rounded-lg" />
-          {/* Adicione mais imagens aqui */}
+          <img src="/cloth-schemes/athena-saints/pegasus-seiya-1-anime.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
+          <img src="/cloth-schemes/athena-saints/pegasus-seiya-1-time-odyssey.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
+          <img src="/cloth-schemes/athena-saints/pegasus-seiya-1.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
+          <img src="/cloth-schemes/athena-saints/pegasus-seiya-2-time-odyssey.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
+          <img src="/cloth-schemes/athena-saints/pegasus-seiya-2.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
+          <img src="/cloth-schemes/athena-saints/pegasus-seiya-3.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
+          <img src="/cloth-schemes/athena-saints/pegasus-seiya-4-anime.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
+          <img src="/cloth-schemes/athena-saints/pegasus-seiya-4-gold-anime.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
+          <img src="/cloth-schemes/athena-saints/pegasus-seiya-4.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
+          <img src="/cloth-schemes/athena-saints/pegasus-seiya-5-anime.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
+          <img src="/cloth-schemes/athena-saints/pegasus-seiya-5.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
+          <img src="/cloth-schemes/athena-saints/pegasus-seiya-god-anime.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
+          <img src="/cloth-schemes/athena-saints/pegasus-seiya-god.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
+          <img src="/cloth-schemes/athena-saints/pegasus-seiya-miracles.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
         </div>
       </div>
 

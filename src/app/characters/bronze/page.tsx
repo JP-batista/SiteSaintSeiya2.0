@@ -3,11 +3,11 @@
 import Link from 'next/link';
 
 const bronzeCharacters = [
-  { name: 'Seiya de Pégaso', slug: 'seiya', description: 'Protagonista da série e Cavaleiro de Bronze de Pégaso.', imgSrc: 'https://i.pinimg.com/originals/f4/78/66/f47866e3aa44f46a7857548f22526aa7.png' },
-  { name: 'Shiryu de Dragão', slug: 'shiryu', description: 'Cavaleiro de Dragão, conhecido por sua força e sabedoria.', imgSrc: 'https://i.pinimg.com/originals/be/e9/8b/bee98b455b2807ce86f50051d52767c3.png' },
-  { name: 'Hyoga de Cisne', slug: 'hyoga', description: 'Cavaleiro de Cisne, mestre no controle do gelo.', imgSrc: 'https://i.pinimg.com/originals/6c/52/e9/6c52e90d72b7d9aea6ca9cf6a95fd8f9.png' },
-  { name: 'Shun de Andrômeda', slug: 'shun', description: 'Cavaleiro de Andrômeda, caracterizado por sua bondade.', imgSrc: 'https://i.pinimg.com/originals/9e/00/38/9e0038c81ccb5e0f3b2a1b87d582bff9.png' },
-  { name: 'Ikki de Fênix', slug: 'ikki', description: 'Cavaleiro de Fênix, conhecido por seu poder de renascimento.', imgSrc: 'https://i.pinimg.com/originals/94/48/b5/9448b5b75e63b786d0052bd8f1ce785f.png' },
+  { name: 'Seiya de Pégaso', slug: 'seiya', description: 'Protagonista da série e Cavaleiro de Bronze de Pégaso.', imgSrc: '/Tags/TagPegasus.png' },
+  { name: 'Shiryu de Dragão', slug: 'shiryu', description: 'Cavaleiro de Dragão, conhecido por sua força e sabedoria.', imgSrc: '/Tags/TagDragao.png' },
+  { name: 'Hyoga de Cisne', slug: 'hyoga', description: 'Cavaleiro de Cisne, mestre no controle do gelo.', imgSrc: '/Tags/TagCisne.png' },
+  { name: 'Shun de Andrômeda', slug: 'shun', description: 'Cavaleiro de Andrômeda, caracterizado por sua bondade.', imgSrc: '/Tags/TagAndromeda.png' },
+  { name: 'Ikki de Fênix', slug: 'ikki', description: 'Cavaleiro de Fênix, conhecido por seu poder de renascimento.', imgSrc: '/Tags/TagFenix.png' },
 ];
 
 export default function BronzeCharactersPage() {

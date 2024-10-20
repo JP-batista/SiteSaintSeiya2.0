@@ -68,8 +68,8 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
           <Link href="/about" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
             Sobre
           </Link>
-          <Link href="/products" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
-            Produtos
+          <Link href="/hipermito" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300">
+            Hipermito
           </Link>
 
           {/* Dropdown Menu - Abre ao passar o mouse */}
@@ -107,9 +107,6 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
                 </Link>
                 <Link href="/galeria" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
                   Minha Galeria
-                </Link>
-                <Link href="/hipermito" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
-                  Hipermito
                 </Link>
                 <Link href="/game" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300">
                   DLE Saint Seiya

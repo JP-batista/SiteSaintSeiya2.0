@@ -55,7 +55,7 @@ export default function AboutPage() {
           <div className="bg-gray-900 bg-opacity-60 rounded-lg p-6 shadow-lg">
             <h3 className="text-2xl text-yellow-300 mb-4">Projeto 1: Saint Seiya Web</h3>
             <p className="text-gray-300 text-lg mb-6">Um site dedicado aos Cavaleiros do Zodíaco, com conteúdo e informações sobre os personagens.</p>
-            <a href="#" className="text-yellow-400 hover:text-yellow-500 transition-colors duration-300 text-lg">Ver Projeto</a>
+            <a href="/" className="text-yellow-400 hover:text-yellow-500 transition-colors duration-300 text-lg">Ver Projeto</a>
           </div>
           <div className="bg-gray-900 bg-opacity-60 rounded-lg p-6 shadow-lg">
             <h3 className="text-2xl text-yellow-300 mb-4">Projeto 2: Portfólio Pessoal</h3>
