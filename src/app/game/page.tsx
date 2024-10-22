@@ -13,7 +13,7 @@ type Character = {
   localDeTreinamento: string;
   patente: string;
   exercito: string;
-  saga: string;
+  saga?: string; // Tornando opcional para evitar problemas com undefined
   imgSrc: string;
 };
 

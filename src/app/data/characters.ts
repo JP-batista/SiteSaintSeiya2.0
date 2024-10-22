@@ -1709,6 +1709,7 @@ const characters = [
         localDeTreinamento: "Cinco Picos de Rozan, China",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
+        saga: "Omega",
         imgSrc: "/dle/shiryulibra.jpg"
     },
     {
@@ -1721,6 +1722,7 @@ const characters = [
         localDeTreinamento: "Jamiel, Tibete",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
+        saga: "Omega",
         imgSrc: "/dle/kiki.jpg"
     },
     {
@@ -1733,6 +1735,7 @@ const characters = [
         localDeTreinamento: "Desconhecido",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
+        saga: "Omega",
         imgSrc: "/dle/harbinger.jpg"
     },
     {
@@ -1745,6 +1748,7 @@ const characters = [
         localDeTreinamento: "Desconhecido",
         patente: "Cavaleira de Ouro",
         exercito: "Exército de Athena",
+        saga: "Omega",
         imgSrc: "/dle/paradox.jpg"
     },
     {
@@ -1757,6 +1761,7 @@ const characters = [
         localDeTreinamento: "Desconhecido",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
+        saga: "Omega",
         imgSrc: "/dle/schiller.jpg"
     },
     {
@@ -1769,6 +1774,7 @@ const characters = [
         localDeTreinamento: "Desconhecido",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
+        saga: "Omega",
         imgSrc: "/dle/micenas.jpg"
     },
     {
@@ -1781,6 +1787,7 @@ const characters = [
         localDeTreinamento: "Desconhecido",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
+        saga: "Omega",
         imgSrc: "/dle/fudou.jpg"
     },
     {
@@ -1793,6 +1800,7 @@ const characters = [
         localDeTreinamento: "Cinco Picos de Rozan, China",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
+        saga: "Omega",
         imgSrc: "/dle/gembu.jpg"
     },
     {
@@ -1805,6 +1813,7 @@ const characters = [
         localDeTreinamento: "Desconhecido",
         patente: "Cavaleira de Ouro",
         exercito: "Exército de Athena",
+        saga: "Omega",
         imgSrc: "/dle/sonia.jpg"
     },
     {
@@ -1817,6 +1826,7 @@ const characters = [
         localDeTreinamento: "Santuário, Grécia",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
+        saga: "Omega",
         imgSrc: "/dle/seiyasagitario.jpg"
     },
     {
@@ -1829,6 +1839,7 @@ const characters = [
         localDeTreinamento: "Santuário, Grécia",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
+        saga: "Omega",
         imgSrc: "/dle/ionia.jpg"
     },
     {
@@ -1841,6 +1852,7 @@ const characters = [
         localDeTreinamento: "Desconhecido",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
+        saga: "Omega",
         imgSrc: "/dle/tokisada.jpg"
     },
     {
@@ -1853,6 +1865,7 @@ const characters = [
         localDeTreinamento: "Desconhecido",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
+        saga: "Omega",
         imgSrc: "/dle/amor.jpg"
     },
     
