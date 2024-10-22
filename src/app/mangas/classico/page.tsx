@@ -2006,37 +2006,47 @@ export default function SaintSeiya() {
           {selectedSection === 'Volume 19 - Ressurreição! As 108 Estrelas Maléficas de Hades' && (
             <div>
               
-              <p className="text-2xl mt-4"> 
+              <p className="text-2xl mt-4"> Capítulo 1: "Ressurreição! As 108 estrelas maléficas de Hades"
               </p>
-              <p>
+              <p>"Fukkatsu! Hadesu Hyaku-hachi no Masei"
               </p>
-              <p className="mt-2">  
+              <p className="mt-2">  Lançamento em tankobon no Japão: 10 de novembro de 1989; no Brasil: setembro de 2013 (Editora JBC)
               </p>
-              <img src="" 
+              <img src="https://www.cavzodiaco.com.br/imagens-mangas/hades/1.jpg" 
               className="w-100 h-auto rounded-lg shadow-lg float-left mt-4 my-1 mr-4 ml-4"/>
-              <p className="mt-4">
+              <p className="mt-4">Mestre Ancião está sentado nos Cinco Picos Antigos de Rozan e observa que, a mil quilômetros de distância, o selo que prendia Hades em uma imensa torre havia perdido a força. Uma nova Guerra Santa está prestes a começar!!! No Santuário, Nachi de Lobo e Ichi de Hidra dão bronca em alguns soldados que estão dormindo. Eles dizem que soaram alertas no Santuário e não é para soldados ficarem dormindo.
+Os dois Cavaleiros de Bronze continuam andando e conversando, dizendo que agora que Atena está de volta ao Santuário, as pessoas que vivem nele se sentem mais seguras. De repente, os soldados que foram repreendidos parecem ver algo estranho. Enquanto isso, no Templo de Atena, Saori dorme, mas é acordada por um homem que diz ser Hades. Hades arranca a cabeça de Saori, mas tudo isso não passou de uma premonição do Mestre Ancião, que continua em Rozan. Nachi e Ichi escutam os gritos dos soldados e voltam para ver o que aconteceu. Os soldados estão caídos e, de repente, aparece um homem com túnica (provavelmente algum espectro de Cavaleiro de Prata morto no passado). Os Cavaleiros de Bronze tentam atacar os espectros, porém não conseguem acertar os golpes neles. Jabu aparece para ajudar, disparando o seu Galope do Unicórnio e os espectros misteriosamente somem.
+Na Casa de Áries, Mu está de guarda e observa a chegada de um espectro. O espectro pede para Mu se ajoelhar perante ele e o Cavaleiro de Ouro obedece. O espectro ordena que Mu encontre e mate Atena, porém Mu se recusa, dizendo que mesmo a ordem vindo "dele", ele não pode fazer uma coisa dessas. Nisso, mais dois espectros surgem. Shina vai até o cemitério do Santuário e observa que vários túmulos foram abertos. Ela nota que os túmulos foram abertos por dentro e não por fora. De volta a Casa de Áries, os dois novos espectros se apresentam: são os cavaleiros de Ouro Afrodite de Peixes e Máscara da Morte de Câncer. Eles dizem que foram revividos por Hades, o que faz Mu se espantar. Os dois espectros que um dia já foram Cavaleiros de Ouro rasgam a túnica que vestiam e mostram suas armaduras: são negras, mas iguais as Armaduras de Ouro. Eles explicam que agoram eles vestem Surplices, sinal que eles são espectros leais a Hades.
+Afrodite e Máscara da Morte tentam avançar, mas Mu os impede com a sua Parede de Cristal. Máscara da Morte tenta atacar com a sua Ondas do Inferno, porém tem o golpe repelido. O mesmo acontece com Afrodite, ao tentar disparar as Rosas Piranhas. Não existe maneira de atravessar a Parede de Cristal! Em Rozan, o Mestre Ancião avisa para Shunrei que ele terá que ir embora e talvez nunca mais volte. Na Casa de Áries, o outro encapuzado quebra a Parede de Cristal facilmente, fazendo com que Máscara da Morte e Afrodite tentem avançar novamente. Mu recebe alguns golpes deles, mas resiste. Quando Máscara da Morte iria disparar um novo golpe, é surpreendentemente atingido pelas costas. Seiya de Pégaso aparece.
               </p>
 
-              <p className="text-2xl mt-4"> 
+              <p className="text-2xl mt-4"> Capítulo 2: "Lamentação! Lágrimas de sangue"
               </p>
-              <p>
+              <p>"Dokoku! Chi no Namida"
               </p>
-              <p className="mt-2">              
+              <p className="mt-2">   Lançamento em tankobon no Japão: 10 de novembro de 1989; no Brasil: setembro de 2013 (Editora JBC)           
               </p>
-              <img src="" 
+              <img src="https://www.cavzodiaco.com.br/imagens-mangas/hades/2.jpg" 
               className="w-100 h-auto rounded-lg shadow-lg float-right mt-4 my-1 mr-4 ml-4"/>
-              <p className="mt-4">
+              <p className="mt-4">Seiya pergunta para o Mu o que está acontecendo. Logo em seguida ele encara Máscara da Morte e Afrodite e pergunta como os dois podem ter voltado a vida. Mu explica que eles são espectros de Hades e diz que o verdadeiro inimigo de Atena é Hades (as lutas anteriores foram eventos insignificantes). Mu pede para Seiya sair do Santuário pois não é mais lugar para ele ficar.
+Em Rozan, Shiryu se despede de Shunrei, deixando-a sozinha, e parte para o Santuário. Na Sibéria, Hyoga se despede da sua mãe e sente um cosmo estranho se dirigindo para o Santuário. Shun, que está na mansão Kido, sente o mesmo cosmo. Tatsumi aparece e diz que Shun não pode ir para o Santuário. De volta a Casa de Áries, Seiya está indignado com o que Mu disse e quer ver Atena a qualquer custo. Mu o impede e, logo em seguida, Máscara da Morte entra na briga e dá um chute na cara do Seiya, para logo em seguida ficar pisoteando em cima do Pégaso. Seiya fica nervoso e joga Máscara da Morte para longe. Seiya resolve lutar e veste a sua armadura (que não está em bom estado).
+Máscara da Morte pergunta para o Seiya, o que ele espera conseguir com uma armadura toda quebrada. Seiya responde que nem precisa de uma armadura para vencer Máscara da Morte. O Pégaso agarra Máscara da Morte e dispara o seu Turbilhão de Pégaso. O ex-cavaleiro de Câncer cai no chão e, quando Seiya iria disparar o golpe final, Mu o paralisa, dizendo para ele ir embora. Saori acorda, dizendo ter ouvido a voz de Seiya. Alguém misterioso chega para conversar com a Saori. De volta na Casa de Áries, Máscara da Morte tenta se aproveitar do fato de Seiya estar caido e ataca. Mu segura o braço de Máscara da Morte e diz que ele mesmo vai matar Seiya. Máscara da Morte voa longe com um simples movimento de Mu. O Cavaleiro de Áries dispara a Extinção Estelar e Seiya desaparece.
+Shion percebe a farsa e pergunta para a Mu para onde ele enviou o Pégaso. Mu responde que todos que são atingidos pela Extinção Estelar são enviados para o Inferno. Máscara da Morte e Afrodite tentam avançar novamente, mas são detidos mais uma vez por Mu. É impossível passar por cima de Mu e até o mestre dele percebe isso, dizendo que é a primeira vez que o Cavaleiro de Áries mostra toda sua agressividade. Mu resolve acabar com tudo isso rapidamente e dispara mais uma Extinção Estelar, eliminando Afrodite e Máscara da Morte. Três novos espectros surgem: Saga de Gêmeos, Shura de Capricórnio e Camus de Aquário. Os três partem para cima de Mu e o Cavaleiro de Áries tenta de todas as formas se defender, mas lutar contra três grandes Cavaleiros de Ouro é muito complicado.
+Mu recua, mas percebe que existe algo estranho com aqueles três cavaleiros: eles estão chorando, seus "corações estão chorando sangue". Mu entende toda a situação, mas é paralisado totalmente por seu Mestre, fazendo com que Saga, Shura e Camus passem pela Casa de Áries. De repente, o Mestre Ancião chega ao local. Shion rasga a sua túnica e mostra a sua armadura e a sua verdadeira aparência. Ele é o jovem Shion de Áries!
               </p>
               
-              <p className="text-2xl mt-4"> 
+              <p className="text-2xl mt-4"> Capítulo 3: "Relógio de Fogo! As chamas reacendem"
               </p>
-              <p>
+              <p>"Hidokei! Futatabi Moyuru"
               </p>
-              <p className="mt-2">  
+              <p className="mt-2">  Lançamento em tankobon no Japão: 10 de novembro de 1989; no Brasil: setembro de 2013 (Editora JBC)
               </p>
-              <img src="" 
+              <img src="https://www.cavzodiaco.com.br/imagens-mangas/hades/3.jpg" 
               className="w-100 h-auto rounded-lg shadow-lg float-left mt-4 my-1 mr-4 ml-4"/>
-              <p className="mt-4">
+              <p className="mt-4">Mu fica surpreso ao ver Shion com a aparência jovem. O antigo mestre do Santuário explica que ele está com a aparência jovem graças ao poder de Hades e diz que, enquanto ele está jovem, Dohko está um velho acabado. Dohko responde, dizendo que tudo isso não passa de uma ilusão. Ele, antes de chegar no local, havia acendido o Relógio de Fogo. A vida de Shion e dos outros Cavaleiros de Ouro renegados durará apenas doze horas. Dohko ordena para que Mu parta e proteja Atena de todas as formas possíveis, durante as doze horas.
+No Castelo de Hades, Máscara da Morte de Câncer e Afrodite de Peixes pedem mais uma chance para Radamanthys, porém o espectro não os perdoa, jogando os dois no buraco que leva até o mundo dos mortos. Radamanthys entra no Castelo de Hades, para pedir para Pandora que ela ordene a sua ida ao Santuário. Pandora recusa dizendo que já existem cavaleiros mortos lá e que Hades não permitiria que seus espectros se ferissem. Radamanthys é obrigado a aceitar as ordens! Mu chega à Casa de Touro e encontra Aldebaran estático, como se acabasse de disparar o seu Grande Chifre. Mu percebe que Aldebaran está morto. O Cavaleiro de Touro se sacrificou para proteger a Casa de Touro.
+Um novo espectro surge por trás da armadura de Aldebaran: é Niobe de Deep. De volta ao Castelo de Hades, Radamanthys pergunta se Zelos de Sapo seguiu suas ordens, enviando espectros ao Santuário. Zelos questiona Radamanthys, perguntando se Radamanthys não tem medo de Pandora. O juíz vira as costas e não responde. Na Casa de Touro, Mu resolve lutar, mas quem ataca primeiro é o espectro, disparando o golpe Fragrância Profunda. Mu parece ter sido atingido em cheio pelo golpe, mas surpreende Niobe, que dá de frente com a Parede de Cristal de Mu.
+O Cavaleiro de Ouro nem perde tempo lutando com o espectro e já parte para a próxima casa, Gêmeos. Niobe pergunta para Mu porque ele não vai lutar e Mu responde de forma simples: eu não preciso lutar contra alguém que já está morto. No mesmo instante, aparece ao fundo a alma de Aldebaran de Touro e o corpo do espectro explode, matando-o. Mu, que já está a caminho da Casa de Gêmeos, diz que a morte de Aldebaran não foi em vão e que ele fara de tudo para proteger Atena. Mu sente, também, que existe um cosmo estranho na Casa de Câncer.
               </p>
 
               <p className="text-2xl mt-4"> 
