@@ -1710,7 +1710,7 @@ const characters = [
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
         saga: "Omega",
-        imgSrc: "/dle/shiryulibra.jpg"
+        imgSrc: "/dle/shiryuLibra.jpg"
     },
     {
         nome: "Kiki de Áries",
