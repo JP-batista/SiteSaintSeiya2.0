@@ -30,7 +30,11 @@ export default function CharactersPage() {
             Ir para Cavaleiros de Ouro
           </Link>
         </div>
+        
       </div>
+      <p className="text-yellow-400 mt-6 text-center">
+        <Link href="/characters/todos" className="hover:text-yellow-500">Todos os Personagens</Link>
+      </p>
     </div>
   );
 }

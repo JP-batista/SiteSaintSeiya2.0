@@ -1,6 +1,7 @@
 // src/app/data/characters.ts
 
 const characters = [
+    //Cavaleiros de Bronze Classico
     {
         nome: "Seiya de Pégaso",
         idade: "13",
@@ -132,6 +133,272 @@ const characters = [
         imgSrc: "/dle/geki.jpg"
     },
     {
+        nome: "June de Camaleão",
+        idade: "14",
+        altura: "1,67 m",
+        genero: "Feminino",
+        peso: "52 kg",
+        signo: "Libra",
+        localDeTreinamento: "Ilha de Andrômeda",
+        patente: "Cavaleira de Bronze",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/june.jpg"
+    },
+
+    //Cavaleiros de Prata Classicos
+
+    {
+        nome: "Shina de Cobra",
+        idade: "16",
+        altura: "1,67 m",
+        genero: "Feminino",
+        peso: "51 kg",
+        signo: "Escorpião",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleira de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/shina.jpg"
+    },
+    {
+        nome: "Misty de Lagarto",
+        idade: "16",
+        altura: "1,83 m",
+        genero: "Masculino",
+        peso: "75 kg",
+        signo: "Leão",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/misty.jpg"
+    },
+    {
+        nome: "Babel de Centauro",
+        idade: "17",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "83 kg",
+        signo: "Sagitário",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/babel.jpg"
+    },
+    {
+        nome: "Capella de Auriga",
+        idade: "17",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "80 kg",
+        signo: "Virgem",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/capella.jpg"
+    },
+    {
+        nome: "Dante de Cérbero",
+        idade: "17",
+        altura: "1,88 m",
+        genero: "Masculino",
+        peso: "94 kg",
+        signo: "Leão",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/dante.jpg"
+    },
+    {
+        nome: "Jamian de Corvo",
+        idade: "18",
+        altura: "1,80 m",
+        genero: "Masculino",
+        peso: "73 kg",
+        signo: "Capricórnio",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/jamian.jpg"
+    },
+    {
+        nome: "Asterion de Cães de Caça",
+        idade: "18",
+        altura: "1,87 m",
+        genero: "Masculino",
+        peso: "87 kg",
+        signo: "Câncer",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/asterion.jpg"
+    },
+    {
+        nome: "Mouses de Baleia",
+        idade: "17",
+        altura: "2,05 m",
+        genero: "Masculino",
+        peso: "130 kg",
+        signo: "Aquário",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/mouses.jpg"
+    },
+    {
+        nome: "Algol de Perseu",
+        idade: "17",
+        altura: "1,87 m",
+        genero: "Masculino",
+        peso: "85 kg",
+        signo: "Gêmeos",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/algol.jpg"
+    },
+    {
+        nome: "Dio de Mosca",
+        idade: "17",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "85 kg",
+        signo: "Capricórnio",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/dio.jpg"
+    },
+    {
+        nome: "Sirius de Cão Maior",
+        idade: "17",
+        altura: "1,89 m",
+        genero: "Masculino",
+        peso: "92 kg",
+        signo: "Virgem",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/sirius.jpg"
+    },
+    {
+        nome: "Algheti de Hércules",
+        idade: "18",
+        altura: "2,25 m",
+        genero: "Masculino",
+        peso: "160 kg",
+        signo: "Touro",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/algheti.jpg"
+    },
+    {
+        nome: "Shiva de Pavão",
+        idade: "17",
+        altura: "1,78 m",
+        genero: "Masculino",
+        peso: "67 kg",
+        signo: "Gêmeos",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/shiva.jpg"
+    },
+    {
+        nome: "Ágora de Lótus",
+        idade: "17",
+        altura: "1,78 m",
+        genero: "Masculino",
+        peso: "67 kg",
+        signo: "Câncer",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/agora.jpg"
+    },
+    {
+        nome: "Albion (Daidaros) de Cefeu",
+        idade: "18",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "80 kg",
+        signo: "Leão",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/albion.jpg"
+    },
+    {
+        nome: "Marin de Águia",
+        idade: "16",
+        altura: "1,67 m",
+        genero: "Feminino",
+        peso: "52 kg",
+        signo: "Áries",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleira de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/marin.jpg"
+    },
+    {
+        nome: "Aracne de Tarântula",
+        idade: "17",
+        altura: "1,80 m",
+        genero: "Masculino",
+        peso: "75 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/aracne.jpg"
+    },
+    {
+        nome: "Tremy de Flecha (Sagita)",
+        idade: "Desconhecida",
+        altura: "1,80 m",
+        genero: "Masculino",
+        peso: "75 kg",
+        signo: "Sagitário",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/tremy.jpg"
+    },
+    {
+        nome: "Orfeu de Lira",
+        idade: "20",
+        altura: "1,72 m",
+        genero: "Masculino",
+        peso: "53 kg",
+        signo: "Libra",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Prata",
+        exercito: "Exército de Athena",
+        saga: "Hades",
+        imgSrc: "/dle/orfeu.jpg"
+    },
+
+    //Cavaleiros de Ouro Classicos
+
+    {
         nome: "Mu de Áries",
         idade: "20",
         altura: "1,82 m",
@@ -210,7 +477,7 @@ const characters = [
         imgSrc: "/dle/shaka.jpg"
     },
     {
-        nome: "Mestre Ancião de Libra",
+        nome: "Dohko de Libra (Classico)",
         idade: "261",
         altura: "1,40 m",
         genero: "Masculino",
@@ -287,162 +554,11 @@ const characters = [
         saga: "Santuario",
         imgSrc: "/dle/afrodite.jpg"
     },
-    {
-        nome: "Marin de Águia",
-        idade: "16",
-        altura: "1,67 m",
-        genero: "Feminino",
-        peso: "52 kg",
-        signo: "Áries",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Prata",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/marin.jpg"
-    },
-    {
-        nome: "Shina de Cobra",
-        idade: "16",
-        altura: "1,67 m",
-        genero: "Feminino",
-        peso: "51 kg",
-        signo: "Escorpião",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Prata",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/shina.jpg"
-    },
-    {
-        nome: "Misty de Lagarto",
-        idade: "16",
-        altura: "1,83 m",
-        genero: "Masculino",
-        peso: "75 kg",
-        signo: "Leão",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Prata",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/misty.jpg"
-    },
-    {
-        nome: "Moses de Baleia",
-        idade: "17",
-        altura: "2,05 m",
-        genero: "Masculino",
-        peso: "130 kg",
-        signo: "Aquário",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Prata",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/moses.jpg"
-    },
-    {
-        nome: "Asterion de Cães de Caça",
-        idade: "18",
-        altura: "1,87 m",
-        genero: "Masculino",
-        peso: "87 kg",
-        signo: "Câncer",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Prata",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/asterion.jpg"
-    },
-    {
-        nome: "Babel de Centauro",
-        idade: "17",
-        altura: "1,85 m",
-        genero: "Masculino",
-        peso: "83 kg",
-        signo: "Sagitário",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Prata",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/babel.jpg"
-    },
-    {
-        nome: "Algol de Perseu",
-        idade: "17",
-        altura: "1,87 m",
-        genero: "Masculino",
-        peso: "85 kg",
-        signo: "Gêmeos",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Prata",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/algol.jpg"
-    },
-    {
-        nome: "Dante de Cérbero",
-        idade: "17",
-        altura: "1,88 m",
-        genero: "Masculino",
-        peso: "94 kg",
-        signo: "Leão",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Prata",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/dante.jpg"
-    },
-    {
-        nome: "Capella de Auriga",
-        idade: "17",
-        altura: "1,85 m",
-        genero: "Masculino",
-        peso: "80 kg",
-        signo: "Virgem",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Prata",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/capella.jpg"
-    },
-    {
-        nome: "Argethi de Hércules",
-        idade: "18",
-        altura: "2,25 m",
-        genero: "Masculino",
-        peso: "160 kg",
-        signo: "Touro",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Prata",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/argethi.jpg"
-    },
-    {
-        nome: "Sirius de Cão Maior",
-        idade: "17",
-        altura: "1,89 m",
-        genero: "Masculino",
-        peso: "92 kg",
-        signo: "Virgem",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Prata",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/sirius.jpg"
-    },
-    {
-        nome: "Jamian de Corvo",
-        idade: "18",
-        altura: "1,80 m",
-        genero: "Masculino",
-        peso: "73 kg",
-        signo: "Capricórnio",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Prata",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/jamian.jpg"
-    },
+
+
+    
+    //Marinas de Poseidon Classico
+
     {
         nome: "Baian de Cavalo Marinho",
         idade: "18",
@@ -547,70 +663,34 @@ const characters = [
         saga: "Poseidon",
         imgSrc: "/dle/tetis.jpg"
     },
+
+    //Espectros de Hades Classico
+
     {
-        nome: "Radamanthys de Wyvern",
-        idade: "23",
-        altura: "1,89 m",
-        genero: "Masculino",
-        peso: "84 kg",
-        signo: "Leão",
-        localDeTreinamento: "Giudecca, Submundo",
-        patente: "Juiz do Inferno",
-        exercito: "Exército de Hades",
-        saga: "Hades",
-        imgSrc: "/dle/radamanthys.jpg"
-    },
-    {
-        nome: "Aiacos de Garuda",
-        idade: "22",
-        altura: "1,85 m",
-        genero: "Masculino",
-        peso: "85 kg",
-        signo: "Capricórnio",
-        localDeTreinamento: "Giudecca, Submundo",
-        patente: "Juiz do Inferno",
-        exercito: "Exército de Hades",
-        saga: "Hades",
-        imgSrc: "/dle/aiacos.jpg"
-    },
-    {
-        nome: "Minos de Griffon",
-        idade: "24",
-        altura: "1,92 m",
-        genero: "Masculino",
-        peso: "88 kg",
-        signo: "Virgem",
-        localDeTreinamento: "Giudecca, Submundo",
-        patente: "Juiz do Inferno",
-        exercito: "Exército de Hades",
-        saga: "Hades",
-        imgSrc: "/dle/minos.jpg"
-    },
-    {
-        nome: "Valentine de Harpia",
-        idade: "23",
+        nome: "Niobe de Deep",
+        idade: "21",
         altura: "1,80 m",
         genero: "Masculino",
-        peso: "75 kg",
-        signo: "Aquário",
+        peso: "72 kg",
+        signo: "Peixes",
         localDeTreinamento: "Submundo",
         patente: "Espectro",
         exercito: "Exército de Hades",
         saga: "Hades",
-        imgSrc: "/dle/valentine.jpg"
+        imgSrc: "/dle/niobe.jpg"
     },
     {
-        nome: "Pharaoh de Esfinge",
-        idade: "20",
-        altura: "1,78 m",
+        nome: "Myu de Papillon (Borboleta)",
+        idade: "19",
+        altura: "1,80 m",
         genero: "Masculino",
-        peso: "65 kg",
+        peso: "70 kg",
         signo: "Escorpião",
         localDeTreinamento: "Submundo",
         patente: "Espectro",
         exercito: "Exército de Hades",
         saga: "Hades",
-        imgSrc: "/dle/pharaoh.jpg"
+        imgSrc: "/dle/myu.jpg"
     },
     {
         nome: "Giganto de Ciclope",
@@ -626,20 +706,85 @@ const characters = [
         imgSrc: "/dle/giganto.jpg"
     },
     {
-        nome: "Niobe de Deep",
-        idade: "21",
-        altura: "1,80 m",
+        nome: "Laimi de Verme",
+        idade: "23",
+        altura: "1,70 m",
         genero: "Masculino",
-        peso: "72 kg",
-        signo: "Peixes",
+        peso: "65 kg",
+        signo: "Virgem",
         localDeTreinamento: "Submundo",
         patente: "Espectro",
         exercito: "Exército de Hades",
         saga: "Hades",
-        imgSrc: "/dle/niobe.jpg"
+        imgSrc: "/dle/laimi.jpg"
     },
     {
-        nome: "Charon de Aqueronte",
+        nome: "Zelos de Sapo",
+        idade: "21",
+        altura: "1,68 m",
+        genero: "Masculino",
+        peso: "62 kg",
+        signo: "Sagitário",
+        localDeTreinamento: "Submundo",
+        patente: "Espectro",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/zelos.jpg"
+    },
+    {
+        nome: "Kiew (Cube) de Durahan",
+        idade: "25",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "85 kg",
+        signo: "Touro",
+        localDeTreinamento: "Submundo",
+        patente: "Espectro",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/kiew.jpg"
+    },
+    {
+        nome: "Ox de Górgona",
+        idade: "26",
+        altura: "1,92 m",
+        genero: "Masculino",
+        peso: "95 kg",
+        signo: "Capricórnio",
+        localDeTreinamento: "Submundo",
+        patente: "Espectro",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/oxtouro.jpg"
+    },
+    {
+        nome: "Miles de Elfo",
+        idade: "24",
+        altura: "1,78 m",
+        genero: "Masculino",
+        peso: "73 kg",
+        signo: "Aquário",
+        localDeTreinamento: "Submundo",
+        patente: "Espectro",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/miles.jpg"
+    },
+    {
+        nome: "Radamanthys de Wyvern",
+        idade: "23",
+        altura: "1,89 m",
+        genero: "Masculino",
+        peso: "84 kg",
+        signo: "Leão",
+        localDeTreinamento: "Giudecca, Submundo",
+        patente: "Juiz do Inferno",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/radamanthys.jpg"
+    },
+    {
+        nome: "Caronte de Aqueronte",
         idade: "30",
         altura: "1,90 m",
         genero: "Masculino",
@@ -649,33 +794,124 @@ const characters = [
         patente: "Barqueiro do Inferno",
         exercito: "Exército de Hades",
         saga: "Hades",
-        imgSrc: "/dle/charon.jpg"
+        imgSrc: "/dle/caronte.jpg"
     },
     {
-        nome: "Myu de Papillon",
-        idade: "19",
-        altura: "1,80 m",
+        nome: "Lune de Balron",
+        idade: "22",
+        altura: "1,85 m",
         genero: "Masculino",
-        peso: "70 kg",
+        peso: "80 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Submundo",
+        patente: "Espectro",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/lune.jpg"
+    },
+    {
+        nome: "Faraó de Esfinge",
+        idade: "20",
+        altura: "1,78 m",
+        genero: "Masculino",
+        peso: "65 kg",
         signo: "Escorpião",
         localDeTreinamento: "Submundo",
         patente: "Espectro",
         exercito: "Exército de Hades",
         saga: "Hades",
-        imgSrc: "/dle/myu.jpg"
+        imgSrc: "/dle/farao.jpg"
     },
     {
-        nome: "Queen de Alraune",
-        idade: "22",
-        altura: "1,90 m",
+        nome: "Iwan de Troll",
+        idade: "26",
+        altura: "2,30 m",
         genero: "Masculino",
-        peso: "90 kg",
-        signo: "Aquário",
+        peso: "200 kg",
+        signo: "Capricórnio",
         localDeTreinamento: "Submundo",
         patente: "Espectro",
         exercito: "Exército de Hades",
         saga: "Hades",
-        imgSrc: "/dle/queen.jpg"
+        imgSrc: "/dle/iwan.jpg"
+    },
+    {
+        nome: "Rock de Golem",
+        idade: "25",
+        altura: "2,50 m",
+        genero: "Masculino",
+        peso: "250 kg",
+        signo: "Touro",
+        localDeTreinamento: "Submundo",
+        patente: "Espectro",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/rock.jpg"
+    },
+    {
+        nome: "Flégias de Lycaon",
+        idade: "22",
+        altura: "1,90 m",
+        genero: "Masculino",
+        peso: "90 kg",
+        signo: "Áries",
+        localDeTreinamento: "Submundo",
+        patente: "Espectro",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/flegias.jpg"
+    },
+    {
+        nome: "Stand de Besouro Mortal",
+        idade: "20",
+        altura: "1,70 m",
+        genero: "Masculino",
+        peso: "65 kg",
+        signo: "Virgem",
+        localDeTreinamento: "Submundo",
+        patente: "Espectro",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/stand.jpg"
+    },
+    {
+        nome: "Markino",
+        idade: "Desconhecida",
+        altura: "1,68 m",
+        genero: "Masculino",
+        peso: "65 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Submundo",
+        patente: "Espectro",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/markino.jpg"
+    },
+    {
+        nome: "Minos de Griffon",
+        idade: "24",
+        altura: "1,92 m",
+        genero: "Masculino",
+        peso: "88 kg",
+        signo: "Virgem",
+        localDeTreinamento: "Giudecca, Submundo",
+        patente: "Juiz do Inferno",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/minos.jpg"
+    },
+    {
+        nome: "Aiacos de Garuda",
+        idade: "22",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "85 kg",
+        signo: "Capricórnio",
+        localDeTreinamento: "Giudecca, Submundo",
+        patente: "Juiz do Inferno",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/aiacos.jpg"
     },
     {
         nome: "Gordon de Minotauro",
@@ -691,18 +927,47 @@ const characters = [
         imgSrc: "/dle/gordon.jpg"
     },
     {
-        nome: "Stand de Besouro Mortal",
-        idade: "20",
-        altura: "1,70 m",
+        nome: "Queen de Mandrágora (Alraune)",
+        idade: "22",
+        altura: "1,90 m",
         genero: "Masculino",
-        peso: "65 kg",
+        peso: "90 kg",
+        signo: "Aquário",
+        localDeTreinamento: "Submundo",
+        patente: "Espectro",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/queen.jpg"
+    },
+    {
+        nome: "Sylphid de Basilisco",
+        idade: "21",
+        altura: "1,90 m",
+        genero: "Masculino",
+        peso: "82 kg",
         signo: "Virgem",
         localDeTreinamento: "Submundo",
         patente: "Espectro",
         exercito: "Exército de Hades",
         saga: "Hades",
-        imgSrc: "/dle/stand.jpg"
+        imgSrc: "/dle/sylphid.jpg"
     },
+    {
+        nome: "Valentine de Harpia",
+        idade: "23",
+        altura: "1,80 m",
+        genero: "Masculino",
+        peso: "75 kg",
+        signo: "Aquário",
+        localDeTreinamento: "Submundo",
+        patente: "Espectro",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/valentine.jpg"
+    },    
+
+    //Deuses 
+
     {
         nome: "Athena",
         idade: "Imortal",
@@ -769,7 +1034,127 @@ const characters = [
         imgSrc: "/dle/thanatos.jpg"
     },
     {
-        nome: "Shion de Áries",
+        nome: "Abel",
+        idade: "Imortal",
+        altura: "1,80 m",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Deus",
+        exercito: "Exército de Abel",
+        saga: "Lenda dos Defensores de Athena",
+        imgSrc: "/dle/abel1.jpg"
+    },
+    {
+        nome: "Apolo",
+        idade: "Imortal",
+        altura: "1,88 m",
+        genero: "Masculino",
+        peso: "85 kg",
+        signo: "Leão",
+        localDeTreinamento: "Monte Olimpo",
+        patente: "Deus",
+        exercito: "Exército de Apolo",
+        saga: "Prologo do Céu",
+        imgSrc: "/dle/apolo.jpg"
+    },
+    {
+        nome: "Éris",
+        idade: "Imortal",
+        altura: "1,75 m",
+        genero: "Feminino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Deus",
+        exercito: "Exército de Éris",
+        saga: "O Santo Guerreiro",
+        imgSrc: "/dle/eris.jpg"
+    },
+    {
+        nome: "Artemis",
+        idade: "Imortal",
+        altura: "1,75 m",
+        genero: "Feminino",
+        peso: "54 kg",
+        signo: "Áries",
+        localDeTreinamento: "Monte Olimpo",
+        patente: "Deus",
+        exercito: "Exército de Artemis",
+        saga: "Prologo do Céu",
+        imgSrc: "/dle/artemis.jpg"
+    },
+    {
+        nome: "Loki",
+        idade: "Imortal",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Deus",
+        exercito: "Exército de Loki",
+        saga: "Alma de Ouro",
+        imgSrc: "/dle/loki.jpg"
+    },
+    {
+        nome: "Odin",
+        idade: "Imortal",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Deus",
+        exercito: "Exército de Odin",
+        saga: "Asgard",
+        imgSrc: "/dle/odin.jpg"
+    },
+    {
+        nome: "Marte",
+        idade: "Imortal",
+        altura: "1,95 m",
+        genero: "Masculino",
+        peso: "90 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Planeta Marte",
+        patente: "Deus",
+        exercito: "Exército de Marte",
+        saga: "Omega",
+        imgSrc: "/dle/mars.jpg"
+    },
+    {
+        nome: "Pallas",
+        idade: "Imortal",
+        altura: "1,65 m",
+        genero: "Feminino",
+        peso: "48 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Santuário Pallas",
+        patente: "Deus",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/pallas.jpg"
+    },
+    {
+        nome: "Saturno",
+        idade: "Imortal",
+        altura: "1,90 m",
+        genero: "Masculino",
+        peso: "88 kg",
+        signo: "Capricórnio",
+        localDeTreinamento: "Santuário de Saturno",
+        patente: "Deus",
+        exercito: "Exército de Saturno",
+        saga: "Omega",
+        imgSrc: "/dle/saturno.jpg"
+    },
+
+    //Cavaleiros de Ouro Lost Canvas
+
+    {
+        nome: "Shion de Áries (Lost Canvas)",
         idade: "18",
         altura: "1,85 m",
         genero: "Masculino",
@@ -793,6 +1178,32 @@ const characters = [
         exercito: "Exército de Athena",
         saga: "Lost Canvas",
         imgSrc: "/dle/hasgard.jpg"
+    },
+    {
+        nome: "Teneo de Touro",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Touro",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        saga: "Lost Canvas",
+        imgSrc: "/dle/teneo.jpg"
+    },
+    {
+        nome: "Defteros de Gêmeos",
+        idade: "Desconhecida",
+        altura: "1,88 m",
+        genero: "Masculino",
+        peso: "85 kg",
+        signo: "Gêmeos",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        saga: "Lost Canvas",
+        imgSrc: "/dle/defteros.jpg"
     },
     {
         nome: "Aspros de Gêmeos",
@@ -834,6 +1245,19 @@ const characters = [
         imgSrc: "/dle/regulus.jpg"
     },
     {
+        nome: "Ilias de Leão",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Leão",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        saga: "Lost Canvas",
+        imgSrc: "/dle/ilias.jpg"
+    },
+    {
         nome: "Asmita de Virgem",
         idade: "20",
         altura: "1,86 m",
@@ -847,17 +1271,17 @@ const characters = [
         imgSrc: "/dle/asmita.jpg"
     },
     {
-        nome: "Dohko de Libra",
+        nome: "Dohko de Libra (Lost Canvas)",
         idade: "18",
-        altura: "1,70 m",
+        altura: "1,40 m",
         genero: "Masculino",
-        peso: "71 kg",
+        peso: "68 kg",
         signo: "Libra",
         localDeTreinamento: "Cinco Picos de Rozan, China",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
         saga: "Lost Canvas",
-        imgSrc: "/dle/dohkolc.jpg"
+        imgSrc: "/dle/dohko.jpg"
     },
     {
         nome: "Kardia de Escorpião",
@@ -899,7 +1323,7 @@ const characters = [
         imgSrc: "/dle/elcid.jpg"
     },
     {
-        nome: "Degel de Aquário",
+        nome: "Dégel de Aquário",
         idade: "22",
         altura: "1,84 m",
         genero: "Masculino",
@@ -924,6 +1348,22 @@ const characters = [
         saga: "Lost Canvas",
         imgSrc: "/dle/albafica.jpg"
     },
+    {
+        nome: "Lugonis de Peixes",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Peixes",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        saga: "Lost Canvas",
+        imgSrc: "/dle/lugonis.jpg"
+    },
+
+    //Cavaleiros de Bronze/Prata Lost Canvas
+
     {
         nome: "Tenma de Pégaso",
         idade: "15",
@@ -989,6 +1429,22 @@ const characters = [
         saga: "Lost Canvas",
         imgSrc: "/dle/hakurei.jpg"
     },
+
+    //Cavaleiros de Ouro Next Dimension
+
+    {
+        nome: "Shion de Áries (Next Dimension)",
+        idade: "18",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "77 kg",
+        signo: "Áries",
+        localDeTreinamento: "Jamiel, Tibete",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        saga: "Next Dimension",
+        imgSrc: "/dle/shionnd.jpg"
+    },
     {
         nome: "Ox de Touro",
         idade: "20",
@@ -1029,7 +1485,7 @@ const characters = [
         imgSrc: "/dle/abel.jpg"
     },
     {
-        nome: "DeathToll de Câncer",
+        nome: "Contador da Morte de Câncer",
         idade: "25",
         altura: "1,82 m",
         genero: "Masculino",
@@ -1039,20 +1495,20 @@ const characters = [
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
         saga: "Next Dimension",
-        imgSrc: "/dle/deathtoll.jpg"
+        imgSrc: "/dle/contador.jpg"
     },
     {
-        nome: "Izo de Capricórnio",
-        idade: "21",
+        nome: "Kaiser de Leão",
+        idade: "19",
         altura: "1,85 m",
         genero: "Masculino",
-        peso: "83 kg",
+        peso: "85 kg",
         signo: "Leão",
-        localDeTreinamento: "Japão",
+        localDeTreinamento: "África",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
         saga: "Next Dimension",
-        imgSrc: "/dle/izo.jpg"
+        imgSrc: "/dle/kaiser.jpg"
     },
     {
         nome: "Shijima de Virgem",
@@ -1068,17 +1524,56 @@ const characters = [
         imgSrc: "/dle/shijima.jpg"
     },
     {
-        nome: "Kaiser de Leão",
-        idade: "19",
-        altura: "1,85 m",
+        nome: "Dohko de Libra (Next Dimension)",
+        idade: "18",
+        altura: "1,40 m",
         genero: "Masculino",
-        peso: "85 kg",
-        signo: "Leão",
-        localDeTreinamento: "África",
+        peso: "68 kg",
+        signo: "Libra",
+        localDeTreinamento: "Cinco Picos de Rozan, China",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
         saga: "Next Dimension",
-        imgSrc: "/dle/kaiser.jpg"
+        imgSrc: "/dle/dohkond.jpg"
+    },
+    {
+        nome: "Escarlate (Écarlate) de Escorpião",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Escorpião",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        saga: "Next Dimension",
+        imgSrc: "/dle/escarlate.jpg"
+    },
+    {
+        nome: "Gestalt de Sagitário",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Sagitário",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        saga: "Next Dimension",
+        imgSrc: "/dle/gestalt.jpg"
+    },
+    {
+        nome: "Izo de Capricórnio",
+        idade: "20",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "83 kg",
+        signo: "Capricórnio",
+        localDeTreinamento: "Japão",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        saga: "Next Dimension",
+        imgSrc: "/dle/izo.jpg"
     },
     {
         nome: "Mystoria de Aquário",
@@ -1106,6 +1601,9 @@ const characters = [
         saga: "Next Dimension",
         imgSrc: "/dle/cardinale.jpg"
     },
+
+    //Cavaleiros de Bronze/Prata Omega
+
     {
         nome: "Kouga de Pégaso",
         idade: "13",
@@ -1185,70 +1683,22 @@ const characters = [
         imgSrc: "/dle/eden.jpg"
     },
     {
-        nome: "Seiya de Sagitário",
-        idade: "29",
-        altura: "1,75 m",
+        nome: "Subaru de Cavalo Menor",
+        idade: "13",
+        altura: "1,60 m",
         genero: "Masculino",
-        peso: "65 kg",
-        signo: "Sagitário",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Ouro",
+        peso: "55 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro de Bronze",
         exercito: "Exército de Athena",
         saga: "Omega",
-        imgSrc: "/dle/seiyaOmega.jpg"
+        imgSrc: "/dle/subaru.jpg"
     },
-    {
-        nome: "Ionia de Capricórnio",
-        idade: "50",
-        altura: "1,85 m",
-        genero: "Masculino",
-        peso: "80 kg",
-        signo: "Capricórnio",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Ouro",
-        exercito: "Exército de Athena",
-        saga: "Omega",
-        imgSrc: "/dle/ionia.jpg"
-    },
-    {
-        nome: "Genbu de Libra",
-        idade: "28",
-        altura: "1,87 m",
-        genero: "Masculino",
-        peso: "82 kg",
-        signo: "Libra",
-        localDeTreinamento: "Cinco Picos de Rozan, China",
-        patente: "Cavaleiro de Ouro",
-        exercito: "Exército de Athena",
-        saga: "Omega",
-        imgSrc: "/dle/genbu.jpg"
-    },
-    {
-        nome: "Mykene de Leão",
-        idade: "27",
-        altura: "1,90 m",
-        genero: "Masculino",
-        peso: "95 kg",
-        signo: "Leão",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Ouro",
-        exercito: "Exército de Athena",
-        saga: "Omega",
-        imgSrc: "/dle/mykene.jpg"
-    },
-    {
-        nome: "Fudo de Virgem",
-        idade: "25",
-        altura: "1,82 m",
-        genero: "Masculino",
-        peso: "72 kg",
-        signo: "Virgem",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Cavaleiro de Ouro",
-        exercito: "Exército de Athena",
-        saga: "Omega",
-        imgSrc: "/dle/fudo.jpg"
-    },
+    
+
+    //Cavaleiros de Ouro Omega 
+
     {
         nome: "Shiryu de Libra",
         idade: "29",
@@ -1259,48 +1709,156 @@ const characters = [
         localDeTreinamento: "Cinco Picos de Rozan, China",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
-        saga: "Omega",
-        imgSrc: "/dle/shiryuLibra.jpg"
+        imgSrc: "/dle/shiryulibra.jpg"
     },
     {
-        nome: "Marte",
-        idade: "Imortal",
+        nome: "Kiki de Áries",
+        idade: "20",
+        altura: "1,75 m",
+        genero: "Masculino",
+        peso: "65 kg",
+        signo: "Áries",
+        localDeTreinamento: "Jamiel, Tibete",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        imgSrc: "/dle/kiki.jpg"
+    },
+    {
+        nome: "Harbinger de Touro",
+        idade: "25",
         altura: "1,95 m",
         genero: "Masculino",
-        peso: "90 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Planeta Marte",
-        patente: "Deus",
-        exercito: "Exército de Marte",
-        saga: "Omega",
-        imgSrc: "/dle/mars.jpg"
+        peso: "95 kg",
+        signo: "Touro",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        imgSrc: "/dle/harbinger.jpg"
     },
     {
-        nome: "Pallas",
-        idade: "Imortal",
-        altura: "1,65 m",
+        nome: "Paradox de Gêmeos",
+        idade: "19",
+        altura: "1,75 m",
         genero: "Feminino",
-        peso: "48 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Santuário Pallas",
-        patente: "Deus",
-        exercito: "Exército de Pallas",
-        saga: "Omega",
-        imgSrc: "/dle/pallas.jpg"
+        peso: "55 kg",
+        signo: "Gêmeos",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleira de Ouro",
+        exercito: "Exército de Athena",
+        imgSrc: "/dle/paradox.jpg"
     },
     {
-        nome: "Saturno",
-        idade: "Imortal",
+        nome: "Schiller de Câncer",
+        idade: "23",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "82 kg",
+        signo: "Câncer",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        imgSrc: "/dle/schiller.jpg"
+    },
+    {
+        nome: "Micenas de Leão",
+        idade: "27",
         altura: "1,90 m",
         genero: "Masculino",
-        peso: "88 kg",
-        signo: "Capricórnio",
-        localDeTreinamento: "Santuário de Saturno",
-        patente: "Deus",
-        exercito: "Exército de Saturno",
-        saga: "Omega",
-        imgSrc: "/dle/saturno.jpg"
+        peso: "95 kg",
+        signo: "Leão",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        imgSrc: "/dle/micenas.jpg"
     },
+    {
+        nome: "Fudou de Virgem",
+        idade: "25",
+        altura: "1,82 m",
+        genero: "Masculino",
+        peso: "72 kg",
+        signo: "Virgem",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        imgSrc: "/dle/fudou.jpg"
+    },
+    {
+        nome: "Gembu de Libra",
+        idade: "28",
+        altura: "1,87 m",
+        genero: "Masculino",
+        peso: "82 kg",
+        signo: "Libra",
+        localDeTreinamento: "Cinco Picos de Rozan, China",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        imgSrc: "/dle/gembu.jpg"
+    },
+    {
+        nome: "Sonia de Escorpião",
+        idade: "17",
+        altura: "1,72 m",
+        genero: "Feminino",
+        peso: "58 kg",
+        signo: "Escorpião",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleira de Ouro",
+        exercito: "Exército de Athena",
+        imgSrc: "/dle/sonia.jpg"
+    },
+    {
+        nome: "Seiya de Sagitário",
+        idade: "29",
+        altura: "1,75 m",
+        genero: "Masculino",
+        peso: "65 kg",
+        signo: "Sagitário",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        imgSrc: "/dle/seiyasagitario.jpg"
+    },
+    {
+        nome: "Ionia de Capricórnio",
+        idade: "500",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "80 kg",
+        signo: "Capricórnio",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        imgSrc: "/dle/ionia.jpg"
+    },
+    {
+        nome: "Tokisada de Aquário",
+        idade: "22",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "77 kg",
+        signo: "Aquário",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        imgSrc: "/dle/tokisada.jpg"
+    },
+    {
+        nome: "Amor de Peixes",
+        idade: "20",
+        altura: "1,87 m",
+        genero: "Masculino",
+        peso: "77 kg",
+        signo: "Peixes",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro de Ouro",
+        exercito: "Exército de Athena",
+        imgSrc: "/dle/amor.jpg"
+    },
+    
+
+    //Palasitos
+
     {
         nome: "Titan",
         idade: "Desconhecida",
@@ -1353,6 +1911,9 @@ const characters = [
         saga: "Omega",
         imgSrc: "/dle/aegir.jpg"
     },   
+
+    //Guerreiros Deuses de Asgard
+
     {
         nome: "Siegfried de Dubhe",
         idade: "Desconhecida",
@@ -1483,6 +2044,9 @@ const characters = [
         saga: "Asgard",
         imgSrc: "/dle/freya.jpg"
     },
+
+    //Cavaleiros de Aço
+
     {
         nome: "Sho de Céu",
         idade: "15",
@@ -1522,6 +2086,9 @@ const characters = [
         saga: "Santuario",
         imgSrc: "/dle/ushio.jpg"
     },
+
+    //Cavaleiros da Coroa do Sol
+
     {
         nome: "Atlas de Carina",
         idade: "Desconhecida",
@@ -1561,6 +2128,9 @@ const characters = [
         saga: "Lenda dos Defensores de Athena",
         imgSrc: "/dle/berenice.jpg"
     },
+
+    //Guerreiros do Santuario
+
     {
         nome: "Docrates",
         idade: "Desconhecida",
@@ -1613,6 +2183,9 @@ const characters = [
         saga: "Santuario",
         imgSrc: "/dle/phaeton.jpg"
     },
+
+    //Cavaleiros Fantasmas
+
     {
         nome: "Geist",
         idade: "Desconhecida",
@@ -1665,6 +2238,9 @@ const characters = [
         saga: "Santuario",
         imgSrc: "/dle/chama.jpg"
     },
+
+    //Cavaleiros Negros Classicos
+
     {
         nome: "Kenuma de Pégaso Negro",
         idade: "Desconhecida",
@@ -1756,6 +2332,9 @@ const characters = [
         saga: "Santuario",
         imgSrc: "/dle/guilty.jpg"
     },
+
+    //Anjos Prologo do Céu
+
     {
         nome: "Odysseu",
         idade: "Desconhecida",
@@ -1795,6 +2374,9 @@ const characters = [
         saga: "Prologo do Céu",
         imgSrc: "/dle/tohma.jpg"
     },
+
+
+
     {
         nome: "Belzebu de Serafim",
         idade: "Desconhecida",
@@ -1860,84 +2442,9 @@ const characters = [
         saga: "Os Guerreiros do Armagedon",
         imgSrc: "/dle/lucifer.jpg"
     },
-    {
-        nome: "Abel",
-        idade: "Imortal",
-        altura: "1,80 m",
-        genero: "Masculino",
-        peso: "Desconhecido",
-        signo: "Desconhecido",
-        localDeTreinamento: "Desconhecido",
-        patente: "Deus",
-        exercito: "Exército de Abel",
-        saga: "Lenda dos Defensores de Athena",
-        imgSrc: "/dle/abel1.jpg"
-    },
-    {
-        nome: "Apolo",
-        idade: "Imortal",
-        altura: "1,88 m",
-        genero: "Masculino",
-        peso: "85 kg",
-        signo: "Leão",
-        localDeTreinamento: "Monte Olimpo",
-        patente: "Deus",
-        exercito: "Exército de Apolo",
-        saga: "Prologo do Céu",
-        imgSrc: "/dle/apolo.jpg"
-    },
-    {
-        nome: "Éris",
-        idade: "Imortal",
-        altura: "1,75 m",
-        genero: "Feminino",
-        peso: "Desconhecido",
-        signo: "Desconhecido",
-        localDeTreinamento: "Desconhecido",
-        patente: "Deus",
-        exercito: "Exército de Éris",
-        saga: "O Santo Guerreiro",
-        imgSrc: "/dle/eris.jpg"
-    },
-    {
-        nome: "Artemis",
-        idade: "Imortal",
-        altura: "1,75 m",
-        genero: "Feminino",
-        peso: "54 kg",
-        signo: "Áries",
-        localDeTreinamento: "Monte Olimpo",
-        patente: "Deus",
-        exercito: "Exército de Artemis",
-        saga: "Prologo do Céu",
-        imgSrc: "/dle/artemis.jpg"
-    },
-    {
-        nome: "Loki",
-        idade: "Imortal",
-        altura: "Desconhecida",
-        genero: "Masculino",
-        peso: "Desconhecido",
-        signo: "Desconhecido",
-        localDeTreinamento: "Asgard",
-        patente: "Deus",
-        exercito: "Exército de Loki",
-        saga: "Alma de Ouro",
-        imgSrc: "/dle/loki.jpg"
-    },
-    {
-        nome: "Odin",
-        idade: "Imortal",
-        altura: "Desconhecida",
-        genero: "Masculino",
-        peso: "Desconhecido",
-        signo: "Desconhecido",
-        localDeTreinamento: "Asgard",
-        patente: "Deus",
-        exercito: "Exército de Odin",
-        saga: "Asgard",
-        imgSrc: "/dle/odin.jpg"
-    },
+
+    //Eris
+
     {
         nome: "Maiya de Sagita",
         idade: "Desconhecida",
@@ -2002,7 +2509,89 @@ const characters = [
         exercito: "Exército de Éris",
         saga: "O Santo Guerreiro",
         imgSrc: "/dle/jaga.jpg"
+    },
+
+    //Saintias
+
+    {
+        nome: "Shoko de Cavalo Menor",
+        idade: "14",
+        altura: "1,60 m",
+        genero: "Feminino",
+        peso: "45 kg",
+        signo: "Sagitário",
+        localDeTreinamento: "Desconhecido",
+        patente: "Saintia de Bronze",
+        exercito: "Exército de Athena",
+        saga: "Saintia Shô",
+        imgSrc: "/dle/shoko.jpg"
+    },
+    {
+        nome: "Kyoko de Cavalo Menor",
+        idade: "16",
+        altura: "1,65 m",
+        genero: "Feminino",
+        peso: "48 kg",
+        signo: "Sagitário",
+        localDeTreinamento: "Desconhecido",
+        patente: "Saintia de Bronze",
+        exercito: "Exército de Athena",
+        saga: "Saintia Shô",
+        imgSrc: "/dle/kyoko.jpg"
+    },
+    {
+        nome: "Mii de Golfinho",
+        idade: "16",
+        altura: "1,65 m",
+        genero: "Feminino",
+        peso: "50 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Saintia de Bronze",
+        exercito: "Exército de Athena",
+        saga: "Saintia Shô",
+        imgSrc: "/dle/mii.jpg"
+    },
+    {
+        nome: "Xiaoling de Ursa Menor",
+        idade: "12",
+        altura: "1,48 m",
+        genero: "Feminino",
+        peso: "40 kg",
+        signo: "Capricórnio",
+        localDeTreinamento: "China",
+        patente: "Saintia de Bronze",
+        exercito: "Exército de Athena",
+        saga: "Saintia Shô",
+        imgSrc: "/dle/xiaoling.jpg"
+    },
+    {
+        nome: "Katya de Coroa Boreal",
+        idade: "18",
+        altura: "1,70 m",
+        genero: "Feminino",
+        peso: "52 kg",
+        signo: "Aquário",
+        localDeTreinamento: "Sibéria",
+        patente: "Saintia de Prata",
+        exercito: "Exército de Athena",
+        saga: "Saintia Shô",
+        imgSrc: "/dle/katya.jpg"
+    },
+    {
+        nome: "Elda de Cassiopeia",
+        idade: "17",
+        altura: "1,68 m",
+        genero: "Feminino",
+        peso: "49 kg",
+        signo: "Áries",
+        localDeTreinamento: "Itália",
+        patente: "Saintia de Prata",
+        exercito: "Exército de Athena",
+        saga: "Saintia Shô",
+        imgSrc: "/dle/elda.jpg"
     }
+    
   ];
   
   export default characters;

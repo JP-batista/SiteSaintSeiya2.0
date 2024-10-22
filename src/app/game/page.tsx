@@ -74,9 +74,20 @@ export default function GamePage() {
     saveToLocalStorage("attempts", attempts);
   }, [selectedCharacter, attempts]);
 
+  // Função que verifica se o personagem já foi tentado
+  const isAlreadyTried = (nome: string) => {
+    return attempts.some((attempt) => attempt.nome.toLowerCase() === nome.toLowerCase());
+  };
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!input.trim()) return;
+
+    // Verifica se o personagem já foi tentado
+    if (isAlreadyTried(input)) {
+      alert("Você já tentou esse personagem!");
+      return;
+    }
 
     const guess = characters.find(
       (char: Character) => char.nome.toLowerCase() === input.toLowerCase()
@@ -121,6 +132,15 @@ export default function GamePage() {
     setShowDropdown(false);
   };
 
+  // Função para filtrar personagens não tentados para o dropdown de sugestões
+  const getFilteredSuggestions = (value: string) => {
+    const lowercasedValue = value.toLowerCase();
+    return characters.filter(
+      (char: Character) =>
+        char.nome.toLowerCase().includes(lowercasedValue) && !isAlreadyTried(char.nome)
+    );
+  };
+
   // Função para desistir do jogo
   const handleGiveUp = () => {
     setShowAnswer(true);
@@ -134,9 +154,7 @@ export default function GamePage() {
     setInput(value);
 
     if (value.trim()) {
-      const filteredSuggestions = characters.filter((char: Character) =>
-        char.nome.toLowerCase().includes(value.toLowerCase())
-      );
+      const filteredSuggestions = getFilteredSuggestions(value);
       setSuggestions(filteredSuggestions);
       setShowDropdown(true);
     } else {
@@ -168,6 +186,7 @@ export default function GamePage() {
     localStorage.removeItem("selectedCharacter");
     localStorage.removeItem("attempts");
   };
+
   return (
     <div className="min-h-screen text-white flex flex-col items-center justify-center p-6">
       <h1 className="text-5xl font-bold mb-8 text-yellow-400">
@@ -215,6 +234,9 @@ export default function GamePage() {
               Tentar
             </button>
           </form>
+
+          {/* Continuação do código... */}
+
 
           <div className="w-full max-w-3xl">
             <h2 className="text-3xl mb-6 text-center">Tentativas</h2>
