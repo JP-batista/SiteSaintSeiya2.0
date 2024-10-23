@@ -19,7 +19,7 @@ export default function HomePage() {
         </p>
         <div className="flex justify-center space-x-4 md:space-x-6">
           {/* Ver Personagens */}
-          <Link href="/characters">
+          <Link href="/characters/todos">
             <div className="text-yellow-400 bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-yellow-500 hover:text-gray-900 transition-all duration-300 ease-in-out transform hover:scale-105">
               <img
                 src="/logos/helmet-pegasus.svg"

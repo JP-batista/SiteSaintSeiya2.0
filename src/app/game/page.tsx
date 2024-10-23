@@ -53,19 +53,19 @@ export default function GamePage() {
   const parseHeight = (height: string) =>
     parseFloat(height.replace(",", ".").replace(" m", ""));
 
-  // Comparação de números (idade, peso)
+  // Função para comparar números como idade e peso
   const compareNumber = (value: number, target: number) => {
-    if (value === target) return "green";
-    return value > target ? "down" : "up"; // Setas para indicar maior ou menor
+    if (value === target) return "green"; // Valor igual
+    return value < target ? "up" : "down"; // Corrigido para exibir "up" quando o valor do personagem é menor
   };
 
   // Comparação de alturas (que são strings)
   const compareHeight = (value: string, target: string) => {
-    const val = parseHeight(value);
-    const tgt = parseHeight(target);
+    const val = parseHeight(value); // Converte a altura para número
+    const tgt = parseHeight(target); // Converte a altura alvo para número
     if (isNaN(val) || isNaN(tgt)) return "ignore"; // Caso falte algum dado de altura
-    if (val === tgt) return "green";
-    return val > tgt ? "down" : "up";
+    if (val === tgt) return "green"; // Altura igual
+    return val < tgt ? "up" : "down"; // Corrigido para exibir "up" quando o valor do personagem é menor
   };
 
   // Salva o personagem e tentativas no localStorage sempre que houver mudanças
@@ -93,6 +93,7 @@ export default function GamePage() {
       (char: Character) => char.nome.toLowerCase() === input.toLowerCase()
     );
 
+    // Verifica se o personagem foi encontrado
     if (!guess) {
       alert("Personagem não encontrado!");
       return;
@@ -102,19 +103,16 @@ export default function GamePage() {
 
     const comparison = {
       nome: input,
-      idade:
-        isNaN(parseInt(guess.idade)) || isNaN(parseInt(selectedCharacter.idade))
-          ? "ignore" // Desconsidera a idade se não for um número
-          : compareNumber(parseInt(guess.idade), parseInt(selectedCharacter.idade)),
-      altura:
-        isNaN(parseHeight(guess.altura)) || isNaN(parseHeight(selectedCharacter.altura))
-          ? "ignore" // Desconsidera a altura se não for um número
-          : compareHeight(guess.altura, selectedCharacter.altura),
+      idade: isNaN(parseInt(guess.idade)) || isNaN(parseInt(selectedCharacter.idade))
+        ? "ignore" // Ignora se a idade não for numérica
+        : compareNumber(parseInt(guess.idade), parseInt(selectedCharacter.idade)),
+      altura: isNaN(parseHeight(guess.altura)) || isNaN(parseHeight(selectedCharacter.altura))
+        ? "ignore" // Ignora se a altura não for numérica
+        : compareHeight(guess.altura, selectedCharacter.altura),
+      peso: isNaN(parseFloat(guess.peso)) || isNaN(parseFloat(selectedCharacter.peso))
+        ? "ignore" // Ignora se o peso não for numérico
+        : compareNumber(parseFloat(guess.peso), parseFloat(selectedCharacter.peso)),
       genero: guess.genero === selectedCharacter.genero ? "green" : "red",
-      peso:
-        isNaN(parseFloat(guess.peso)) || isNaN(parseFloat(selectedCharacter.peso))
-          ? "ignore" // Desconsidera o peso se não for um número
-          : compareNumber(parseFloat(guess.peso), parseFloat(selectedCharacter.peso)),
       signo: guess.signo === selectedCharacter.signo ? "green" : "red",
       localDeTreinamento: guess.localDeTreinamento === selectedCharacter.localDeTreinamento ? "green" : "red",
       patente: guess.patente === selectedCharacter.patente ? "green" : "red",
@@ -123,6 +121,7 @@ export default function GamePage() {
       imgSrc: guess.imgSrc,
       guessCharacter: guess,
     };
+    
 
     if (correct) setWon(true);
 
@@ -245,14 +244,14 @@ export default function GamePage() {
                 <thead>
                   <tr className="text-yellow-500 border-b-2 border-yellow-500">
                     <th className="p-2">Personagem</th>
+                    <th className="p-2">Gênero</th>
                     <th className="p-2">Idade</th>
                     <th className="p-2">Altura</th>
-                    <th className="p-2">Gênero</th>
                     <th className="p-2">Peso</th>
                     <th className="p-2">Signo</th>
-                    <th className="p-2">Treinamento</th>
                     <th className="p-2">Patente</th>
                     <th className="p-2">Exército</th>
+                    <th className="p-2">Treinamento</th>
                     <th className="p-2">Saga</th>
                   </tr>
                 </thead>
@@ -263,9 +262,24 @@ export default function GamePage() {
                         <img
                           src={attempt.imgSrc}
                           alt={attempt.nome}
-                          className="w-24 h-auto rounded-lg mb-2" // Aumentando o tamanho da imagem para 24x24
+                          className="w-24 h-auto rounded-lg mb-2"
                         />
                         <span>{attempt.nome}</span>
+                      </td>
+                      <td
+                        className={`p-2 ${
+                          attempt.genero === "green" ? "text-green-400" : "text-red-400"
+                        }`}
+                      >
+                        {attempt.genero === "green" ? (
+                          <span className="text-3xl">✔️</span>
+                        ) : (
+                          <span className="text-3xl">❌</span>
+                        )}
+                        <br />
+                        <span className="text-xs text-gray-400">
+                          {attempt.guessCharacter.genero}
+                        </span>
                       </td>
                       <td className={`p-2 ${attempt.idade}`}>
                         {attempt.idade === "green" ? (
@@ -297,23 +311,6 @@ export default function GamePage() {
                           {attempt.guessCharacter.altura}
                         </span>
                       </td>
-                      <td
-                        className={`p-2 ${
-                          attempt.genero === "green"
-                            ? "text-green-400"
-                            : "text-red-400"
-                        }`}
-                      >
-                        {attempt.genero === "green" ? (
-                          <span className="text-3xl">✔️</span>
-                        ) : (
-                          <span className="text-3xl">❌</span>
-                        )}
-                        <br />
-                        <span className="text-xs text-gray-400">
-                          {attempt.guessCharacter.genero}
-                        </span>
-                      </td>
                       <td className={`p-2 ${attempt.peso}`}>
                         {attempt.peso === "green" ? (
                           <span className="text-3xl">✔️</span>
@@ -331,9 +328,7 @@ export default function GamePage() {
                       </td>
                       <td
                         className={`p-2 ${
-                          attempt.signo === "green"
-                            ? "text-green-400"
-                            : "text-red-400"
+                          attempt.signo === "green" ? "text-green-400" : "text-red-400"
                         }`}
                       >
                         {attempt.signo === "green" ? (
@@ -344,6 +339,36 @@ export default function GamePage() {
                         <br />
                         <span className="text-xs text-gray-400">
                           {attempt.guessCharacter.signo}
+                        </span>
+                      </td>
+                      <td
+                        className={`p-2 ${
+                          attempt.patente === "green" ? "text-green-400" : "text-red-400"
+                        }`}
+                      >
+                        {attempt.patente === "green" ? (
+                          <span className="text-3xl">✔️</span>
+                        ) : (
+                          <span className="text-3xl">❌</span>
+                        )}
+                        <br />
+                        <span className="text-xs text-gray-400">
+                          {attempt.guessCharacter.patente}
+                        </span>
+                      </td>
+                      <td
+                        className={`p-2 ${
+                          attempt.exercito === "green" ? "text-green-400" : "text-red-400"
+                        }`}
+                      >
+                        {attempt.exercito === "green" ? (
+                          <span className="text-3xl">✔️</span>
+                        ) : (
+                          <span className="text-3xl">❌</span>
+                        )}
+                        <br />
+                        <span className="text-xs text-gray-400">
+                          {attempt.guessCharacter.exercito}
                         </span>
                       </td>
                       <td
@@ -365,43 +390,7 @@ export default function GamePage() {
                       </td>
                       <td
                         className={`p-2 ${
-                          attempt.patente === "green"
-                            ? "text-green-400"
-                            : "text-red-400"
-                        }`}
-                      >
-                        {attempt.patente === "green" ? (
-                          <span className="text-3xl">✔️</span>
-                        ) : (
-                          <span className="text-3xl">❌</span>
-                        )}
-                        <br />
-                        <span className="text-xs text-gray-400">
-                          {attempt.guessCharacter.patente}
-                        </span>
-                      </td>
-                      <td
-                        className={`p-2 ${
-                          attempt.exercito === "green"
-                            ? "text-green-400"
-                            : "text-red-400"
-                        }`}
-                      >
-                        {attempt.exercito === "green" ? (
-                          <span className="text-3xl">✔️</span>
-                        ) : (
-                          <span className="text-3xl">❌</span>
-                        )}
-                        <br />
-                        <span className="text-xs text-gray-400">
-                          {attempt.guessCharacter.exercito}
-                        </span>
-                      </td>
-                      <td
-                        className={`p-2 ${
-                          attempt.saga === "green"
-                            ? "text-green-400"
-                            : "text-red-400"
+                          attempt.saga === "green" ? "text-green-400" : "text-red-400"
                         }`}
                       >
                         {attempt.saga === "green" ? (

@@ -32,9 +32,11 @@ export default function CharactersPage() {
         </div>
         
       </div>
-      <p className="text-yellow-400 mt-6 text-center">
-        <Link href="/characters/todos" className="hover:text-yellow-500">Todos os Personagens</Link>
-      </p>
+      <div className="flex justify-center space-x-6 mt-6">
+          <Link href="/characters/todos" className="bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold text-lg hover:bg-yellow-600 transition-colors duration-300">
+            Todos os Personagens
+          </Link>
+        </div>
     </div>
   );
 }

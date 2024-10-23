@@ -555,8 +555,417 @@ const characters = [
         imgSrc: "/dle/afrodite.jpg"
     },
 
+    //Deusa Athena 
 
+    {
+        nome: "Athena",
+        idade: "Imortal",
+        altura: "1,70 m",
+        genero: "Feminino",
+        peso: "55 kg",
+        signo: "Sagitário",
+        localDeTreinamento: "Santuário, Grécia",
+        patente: "Deus",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/athena.jpg"
+    },
+
+    //Cavaleiros Negros Classicos
+
+    {
+        nome: "Kenuma de Pégaso Negro",
+        idade: "Desconhecida",
+        altura: "1,65 m",
+        genero: "Masculino",
+        peso: "55 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro Negro",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/kenuma.jpg"
+    },
+    {
+        nome: "Shinadekuro de Dragão Negro",
+        idade: "Desconhecida",
+        altura: "1,72 m",
+        genero: "Masculino",
+        peso: "60 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro Negro",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/shinadekuro.jpg"
+    },
+    {
+        nome: "Jid de Cisne Negro",
+        idade: "Desconhecida",
+        altura: "1,70 m",
+        genero: "Masculino",
+        peso: "58 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro Negro",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/jid.jpg"
+    },
+    {
+        nome: "Andrômeda Negro",
+        idade: "Desconhecida",
+        altura: "1,65 m",
+        genero: "Masculino",
+        peso: "53 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro Negro",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/andromedanegro.jpg"
+    },
+    {
+        nome: "Ritahoa de Fênix Negro",
+        idade: "Desconhecida",
+        altura: "1,75 m",
+        genero: "Masculino",
+        peso: "62 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Ilha da Rainha da Morte",
+        patente: "Cavaleiro Negro",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/ritahoa.jpg"
+    },
+    {
+        nome: "Jango",
+        idade: "Desconhecida",
+        altura: "1,80 m",
+        genero: "Masculino",
+        peso: "80 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Ilha da Rainha da Morte",
+        patente: "Cavaleiro Negro",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/jango.jpg"
+    },
+    {
+        nome: "Guilty",
+        idade: "Desconhecida",
+        altura: "1,90 m",
+        genero: "Masculino",
+        peso: "90 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Ilha da Rainha da Morte",
+        patente: "Desconhecida",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/guilty.jpg"
+    },
     
+    //Guerreiros do Santuario
+
+    {
+        nome: "Docrates",
+        idade: "Desconhecida",
+        altura: "2,20 m",
+        genero: "Masculino",
+        peso: "150 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Guerreiro",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/docrates.jpg"
+    },
+    {
+        nome: "Spartan",
+        idade: "Desconhecida",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "80 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Guerreiro",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/spartan.jpg"
+    },
+    {
+        nome: "Gigas",
+        idade: "Desconhecida",
+        altura: "1,88 m",
+        genero: "Masculino",
+        peso: "85 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Guerreiro",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/gigas.jpg"
+    },
+    {
+        nome: "Phaeton",
+        idade: "Desconhecida",
+        altura: "1,90 m",
+        genero: "Masculino",
+        peso: "88 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Guerreiro",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/phaeton.jpg"
+    },
+
+    //Cavaleiros Fantasmas
+
+    {
+        nome: "Geist",
+        idade: "Desconhecida",
+        altura: "1,70 m",
+        genero: "Feminino",
+        peso: "50 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Ilha do Diabo",
+        patente: "Cavaleiro Fantasma",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/geist.jpg"
+    },
+    {
+        nome: "Serpente Marinha",
+        idade: "Desconhecida",
+        altura: "1,80 m",
+        genero: "Masculino",
+        peso: "70 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Ilha do Diabo",
+        patente: "Cavaleiro Fantasma",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/serpentemarina.jpg"
+    },
+    {
+        nome: "Medusa",
+        idade: "Desconhecida",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "80 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Ilha do Diabo",
+        patente: "Cavaleiro Fantasma",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/medusa.jpg"
+    },
+    {
+        nome: "Golfinho",
+        idade: "Desconhecida",
+        altura: "1,77 m",
+        genero: "Masculino",
+        peso: "75 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Ilha do Diabo",
+        patente: "Cavaleiro Fantasma",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/chama.jpg"
+    },
+    
+    //Cavaleiros de Aço
+
+    {
+        nome: "Sho de Céu",
+        idade: "15",
+        altura: "1,68 m",
+        genero: "Masculino",
+        peso: "55 kg",
+        signo: "Câncer",
+        localDeTreinamento: "Japão",
+        patente: "Cavaleiro de Aço",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/sho.jpg"
+    },
+    {
+        nome: "Daichi de Terra",
+        idade: "14",
+        altura: "1,62 m",
+        genero: "Masculino",
+        peso: "51 kg",
+        signo: "Capricórnio",
+        localDeTreinamento: "Japão",
+        patente: "Cavaleiro de Aço",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/daichi.jpg"
+    },
+    {
+        nome: "Ushô de Mar",
+        idade: "14",
+        altura: "1,66 m",
+        genero: "Masculino",
+        peso: "53 kg",
+        signo: "Peixes",
+        localDeTreinamento: "Japão",
+        patente: "Cavaleiro de Aço",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/ushio.jpg"
+    },
+
+    //Guerreiros Deuses de Asgard
+
+    {
+        nome: "Siegfried de Dubhe",
+        idade: "Desconhecida",
+        altura: "1,97 m",
+        genero: "Masculino",
+        peso: "88 kg",
+        signo: "Leão",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Asgard",
+        imgSrc: "/dle/siegfried.jpg"
+    },
+    {
+        nome: "Hagen de Merak",
+        idade: "Desconhecida",
+        altura: "1,88 m",
+        genero: "Masculino",
+        peso: "81 kg",
+        signo: "Áries",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Asgard",
+        imgSrc: "/dle/hagen.jpg"
+    },
+    {
+        nome: "Thor de Phecda",
+        idade: "Desconhecida",
+        altura: "2,25 m",
+        genero: "Masculino",
+        peso: "200 kg",
+        signo: "Touro",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Asgard",
+        imgSrc: "/dle/thor.jpg"
+    },
+    {
+        nome: "Fenrir de Alioth",
+        idade: "Desconhecida",
+        altura: "1,90 m",
+        genero: "Masculino",
+        peso: "83 kg",
+        signo: "Escorpião",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Asgard",
+        imgSrc: "/dle/fenrir.jpg"
+    },
+    {
+        nome: "Mime de Benetnasch",
+        idade: "Desconhecida",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "75 kg",
+        signo: "Virgem",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Asgard",
+        imgSrc: "/dle/mime.jpg"
+    },
+    {
+        nome: "Alberich de Megrez",
+        idade: "Desconhecida",
+        altura: "1,80 m",
+        genero: "Masculino",
+        peso: "70 kg",
+        signo: "Libra",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Asgard",
+        imgSrc: "/dle/alberich.jpg"
+    },
+    {
+        nome: "Shido de Mizar",
+        idade: "Desconhecida",
+        altura: "1,82 m",
+        genero: "Masculino",
+        peso: "75 kg",
+        signo: "Gêmeos",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Asgard",
+        imgSrc: "/dle/syd.jpg"
+    },
+    {
+        nome: "Bado de Alcor",
+        idade: "Desconhecida",
+        altura: "1,82 m",
+        genero: "Masculino",
+        peso: "75 kg",
+        signo: "Gêmeos",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Asgard",
+        imgSrc: "/dle/bud.jpg"
+    },
+    {
+        nome: "Hilda de Polaris",
+        idade: "Desconhecida",
+        altura: "1,70 m",
+        genero: "Feminino",
+        peso: "56 kg",
+        signo: "Escorpião",
+        localDeTreinamento: "Asgard",
+        patente: "Sacerdotisa de Odin",
+        exercito: "Exército de Asgard",
+        saga: "Asgard",
+        imgSrc: "/dle/hilda.jpg"
+    },
+    {
+        nome: "Freya",
+        idade: "Desconhecida",
+        altura: "1,65 m",
+        genero: "Feminino",
+        peso: "50 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Habitante de Asgard",
+        exercito: "Exército de Asgard",
+        saga: "Asgard",
+        imgSrc: "/dle/freya.jpg"
+    },
+
+    //Deus Odin
+
+    {
+        nome: "Odin",
+        idade: "Imortal",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Deus",
+        exercito: "Exército de Odin",
+        saga: "Asgard",
+        imgSrc: "/dle/odin.jpg"
+    },
+
     //Marinas de Poseidon Classico
 
     {
@@ -663,9 +1072,64 @@ const characters = [
         saga: "Poseidon",
         imgSrc: "/dle/tetis.jpg"
     },
+    
+    //Deus Poseidon
+
+    {
+        nome: "Poseidon",
+        idade: "Imortal",
+        altura: "1,88 m",
+        genero: "Masculino",
+        peso: "88 kg",
+        signo: "Escorpião",
+        localDeTreinamento: "Atlântida",
+        patente: "Deus",
+        exercito: "Exército de Poseidon",
+        saga: "Poseidon",
+        imgSrc: "/dle/poseidon.jpg"
+    },
 
     //Espectros de Hades Classico
 
+    {
+        nome: "Radamanthys de Wyvern",
+        idade: "23",
+        altura: "1,89 m",
+        genero: "Masculino",
+        peso: "84 kg",
+        signo: "Leão",
+        localDeTreinamento: "Giudecca, Submundo",
+        patente: "Juiz do Inferno",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/radamanthys.jpg"
+    },
+    {
+        nome: "Minos de Griffon",
+        idade: "24",
+        altura: "1,92 m",
+        genero: "Masculino",
+        peso: "88 kg",
+        signo: "Virgem",
+        localDeTreinamento: "Giudecca, Submundo",
+        patente: "Juiz do Inferno",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/minos.jpg"
+    },
+    {
+        nome: "Aiacos de Garuda",
+        idade: "22",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "85 kg",
+        signo: "Capricórnio",
+        localDeTreinamento: "Giudecca, Submundo",
+        patente: "Juiz do Inferno",
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/aiacos.jpg"
+    },
     {
         nome: "Niobe de Deep",
         idade: "21",
@@ -755,7 +1219,7 @@ const characters = [
         patente: "Espectro",
         exercito: "Exército de Hades",
         saga: "Hades",
-        imgSrc: "/dle/oxtouro.jpg"
+        imgSrc: "/dle/ox.jpg"
     },
     {
         nome: "Miles de Elfo",
@@ -769,19 +1233,6 @@ const characters = [
         exercito: "Exército de Hades",
         saga: "Hades",
         imgSrc: "/dle/miles.jpg"
-    },
-    {
-        nome: "Radamanthys de Wyvern",
-        idade: "23",
-        altura: "1,89 m",
-        genero: "Masculino",
-        peso: "84 kg",
-        signo: "Leão",
-        localDeTreinamento: "Giudecca, Submundo",
-        patente: "Juiz do Inferno",
-        exercito: "Exército de Hades",
-        saga: "Hades",
-        imgSrc: "/dle/radamanthys.jpg"
     },
     {
         nome: "Caronte de Aqueronte",
@@ -888,32 +1339,6 @@ const characters = [
         imgSrc: "/dle/markino.jpg"
     },
     {
-        nome: "Minos de Griffon",
-        idade: "24",
-        altura: "1,92 m",
-        genero: "Masculino",
-        peso: "88 kg",
-        signo: "Virgem",
-        localDeTreinamento: "Giudecca, Submundo",
-        patente: "Juiz do Inferno",
-        exercito: "Exército de Hades",
-        saga: "Hades",
-        imgSrc: "/dle/minos.jpg"
-    },
-    {
-        nome: "Aiacos de Garuda",
-        idade: "22",
-        altura: "1,85 m",
-        genero: "Masculino",
-        peso: "85 kg",
-        signo: "Capricórnio",
-        localDeTreinamento: "Giudecca, Submundo",
-        patente: "Juiz do Inferno",
-        exercito: "Exército de Hades",
-        saga: "Hades",
-        imgSrc: "/dle/aiacos.jpg"
-    },
-    {
         nome: "Gordon de Minotauro",
         idade: "25",
         altura: "2,30 m",
@@ -965,47 +1390,18 @@ const characters = [
         saga: "Hades",
         imgSrc: "/dle/valentine.jpg"
     },    
-
-    //Deuses 
-
     {
-        nome: "Athena",
-        idade: "Imortal",
+        nome: "Pandora",
+        idade: "18",
         altura: "1,70 m",
         genero: "Feminino",
         peso: "55 kg",
-        signo: "Sagitário",
-        localDeTreinamento: "Santuário, Grécia",
-        patente: "Deus",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/athena.jpg"
-    },
-    {
-        nome: "Poseidon",
-        idade: "Imortal",
-        altura: "1,88 m",
-        genero: "Masculino",
-        peso: "88 kg",
-        signo: "Escorpião",
-        localDeTreinamento: "Atlântida",
-        patente: "Deus",
-        exercito: "Exército de Poseidon",
-        saga: "Poseidon",
-        imgSrc: "/dle/poseidon.jpg"
-    },
-    {
-        nome: "Hades",
-        idade: "Imortal",
-        altura: "1,84 m",
-        genero: "Masculino",
-        peso: "78 kg",
-        signo: "Gêmeos",
+        signo: "Peixes",
         localDeTreinamento: "Submundo",
-        patente: "Deus",
+        patente: "Líder dos Espectros",
         exercito: "Exército de Hades",
         saga: "Hades",
-        imgSrc: "/dle/hades.jpg"
+        imgSrc: "/dle/pandora.jpg"
     },
     {
         nome: "Hypnos",
@@ -1034,121 +1430,17 @@ const characters = [
         imgSrc: "/dle/thanatos.jpg"
     },
     {
-        nome: "Abel",
+        nome: "Hades",
         idade: "Imortal",
-        altura: "1,80 m",
+        altura: "1,84 m",
         genero: "Masculino",
-        peso: "Desconhecido",
-        signo: "Desconhecido",
-        localDeTreinamento: "Desconhecido",
+        peso: "78 kg",
+        signo: "Gêmeos",
+        localDeTreinamento: "Submundo",
         patente: "Deus",
-        exercito: "Exército de Abel",
-        saga: "Lenda dos Defensores de Athena",
-        imgSrc: "/dle/abel1.jpg"
-    },
-    {
-        nome: "Apolo",
-        idade: "Imortal",
-        altura: "1,88 m",
-        genero: "Masculino",
-        peso: "85 kg",
-        signo: "Leão",
-        localDeTreinamento: "Monte Olimpo",
-        patente: "Deus",
-        exercito: "Exército de Apolo",
-        saga: "Prologo do Céu",
-        imgSrc: "/dle/apolo.jpg"
-    },
-    {
-        nome: "Éris",
-        idade: "Imortal",
-        altura: "1,75 m",
-        genero: "Feminino",
-        peso: "Desconhecido",
-        signo: "Desconhecido",
-        localDeTreinamento: "Desconhecido",
-        patente: "Deus",
-        exercito: "Exército de Éris",
-        saga: "O Santo Guerreiro",
-        imgSrc: "/dle/eris.jpg"
-    },
-    {
-        nome: "Artemis",
-        idade: "Imortal",
-        altura: "1,75 m",
-        genero: "Feminino",
-        peso: "54 kg",
-        signo: "Áries",
-        localDeTreinamento: "Monte Olimpo",
-        patente: "Deus",
-        exercito: "Exército de Artemis",
-        saga: "Prologo do Céu",
-        imgSrc: "/dle/artemis.jpg"
-    },
-    {
-        nome: "Loki",
-        idade: "Imortal",
-        altura: "Desconhecida",
-        genero: "Masculino",
-        peso: "Desconhecido",
-        signo: "Desconhecido",
-        localDeTreinamento: "Asgard",
-        patente: "Deus",
-        exercito: "Exército de Loki",
-        saga: "Alma de Ouro",
-        imgSrc: "/dle/loki.jpg"
-    },
-    {
-        nome: "Odin",
-        idade: "Imortal",
-        altura: "Desconhecida",
-        genero: "Masculino",
-        peso: "Desconhecido",
-        signo: "Desconhecido",
-        localDeTreinamento: "Asgard",
-        patente: "Deus",
-        exercito: "Exército de Odin",
-        saga: "Asgard",
-        imgSrc: "/dle/odin.jpg"
-    },
-    {
-        nome: "Marte",
-        idade: "Imortal",
-        altura: "1,95 m",
-        genero: "Masculino",
-        peso: "90 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Planeta Marte",
-        patente: "Deus",
-        exercito: "Exército de Marte",
-        saga: "Omega",
-        imgSrc: "/dle/mars.jpg"
-    },
-    {
-        nome: "Pallas",
-        idade: "Imortal",
-        altura: "1,65 m",
-        genero: "Feminino",
-        peso: "48 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Santuário Pallas",
-        patente: "Deus",
-        exercito: "Exército de Pallas",
-        saga: "Omega",
-        imgSrc: "/dle/pallas.jpg"
-    },
-    {
-        nome: "Saturno",
-        idade: "Imortal",
-        altura: "1,90 m",
-        genero: "Masculino",
-        peso: "88 kg",
-        signo: "Capricórnio",
-        localDeTreinamento: "Santuário de Saturno",
-        patente: "Deus",
-        exercito: "Exército de Saturno",
-        saga: "Omega",
-        imgSrc: "/dle/saturno.jpg"
+        exercito: "Exército de Hades",
+        saga: "Hades",
+        imgSrc: "/dle/hades.jpg"
     },
 
     //Cavaleiros de Ouro Lost Canvas
@@ -1404,19 +1696,6 @@ const characters = [
         imgSrc: "/dle/yuzuriha.jpg"
     },
     {
-        nome: "Pandora",
-        idade: "18",
-        altura: "1,70 m",
-        genero: "Feminino",
-        peso: "55 kg",
-        signo: "Peixes",
-        localDeTreinamento: "Submundo",
-        patente: "Líder dos Espectros",
-        exercito: "Exército de Hades",
-        saga: "Hades",
-        imgSrc: "/dle/pandora.jpg"
-    },
-    {
         nome: "Hakurei de Altar",
         idade: "265",
         altura: "1,65 m",
@@ -1456,7 +1735,7 @@ const characters = [
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
         saga: "Next Dimension",
-        imgSrc: "/dle/ox.jpg"
+        imgSrc: "/dle/oxtouro.jpg"
     },
     {
         nome: "Cain de Gêmeos",
@@ -1869,9 +2148,180 @@ const characters = [
         imgSrc: "/dle/amor.jpg"
     },
     
+    //Marcianos
+
+    {
+        nome: "Marte",
+        idade: "Imortal",
+        altura: "1,95 m",
+        genero: "Masculino",
+        peso: "90 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Planeta Marte",
+        patente: "Deus",
+        exercito: "Exército de Marte",
+        saga: "Omega",
+        imgSrc: "/dle/mars.jpg"
+    },
+    {
+        nome: "Ordykia de Mantis",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Marciano",
+        exercito: "Exército de Marte",
+        saga: "Omega",
+        imgSrc: "/dle/ordykia.jpg"
+    },
+    {
+        nome: "Radzinsky de Formiga",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Marciano",
+        exercito: "Exército de Marte",
+        saga: "Omega",
+        imgSrc: "/dle/radzinsky.jpg"
+    },
+    {
+        nome: "Ragno de Aranha",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Marciano",
+        exercito: "Exército de Marte",
+        saga: "Omega",
+        imgSrc: "/dle/ragno.jpg"
+    },
+    {
+        nome: "Comandante Marciano",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Comandante",
+        exercito: "Exército de Marte",
+        saga: "Omega",
+        imgSrc: "/dle/comandante.jpg"
+    },
+    {
+        nome: "Sonia de Vespa",
+        idade: "17",
+        altura: "1,72 m",
+        genero: "Feminino",
+        peso: "58 kg",
+        signo: "Escorpião",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleira de Ouro",
+        exercito: "Exército de Marte",
+        saga: "Omega",
+        imgSrc: "/dle/soniavespa.jpg"
+    },
+    {
+        nome: "Medea",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Feminino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Sacerdotisa",
+        exercito: "Exército de Marte",
+        saga: "Omega",
+        imgSrc: "/dle/medea.jpg"
+    },
+    {
+        nome: "Baco",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Marciano",
+        exercito: "Exército de Marte",
+        saga: "Omega",
+        imgSrc: "/dle/baco.jpg"
+    },
+    {
+        nome: "Diana",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Feminino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Marciana",
+        exercito: "Exército de Marte",
+        saga: "Omega",
+        imgSrc: "/dle/diana.jpg"
+    },
+    {
+        nome: "Vulcano",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Marciano",
+        exercito: "Exército de Marte",
+        saga: "Omega",
+        imgSrc: "/dle/vulcano.jpg"
+    },
+    {
+        nome: "Rômulo",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Marciano",
+        exercito: "Exército de Marte",
+        saga: "Omega",
+        imgSrc: "/dle/romulo.jpg"
+    },
 
     //Palasitos
-
+    
+    {
+        nome: "Pallas",
+        idade: "Imortal",
+        altura: "1,65 m",
+        genero: "Feminino",
+        peso: "48 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Santuário Pallas",
+        patente: "Deus",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/pallas.jpg"
+    },
+    {
+        nome: "Saturno",
+        idade: "Imortal",
+        altura: "1,90 m",
+        genero: "Masculino",
+        peso: "88 kg",
+        signo: "Capricórnio",
+        localDeTreinamento: "Santuário de Saturno",
+        patente: "Deus",
+        exercito: "Exército de Saturno",
+        saga: "Omega",
+        imgSrc: "/dle/saturno.jpg"
+    },
     {
         nome: "Titan",
         idade: "Desconhecida",
@@ -1923,541 +2373,258 @@ const characters = [
         exercito: "Exército de Pallas",
         saga: "Omega",
         imgSrc: "/dle/aegir.jpg"
-    },   
-
-    //Guerreiros Deuses de Asgard
-
+    }, 
     {
-        nome: "Siegfried de Dubhe",
+        nome: "Miller de Luva Alquímica",
         idade: "Desconhecida",
-        altura: "1,97 m",
+        altura: "Desconhecida",
         genero: "Masculino",
-        peso: "88 kg",
-        signo: "Leão",
-        localDeTreinamento: "Asgard",
-        patente: "Guerreiro Deus",
-        exercito: "Exército de Asgard",
-        saga: "Asgard",
-        imgSrc: "/dle/siegfried.jpg"
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Pallasite de Classe Desconhecida",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/miller.jpg"
     },
     {
-        nome: "Hagen de Merak",
+        nome: "Dione de Cobra de Plasma (Chicote)",
         idade: "Desconhecida",
-        altura: "1,88 m",
+        altura: "Desconhecida",
         genero: "Masculino",
-        peso: "81 kg",
-        signo: "Áries",
-        localDeTreinamento: "Asgard",
-        patente: "Guerreiro Deus",
-        exercito: "Exército de Asgard",
-        saga: "Asgard",
-        imgSrc: "/dle/hagen.jpg"
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Pallasite de Segunda Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/dione.jpg"
     },
     {
-        nome: "Thor de Phecda",
+        nome: "Réia de Marionetes",
         idade: "Desconhecida",
-        altura: "2,25 m",
-        genero: "Masculino",
-        peso: "200 kg",
-        signo: "Touro",
-        localDeTreinamento: "Asgard",
-        patente: "Guerreiro Deus",
-        exercito: "Exército de Asgard",
-        saga: "Asgard",
-        imgSrc: "/dle/thor.jpg"
+        altura: "Desconhecida",
+        genero: "Feminino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Pallasite de Segunda Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/reia.jpg"
     },
     {
-        nome: "Fenrir de Alioth",
+        nome: "Europa de Corte Retalhador (Chakram)",
         idade: "Desconhecida",
-        altura: "1,90 m",
+        altura: "Desconhecida",
         genero: "Masculino",
-        peso: "83 kg",
-        signo: "Escorpião",
-        localDeTreinamento: "Asgard",
-        patente: "Guerreiro Deus",
-        exercito: "Exército de Asgard",
-        saga: "Asgard",
-        imgSrc: "/dle/fenrir.jpg"
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Pallasite de Segunda Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/europa.jpg"
     },
     {
-        nome: "Mime de Benetnasch",
+        nome: "Aegir de Braço Fantasma (Manopla)",
         idade: "Desconhecida",
-        altura: "1,85 m",
+        altura: "Desconhecida",
         genero: "Masculino",
-        peso: "75 kg",
-        signo: "Virgem",
-        localDeTreinamento: "Asgard",
-        patente: "Guerreiro Deus",
-        exercito: "Exército de Asgard",
-        saga: "Asgard",
-        imgSrc: "/dle/mime.jpg"
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Pallasite de Segunda Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/aegir2.jpg"
     },
     {
-        nome: "Alberich de Megrez",
+        nome: "Surtr de Pedra Mística",
         idade: "Desconhecida",
-        altura: "1,80 m",
+        altura: "Desconhecida",
         genero: "Masculino",
-        peso: "70 kg",
-        signo: "Libra",
-        localDeTreinamento: "Asgard",
-        patente: "Guerreiro Deus",
-        exercito: "Exército de Asgard",
-        saga: "Asgard",
-        imgSrc: "/dle/alberich.jpg"
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Pallasite de Segunda Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/surtr.jpg"
     },
     {
-        nome: "Shido de Mizar",
+        nome: "Paradox de Jano Escarlate (Cetro)",
         idade: "Desconhecida",
-        altura: "1,82 m",
-        genero: "Masculino",
-        peso: "75 kg",
+        altura: "Desconhecida",
+        genero: "Feminino",
+        peso: "Desconhecido",
         signo: "Gêmeos",
-        localDeTreinamento: "Asgard",
-        patente: "Guerreiro Deus",
-        exercito: "Exército de Asgard",
-        saga: "Asgard",
-        imgSrc: "/dle/syd.jpg"
-    },
-    {
-        nome: "Bado de Alcor",
-        idade: "Desconhecida",
-        altura: "1,82 m",
-        genero: "Masculino",
-        peso: "75 kg",
-        signo: "Gêmeos",
-        localDeTreinamento: "Asgard",
-        patente: "Guerreiro Deus",
-        exercito: "Exército de Asgard",
-        saga: "Asgard",
-        imgSrc: "/dle/bud.jpg"
-    },
-    {
-        nome: "Hilda de Polaris",
-        idade: "Desconhecida",
-        altura: "1,70 m",
-        genero: "Feminino",
-        peso: "56 kg",
-        signo: "Escorpião",
-        localDeTreinamento: "Asgard",
-        patente: "Sacerdotisa de Odin",
-        exercito: "Exército de Asgard",
-        saga: "Asgard",
-        imgSrc: "/dle/hilda.jpg"
-    },
-    {
-        nome: "Freya",
-        idade: "Desconhecida",
-        altura: "1,65 m",
-        genero: "Feminino",
-        peso: "50 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Asgard",
-        patente: "Habitante de Asgard",
-        exercito: "Exército de Asgard",
-        saga: "Asgard",
-        imgSrc: "/dle/freya.jpg"
-    },
-
-    //Cavaleiros de Aço
-
-    {
-        nome: "Sho de Céu",
-        idade: "15",
-        altura: "1,68 m",
-        genero: "Masculino",
-        peso: "55 kg",
-        signo: "Câncer",
-        localDeTreinamento: "Japão",
-        patente: "Cavaleiro de Aço",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/sho.jpg"
-    },
-    {
-        nome: "Daichi de Terra",
-        idade: "14",
-        altura: "1,62 m",
-        genero: "Masculino",
-        peso: "51 kg",
-        signo: "Capricórnio",
-        localDeTreinamento: "Japão",
-        patente: "Cavaleiro de Aço",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/daichi.jpg"
-    },
-    {
-        nome: "Ushô de Mar",
-        idade: "14",
-        altura: "1,66 m",
-        genero: "Masculino",
-        peso: "53 kg",
-        signo: "Peixes",
-        localDeTreinamento: "Japão",
-        patente: "Cavaleiro de Aço",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/ushio.jpg"
-    },
-
-    //Cavaleiros da Coroa do Sol
-
-    {
-        nome: "Atlas de Carina",
-        idade: "Desconhecida",
-        altura: "1,85 m",
-        genero: "Masculino",
-        peso: "75 kg",
-        signo: "Desconhecido",
         localDeTreinamento: "Desconhecido",
-        patente: "Cavaleiro da Coroa Solar",
-        exercito: "Exército de Abel",
-        saga: "Lenda dos Defensores de Athena",
-        imgSrc: "/dle/atlas.jpg"
+        patente: "Pallasite de Segunda Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/paradox2.jpg"
     },
     {
-        nome: "Jaoh de Lince",
+        nome: "Tokisada de Relógio da Morte",
         idade: "Desconhecida",
-        altura: "1,83 m",
+        altura: "Desconhecida",
         genero: "Masculino",
-        peso: "73 kg",
-        signo: "Desconhecido",
+        peso: "Desconhecido",
+        signo: "Aquário",
         localDeTreinamento: "Desconhecido",
-        patente: "Cavaleiro da Coroa Solar",
-        exercito: "Exército de Abel",
-        saga: "Lenda dos Defensores de Athena",
-        imgSrc: "/dle/jaoh.jpg"
+        patente: "Pallasite de Segunda Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/tokisada2.jpg"
     },
     {
-        nome: " Berengue de Coma",
-        idade: "Desconhecida",
-        altura: "1,80 m",
-        genero: "Masculino",
-        peso: "70 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Desconhecido",
-        patente: "Cavaleiro da Coroa Solar",
-        exercito: "Exército de Abel",
-        saga: "Lenda dos Defensores de Athena",
-        imgSrc: "/dle/berenice.jpg"
-    },
-
-    //Guerreiros do Santuario
-
-    {
-        nome: "Docrates",
-        idade: "Desconhecida",
-        altura: "2,20 m",
-        genero: "Masculino",
-        peso: "150 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Desconhecido",
-        patente: "Guerreiro",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/docrates.jpg"
-    },
-    {
-        nome: "Spartan",
-        idade: "Desconhecida",
-        altura: "1,85 m",
-        genero: "Masculino",
-        peso: "80 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Desconhecido",
-        patente: "Guerreiro",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/spartan.jpg"
-    },
-    {
-        nome: "Gigas",
-        idade: "Desconhecida",
-        altura: "1,88 m",
-        genero: "Masculino",
-        peso: "85 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Desconhecido",
-        patente: "Guerreiro",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/gigas.jpg"
-    },
-    {
-        nome: "Phaeton",
-        idade: "Desconhecida",
-        altura: "1,90 m",
-        genero: "Masculino",
-        peso: "88 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Desconhecido",
-        patente: "Guerreiro",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/phaeton.jpg"
-    },
-
-    //Cavaleiros Fantasmas
-
-    {
-        nome: "Geist",
-        idade: "Desconhecida",
-        altura: "1,70 m",
-        genero: "Feminino",
-        peso: "50 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Ilha do Diabo",
-        patente: "Cavaleiro Fantasma",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/geist.jpg"
-    },
-    {
-        nome: "Serpente Marinha",
-        idade: "Desconhecida",
-        altura: "1,80 m",
-        genero: "Masculino",
-        peso: "70 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Ilha do Diabo",
-        patente: "Cavaleiro Fantasma",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/serpentemarina.jpg"
-    },
-    {
-        nome: "Medusa",
-        idade: "Desconhecida",
-        altura: "1,85 m",
-        genero: "Masculino",
-        peso: "80 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Ilha do Diabo",
-        patente: "Cavaleiro Fantasma",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/medusa.jpg"
-    },
-    {
-        nome: "Golfinho",
-        idade: "Desconhecida",
-        altura: "1,77 m",
-        genero: "Masculino",
-        peso: "75 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Ilha do Diabo",
-        patente: "Cavaleiro Fantasma",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/chama.jpg"
-    },
-
-    //Cavaleiros Negros Classicos
-
-    {
-        nome: "Kenuma de Pégaso Negro",
-        idade: "Desconhecida",
-        altura: "1,65 m",
-        genero: "Masculino",
-        peso: "55 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Desconhecido",
-        patente: "Cavaleiro Negro",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/kenuma.jpg"
-    },
-    {
-        nome: "Shinadekuro de Dragão Negro",
-        idade: "Desconhecida",
-        altura: "1,72 m",
-        genero: "Masculino",
-        peso: "60 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Desconhecido",
-        patente: "Cavaleiro Negro",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/shinadekuro.jpg"
-    },
-    {
-        nome: "Jid de Cisne Negro",
-        idade: "Desconhecida",
-        altura: "1,70 m",
-        genero: "Masculino",
-        peso: "58 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Desconhecido",
-        patente: "Cavaleiro Negro",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/jid.jpg"
-    },
-    {
-        nome: "Andrômeda Negro",
-        idade: "Desconhecida",
-        altura: "1,65 m",
-        genero: "Masculino",
-        peso: "53 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Desconhecido",
-        patente: "Cavaleiro Negro",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/andromedanegro.jpg"
-    },
-    {
-        nome: "Ritahoa de Fênix Negro",
-        idade: "Desconhecida",
-        altura: "1,75 m",
-        genero: "Masculino",
-        peso: "62 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Ilha da Rainha da Morte",
-        patente: "Cavaleiro Negro",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/ritahoa.jpg"
-    },
-    {
-        nome: "Jango",
-        idade: "Desconhecida",
-        altura: "1,80 m",
-        genero: "Masculino",
-        peso: "80 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Ilha da Rainha da Morte",
-        patente: "Cavaleiro Negro",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/jango.jpg"
-    },
-    {
-        nome: "Guilty",
-        idade: "Desconhecida",
-        altura: "1,90 m",
-        genero: "Masculino",
-        peso: "90 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Ilha da Rainha da Morte",
-        patente: "Desconhecida",
-        exercito: "Exército de Athena",
-        saga: "Santuario",
-        imgSrc: "/dle/guilty.jpg"
-    },
-
-    //Anjos Prologo do Céu
-
-    {
-        nome: "Odysseu",
+        nome: "Tarvos de Esmagador de Estrelas (Mangual)",
         idade: "Desconhecida",
         altura: "Desconhecida",
         genero: "Masculino",
         peso: "Desconhecido",
         signo: "Desconhecido",
         localDeTreinamento: "Desconhecido",
-        patente: "Cavaleiro Celestial",
-        exercito: "Exército de Artemis",
-        saga: "Prologo do Céu",
-        imgSrc: "/dle/odysseu.jpg"
+        patente: "Pallasite de Terceira Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/tarvos.jpg"
     },
     {
-        nome: "Teseu",
+        nome: "Loge de Brionac (Lança)",
         idade: "Desconhecida",
         altura: "Desconhecida",
         genero: "Masculino",
         peso: "Desconhecido",
         signo: "Desconhecido",
         localDeTreinamento: "Desconhecido",
-        patente: "Cavaleiro Celestial",
-        exercito: "Exército de Artemis",
-        saga: "Prologo do Céu",
-        imgSrc: "/dle/teseu.jpg"
+        patente: "Pallasite de Terceira Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/loge.jpg"
     },
     {
-        nome: "Tohma de Ícaro",
+        nome: "Ymir de Máxima Brilhante (Garras)",
         idade: "Desconhecida",
         altura: "Desconhecida",
         genero: "Masculino",
         peso: "Desconhecido",
         signo: "Desconhecido",
         localDeTreinamento: "Desconhecido",
-        patente: "Cavaleiro Celestial",
-        exercito: "Exército de Artemis",
-        saga: "Prologo do Céu",
-        imgSrc: "/dle/tohma.jpg"
+        patente: "Pallasite de Terceira Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/ymir.jpg"
     },
-
-
-
     {
-        nome: "Belzebu de Serafim",
+        nome: "Metone de Máxima Brilhante (Garras)",
         idade: "Desconhecida",
-        altura: "1,85 m",
-        genero: "Masculino",
-        peso: "75 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Mundo dos Mortos",
-        patente: "Anjo da Morte",
-        exercito: "Exército de Lúcifer",
-        saga: "Os Guerreiros do Armagedon",
-        imgSrc: "/dle/belzebu.jpg"
-    },
-    {
-        nome: "Ashtarote de Querubim",
-        idade: "Desconhecida",
-        altura: "1,80 m",
-        genero: "Masculino",
-        peso: "73 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Mundo dos Mortos",
-        patente: "Anjo da Morte",
-        exercito: "Exército de Lúcifer",
-        saga: "Os Guerreiros do Armagedon",
-        imgSrc: "/dle/ashtarote.jpg"
-    },
-    {
-        nome: "Érigor de Virtude",
-        idade: "Desconhecida",
-        altura: "1,90 m",
-        genero: "Masculino",
-        peso: "80 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Mundo dos Mortos",
-        patente: "Anjo da Morte",
-        exercito: "Exército de Lúcifer",
-        saga: "Os Guerreiros do Armagedon",
-        imgSrc: "/dle/erigor.jpg"
-    },
-    {
-        nome: "Moa de Trono",
-        idade: "Desconhecida",
-        altura: "1,88 m",
-        genero: "Masculino",
-        peso: "78 kg",
-        signo: "Desconhecido",
-        localDeTreinamento: "Mundo dos Mortos",
-        patente: "Anjo da Morte",
-        exercito: "Exército de Lúcifer",
-        saga: "Os Guerreiros do Armagedon",
-        imgSrc: "/dle/moa.jpg"
-    },
-    {
-        nome: "Lúcifer",
-        idade: "Imortal",
-        altura: "1,90 m",
+        altura: "Desconhecida",
         genero: "Masculino",
         peso: "Desconhecido",
         signo: "Desconhecido",
-        localDeTreinamento: "Pandemônio",
-        patente: "Deus",
-        exercito: "Exército de Lúcifer",
-        saga: "Os Guerreiros do Armagedon",
-        imgSrc: "/dle/lucifer.jpg"
+        localDeTreinamento: "Desconhecido",
+        patente: "Pallasite de Terceira Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/metone.jpg"
     },
+    {
+        nome: "Halimede (Barra Tripla)",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Pallasite de Terceira Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/halimede.jpg"
+    },
+    {
+        nome: "Hati (Adaga)",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Pallasite de Terceira Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/hati.jpg"
+    },
+    {
+        nome: "Tebe de Impacto Demoníaco (Martelo)",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Pallasite de Terceira Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/tebe.jpg"
+    },
+    {
+        nome: "Cilene de Matador de Almas (Foice da Morte)",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Feminino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Pallasite de Terceira Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/cilene.jpg"
+    },
+    {
+        nome: "Greip de Matador de Almas (Foice da Morte)",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Pallasite de Terceira Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/greip.jpg"
+    },
+    {
+        nome: "Eden de Mapa de Impulso (Clava)",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Pallasite de Terceira Classe",
+        exercito: "Exército de Pallas",
+        saga: "Omega",
+        imgSrc: "/dle/edenpala.jpg"
+    },
+    
 
     //Eris
 
+    {
+        nome: "Éris",
+        idade: "Imortal",
+        altura: "1,75 m",
+        genero: "Feminino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Deus",
+        exercito: "Exército de Éris",
+        saga: "O Santo Guerreiro",
+        imgSrc: "/dle/eris.jpg"
+    },
     {
         nome: "Maiya de Sagita",
         idade: "Desconhecida",
@@ -2524,6 +2691,384 @@ const characters = [
         imgSrc: "/dle/jaga.jpg"
     },
 
+    //A Grande Batalha dos Deuses
+
+    {
+        nome: "Durval",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Odin",
+        saga: "A Grande Batalha dos Deuses",
+        imgSrc: "/dle/durval.jpg"
+    },
+    {
+        nome: "Loki",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Odin",
+        saga: "A Grande Batalha dos Deuses",
+        imgSrc: "/dle/lokibt.jpg"
+    },
+    {
+        nome: "Rung",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Odin",
+        saga: "A Grande Batalha dos Deuses",
+        imgSrc: "/dle/rung.jpg"
+    },
+    {
+        nome: "Midgard",
+        idade: "14",
+        altura: "1,73 m",
+        genero: "Masculino",
+        peso: "60 kg",
+        signo: "Aquário",
+        localDeTreinamento: "Sibéria Oriental",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Odin",
+        saga: "A Grande Batalha dos Deuses",          
+        imgSrc: "/dle/midgard.jpg" 
+    },
+    {
+        nome: "Ur",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Odin",
+        saga: "A Grande Batalha dos Deuses",
+        imgSrc: "/dle/ur.jpg"
+    },
+    
+    //Cavaleiros da Coroa do Sol
+    
+    {
+        nome: "Abel",
+        idade: "Imortal",
+        altura: "1,80 m",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Deus",
+        exercito: "Exército de Abel",
+        saga: "Lenda dos Defensores de Athena",
+        imgSrc: "/dle/abel1.jpg"
+    },
+    {
+        nome: "Atlas de Carina",
+        idade: "Desconhecida",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "75 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro da Coroa Solar",
+        exercito: "Exército de Abel",
+        saga: "Lenda dos Defensores de Athena",
+        imgSrc: "/dle/atlas.jpg"
+    },
+    {
+        nome: "Jaoh de Lince",
+        idade: "Desconhecida",
+        altura: "1,83 m",
+        genero: "Masculino",
+        peso: "73 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro da Coroa Solar",
+        exercito: "Exército de Abel",
+        saga: "Lenda dos Defensores de Athena",
+        imgSrc: "/dle/jaoh.jpg"
+    },
+    {
+        nome: " Berengue de Coma",
+        idade: "Desconhecida",
+        altura: "1,80 m",
+        genero: "Masculino",
+        peso: "70 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro da Coroa Solar",
+        exercito: "Exército de Abel",
+        saga: "Lenda dos Defensores de Athena",
+        imgSrc: "/dle/berenice.jpg"
+    },
+
+    //Exercito Lúcifer
+
+    {
+        nome: "Lúcifer",
+        idade: "Imortal",
+        altura: "1,90 m",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Pandemônio",
+        patente: "Deus",
+        exercito: "Exército de Lúcifer",
+        saga: "Os Guerreiros do Armagedon",
+        imgSrc: "/dle/lucifer.jpg"
+    },
+    {
+        nome: "Belzebu de Serafim",
+        idade: "Desconhecida",
+        altura: "1,85 m",
+        genero: "Masculino",
+        peso: "75 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Mundo dos Mortos",
+        patente: "Anjo da Morte",
+        exercito: "Exército de Lúcifer",
+        saga: "Os Guerreiros do Armagedon",
+        imgSrc: "/dle/belzebu.jpg"
+    },
+    {
+        nome: "Ashtarote de Querubim",
+        idade: "Desconhecida",
+        altura: "1,80 m",
+        genero: "Masculino",
+        peso: "73 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Mundo dos Mortos",
+        patente: "Anjo da Morte",
+        exercito: "Exército de Lúcifer",
+        saga: "Os Guerreiros do Armagedon",
+        imgSrc: "/dle/ashtarote.jpg"
+    },
+    {
+        nome: "Érigor de Virtude",
+        idade: "Desconhecida",
+        altura: "1,90 m",
+        genero: "Masculino",
+        peso: "80 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Mundo dos Mortos",
+        patente: "Anjo da Morte",
+        exercito: "Exército de Lúcifer",
+        saga: "Os Guerreiros do Armagedon",
+        imgSrc: "/dle/erigor.jpg"
+    },
+    {
+        nome: "Moa de Trono",
+        idade: "Desconhecida",
+        altura: "1,88 m",
+        genero: "Masculino",
+        peso: "78 kg",
+        signo: "Desconhecido",
+        localDeTreinamento: "Mundo dos Mortos",
+        patente: "Anjo da Morte",
+        exercito: "Exército de Lúcifer",
+        saga: "Os Guerreiros do Armagedon",
+        imgSrc: "/dle/moa.jpg"
+    },
+
+    //Anjos Prologo do Céu
+
+    {
+        nome: "Artemis",
+        idade: "Imortal",
+        altura: "1,75 m",
+        genero: "Feminino",
+        peso: "54 kg",
+        signo: "Áries",
+        localDeTreinamento: "Monte Olimpo",
+        patente: "Deus",
+        exercito: "Exército de Artemis",
+        saga: "Prologo do Céu",
+        imgSrc: "/dle/artemis.jpg"
+    },
+    {
+        nome: "Apolo",
+        idade: "Imortal",
+        altura: "1,88 m",
+        genero: "Masculino",
+        peso: "85 kg",
+        signo: "Leão",
+        localDeTreinamento: "Monte Olimpo",
+        patente: "Deus",
+        exercito: "Exército de Apolo",
+        saga: "Prologo do Céu",
+        imgSrc: "/dle/apolo.jpg"
+    },
+    {
+        nome: "Odysseu",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro Celestial",
+        exercito: "Exército de Artemis",
+        saga: "Prologo do Céu",
+        imgSrc: "/dle/odysseu.jpg"
+    },
+    {
+        nome: "Teseu",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro Celestial",
+        exercito: "Exército de Artemis",
+        saga: "Prologo do Céu",
+        imgSrc: "/dle/teseu.jpg"
+    },
+    {
+        nome: "Tohma de Ícaro",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Desconhecido",
+        patente: "Cavaleiro Celestial",
+        exercito: "Exército de Artemis",
+        saga: "Prologo do Céu",
+        imgSrc: "/dle/tohma.jpg"
+    },
+
+    //Soul of Gold
+    {
+        nome: "Loki",
+        idade: "Imortal",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Deus",
+        exercito: "Exército de Loki",
+        saga: "Soul of Gold",
+        imgSrc: "/dle/loki.jpg"
+    },
+    {
+        nome: "Andreas",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Soul of Gold",
+        imgSrc: "/dle/andr2eas.jpg"
+    },
+    {
+        nome: "Frodi de Gullinbursti",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Soul of Gold",
+        imgSrc: "/dle/fro2di.jpg"
+    },
+    {
+        nome: "Hércules de Tanngrisnir",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Soul of Gold",
+        imgSrc: "/dle/herc2ules.jpg"
+    },
+    {
+        nome: "Fafner de Nidhogg",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Soul of Gold",
+        imgSrc: "/dle/faf2ner.jpg"
+    },
+    {
+        nome: "Surtr de Eikschnir",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Soul of Gold",
+        imgSrc: "/dle/sur2tr.jpg"
+    },
+    {
+        nome: "Sigmund de Granyl",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Soul of Gold",
+        imgSrc: "/dle/sigmund2.jpg"
+    },
+    {
+        nome: "Balder de Hraesvelgr",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Soul of Gold",
+        imgSrc: "/dle/balder2.jpg"
+    },
+    {
+        nome: "Utgardar de Garmr",
+        idade: "Desconhecida",
+        altura: "Desconhecida",
+        genero: "Masculino",
+        peso: "Desconhecido",
+        signo: "Desconhecido",
+        localDeTreinamento: "Asgard",
+        patente: "Guerreiro Deus",
+        exercito: "Exército de Asgard",
+        saga: "Soul of Gold",
+        imgSrc: "/dle/utgardar2.jpg"
+    },
+    
     //Saintias
 
     {
