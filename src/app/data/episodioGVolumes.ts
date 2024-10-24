@@ -2,11 +2,11 @@ const episodeGVolumes = [
     {
         volume: 1,
         titulo: "Volume 1",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/1.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 1,
-            titulo: "O Grande Prólogo",
+            titulo: "Capítulo 1: O Grande Prólogo",
             subtitulo: "The Great Prologue",
             legenda: "Lançamento em tankobon no Japão: 19 de junho de 2003; no Brasil: 25 de junho de 2004 (Conrad Editora)",
             texto: `
@@ -15,7 +15,7 @@ const episodeGVolumes = [
           },
           {
             capitulo: 2,
-            titulo: "O Garoto Dourado",
+            titulo: "Capítulo 2: O Garoto Dourado",
             subtitulo: "Ogon no Shonen",
             legenda: "Lançamento em tankobon no Japão: 19 de junho de 2003; no Brasil: 25 de junho de 2004 (Conrad Editora)",
             texto: `
@@ -24,7 +24,7 @@ const episodeGVolumes = [
           },
           {
             capitulo: 3,
-            titulo: "Aquele que Vaga",
+            titulo: "Capítulo 3: Aquele que Vaga",
             subtitulo: "Samayou Umono",
             legenda: "Lançamento em tankobon no Japão: 19 de junho de 2003; no Brasil: 25 de junho de 2004 (Conrad Editora)",
             texto: `
@@ -33,7 +33,7 @@ const episodeGVolumes = [
           },
           {
             capitulo: 4,
-            titulo: "Aquele que corta a luz",
+            titulo: "Capítulo 4: Aquele que corta a luz",
             subtitulo: "Hikari Tatsu Mono",
             legenda: "Lançamento em tankobon no Japão: 19 de junho de 2003; no Brasil: 25 de junho de 2004 (Conrad Editora)",
             texto: `
@@ -42,7 +42,7 @@ const episodeGVolumes = [
           },
           {
             capitulo: 5,
-            titulo: "Aqueles que se reúnem",
+            titulo: "Capítulo 5: Aqueles que se reúnem",
             subtitulo: "Sudou Mono",
             legenda: "Lançamento em tankobon no Japão: 19 de junho de 2003; no Brasil: 25 de junho de 2004 (Conrad Editora)",
             texto: `
@@ -54,7 +54,7 @@ const episodeGVolumes = [
     {
         volume: 2,
         titulo: "Volume 2",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/2.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 1,
@@ -63,50 +63,102 @@ const episodeGVolumes = [
             legenda: "Lançamento em tankobon no Japão: 23 de outubro de 2003; no Brasil: 12 de agosto de 2004 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/6.jpg"
+            imagem: ""
           },
           {
             capitulo: 6,
-            titulo: "O ser de Ébano",
+            titulo: "Capítulo 6: O ser de Ébano",
             subtitulo: "Shikkoku no mono",
+            legenda: "Lançamento em tankobon no Japão: 23 de outubro de 2003; no Brasil: 12 de agosto de 2004 (Conrad Editora)",
+            texto: `
+            `,
+            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/6.jpg"
+          },
+          {
+            capitulo: 7,
+            titulo: "Capítulo 7: Aquele que comanda o vento",
+            subtitulo: "Kaze o shitagaeru mono",
             legenda: "Lançamento em tankobon no Japão: 23 de outubro de 2003; no Brasil: 12 de agosto de 2004 (Conrad Editora)",
             texto: `
             `,
             imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/7.jpg"
           },
           {
-            capitulo: 7,
-            titulo: "Aquele que comanda o vento",
-            subtitulo: "Kaze o shitagaeru mono",
+            capitulo: 8,
+            titulo: "Capítulo 8: Aquele que atravessa a Armadura",
+            subtitulo: "Mukuro o Yaburu Mono",
             legenda: "Lançamento em tankobon no Japão: 23 de outubro de 2003; no Brasil: 12 de agosto de 2004 (Conrad Editora)",
             texto: `
             `,
             imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/8.jpg"
           },
           {
-            capitulo: 8,
-            titulo: "Aquele que atravessa a Armadura",
-            subtitulo: "Mukuro o Yaburu Mono",
-            legenda: "Lançamento em tankobon no Japão: 23 de outubro de 2003; no Brasil: 12 de agosto de 2004 (Conrad Editora)",
-            texto: `
-            `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/9.jpg"
-          },
-          {
             capitulo: 9,
-            titulo: "Aquele que constrói a Armadura",
+            titulo: "Capítulo 9: Aquele que constrói a Armadura",
             subtitulo: "Kara o tsukuru mono",
             legenda: "Lançamento em tankobon no Japão: 23 de outubro de 2003; no Brasil: 12 de agosto de 2004 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/10.jpg"
+            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/9.jpg"
           }
         ]
     },
     {
+      volume: 3,
+      titulo: "Volume 3",
+      capa: "",
+      capitulos: [
+        {
+          capitulo: 1,
+          titulo: "História dentro da História 2: Saga",
+          subtitulo: "Saga hen",
+          legenda: "Lançamento em tankobon no Japão: 19 de fevereiro de 2004; no Brasil: 9 de setembro de 2004 (Conrad Editora)",
+          texto: `
+          `,
+          imagem: ""
+        },
+        {
+          capitulo: 10,
+          titulo: "Capítulo 10: O Homem de Áries",
+          subtitulo: "Ohitsuji no mono",
+          legenda: "Lançamento em tankobon no Japão: 19 de fevereiro de 2004; no Brasil: 9 de setembro de 2004 (Conrad Editora)",
+          texto: `
+          `,
+          imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/10.jpg"
+        },
+        {
+          capitulo: 11,
+          titulo: "Capítulo 11: Aquele que chama a Outra Dimensão",
+          subtitulo: "Ikai o yobu mono",
+          legenda: "Lançamento em tankobon no Japão: 19 de fevereiro de 2004; no Brasil: 9 de setembro de 2004 (Conrad Editora)",
+          texto: `
+          `,
+          imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/11.jpg"
+        },
+        {
+          capitulo: 12,
+          titulo: "Capítulo 12: Aquele que o libertará",
+          subtitulo: "Tokihanatsu no mono",
+          legenda: "Lançamento em tankobon no Japão: 19 de fevereiro de 2004; no Brasil: 9 de setembro de 2004 (Conrad Editora)",
+          texto: `
+          `,
+          imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/12.jpg"
+        },
+        {
+          capitulo: 13,
+          titulo: "Capítulo 13: O Guerreiro da Justiça",
+          subtitulo: "Seigi no mono",
+          legenda: "Lançamento em tankobon no Japão: 19 de fevereiro de 2004; no Brasil: 9 de setembro de 2004 (Conrad Editora)",
+          texto: `
+          `,
+          imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/13.jpg"
+        }
+      ]
+    },
+    {
         volume: 4,
         titulo: "Volume 4",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/4.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 1,
@@ -115,43 +167,43 @@ const episodeGVolumes = [
             legenda: "Lançamento em tankobon no Japão: 29 de julho de 2004; no Brasil: 4 de julho de 2005 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/16.jpg"
+            imagem: "g"
           },
           {
             capitulo: 14,
-            titulo: "O Gigante",
+            titulo: "Capítulo 14: O Gigante",
             subtitulo: "Kyodai naru no mono",
             legenda: "Lançamento em tankobon no Japão: 29 de julho de 2004; no Brasil: 4 de julho de 2005 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/17.jpg"
+            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/14.jpg"
           },
           {
             capitulo: 15,
-            titulo: "O Homem das Presas Douradas",
+            titulo: "Capítulo 15: O Homem das Presas Douradas",
             subtitulo: "Ogon no kiba no mono",
             legenda: "Lançamento em tankobon no Japão: 29 de julho de 2004; no Brasil: 4 de julho de 2005 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/18.jpg"
+            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/15.jpg"
           },
           {
             capitulo: 16,
-            titulo: "O Demoníaco",
+            titulo: "Capítulo 16: O Demoníaco",
             subtitulo: "Akki naru no mono",
             legenda: "Lançamento em tankobon no Japão: 29 de julho de 2004; no Brasil: 4 de julho de 2005 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/19.jpg"
+            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/16.jpg"
           },
           {
             capitulo: 17,
-            titulo: "Aquele que conduz ao Mundo dos Mortos",
+            titulo: "Capítulo 17: Aquele que conduz ao Mundo dos Mortos",
             subtitulo: "Mekai ni michibiku mono",
             legenda: "Lançamento em tankobon no Japão: 29 de julho de 2004; no Brasil: 4 de julho de 2005 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/20.jpg"
+            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/17.jpg"
           },
           {
             capitulo: 18,
@@ -160,14 +212,14 @@ const episodeGVolumes = [
             legenda: "Lançamento em tankobon no Japão: 29 de julho de 2004; no Brasil: 4 de julho de 2005 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/21.jpg"
+            imagem: ""
           }
         ]
     },
     {
         volume: 5,
         titulo: "Volume 5",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/5.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 18,
@@ -176,7 +228,7 @@ const episodeGVolumes = [
             legenda: "Lançamento em tankobon no Japão: 25 de novembro de 2004; no Brasil: 5 de agosto de 2005 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/22.jpg"
+            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/18.jpg"
           },
           {
             capitulo: 19,
@@ -185,7 +237,7 @@ const episodeGVolumes = [
             legenda: "Lançamento em tankobon no Japão: 25 de novembro de 2004; no Brasil: 5 de agosto de 2005 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/23.jpg"
+            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/19.jpg"
           },
           {
             capitulo: 20,
@@ -194,7 +246,7 @@ const episodeGVolumes = [
             legenda: "Lançamento em tankobon no Japão: 25 de novembro de 2004; no Brasil: 5 de agosto de 2005 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/24.jpg"
+            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/20.jpg"
           },
           {
             capitulo: 21,
@@ -203,7 +255,7 @@ const episodeGVolumes = [
             legenda: "Lançamento em tankobon no Japão: 25 de novembro de 2004; no Brasil: 5 de agosto de 2005 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/25.jpg"
+            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/21.jpg"
           },
           {
             capitulo: 22,
@@ -212,14 +264,14 @@ const episodeGVolumes = [
             legenda: "Lançamento em tankobon no Japão: 25 de novembro de 2004; no Brasil: 5 de agosto de 2005 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/26.jpg"
+            imagem: ""
           }
         ]
     },
     {
         volume: 6,
         titulo: "Volume 6",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/6.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 22,
@@ -264,14 +316,14 @@ const episodeGVolumes = [
             legenda: "Lançamento em tankobon no Japão: 29 de abril de 2005; no Brasil: 23 de setembro de 2005 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/26.jpg"
+            imagem: ""
           }
         ]
     },
     {
         volume: 7,
         titulo: "Volume 7",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/7.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 26,
@@ -316,14 +368,14 @@ const episodeGVolumes = [
             legenda: "Lançamento em tankobon no Japão: 20 de julho de 2005; no Brasil: 3 de janeiro de 2006 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/30.jpg"
+            imagem: ""
           }
         ]
     },
     {
         volume: 8,
         titulo: "Volume 8",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/8.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 30,
@@ -368,14 +420,14 @@ const episodeGVolumes = [
             legenda: "Lançamento em tankobon no Japão: 20 de dezembro de 2005; no Brasil: 3 de abril de 2006 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/34.jpg"
+            imagem: ""
           }
         ]
     },
     {
         volume: 9,
         titulo: "Volume 9",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/9.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 34,
@@ -420,14 +472,14 @@ const episodeGVolumes = [
             legenda: "Lançamento em tankobon no Japão: 18 de maio de 2006; no Brasil: 30 de novembro de 2006 (Conrad Editora)",
             texto: `
             `,
-            imagem: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/38.jpg"
+            imagem: ""
           }
         ]
     },
     {
         volume: 10,
         titulo: "Volume 10",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/10.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 38,
@@ -479,7 +531,7 @@ const episodeGVolumes = [
     {
         volume: 11,
         titulo: "Volume 11",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/11.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 43,
@@ -531,7 +583,7 @@ const episodeGVolumes = [
     {
         volume: 12,
         titulo: "Volume 12",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/12.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 48,
@@ -574,7 +626,7 @@ const episodeGVolumes = [
       {
         volume: 13,
         titulo: "Volume 13",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/13.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 52,
@@ -617,7 +669,7 @@ const episodeGVolumes = [
       {
         volume: 14,
         titulo: "Volume 14",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/14.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 56,
@@ -660,7 +712,7 @@ const episodeGVolumes = [
       {
         volume: 15,
         titulo: "Volume 15",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/15.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 60,
@@ -703,7 +755,7 @@ const episodeGVolumes = [
       {
         volume: 16,
         titulo: "Volume 16",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/16.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 64,
@@ -755,7 +807,7 @@ const episodeGVolumes = [
       {
         volume: 17,
         titulo: "Volume 17",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/17.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 69,
@@ -807,7 +859,7 @@ const episodeGVolumes = [
       {
         volume: 18,
         titulo: "Volume 18",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/18.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 74,
@@ -868,7 +920,7 @@ const episodeGVolumes = [
       {
         volume: 19,
         titulo: "Volume 19",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/19.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 80,
@@ -911,7 +963,7 @@ const episodeGVolumes = [
       {
         volume: 20,
         titulo: "Volume 20",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/episodiog/20.jpg",
+        capa: "",
         capitulos: [
           {
             capitulo: 84,
