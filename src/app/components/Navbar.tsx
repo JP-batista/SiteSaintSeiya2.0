@@ -1,36 +1,51 @@
-import { useState, useRef } from 'react'; // Importar o hook useState e useRef
+import { useState, useRef } from 'react';
 import Link from 'next/link';
 
 export default function Navbar({ onThemeChange }: { onThemeChange: (theme: string) => void }) {
-  const themes = ['santuary', 'ruinas', 'asgard', 'relogio',];
+  const themes = ['santuary', 'ruinas', 'asgard', 'relogio'];
   const [currentTheme, setCurrentTheme] = useState('santuary');
-  const [isDropdownOpen, setDropdownOpen] = useState(false); // Estado para controlar o dropdown
+  const [isDropdownOpen, setDropdownOpen] = useState(false); // Estado para o dropdown de explorar mais
   const [isMenuOpen, setMenuOpen] = useState(false); // Estado para o menu mobile
+  const [isThemeDropdownOpen, setThemeDropdownOpen] = useState(false); // Estado para o dropdown de temas
   const dropdownTimerRef = useRef<NodeJS.Timeout | null>(null); // Referência para o temporizador
 
-  const toggleTheme = () => {
-    const nextTheme = themes[(themes.indexOf(currentTheme) + 1) % themes.length];
-    setCurrentTheme(nextTheme);
-    onThemeChange(nextTheme);
+  // Função para selecionar o tema e fechar o dropdown ao clicar
+  const selectTheme = (theme: string) => {
+    setCurrentTheme(theme);
+    onThemeChange(theme);
+    setThemeDropdownOpen(false); // Fecha o dropdown ao selecionar
   };
 
-  // Função para fechar o dropdown após 2 segundos se o mouse sair
+  // Abre o dropdown quando o mouse entra
+  const handleThemeMouseEnter = () => {
+    setThemeDropdownOpen(true);
+    if (dropdownTimerRef.current) {
+      clearTimeout(dropdownTimerRef.current); // Cancela o temporizador se o mouse entrar novamente
+    }
+  };
+
+  // Fecha o dropdown quando o mouse sai com um pequeno atraso
+  const handleThemeMouseLeave = () => {
+    dropdownTimerRef.current = setTimeout(() => {
+      setThemeDropdownOpen(false);
+    }, 200); // Atraso de 200ms para fechar o dropdown
+  };
+
   const handleMouseLeave = () => {
     dropdownTimerRef.current = setTimeout(() => {
       setDropdownOpen(false);
-    }, 100); // 2000 ms = 2 segundos
+    }, 100);
   };
 
-  // Função para abrir o dropdown quando o mouse entrar
   const handleMouseEnter = () => {
-    setDropdownOpen(true); // Abre o dropdown imediatamente quando o mouse entra
+    setDropdownOpen(true);
     if (dropdownTimerRef.current) {
-      clearTimeout(dropdownTimerRef.current); // Cancela o temporizador se o mouse voltar
+      clearTimeout(dropdownTimerRef.current);
     }
   };
 
   const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen); // Alterna a visibilidade do menu no mobile
+    setMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -83,13 +98,35 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
           <Link href="/login" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300" aria-label="Login">Login</Link>
         </nav>
 
-        <button
-          onClick={toggleTheme}
-          className="hidden md:block bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300"
-          aria-label={`Trocar para ${themes[(themes.indexOf(currentTheme) + 1) % themes.length].charAt(0).toUpperCase() + themes[(themes.indexOf(currentTheme) + 1) % themes.length].slice(1)}`}
+        {/* Dropdown para seleção de temas */}
+        <div
+          className="relative hidden md:block"
+          onMouseEnter={handleThemeMouseEnter}
+          onMouseLeave={handleThemeMouseLeave}
         >
-          Trocar para {themes[(themes.indexOf(currentTheme) + 1) % themes.length].charAt(0).toUpperCase() + themes[(themes.indexOf(currentTheme) + 1) % themes.length].slice(1)}
-        </button>
+          <button
+            className="bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300"
+            aria-label="Escolher Tema"
+          >
+            Escolher Tema
+          </button>
+
+          {isThemeDropdownOpen && (
+            <div className="absolute right-0 mt-2 w-48 bg-gray-900 shadow-lg rounded-lg">
+              {themes.map((theme) => (
+                <button
+                  key={theme}
+                  onClick={() => selectTheme(theme)}
+                  className={`block w-full text-left px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300 transition-colors duration-300 ${
+                    currentTheme === theme ? 'bg-gray-800' : ''
+                  }`}
+                >
+                  {theme.charAt(0).toUpperCase() + theme.slice(1)}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
       {isMenuOpen && (
@@ -102,17 +139,33 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
           <Link href="/videos/lost-canvas" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Lost Canvas">Lost Canvas</Link>
           <Link href="/galeria" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Minha Galeria">Minha Galeria</Link>
           <Link href="/hipermito" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Hipermito">Hipermito</Link>
+
+          {/* Dropdown de temas no menu mobile */}
           <button
-            onClick={toggleTheme}
+            onClick={() => setThemeDropdownOpen(!isThemeDropdownOpen)}
             className="w-full bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300 mt-4"
-            aria-label={`Trocar para ${themes[(themes.indexOf(currentTheme) + 1) % themes.length].charAt(0).toUpperCase() + themes[(themes.indexOf(currentTheme) + 1) % themes.length].slice(1)}`}
+            aria-label="Escolher Tema"
           >
-            Trocar para {themes[(themes.indexOf(currentTheme) + 1) % themes.length].charAt(0).toUpperCase() + themes[(themes.indexOf(currentTheme) + 1) % themes.length].slice(1)}
+            Escolher Tema
           </button>
+
+          {isThemeDropdownOpen && (
+            <div className="mt-2 w-full bg-gray-900 shadow-lg rounded-lg">
+              {themes.map((theme) => (
+                <button
+                  key={theme}
+                  onClick={() => selectTheme(theme)}
+                  className={`block w-full text-left px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300 transition-colors duration-300 ${
+                    currentTheme === theme ? 'bg-gray-800' : ''
+                  }`}
+                >
+                  {theme.charAt(0).toUpperCase() + theme.slice(1)}
+                </button>
+              ))}
+            </div>
+          )}
         </nav>
       )}
     </header>
   );
 }
-
-
