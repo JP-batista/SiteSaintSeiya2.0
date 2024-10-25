@@ -93,6 +93,7 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
               <Link href="/videos/lost-canvas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Lost Canvas">Lost Canvas</Link>
               <Link href="/galeria" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Minha Galeria">Minha Galeria</Link>
               <Link href="/game" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="DLE Saint Seiya">DLE Saint Seiya</Link>
+              <Link href="/teste" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Teste">Teste</Link>
             </div>
           </div>
           <Link href="/login" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300" aria-label="Login">Login</Link>

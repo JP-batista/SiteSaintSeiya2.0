@@ -4,7 +4,7 @@ const lostCanvasVolumes = [
     {
       volume: 1,
       titulo: "",
-      capa: "https://i.pinimg.com/originals/0a/58/18/0a58187f91b549165c6f28b4506cea76.jpg",
+      capa: "/capasLostCanvas/1.jpg",
       capitulos: [
         {
             capitulo: 1,
@@ -154,7 +154,7 @@ const lostCanvasVolumes = [
     {
       volume: 2,
       titulo: "",
-      capa: "https://i.pinimg.com/originals/2e/3d/3d/2e3d3db4715cdd5f08e3e0feefb229db.jpg",
+      capa: "/capasLostCanvas/2.jpg",
       capitulos: [
         {
             capitulo: 7,
@@ -325,7 +325,7 @@ const lostCanvasVolumes = [
     {
       volume: 3,
       titulo: "",
-      capa: "https://i.pinimg.com/originals/88/e3/b7/88e3b7a6ecb9ae1f99a93567121befa1.jpg",
+      capa: "/capasLostCanvas/3.jpg",
       capitulos: [
         {
             capitulo: 16,
@@ -471,7 +471,7 @@ const lostCanvasVolumes = [
     {
       volume: 4,
       titulo: "",
-      capa: "https://i.pinimg.com/originals/ba/1e/d7/ba1ed72f068a861491658bdc81c92963.jpg",
+      capa: "/capasLostCanvas/4.jpg",
       capitulos: [
         {
             capitulo: 25,
@@ -623,7 +623,7 @@ const lostCanvasVolumes = [
     {
       volume: 5,
       titulo: "",
-      capa: "https://i.pinimg.com/originals/fe/61/43/fe61437ac8221ef477b5101e984809e1.jpg",
+      capa: "/capasLostCanvas/5.jpg",
       capitulos: [
         {
             capitulo: 34,
@@ -782,1984 +782,1692 @@ const lostCanvasVolumes = [
       ],
     },
     {
-      volume: 6,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/ae/14/48/ae1448e343ce9363d603252283a1cfeb.jpg",
-      capitulos: [
-        {
-            capitulo: 43,
-            titulo: 'Capítulo 43: "Retorno!"',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 44,
-            titulo: 'Capítulo 44: "Deus e o homem!"',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 45,
-            titulo: 'Capítulo 45: "Terra selada!"',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 46,
-            titulo: 'Capítulo 46: "Pandora!"',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 47,
-            titulo: 'Capítulo 47: "Tela perdida!"',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 48,
-            titulo: 'Capítulo 48: "Sombras!"',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 49,
-            titulo: 'Capítulo 49: "Assassinos!"',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 50,
-            titulo: 'Capítulo 50: "Vivos com força!"',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 51,
-            titulo: 'Capítulo 51: "Malvado!"',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 6,
+        titulo: "Tela Perdida - Volume 6",
+        capa: "/capasLostCanvas/6.jpg",
+        capitulos: [
+            {
+                capitulo: 43,
+                titulo: "Capítulo 43: Retorno!",
+                subtitulo: "Kikan!",
+                legenda: "Lançamento em tankobon no Japão: 8 de novembro de 2007; no Brasil: 15 de julho de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/43.jpg"
+            },
+            {
+                capitulo: 44,
+                titulo: "Capítulo 44: Deus e o homem!",
+                subtitulo: "Kami to Hito!",
+                legenda: "Lançamento em tankobon no Japão: 8 de novembro de 2007; no Brasil: 15 de julho de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/44.jpg"
+            },
+            {
+                capitulo: 45,
+                titulo: "Capítulo 45: Terra selada!",
+                subtitulo: "Fuin no Chi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de novembro de 2007; no Brasil: 15 de julho de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/45.jpg"
+            },
+            {
+                capitulo: 46,
+                titulo: "Capítulo 46: Pandora!",
+                subtitulo: "Pandora!",
+                legenda: "Lançamento em tankobon no Japão: 8 de novembro de 2007; no Brasil: 15 de julho de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/46.jpg"
+            },
+            {
+                capitulo: 47,
+                titulo: "Capítulo 47: Tela perdida!",
+                subtitulo: "Rosuto Kyanbasu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de novembro de 2007; no Brasil: 15 de julho de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/47.jpg"
+            },
+            {
+                capitulo: 48,
+                titulo: "Capítulo 48: Sombras!",
+                subtitulo: "Kage!",
+                legenda: "Lançamento em tankobon no Japão: 8 de novembro de 2007; no Brasil: 15 de julho de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/48.jpg"
+            },
+            {
+                capitulo: 49,
+                titulo: "Capítulo 49: Assassinos!",
+                subtitulo: "Shikaku!",
+                legenda: "Lançamento em tankobon no Japão: 8 de novembro de 2007; no Brasil: 15 de julho de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/49.jpg"
+            },
+            {
+                capitulo: 50,
+                titulo: "Capítulo 50: Vivos com força!",
+                subtitulo: "Tsuyoku Ikiro!",
+                legenda: "Lançamento em tankobon no Japão: 8 de novembro de 2007; no Brasil: 15 de julho de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/50.jpg"
+            },
+            {
+                capitulo: 51,
+                titulo: "Capítulo 51: Malvado!",
+                subtitulo: "Fuon no Kizashi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de novembro de 2007; no Brasil: 15 de julho de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/51.jpg"
+            }
+        ]
     },
     {
-      volume: 7,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/38/6f/71/386f712eb28a6e343ffae164f1303133.jpg",
-      capitulos: [
-        {
-            capitulo: 52,
-            titulo: 'Capítulo 52: "Determinação!"',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 53,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 54,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 55,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 56,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 57,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 58,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 59,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 60,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 7,
+        titulo: "Tela Perdida - Volume 7",
+        capa: "/capasLostCanvas/7.jpg",
+        capitulos: [
+            {
+                capitulo: 52,
+                titulo: "Capítulo 52: Determinação!",
+                subtitulo: "Ketsui!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2008; no Brasil: 21 de setembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/52.jpg"
+            },
+            {
+                capitulo: 53,
+                titulo: "Capítulo 53: Sequestro!",
+                subtitulo: "Yuhei!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2008; no Brasil: 21 de setembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/53.jpg"
+            },
+            {
+                capitulo: 54,
+                titulo: "Capítulo 54: Jornada!",
+                subtitulo: "Tabidachi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2008; no Brasil: 21 de setembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/54.jpg"
+            },
+            {
+                capitulo: 55,
+                titulo: "Capítulo 55: Os deuses gêmeos!",
+                subtitulo: "Nijin!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2008; no Brasil: 21 de setembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/55.jpg"
+            },
+            {
+                capitulo: 56,
+                titulo: "Capítulo 56: A Floresta da Morte!",
+                subtitulo: "Shi no Mori!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2008; no Brasil: 21 de setembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/56.jpg"
+            },
+            {
+                capitulo: 57,
+                titulo: "Capítulo 57: Tentação!",
+                subtitulo: "Yuwaku!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2008; no Brasil: 21 de setembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/57.jpg"
+            },
+            {
+                capitulo: 58,
+                titulo: "Capítulo 58: A Floresta da Morte!",
+                subtitulo: "Nigenee!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2008; no Brasil: 21 de setembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/58.jpg"
+            },
+            {
+                capitulo: 59,
+                titulo: "Capítulo 59: Manipuladora de corpos!",
+                subtitulo: "Shijin Tsukai!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2008; no Brasil: 21 de setembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/59.jpg"
+            },
+            {
+                capitulo: 60,
+                titulo: "Capítulo 60: A Rainha das Moscas!",
+                subtitulo: "Hae no Joo!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2008; no Brasil: 21 de setembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/60.jpg"
+            }
+        ]
     },
     {
-      volume: 8,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/af/d1/f1/afd1f1f8b8ef6af66c6496eb26129ada.jpg",
-      capitulos: [
-        {
-            capitulo: 61,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 62,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 63,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 64,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 65,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 66,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 67,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 68,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 69,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 8,
+        titulo: "Tela Perdida - Volume 8",
+        capa: "/capasLostCanvas/8.jpg",
+        capitulos: [
+            {
+                capitulo: 61,
+                titulo: "Capítulo 61: O ataque veloz!",
+                subtitulo: "Sokko!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2008; no Brasil: 14 de novembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/61.jpg"
+            },
+            {
+                capitulo: 62,
+                titulo: "Capítulo 62: Fogo selvagem!",
+                subtitulo: "Onibi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2008; no Brasil: 14 de novembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/62.jpg"
+            },
+            {
+                capitulo: 63,
+                titulo: "Capítulo 63: Intromissão!",
+                subtitulo: "Totsunyu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2008; no Brasil: 14 de novembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/63.jpg"
+            },
+            {
+                capitulo: 64,
+                titulo: "Capítulo 64: Deuses e Peões!",
+                subtitulo: "Kami to Koma!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2008; no Brasil: 14 de novembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/64.jpg"
+            },
+            {
+                capitulo: 65,
+                titulo: "Capítulo 65: Mestre e discípulo!",
+                subtitulo: "Shitei!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2008; no Brasil: 14 de novembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/65.jpg"
+            },
+            {
+                capitulo: 66,
+                titulo: "Capítulo 66: Fantasmagórico!",
+                subtitulo: "Somato!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2008; no Brasil: 14 de novembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/66.jpg"
+            },
+            {
+                capitulo: 67,
+                titulo: "Capítulo 67: Deus do fogo!",
+                subtitulo: "Aragami!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2008; no Brasil: 14 de novembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/67.jpg"
+            },
+            {
+                capitulo: 68,
+                titulo: "Capítulo 68: Corpo perdido!",
+                subtitulo: "Konshin!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2008; no Brasil: 14 de novembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/68.jpg"
+            },
+            {
+                capitulo: 69,
+                titulo: "Capítulo 69: Estratagema!",
+                subtitulo: "Ichinen!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2008; no Brasil: 14 de novembro de 2008",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/69.jpg"
+            }
+        ]
     },
     {
-      volume: 9,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/ab/47/bf/ab47bfbf87cad48a5ee5550d5837dd82.jpg",
-      capitulos: [
-        {
-            capitulo: 70,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 71,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 72,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 73,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 74,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 75,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 76,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 77,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 78,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 9,
+        titulo: "Tela Perdida - Volume 9",
+        capa: "/capasLostCanvas/9.jpg",
+        capitulos: [
+            {
+                capitulo: 70,
+                titulo: "Capítulo 70: Herdeiros dos ideais!",
+                subtitulo: "Takusareta Omoi!",
+                legenda: "Lançamento em tankobon no Japão: 6 de junho de 2008; no Brasil: 27 de março de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/70.jpg"
+            },
+            {
+                capitulo: 71,
+                titulo: "Capítulo 71: Laceração!",
+                subtitulo: "Zangeki!",
+                legenda: "Lançamento em tankobon no Japão: 6 de junho de 2008; no Brasil: 27 de março de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/71.jpg"
+            },
+            {
+                capitulo: 72,
+                titulo: "Capítulo 72: Linhagem dos sonhos!",
+                subtitulo: "Yume no Kenzoku!",
+                legenda: "Lançamento em tankobon no Japão: 6 de junho de 2008; no Brasil: 27 de março de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/72.jpg"
+            },
+            {
+                capitulo: 73,
+                titulo: "Capítulo 73: Mundo dos sonhos!",
+                subtitulo: "Mukai!",
+                legenda: "Lançamento em tankobon no Japão: 6 de junho de 2008; no Brasil: 27 de março de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/73.jpg"
+            },
+            {
+                capitulo: 74,
+                titulo: "Capítulo 74: Estranho sentimento!",
+                subtitulo: "Iwakan!",
+                legenda: "Lançamento em tankobon no Japão: 6 de junho de 2008; no Brasil: 27 de março de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/74.jpg"
+            },
+            {
+                capitulo: 75,
+                titulo: "Capítulo 75: Desejo verdadeiro!",
+                subtitulo: "Honshin!",
+                legenda: "Lançamento em tankobon no Japão: 6 de junho de 2008; no Brasil: 27 de março de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/75.jpg"
+            },
+            {
+                capitulo: 76,
+                titulo: "Capítulo 76: Nova disputa!",
+                subtitulo: "Saisen!",
+                legenda: "Lançamento em tankobon no Japão: 6 de junho de 2008; no Brasil: 27 de março de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/76.jpg"
+            },
+            {
+                capitulo: 77,
+                titulo: "Capítulo 77: Afiado!",
+                subtitulo: "Togisumase!",
+                legenda: "Lançamento em tankobon no Japão: 6 de junho de 2008; no Brasil: 27 de março de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/77.jpg"
+            },
+            {
+                capitulo: 78,
+                titulo: "Capítulo 78: Papoula do Mundo dos Sonhos!",
+                subtitulo: "Mukai no Keshi!",
+                legenda: "Lançamento em tankobon no Japão: 6 de junho de 2008; no Brasil: 27 de março de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/78.jpg"
+            }
+        ]
     },
     {
-      volume: 10,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/48/2b/af/482bafa0bbfeae20ae1acd8846be35f3.jpg",
-      capitulos: [
-        {
-            capitulo: 79,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 80,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 81,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 82,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 83,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 84,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 85,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 86,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 87,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 10,
+        titulo: "Tela Perdida - Volume 10",
+        capa: "/capasLostCanvas/10.jpg",
+        capitulos: [
+            {
+                capitulo: 79,
+                titulo: "Capítulo 79: Oneiroi, o deus dos sonhos!",
+                subtitulo: "Mushin Oneirosu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de agosto de 2008; no Brasil: 25 de maio de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/79.jpg"
+            },
+            {
+                capitulo: 80,
+                titulo: "Capítulo 80: Quatro almas!",
+                subtitulo: "Yottsu no Tamashii!",
+                legenda: "Lançamento em tankobon no Japão: 8 de agosto de 2008; no Brasil: 25 de maio de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/80.jpg"
+            },
+            {
+                capitulo: 81,
+                titulo: "Capítulo 81: Te derrubarei!",
+                subtitulo: "Buttobe!",
+                legenda: "Lançamento em tankobon no Japão: 8 de agosto de 2008; no Brasil: 25 de maio de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/81.jpg"
+            },
+            {
+                capitulo: 82,
+                titulo: "Capítulo 82: O caminho de dever!",
+                subtitulo: "Taigi no Michi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de agosto de 2008; no Brasil: 25 de maio de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/82.jpg"
+            },
+            {
+                capitulo: 83,
+                titulo: "Capítulo 83: Unidos em combate!",
+                subtitulo: "Kyoto!",
+                legenda: "Lançamento em tankobon no Japão: 8 de agosto de 2008; no Brasil: 25 de maio de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/83.jpg"
+            },
+            {
+                capitulo: 84,
+                titulo: "Capítulo 84: Gatilho!",
+                subtitulo: "Itami!",
+                legenda: "Lançamento em tankobon no Japão: 8 de agosto de 2008; no Brasil: 25 de maio de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/84.jpg"
+            },
+            {
+                capitulo: 85,
+                titulo: "Capítulo 85: Sofrer!",
+                subtitulo: "Shori e no Kessoku!",
+                legenda: "Lançamento em tankobon no Japão: 8 de agosto de 2008; no Brasil: 25 de maio de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/85.jpg"
+            },
+            {
+                capitulo: 86,
+                titulo: "Capítulo 86: União para vitória!",
+                subtitulo: "Shori e no Kessoku!",
+                legenda: "Lançamento em tankobon no Japão: 8 de agosto de 2008; no Brasil: 25 de maio de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/86.jpg"
+            },
+            {
+                capitulo: 87,
+                titulo: "Capítulo 87: Flash!",
+                subtitulo: "Shori e no Kessoku!",
+                legenda: "Lançamento em tankobon no Japão: 8 de agosto de 2008; no Brasil: 25 de maio de 2009",
+                texto: `
+                        
+                `,                
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/87.jpg"
+            }
+        ]
     },
     {
-      volume: 11,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/64/96/3b/64963b0868b675083811ce1f083daf2c.jpg",
-      capitulos: [
-        {
-            capitulo: 88,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 89,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 90,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 91,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 92,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 93,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 94,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 95,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 96,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 11,
+        titulo: "Tela Perdida - Volume 11",
+        capa: "/capasLostCanvas/11.jpg",
+        capitulos: [
+            {
+                capitulo: 88,
+                titulo: "Capítulo 88: O mal!",
+                subtitulo: "Jaaku!",
+                legenda: "Lançamento em tankobon no Japão: 7 de novembro de 2008; no Brasil: 24 de julho de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/88.jpg"
+            },
+            {
+                capitulo: 89,
+                titulo: "Capítulo 89: Marchando adiante!",
+                subtitulo: "Ketsui no Shutsujin!",
+                legenda: "Lançamento em tankobon no Japão: 7 de novembro de 2008; no Brasil: 24 de julho de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/89.jpg"
+            },
+            {
+                capitulo: 90,
+                titulo: "Capítulo 90: Mais uma vez o destino!",
+                subtitulo: "Innen Futatabi!",
+                legenda: "Lançamento em tankobon no Japão: 7 de novembro de 2008; no Brasil: 24 de julho de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/90.jpg"
+            },
+            {
+                capitulo: 91,
+                titulo: "Capítulo 91: Mais uma vez o destino!",
+                subtitulo: "Senshi no Shunen!",
+                legenda: "Lançamento em tankobon no Japão: 7 de novembro de 2008; no Brasil: 24 de julho de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/91.jpg"
+            },
+            {
+                capitulo: 92,
+                titulo: "Capítulo 92: Destino final!",
+                subtitulo: "Innen Ketchaku!",
+                legenda: "Lançamento em tankobon no Japão: 7 de novembro de 2008; no Brasil: 24 de julho de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/92.jpg"
+            },
+            {
+                capitulo: 93,
+                titulo: "Capítulo 93: O inalcançável deus!",
+                subtitulo: "Haruka na Kami!",
+                legenda: "Lançamento em tankobon no Japão: 7 de novembro de 2008; no Brasil: 24 de julho de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/93.jpg"
+            },
+            {
+                capitulo: 94,
+                titulo: "Capítulo 94: O presente mortal!",
+                subtitulo: "Shi no Okurimono!",
+                legenda: "Lançamento em tankobon no Japão: 7 de novembro de 2008; no Brasil: 24 de julho de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/94.jpg"
+            },
+            {
+                capitulo: 95,
+                titulo: "Capítulo 95: A escapada!",
+                subtitulo: "Katsuro!",
+                legenda: "Lançamento em tankobon no Japão: 7 de novembro de 2008; no Brasil: 24 de julho de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/95.jpg"
+            },
+            {
+                capitulo: 96,
+                titulo: "Capítulo 96: O fim a frente!",
+                subtitulo: "Shumatsu no Mae ni!",
+                legenda: "Lançamento em tankobon no Japão: 7 de novembro de 2008; no Brasil: 24 de julho de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/96.jpg"
+            }
+        ]
     },
     {
-      volume: 12,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/34/60/cd/3460cd0a5d995dcc8bd328a324db481d.jpg",
-      capitulos: [
-        {
-            capitulo: 97,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 98,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 99,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 100,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 101,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 102,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 103,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 104,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 105,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 12,
+        titulo: "Tela Perdida - Volume 12",
+        capa: "/capasLostCanvas/12.jpg",
+        capitulos: [
+            {
+                capitulo: 97,
+                titulo: "Capítulo 97: O demônio da Ilha do Canhão!",
+                subtitulo: "Kanon-To no Oni!",
+                legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: 18 de setembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/97.jpg"
+            },
+            {
+                capitulo: 98,
+                titulo: "Capítulo 98: A prova de fogo!",
+                subtitulo: "Shakunetsu no Shiren!",
+                legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: 18 de setembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/98.jpg"
+            },
+            {
+                capitulo: 99,
+                titulo: "Capítulo 99: A prova final!",
+                subtitulo: "Saishu Kadai!",
+                legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: 18 de setembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/99.jpg"
+            },
+            {
+                capitulo: 100,
+                titulo: "Capítulo 100: Erupção!",
+                subtitulo: "Funka!",
+                legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: 18 de setembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/100.jpg"
+            },
+            {
+                capitulo: 101,
+                titulo: "Capítulo 101: Graad Azul!",
+                subtitulo: "Burugurado!",
+                legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: 18 de setembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/101.jpg"
+            },
+            {
+                capitulo: 102,
+                titulo: "Capítulo 102: Atlantis!",
+                subtitulo: "Atorantisu!",
+                legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: 18 de setembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/102.jpg"
+            },
+            {
+                capitulo: 103,
+                titulo: "Capítulo 103: Ira!",
+                subtitulo: "Ikari!",
+                legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: 18 de setembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/103.jpg"
+            },
+            {
+                capitulo: 104,
+                titulo: "Capítulo 104: Ira!",
+                subtitulo: "Sasori no Doku!",
+                legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: 18 de setembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/104.jpg"
+            },
+            {
+                capitulo: 105,
+                titulo: "Capítulo 105: O alimento do poder!",
+                subtitulo: "Chikara no Kate!",
+                legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: 18 de setembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/105.jpg"
+            }
+        ]
     },
     {
-      volume: 13,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/a2/a6/90/a2a6909cfb1bb6044378961f6927ae51.jpg",
-      capitulos: [
-        {
-            capitulo: 106,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 107,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 108,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 109,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 110,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 111,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 112,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 113,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 114,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 13,
+        titulo: "Tela Perdida - Volume 13",
+        capa: "/capasLostCanvas/13.jpg",
+        capitulos: [
+            {
+                capitulo: 106,
+                titulo: "Capítulo 106: O alimento do poder!",
+                subtitulo: "Shinzo!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2009; no Brasil: 19 de novembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/106.jpg"
+            },
+            {
+                capitulo: 107,
+                titulo: "Capítulo 107: Antares!",
+                subtitulo: "Antaresu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2009; no Brasil: 19 de novembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/107.jpg"
+            },
+            {
+                capitulo: 108,
+                titulo: "Capítulo 108: O reencontrar com o oceano!",
+                subtitulo: "Kaitei no Saikai!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2009; no Brasil: 19 de novembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/108.jpg"
+            },
+            {
+                capitulo: 109,
+                titulo: "Capítulo 109: O Marina Unity!",
+                subtitulo: "Marina Yunit!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2009; no Brasil: 19 de novembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/109.jpg"
+            },
+            {
+                capitulo: 110,
+                titulo: "Capítulo 110: Como um amigo!",
+                subtitulo: "Shin'yu Toshite!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2009; no Brasil: 19 de novembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/110.jpg"
+            },
+            {
+                capitulo: 111,
+                titulo: "Capítulo 111: A libertação!",
+                subtitulo: "Kaiho!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2009; no Brasil: 19 de novembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/111.jpg"
+            },
+            {
+                capitulo: 112,
+                titulo: "Capítulo 112: O Esquife de Gelo!",
+                subtitulo: "Kori no Hitsugi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2009; no Brasil: 19 de novembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/112.jpg"
+            },
+            {
+                capitulo: 113,
+                titulo: "Capítulo 113: O Esquife de Gelo!",
+                subtitulo: "Ikiru!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2009; no Brasil: 19 de novembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/113.jpg"
+            },
+            {
+                capitulo: 114,
+                titulo: "Capítulo 114: O golpe na velocidade da luz!",
+                subtitulo: "Kosoku Ken!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2009; no Brasil: 19 de novembro de 2009",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/114.jpg"
+            }
+        ]
     },
     {
-      volume: 14,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/0f/15/64/0f1564424ec758c11218ab5570f95657.jpg",
-      capitulos: [
-        {
-            capitulo: 115,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 116,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 117,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 118,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 119,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 120,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 121,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 122,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 123,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 14,
+        titulo: "Tela Perdida - Volume 14",
+        capa: "/capasLostCanvas/14.jpg",
+        capitulos: [
+            {
+                capitulo: 115,
+                titulo: "Capítulo 115: A restauração!",
+                subtitulo: "Shufuku!",
+                legenda: "Lançamento em tankobon no Japão: 8 de junho de 2009; no Brasil: 30 de janeiro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/115.jpg"
+            },
+            {
+                capitulo: 116,
+                titulo: "Capítulo 116: O que vem antes!",
+                subtitulo: "Senjin!",
+                legenda: "Lançamento em tankobon no Japão: 8 de junho de 2009; no Brasil: 30 de janeiro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/116.jpg"
+            },
+            {
+                capitulo: 117,
+                titulo: "Capítulo 117: O monstro!",
+                subtitulo: "Monsuta!",
+                legenda: "Lançamento em tankobon no Japão: 8 de junho de 2009; no Brasil: 30 de janeiro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/117.jpg"
+            },
+            {
+                capitulo: 118,
+                titulo: "Capítulo 118: O choque entre monstros!",
+                subtitulo: "Yaju Gekitotsu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de junho de 2009; no Brasil: 30 de janeiro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/118.jpg"
+            },
+            {
+                capitulo: 119,
+                titulo: "Capítulo 119: O jovem Leão!",
+                subtitulo: "Wakajishi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de junho de 2009; no Brasil: 30 de janeiro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/119.jpg"
+            },
+            {
+                capitulo: 120,
+                titulo: "Capítulo 120: O jovem Leão!",
+                subtitulo: "Tensei!",
+                legenda: "Lançamento em tankobon no Japão: 8 de junho de 2009; no Brasil: 30 de janeiro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/120.jpg"
+            },
+            {
+                capitulo: 121,
+                titulo: "Capítulo 121: Superada!",
+                subtitulo: "Koeru!",
+                legenda: "Lançamento em tankobon no Japão: 8 de junho de 2009; no Brasil: 30 de janeiro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/121.jpg"
+            },
+            {
+                capitulo: 122,
+                titulo: "Capítulo 122: Dispostos!",
+                subtitulo: "Iji!",
+                legenda: "Lançamento em tankobon no Japão: 8 de junho de 2009; no Brasil: 30 de janeiro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/122.jpg"
+            },
+            {
+                capitulo: 123,
+                titulo: "Capítulo 123: Laços!",
+                subtitulo: "Kizuna!",
+                legenda: "Lançamento em tankobon no Japão: 8 de junho de 2009; no Brasil: 30 de janeiro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/123.jpg"
+            }
+        ]
     },
     {
-      volume: 15,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/ce/1d/87/ce1d875d9d198dfcf2adf532132f1aac.jpg",
-      capitulos: [
-        {
-            capitulo: 124,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 125,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 126,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 127,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 128,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 129,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 130,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 131,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 132,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 15,
+        titulo: "Tela Perdida - Volume 15",
+        capa: "/capasLostCanvas/15.jpg",
+        capitulos: [
+            {
+                capitulo: 124,
+                titulo: "Capítulo 124: Agora, vamos!",
+                subtitulo: "Ima, Hitotsu ni!",
+                legenda: "Lançamento em tankobon no Japão: 7 de agosto de 2009; no Brasil: 19 de março de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/124.jpg"
+            },
+            {
+                capitulo: 125,
+                titulo: "Capítulo 125: Agora, vamos!",
+                subtitulo: "Omoi no Kessho!",
+                legenda: "Lançamento em tankobon no Japão: 7 de agosto de 2009; no Brasil: 19 de março de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/125.jpg"
+            },
+            {
+                capitulo: 126,
+                titulo: "Capítulo 126: O combate pela supremacia!",
+                subtitulo: "Ryoyu Taiji!",
+                legenda: "Lançamento em tankobon no Japão: 7 de agosto de 2009; no Brasil: 19 de março de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/126.jpg"
+            },
+            {
+                capitulo: 127,
+                titulo: "Capítulo 127: O Barco das Trevas contra o Barco da Esperança!",
+                subtitulo: "Kurofune VS Kibo no Fune!",
+                legenda: "Lançamento em tankobon no Japão: 7 de agosto de 2009; no Brasil: 19 de março de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/127.jpg"
+            },
+            {
+                capitulo: 128,
+                titulo: "Capítulo 128: Feito um líder!",
+                subtitulo: "Sho Toshite!",
+                legenda: "Lançamento em tankobon no Japão: 7 de agosto de 2009; no Brasil: 19 de março de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/128.jpg"
+            },
+            {
+                capitulo: 129,
+                titulo: "Capítulo 129: A crueldade!",
+                subtitulo: "Hido!",
+                legenda: "Lançamento em tankobon no Japão: 7 de agosto de 2009; no Brasil: 19 de março de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/129.jpg"
+            },
+            {
+                capitulo: 130,
+                titulo: "Capítulo 130: Feito um escudo!",
+                subtitulo: "Tate Toshite!",
+                legenda: "Lançamento em tankobon no Japão: 7 de agosto de 2009; no Brasil: 19 de março de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/130.jpg"
+            },
+            {
+                capitulo: 131,
+                titulo: "Capítulo 131: Feito um escudo!",
+                subtitulo: "Garuda Otsu!",
+                legenda: "Lançamento em tankobon no Japão: 7 de agosto de 2009; no Brasil: 19 de março de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/131.jpg"
+            },
+            {
+                capitulo: 132,
+                titulo: "Capítulo 132: O ser que pune!",
+                subtitulo: "Shiokinin!",
+                legenda: "Lançamento em tankobon no Japão: 7 de agosto de 2009; no Brasil: 19 de março de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/132.jpg"
+            }
+        ]
     },
     {
-      volume: 16,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/7d/fe/d6/7dfed6a3e974d533ce44ea696dc95343.jpg",
-      capitulos: [
-        {
-            capitulo: 133,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 134,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 135,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 136,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 137,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 138,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 139,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 140,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 141,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 16,
+        titulo: "Tela Perdida - Volume 16",
+        capa: "/capasLostCanvas/16.jpg",
+        capitulos: [
+            {
+                capitulo: 133,
+                titulo: "Capítulo 133: A conclusão!",
+                subtitulo: "Kakugo!",
+                legenda: "Lançamento em tankobon no Japão: 8 de outubro de 2009; no Brasil: 14 de julho de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/133.jpg"
+            },
+            {
+                capitulo: 134,
+                titulo: "Capítulo 134: A explosão de vida!",
+                subtitulo: "Inochi no Bakuhatsu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de outubro de 2009; no Brasil: 14 de julho de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/134.jpg"
+            },
+            {
+                capitulo: 135,
+                titulo: "Capítulo 135: O ponto final!",
+                subtitulo: "Shushifu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de outubro de 2009; no Brasil: 14 de julho de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/135.jpg"
+            },
+            {
+                capitulo: 136,
+                titulo: "Capítulo 136: O final desejado!",
+                subtitulo: "Nozomu Ketsumatsu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de outubro de 2009; no Brasil: 14 de julho de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/136.jpg"
+            },
+            {
+                capitulo: 137,
+                titulo: "Capítulo 137: Os templos das Estrelas Maléficas!",
+                subtitulo: "Hoshi no Makyu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de outubro de 2009; no Brasil: 14 de julho de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/137.jpg"
+            },
+            {
+                capitulo: 138,
+                titulo: "Capítulo 138: A harpa maligna!",
+                subtitulo: "Makin!",
+                legenda: "Lançamento em tankobon no Japão: 8 de outubro de 2009; no Brasil: 14 de julho de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/138.jpg"
+            },
+            {
+                capitulo: 139,
+                titulo: "Capítulo 139: O portal da verdade!",
+                subtitulo: "Shinjitsu no Hane!",
+                legenda: "Lançamento em tankobon no Japão: 8 de outubro de 2009; no Brasil: 14 de julho de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/139.jpg"
+            },
+            {
+                capitulo: 140,
+                titulo: "Capítulo 140: A lealdade que se excede!",
+                subtitulo: "Tsuranuku Chugi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de outubro de 2009; no Brasil: 14 de julho de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/140.jpg"
+            },
+            {
+                capitulo: 141,
+                titulo: "Capítulo 141: O ressurgimento!",
+                subtitulo: "Kekki!",
+                legenda: "Lançamento em tankobon no Japão: 8 de outubro de 2009; no Brasil: 14 de julho de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/141.jpg"
+            }
+        ]
     },
     {
-      volume: 17,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/0b/de/6c/0bde6c58b6805b0009b9fa41bd1f2fc1.jpg",
-      capitulos: [
-        {
-            capitulo: 142,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 143,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 144,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 145,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 146,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 147,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 148,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 149,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 150,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 17,
+        titulo: "Tela Perdida - Volume 17",
+        capa: "/capasLostCanvas/17.jpg",
+        capitulos: [
+            {
+                capitulo: 142,
+                titulo: "Capítulo 142: O avançar pelo mar de nuvens!",
+                subtitulo: "Unkai no Wakare!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2009; no Brasil: 20 de agosto de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/142.jpg"
+            },
+            {
+                capitulo: 143,
+                titulo: "Capítulo 143: O barqueiro!",
+                subtitulo: "Watashimori!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2009; no Brasil: 20 de agosto de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/143.jpg"
+            },
+            {
+                capitulo: 144,
+                titulo: "Capítulo 144: O Selo de Atena!",
+                subtitulo: "Atena no Fuin!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2009; no Brasil: 20 de agosto de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/144.jpg"
+            },
+            {
+                capitulo: 145,
+                titulo: "Capítulo 145: Para o Santuário!",
+                subtitulo: "Sankuchuari e!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2009; no Brasil: 20 de agosto de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/145.jpg"
+            },
+            {
+                capitulo: 146,
+                titulo: "Capítulo 146: A Armadura de Atena!",
+                subtitulo: "Atena no Kurosu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2009; no Brasil: 20 de agosto de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/146.jpg"
+            },
+            {
+                capitulo: 147,
+                titulo: "Capítulo 147: As Armas mais poderosas!",
+                subtitulo: "Saikyo no Buki!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2009; no Brasil: 20 de agosto de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/147.jpg"
+            },
+            {
+                capitulo: 148,
+                titulo: "Capítulo 148: O cheiro de sangue!",
+                subtitulo: "Chi no Nioi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2009; no Brasil: 20 de agosto de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/148.jpg"
+            },
+            {
+                capitulo: 149,
+                titulo: "Capítulo 149: O vento venenoso!",
+                subtitulo: "Doku no Kaze!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2009; no Brasil: 20 de agosto de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/149.jpg"
+            },
+            {
+                capitulo: 150,
+                titulo: "Capítulo 150: As asas da solidão!",
+                subtitulo: "Koko no Hane!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2009; no Brasil: 20 de agosto de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/150.jpg"
+            }
+        ]
     },
     {
-      volume: 18,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/c6/c1/5b/c6c15bc5ead861f30d63ff58f255a921.jpg",
-      capitulos: [
-        {
-            capitulo: 151,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 152,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 153,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 154,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 155,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 156,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 157,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 158,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 159,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 18,
+        titulo: "Tela Perdida - Volume 18",
+        capa: "/capasLostCanvas/18.jpg",
+        capitulos: [
+            {
+                capitulo: 151,
+                titulo: "Capítulo 151: A disputa pela armadura!",
+                subtitulo: "Kurosu Sodatsu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de março de 2010; no Brasil: 15 de outubro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/151.jpg"
+            },
+            {
+                capitulo: 152,
+                titulo: "Capítulo 152: O traidor!",
+                subtitulo: "Uragirimono!",
+                legenda: "Lançamento em tankobon no Japão: 8 de março de 2010; no Brasil: 15 de outubro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/152.jpg"
+            },
+            {
+                capitulo: 153,
+                titulo: "Capítulo 153: A réplica!",
+                subtitulo: "Repurika!",
+                legenda: "Lançamento em tankobon no Japão: 8 de março de 2010; no Brasil: 15 de outubro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/153.jpg"
+            },
+            {
+                capitulo: 154,
+                titulo: "Capítulo 154: O punho demoníaco!",
+                subtitulo: "Maken!",
+                legenda: "Lançamento em tankobon no Japão: 8 de março de 2010; no Brasil: 15 de outubro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/154.jpg"
+            },
+            {
+                capitulo: 155,
+                titulo: "Capítulo 155: O ato de um assassinato!",
+                subtitulo: "Ansatsu Geki!",
+                legenda: "Lançamento em tankobon no Japão: 8 de março de 2010; no Brasil: 15 de outubro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/155.jpg"
+            },
+            {
+                capitulo: 156,
+                titulo: "Capítulo 156: O pecado!",
+                subtitulo: "Tsumi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de março de 2010; no Brasil: 15 de outubro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/156.jpg"
+            },
+            {
+                capitulo: 157,
+                titulo: "Capítulo 157: Feito um demônio!",
+                subtitulo: "Oni no Gotoku!",
+                legenda: "Lançamento em tankobon no Japão: 8 de março de 2010; no Brasil: 15 de outubro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/157.jpg"
+            },
+            {
+                capitulo: 158,
+                titulo: "Capítulo 158: O incompleto!",
+                subtitulo: "Hanpa!",
+                legenda: "Lançamento em tankobon no Japão: 8 de março de 2010; no Brasil: 15 de outubro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/158.jpg"
+            },
+            {
+                capitulo: 159,
+                titulo: "Capítulo 159: A extinção!",
+                subtitulo: "Shometsu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de março de 2010; no Brasil: 15 de outubro de 2010",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/159.jpg"
+            }
+        ]
     },
     {
-      volume: 19,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/0e/b8/ad/0eb8addd61d909103b2f6c6aa624cd99.jpg",
-      capitulos: [
-        {
-            capitulo: 160,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 161,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 162,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 163,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 164,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 165,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 166,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 167,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 168,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 19,
+        titulo: "Tela Perdida - Volume 19",
+        capa: "/capasLostCanvas/19.jpg",
+        capitulos: [
+            {
+                capitulo: 160,
+                titulo: "Capítulo 160: A forma devida!",
+                subtitulo: "Arubeki Sugata!",
+                legenda: "Lançamento em tankobon no Japão: 7 de maio de 2010; no Brasil: 20 de janeiro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/160.jpg"
+            },
+            {
+                capitulo: 161,
+                titulo: "Capítulo 161: O Mefistófeles!",
+                subtitulo: "Mefisutoferesu!",
+                legenda: "Lançamento em tankobon no Japão: 7 de maio de 2010; no Brasil: 20 de janeiro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/161.jpg"
+            },
+            {
+                capitulo: 162,
+                titulo: "Capítulo 162: O pai!",
+                subtitulo: "Chichioya!",
+                legenda: "Lançamento em tankobon no Japão: 7 de maio de 2010; no Brasil: 20 de janeiro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/162.jpg"
+            },
+            {
+                capitulo: 163,
+                titulo: "Capítulo 163: Mesmo que só uma gota!",
+                subtitulo: "Saredo Itteki!",
+                legenda: "Lançamento em tankobon no Japão: 7 de maio de 2010; no Brasil: 20 de janeiro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/163.jpg"
+            },
+            {
+                capitulo: 164,
+                titulo: "Capítulo 164: A dor humana!",
+                subtitulo: "Hito no Itami!",
+                legenda: "Lançamento em tankobon no Japão: 7 de maio de 2010; no Brasil: 20 de janeiro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/164.jpg"
+            },
+            {
+                capitulo: 165,
+                titulo: "Capítulo 165: O auxílio!",
+                subtitulo: "Kyusai!",
+                legenda: "Lançamento em tankobon no Japão: 7 de maio de 2010; no Brasil: 20 de janeiro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/165.jpg"
+            },
+            {
+                capitulo: 166,
+                titulo: "Capítulo 166: O lugar devido!",
+                subtitulo: "Ibasho!",
+                legenda: "Lançamento em tankobon no Japão: 7 de maio de 2010; no Brasil: 20 de janeiro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/166.jpg"
+            },
+            {
+                capitulo: 167,
+                titulo: "Capítulo 167: A hora da salvação!",
+                subtitulo: "Kyusai no Koku!",
+                legenda: "Lançamento em tankobon no Japão: 7 de maio de 2010; no Brasil: 20 de janeiro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/167.jpg"
+            },
+            {
+                capitulo: 168,
+                titulo: "Capítulo 168: A autoridade!",
+                subtitulo: "Tochisha!",
+                legenda: "Lançamento em tankobon no Japão: 7 de maio de 2010; no Brasil: 20 de janeiro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/168.jpg"
+            }
+        ]
     },
     {
-      volume: 20,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/09/be/84/09be8440f0a4326b5c712e04b6980323.jpg",
-      capitulos: [
-        {
-            capitulo: 169,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 170,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 171,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 172,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 173,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 174,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 175,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 176,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 177,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 20,
+        titulo: "Tela Perdida - Volume 20",
+        capa: "/capasLostCanvas/20.jpg",
+        capitulos: [
+            {
+                capitulo: 169,
+                titulo: "Capítulo 169: O local de se entreter!",
+                subtitulo: "Yugijo!",
+                legenda: "Lançamento em tankobon no Japão: 8 de julho de 2010; no Brasil: 18 de março de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/169.jpg"
+            },
+            {
+                capitulo: 170,
+                titulo: "Capítulo 170: A história vivida!",
+                subtitulo: "Ikita Rekishi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de julho de 2010; no Brasil: 18 de março de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/170.jpg"
+            },
+            {
+                capitulo: 171,
+                titulo: "Capítulo 171: O sucessor!",
+                subtitulo: "Keishosha!",
+                legenda: "Lançamento em tankobon no Japão: 8 de julho de 2010; no Brasil: 18 de março de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/171.jpg"
+            },
+            {
+                capitulo: 172,
+                titulo: "Capítulo 172: O Cocyto!",
+                subtitulo: "Kokyutosu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de julho de 2010; no Brasil: 18 de março de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/172.jpg"
+            },
+            {
+                capitulo: 173,
+                titulo: "Capítulo 173: O rugir da história!",
+                subtitulo: "Rekishi no Hoko!",
+                legenda: "Lançamento em tankobon no Japão: 8 de julho de 2010; no Brasil: 18 de março de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/173.jpg"
+            },
+            {
+                capitulo: 174,
+                titulo: "Capítulo 174: A lápide!",
+                subtitulo: "Boseki!",
+                legenda: "Lançamento em tankobon no Japão: 8 de julho de 2010; no Brasil: 18 de março de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/174.jpg"
+            },
+            {
+                capitulo: 175,
+                titulo: "Capítulo 175: O dever!",
+                subtitulo: "Yakume!",
+                legenda: "Lançamento em tankobon no Japão: 8 de julho de 2010; no Brasil: 18 de março de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/175.jpg"
+            },
+            {
+                capitulo: 176,
+                titulo: "Capítulo 176: A hora da besta!",
+                subtitulo: "Kemono no Jikan!",
+                legenda: "Lançamento em tankobon no Japão: 8 de julho de 2010; no Brasil: 18 de março de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/176.jpg"
+            },
+            {
+                capitulo: 177,
+                titulo: "Capítulo 177: A demônio de fogo!",
+                subtitulo: "Hono no Majin!",
+                legenda: "Lançamento em tankobon no Japão: 8 de julho de 2010; no Brasil: 18 de março de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/177.jpg"
+            }
+        ]
     },
     {
-      volume: 21,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/ac/4c/92/ac4c923ab49df57c3312efe797b18f8b.jpg",
-      capitulos: [
-        {
-            capitulo: 178,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 179,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 180,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 181,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 182,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 183,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 184,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 185,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 186,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 187,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 21,
+        titulo: "Tela Perdida - Volume 21",
+        capa: "/capasLostCanvas/21.jpg",
+        capitulos: [
+            {
+                capitulo: 178,
+                titulo: "Capítulo 178: O fogo vermelho!",
+                subtitulo: "Akaki Hono!",
+                legenda: "Lançamento em tankobon no Japão: 8 de setembro de 2010; no Brasil: 17 de maio de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/178.jpg"
+            },
+            {
+                capitulo: 179,
+                titulo: "Capítulo 179: A fênix!",
+                subtitulo: "Fushicho!",
+                legenda: "Lançamento em tankobon no Japão: 8 de setembro de 2010; no Brasil: 17 de maio de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/179.jpg"
+            },
+            {
+                capitulo: 180,
+                titulo: "Capítulo 180: O adestramento!",
+                subtitulo: "Chokyo!",
+                legenda: "Lançamento em tankobon no Japão: 8 de setembro de 2010; no Brasil: 17 de maio de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/180.jpg"
+            },
+            {
+                capitulo: 181,
+                titulo: "Capítulo 181: O senhor!",
+                subtitulo: "Shukun!",
+                legenda: "Lançamento em tankobon no Japão: 8 de setembro de 2010; no Brasil: 17 de maio de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/181.jpg"
+            },
+            {
+                capitulo: 182,
+                titulo: "Capítulo 182: A lealdade!",
+                subtitulo: "Chusei!",
+                legenda: "Lançamento em tankobon no Japão: 8 de setembro de 2010; no Brasil: 17 de maio de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/182.jpg"
+            },
+            {
+                capitulo: 183,
+                titulo: "Capítulo 183: Como um espectro!",
+                subtitulo: "Supekuta Toshite!",
+                legenda: "Lançamento em tankobon no Japão: 8 de setembro de 2010; no Brasil: 17 de maio de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/183.jpg"
+            },
+            {
+                capitulo: 184,
+                titulo: "Capítulo 184: 3 contra 3!",
+                subtitulo: "San Tai San!",
+                legenda: "Lançamento em tankobon no Japão: 8 de setembro de 2010; no Brasil: 17 de maio de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/184.jpg"
+            },
+            {
+                capitulo: 185,
+                titulo: "Capítulo 185: Enquanto existir vida!",
+                subtitulo: "Seimei Aru Kagiri!",
+                legenda: "Lançamento em tankobon no Japão: 8 de setembro de 2010; no Brasil: 17 de maio de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/185.jpg"
+            },
+            {
+                capitulo: 186,
+                titulo: "Capítulo 186: O dia cinzento!",
+                subtitulo: "Hai'iro no Hi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de setembro de 2010; no Brasil: 17 de maio de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/186.jpg"
+            },
+            {
+                capitulo: 187,
+                titulo: "Capítulo 187: Partita!",
+                subtitulo: "Parutita!",
+                legenda: "Lançamento em tankobon no Japão: 8 de setembro de 2010; no Brasil: 17 de maio de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/187.jpg"
+            }
+        ]
     },
     {
-      volume: 22,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/54/9d/78/549d7816efd691fa679dd79a0ecda49d.jpg",
-      capitulos: [
-        {
-            capitulo: 188,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 189,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 190,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 191,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 192,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 193,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 194,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 195,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 196,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 22,
+        titulo: "Tela Perdida - Volume 22",
+        capa: "/capasLostCanvas/22.jpg",
+        capitulos: [
+            {
+                capitulo: 188,
+                titulo: "Capítulo 188: O olhar da mãe!",
+                subtitulo: "Haha no Me!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2010; no Brasil: 21 de julho de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/188.jpg"
+            },
+            {
+                capitulo: 189,
+                titulo: "Capítulo 189: A decisão!",
+                subtitulo: "Ketsudan!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2010; no Brasil: 21 de julho de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/189.jpg"
+            },
+            {
+                capitulo: 190,
+                titulo: "Capítulo 190: Sem proteção!",
+                subtitulo: "Mukidashi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2010; no Brasil: 21 de julho de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/190.jpg"
+            },
+            {
+                capitulo: 191,
+                titulo: "Capítulo 191: A alma!",
+                subtitulo: "Ore no Tamashii!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2010; no Brasil: 21 de julho de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/191.jpg"
+            },
+            {
+                capitulo: 192,
+                titulo: "Capítulo 192: A Armadura Divina!",
+                subtitulo: "Ore no Tamashii!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2010; no Brasil: 21 de julho de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/192.jpg"
+            },
+            {
+                capitulo: 193,
+                titulo: "Capítulo 193: O caminho a ser seguido!",
+                subtitulo: "Susumu Beki Michi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2010; no Brasil: 21 de julho de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/193.jpg"
+            },
+            {
+                capitulo: 194,
+                titulo: "Capítulo 194: A memória do Leão!",
+                subtitulo: "Shishi no Kioku!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2010; no Brasil: 21 de julho de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/194.jpg"
+            },
+            {
+                capitulo: 195,
+                titulo: "Capítulo 195: Ilíada!",
+                subtitulo: "Iriasu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2010; no Brasil: 21 de julho de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/195.jpg"
+            },
+            {
+                capitulo: 196,
+                titulo: "Capítulo 196: O dia do destino!",
+                subtitulo: "Unmei no Hi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de dezembro de 2010; no Brasil: 21 de julho de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/196.jpg"
+            }
+        ]
     },
     {
-      volume: 23,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/57/92/e2/5792e2e8aab15b5ebd2c5015dd00306b.jpg",
-      capitulos: [
-        {
-            capitulo: 197,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 198,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 199,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 200,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 201,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 202,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 203,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 204,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 205,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 23,
+        titulo: "Tela Perdida - Volume 23",
+        capa: "/capasLostCanvas/23.jpg",
+        capitulos: [
+            {
+                capitulo: 197,
+                titulo: "Capítulo 197: Uma nova estrela!",
+                subtitulo: "Atarashii Hoshi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2011; no Brasil: 16 de setembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/197.jpg"
+            },
+            {
+                capitulo: 198,
+                titulo: "Capítulo 198: O final!",
+                subtitulo: "Kyukyoku!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2011; no Brasil: 16 de setembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/198.jpg"
+            },
+            {
+                capitulo: 199,
+                titulo: "Capítulo 199: Superando!",
+                subtitulo: "Koeru!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2011; no Brasil: 16 de setembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/199.jpg"
+            },
+            {
+                capitulo: 200,
+                titulo: "Capítulo 200: Conversando com a Terra!",
+                subtitulo: "Daichi to Kataru!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2011; no Brasil: 16 de setembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/200.jpg"
+            },
+            {
+                capitulo: 201,
+                titulo: "Capítulo 201: Os buscadores de pessoas!",
+                subtitulo: "Sagashi Jin!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2011; no Brasil: 16 de setembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/201.jpg"
+            },
+            {
+                capitulo: 202,
+                titulo: "Capítulo 202: O amor e a tristeza!",
+                subtitulo: "Ai to Kanashimi!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2011; no Brasil: 16 de setembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/202.jpg"
+            },
+            {
+                capitulo: 203,
+                titulo: "Capítulo 203: Aquilo que deve ser feito!",
+                subtitulo: "Nasu Beki Koto!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2011; no Brasil: 16 de setembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/203.jpg"
+            },
+            {
+                capitulo: 204,
+                titulo: "Capítulo 204: Só para estar com ele!",
+                subtitulo: "Tada Hata ni!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2011; no Brasil: 16 de setembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/204.jpg"
+            },
+            {
+                capitulo: 205,
+                titulo: "Capítulo 205: Atena entra em ação!",
+                subtitulo: "Atena Shutsugeki!",
+                legenda: "Lançamento em tankobon no Japão: 8 de fevereiro de 2011; no Brasil: 16 de setembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/205.jpg"
+            }
+        ]
     },
     {
-      volume: 24,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/73/fd/b6/73fdb69c25449d28b354d5a20c159451.jpg",
-      capitulos: [
-        {
-            capitulo: 206,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 207,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 208,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 209,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 210,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 211,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 212,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 213,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 214,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        
-      ],
+        volume: 24,
+        titulo: "Tela Perdida - Volume 24",
+        capa: "/capasLostCanvas/24.jpg",
+        capitulos: [
+            {
+                capitulo: 206,
+                titulo: "Capítulo 206: O futuro!",
+                subtitulo: "Mirai!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2011; no Brasil: 6 de dezembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/206.jpg"
+            },
+            {
+                capitulo: 207,
+                titulo: "Capítulo 207: Os irmãos demônios!",
+                subtitulo: "Oni Kyodai!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2011; no Brasil: 6 de dezembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/207.jpg"
+            },
+            {
+                capitulo: 208,
+                titulo: "Capítulo 208: O deus do tempo!",
+                subtitulo: "Toki no Kami!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2011; no Brasil: 6 de dezembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/208.jpg"
+            },
+            {
+                capitulo: 209,
+                titulo: "Capítulo 209: Kairos!",
+                subtitulo: "Kairosu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2011; no Brasil: 6 de dezembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/209.jpg"
+            },
+            {
+                capitulo: 210,
+                titulo: "Capítulo 210: A cortina cai!",
+                subtitulo: "Maku Biki!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2011; no Brasil: 6 de dezembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/210.jpg"
+            },
+            {
+                capitulo: 211,
+                titulo: "Capítulo 211: O humano!",
+                subtitulo: "Hidari no Ningen!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2011; no Brasil: 6 de dezembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/211.jpg"
+            },
+            {
+                capitulo: 212,
+                titulo: "Capítulo 212: O encontro!",
+                subtitulo: "Shuketsu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2011; no Brasil: 6 de dezembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/212.jpg"
+            },
+            {
+                capitulo: 213,
+                titulo: "Capítulo 213: A resposta!",
+                subtitulo: "Kotae!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2011; no Brasil: 6 de dezembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/213.jpg"
+            },
+            {
+                capitulo: 214,
+                titulo: "Capítulo 214: Alone!",
+                subtitulo: "Aron!",
+                legenda: "Lançamento em tankobon no Japão: 8 de abril de 2011; no Brasil: 6 de dezembro de 2011",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/214.jpg"
+            }
+        ]
     },
     {
-      volume: 25,
-      titulo: "",
-      capa: "https://i.pinimg.com/originals/88/40/5c/88405c1c794c3c8ba4dda730938e9a5d.jpg",
-      capitulos: [
-        {
-            capitulo: 215,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 216,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 217,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 218,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 219,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 220,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 221,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 222,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 223,
-            titulo: '',
-            subtitulo: '',
-            legenda: '',
-            texto: `
-
-            `,
-            imagem: '',
-        },
-        {
-            capitulo: 'Omake',
-            titulo: 'Capítulo Extra: "243 anos depois!"',
-            subtitulo: '"243 Nen-go!"',
-            legenda: 'Lançamento em tankobon no Japão: 8 de maio de 2011; no Brasil: 13 de fevereiro de 2012',
-            texto: `
-                Nos Cinco Picos Antigos de Rozan, Dohko conversa com Kiki e Mu. O Cavaleiro de Ouro de Áries diz que existem grandes possibilidades de Saori Kido ser a deusa Atena. Ele cita que os Cavaleiros de Bronze estão lutando em um show chamado Guerra Galáctica, em teoria uma tática para atrair o mal que se esconde no Santuário. Mu diz também que há treze anos atrás, o cosmo do Grande Mestre mudou de forma repentina e ele não pode acreditar que é o cosmo do seu mestre Shion. Dohko diz que Shion não sucumbiria ao mal. Mu pergunta como Dohko foi o primeiro a saber que Saori Kido é Atena. Ele responde dizendo que o seu discípulo está participando da Guerra Galáctica e acabou escutando isso: o Pégaso desta era já está junto de Atena!
-            `,
-            imagem: 'https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/extra.jpg',
-        },
-      ],
-    },
-  ];
-  
+        volume: 25,
+        titulo: "Tela Perdida - Volume 25",
+        capa: "/capasLostCanvas/25.jpg",
+        capitulos: [
+            {
+                capitulo: 215,
+                titulo: "Capítulo 215: A conclusão!",
+                subtitulo: "Ketsuron!",
+                legenda: "Lançamento em tankobon no Japão: 8 de maio de 2011; no Brasil: 13 de fevereiro de 2012",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/215.jpg"
+            },
+            {
+                capitulo: 216,
+                titulo: "Capítulo 216: As vozes!",
+                subtitulo: "Koe!",
+                legenda: "Lançamento em tankobon no Japão: 8 de maio de 2011; no Brasil: 13 de fevereiro de 2012",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/216.jpg"
+            },
+            {
+                capitulo: 217,
+                titulo: "Capítulo 217: Em linha reta!",
+                subtitulo: "Massugu!",
+                legenda: "Lançamento em tankobon no Japão: 8 de maio de 2011; no Brasil: 13 de fevereiro de 2012",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/217.jpg"
+            },
+            {
+                capitulo: 218,
+                titulo: "Capítulo 218: Até aquele dia!",
+                subtitulo: "Ano Hi e!!",
+                legenda: "Lançamento em tankobon no Japão: 8 de maio de 2011; no Brasil: 13 de fevereiro de 2012",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/218.jpg"
+            },
+            {
+                capitulo: 219,
+                titulo: "Capítulo 219: A verdadeira escuridão!",
+                subtitulo: "Shin no Yami!",
+                legenda: "Lançamento em tankobon no Japão: 8 de maio de 2011; no Brasil: 13 de fevereiro de 2012",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/219.jpg"
+            },
+            {
+                capitulo: 220,
+                titulo: "Capítulo 220: A luz dourada!",
+                subtitulo: "Ogon no Hikari!",
+                legenda: "Lançamento em tankobon no Japão: 8 de maio de 2011; no Brasil: 13 de fevereiro de 2012",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/220.jpg"
+            },
+            {
+                capitulo: 221,
+                titulo: "Capítulo 221: A pulseira de flores!",
+                subtitulo: "Tsunagaru Hanawa!",
+                legenda: "Lançamento em tankobon no Japão: 8 de maio de 2011; no Brasil: 13 de fevereiro de 2012",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/221.jpg"
+            },
+            {
+                capitulo: 222,
+                titulo: "Capítulo 222: Todos os três juntos!",
+                subtitulo: "San-nin Issho!",
+                legenda: "Lançamento em tankobon no Japão: 8 de maio de 2011; no Brasil: 13 de fevereiro de 2012",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/222.jpg"
+            },
+            {
+                capitulo: 223,
+                titulo: "Capítulo 223: O futuro que começa!",
+                subtitulo: "Hajimaru Mirai!",
+                legenda: "Lançamento em tankobon no Japão: 8 de maio de 2011; no Brasil: 13 de fevereiro de 2012",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/223.jpg"
+            },
+            {
+                capitulo: 224,
+                titulo: "Capítulo Extra: 243 anos depois!",
+                subtitulo: "243 Nen-go!",
+                legenda: "Lançamento em tankobon no Japão: 8 de maio de 2011; no Brasil: 13 de fevereiro de 2012",
+                texto: "",
+                imagem: "https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/original/224.jpg"
+            }
+        ]
+    }
+];
+    
+ 
 export default lostCanvasVolumes;

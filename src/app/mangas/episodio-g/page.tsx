@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link'; // Importando o componente Link para navegação
 import episodeGVolumes from '../../data/episodioGVolumes'; // Caminho relativo para src/app/mangas/lost-canvas/page.tsx
 
-export default function LostCanvas() {
+export default function EpisodioG() {
   const allErasSections = episodeGVolumes.map(volume => `Volume ${volume.volume}`);
 
   const [selectedSection, setSelectedSection] = useState(allErasSections[0]); // Estado para a seção selecionada
