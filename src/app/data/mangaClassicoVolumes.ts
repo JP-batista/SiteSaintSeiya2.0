@@ -1507,7 +1507,24 @@ const mangaClassicoVolumes = [
                         subtitulo: "Kyokaikyu no Naka no Shikai",
                         legenda: "Lançamento em tankobon no Japão: 10 de janeiro de 1990; no Brasil: outubro de 2013 (Editora JBC)",
                         texto: `
-                        
+                            Saga, Camus e Shura chegam a Casa de Câncer. Lá encontram uma ilusão da costa de Yomotsu Hira. Os 
+                            mortos vivos que estão no local começam a atacar os Cavaleiros de Ouro renegados. Saga se livra dos 
+                            mortos, disparando a sua Explosão Galáctica. Eles não entendem quem está criando estas ilusões, mas 
+                            resolvem avançar. Na Casa de Áries, Shion percebe que o fogo do Relógio das Casas de Áries e Touro já 
+                            se extinguiram.
+                            Na Casa de Câncer, Saga, Camus e Shura continuam tentando atravessar, porém se deparam com ilusões 
+                            parecidas com as da Casa de Gêmeos. De repente, eles reparam que estão na mão de Buda. Só ai, neste 
+                            momento, eles descobrem quem está criando estas ilusões: Shaka de Virgem. Saga fica irritado com a situação 
+                            comprometedora e dispara um golpe que atravessa a Casa de Câncer e a Casa de Leão, assustando o Cavaleiro 
+                            de Ouro Aiolia, e atinge em cheio a Casa de Virgem, porém Shaka consegue se defender pois estava protegido 
+                            por uma espécie de esfera cósmica. O Cavaleiro de Ouro de Virgem revida com o poderoso golpe Rendição Divina, 
+                            atrevessando novamente o Santuário e atingindo em cheio a Casa de Câncer.
+                            Shion e o Mestre Ancião sentem as energias dos golpes dados por Saga e Shaka e ficam totalmente paralisados. 
+                            Shion tenta partir para a próxima casa zodiacal, mas o Mestre Ancião não o deixa. O antigo mestre do Santuário 
+                            resolve, então, enfrentar o seu antigo amigo (no que seria a Guerra dos Mil Dias). Neste exato momento, Shiryu de 
+                            Dragão chega ao local e está disposto a fazer de tudo para ajudar o seu mestre! O Cavaleiro de Dragão é repreendido 
+                            por seu mestre, que questiona o fato dele estar lá quando deu ordens para ele ficar ao lado de Shunrei, nos Cinco 
+                            Picos Antigos de Rozan!
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/5.jpg"
                     },
@@ -1517,7 +1534,32 @@ const mangaClassicoVolumes = [
                         subtitulo: "Doko Fukkatsu!",
                         legenda: "Lançamento em tankobon no Japão: 10 de janeiro de 1990; no Brasil: outubro de 2013 (Editora JBC)",
                         texto: `
-                        
+                            Mu de Áries continua subindo as escadarias do Santuário. Ao chegar na Casa de Câncer, ele vê a destruição causada 
+                            pelo poder do Shaka de Virgem e não sente mais os cosmos de Saga, Shura e Camus. Shiryu convence o Mestre Ancião, 
+                            através de palavras emotivas, a ficar e lutar ao seu lado. Mestre Ancião tenta explicar que Atena está disposta a 
+                            morrer, mas Shiryu não consegue compreender direito. De repente, Shion ataca Shiryu, interrompendo a conversa dele 
+                            com o Mestre Ancião, mas é detido pelo próprio Mestre Ancião. Ele explica que aquele é Shion de Áries, o mestre de 
+                            Mu. Shiryu fica perplexo com a presença de Shion.
+                            Shion e o Mestre Ancião começam a travar uma luta intensa, porém a força de Shion aparenta ser maior neste momento. 
+                            Ele está jovem e veste uma Surplice, enquanto o Mestre Ancião está velho e com o cosmo enfraquecido. De repente, o 
+                            Mestre Ancião revida com o golpe Cólera dos Cem Dragões, que atinge em cheio Shion. Entretanto o golpe não teve o 
+                            efeito desejado e Shion explica que se fosse anos atrás, ele teria sido derrubado com o golpe do Mestre Ancião, mas, 
+                            como agora ele está velho, o poder dos seus golpes não é o mesmo. Shion dispara a sua Revolução Estelar e manda o 
+                            Mestre Ancião para longe. Shiryu tenta ajudar, mas também é atingido por Shion. Shiryu se irrita e veste a sua 
+                            Armadura de Dragão, disparando logo em seguida o golpe Cólera do Dragão. Shion defende o golpe com apenas uma mão.
+                            O Mestre Ancião levanta e começa a conversar com Shiryu. O Cavaleiro de Dragão insiste em querer ficar lá para lutar 
+                            e o Mestre Ancião finalmente aceita, dizendo que vai pedir desculpas pessoalmente para Atena. Agora os dois não são 
+                            mais discípulo e mestre e sim dois Cavaleiros de Atena. Shion, irritado com a conversa dos dois, dispara mais um 
+                            golpe, mas é detido pela Armadura de Ouro de Libra, que surge no caminho do ex-Cavaleiro de Áries. Mestre Ancião 
+                            explica porque ficou 243 anos sentado diante da grande cachoeira dos Cinco Picos Antigos de Rozan: a carapaça velha 
+                            que cobria o seu corpo começa a quebrar e surge Dohko de Libra, o jovem Cavaleiro de Ouro de Libra. Shiryu fica 
+                            perplexo com o rejuvenescimento do seu antigo mestre.
+                            Dohko explica que Atena lhe concedeu a honra de utilizar a técnica chamada de Misopetha Menos, a fórmula divina para 
+                            o envelhecimento simulado. Dohko manda Shiryu partir e proteger Atena com a sua própria vida. O Cavaleiro de Dragão 
+                            aceita sem hesitar. Dohko finalmente veste a Armadura de Libra e agora está pronto para enfrentar Shion com igualdade 
+                            de força. Os dois lançam seus golpes: Cólera do Cem Dragões e Revolução Estelar. Mu, que ainda está na Casa de Câncer, 
+                            é atingido por alguns espectros e fica imobilizado!
+
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/6.jpg"
                     },
@@ -1527,7 +1569,21 @@ const mangaClassicoVolumes = [
                         subtitulo: "Shikai no Chou! Feari",
                         legenda: "Lançamento em tankobon no Japão: 10 de janeiro de 1990; no Brasil: novembro de 2013 (Editora JBC)",
                         texto: `
-                        
+                            O líder dos espectros, Giganto de Ciclope, pergunta qual o paradeiro de Saga, Shura e Camus. Ele então golpeia 
+                            Mu de Áries. Quando estava prestes a eliminar o Cavaleiro de Áries, um espectro pede para enfrentar Mu. No Castelo 
+                            de Hades, Radamanthys pergunta para Zelos se há novidades. O espectro de Sapo diz que não, mas também fala para o 
+                            juiz não se preocupar, pois Myu está no Santuário. Na Casa de Câncer, o espectro que quer enfrentar Mu é justamente 
+                            Myu de Borboleta, mas ele surge num primeiro momento apenas como ovas de inseto.
+                            Mu decide ir embora, mas o espectro o golpeia com o golpe Terrível Erupção. Mu bloqueia com a Parede de Cristal e 
+                            em seguida golpeia Myu com a Revolução Estelar. Entretanto, nada acontece. Então o espectro se transforma em uma 
+                            larva e utiliza o golpe Fios de Seda, que envolve Mu em um casulo. Shiryu chega na Casa de Câncer. Como ela está 
+                            vazia, ele segue em frente. Mu se liberta do casulo e encontra outro mais a frente. Então o casulo se quebra e de 
+                            dentro sai Myu de Borboleta com sua aparência verdadeira. O espectro mostra ter golpes psicocinéticos, assim como 
+                            Mu, mas o Cavaleiro de Ouro tem uma técnica muito mais avançada.
+                            O espectro então apela para seu golpe Encantamento das Fadas, um golpe que faz com que várias borboletas da morte 
+                            levem a alma do adversário para o mundo dos mortos. O golpe não funciona em Mu, pois a psicocinesia dele é maior. 
+                            Mu prende Myu no golpe Rede de Cristal e o derrota utilizando a Extinção Estelar. Mu segue para Casa de Leão, mas 
+                            uma borboleta sobrevive.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/7.jpg"
                     },
@@ -1544,7 +1600,21 @@ const mangaClassicoVolumes = [
                         subtitulo: "Kiba Muku Ougon no Shishi",
                         legenda: "Lançamento em tankobon no Japão: 9 de março de 1990; no Brasil: novembro de 2013 (Editora JBC)",
                         texto: `
-                        
+                            Giganto de Ciclope e os demais espectros estão na frente da Casa de Leão, protegida por Aiolia. Giganto pergunta 
+                            sobre o paradeiro de Saga, Shura e Camus e questiona se eles por acaso não se teletransportaram, mas Aiolia diz 
+                            que, graças a proteção de Atena, não é possível acontecer teletransportes dentro das Doze Casas. Cinco espectros 
+                            avançam contra Aiolia, que revida com o Relâmpago de Plasma, eliminando-os. Na escadaria das Doze Casas, Mu 
+                            encontra os corpos de três espectros.
+                            Na Casa de Leão, o espectro Laimi de Verme se oferece para enfrentar Aiolia, então penetra na terra e, com seu 
+                            golpe Tentáculos de Verme, imobiliza o Cavaleiro de Ouro, dando uma brecha para os outros espectros passarem. 
+                            Laimi tenta executar Aiolia, mas o Cavaleiro de Ouro eleva seu cosmo e se livra dos tentáculos. Laimi lança o 
+                            golpe Rugido Sangrento, mas Aiolia revida com o Relâmpago de Plasma e derrota o espectro. Shiryu chega na Casa 
+                            de Leão e acompanha Aiolia rumo a casa seguinte.
+                            Na Casa de Virgem, os espectros liderados por Giganto percebem um cosmo diferente no meio deles, então Giganto 
+                            pede para o espectro Kiew tirar sua máscara. Porém, Shaka de Virgem aparece e as atenções voltam-se para ele. 
+                            Os espectros tentam golpeá-lo, mas o cosmo de Shaka o protege. Shaka está segurando um rosário na mão e explica 
+                            a utilidade desse item: cada conta representa um espectro e quando ela muda de cor quer dizer que um espectro foi 
+                            eliminado.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/8.jpg"
                     },
@@ -1554,7 +1624,16 @@ const mangaClassicoVolumes = [
                         subtitulo: "Hyaku Hachi no Tama!",
                         legenda: "Lançamento em tankobon no Japão: 9 de março de 1990; no Brasil: novembro de 2013 (Editora JBC)",
                         texto: `
-                        
+                            Shaka lança o golpe Invocação dos Espíritos, mas Kiew desfaz o golpe. Kiew junto com mais dois espectros, Ox e 
+                            Miles, avançam contra Shaka, que se protege. O Cavaleiro de Ouro quebra as súrplices dos três espectros, revelando 
+                            que eles são na verdade Saga de Gêmeos, Shura de Capricórnio e Camus de Aquário. Aiolia fala para Shiryu que Shaka 
+                            está se preparando para morrer.
+                            Saga diz para Giganto que a missão é deles e que é para os espectros se afastarem. Shaka encara os três Cavaleiros 
+                            de Ouro por alguns instantes, então ele pede para os três seguirem em frente. Giganto e os demais avançam contra 
+                            Shaka, que os elimina com o golpe Rendição Divina. O Cavaleiro de Virgem diz que agora que eliminou quem os vigiava, 
+                            Saga poderia contar a sua verdadeira intenção. Como o Cavaleiro de Gêmeos fala que a missão deles é matar Atena, 
+                            Shaka leva Saga, Shura e Camus para um jardim ao lado da Casa de Virgem.
+
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/9.jpg"
                     },
@@ -1564,7 +1643,18 @@ const mangaClassicoVolumes = [
                         subtitulo: "Sarasouju no Shita ni ...",
                         legenda: "Lançamento em tankobon no Japão: 9 de março de 1990; no Brasil: novembro de 2013 (Editora JBC)",
                         texto: `
-                        
+                            Shaka fica embaixo de duas árvores gêmeas. Os quatro começam a lutar, apesar da desvantagem, Shaka utiliza seu 
+                            golpe Tesouro do Céu e começa a tirar cada um dos sentidos dos três Cavaleiros de Ouro renegados. O Cavaleiro de 
+                            Virgem diz que só há uma maneira de derrotá-lo, usando a Exclamação de Atena. Shaka tira mais três sentidos dos 
+                            cavaleiros, "obrigando-os" utilizar a Exclamação de Atena.
+                            Atena, Kanon e Milo sentem a intenção de Shaka em querer se sacrificar. Aiolia e Shiryu chegam na Casa de Virgem, 
+                            mas encontram a porta que leva para o jardim trancado. Mu chega e diz para Aiolia que a intenção de Shaka é se 
+                            sacrificar. O Cavaleiro de Virgem tem um flashback de quando era criança e estava num templo conversando com Buda, 
+                            questionando-o sobre os males do mundo. Shaka tira o último sentido dos cavaleiros e eles utilizam a Exclamação de 
+                            Atena. Uma explosão ocorre no Santuário.
+                            O jardim fica deserto, só restando as duas árvores gêmeas. Shaka está sentado abaixo delas, ele escreve em quatro 
+                            pétalas e as lança no ar. Shura percebe que terá de dar o golpe de misericórdia em Shaka, mas o Cavaleiro de Virgem 
+                            desaparece.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/10.jpg"
                     },
@@ -1574,7 +1664,14 @@ const mangaClassicoVolumes = [
                         subtitulo: "Atena ni Takusu ...",
                         legenda: "Lançamento em tankobon no Japão: 9 de março de 1990; no Brasil: novembro de 2013 (Editora JBC)",
                         texto: `
-                        
+                            Os três Cavaleiros de Ouro se emocionam e perdem perdão para Shaka, mas eles percebem que uma borboleta os vigia. 
+                            Então eles acabam se contendo e voltam para a Casa de Virgem. Lá, eles se encontram com Aiolia, Shiryu e Mu. Saga 
+                            entrega o rosário para Mu e Aiolia golpeia os três cavaleiros. Ele vai utilizar o Capsula do Poder, mas Mu o impede. 
+                            Aiolia não se importa, pois ele quer vingar Shaka. Ele usa o Relâmpago de Plasma, mas Saga bloqueia o golpe.
+                            Milo aparece e utiliza o golpe Agulha Escarlate nos três Cavaleiros de Ouro renegados. Saori recebe as pétalas que 
+                            Shaka enviou e lê a palavra "Arayashiki". Na Casa de Virgem, Saga, Shura e Camus formam a posição da tríade para 
+                            usar o golpe Exclamação de Atena novamente. Para se defenderem, Mu, Aiolia e Milo também formam a tríade. Os seis 
+                            cavaleiros lançam a Exclamação de Atena.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/11.jpg"
                     },
@@ -1591,17 +1688,35 @@ const mangaClassicoVolumes = [
                         subtitulo: "Atena! Shi no Ketsui!",
                         legenda: "Lançamento em tankobon no Japão: 10 de maio de 1990; no Brasil: dezembro de 2013 (Editora JBC)",
                         texto: `
-                        
+                            Os dois golpes são bloqueados no ar e uma esfera de energia surge entre os seis Cavaleiros de Ouro. Shiryu tenta 
+                            interferir, mas os Cavaleiros de Ouro falam para ele se esconder. O Cavaleiro de Dragão eleva seu cosmo ao máximo 
+                            e lança a Cólera do Dragão que interfere e desfaz a Exclamação de Atena. Aos pés da Estátua de Atena, Saori pede 
+                            para Kanon pegar o item que está debaixo do trono do Grande Mestre. Mu, Milo e Aiolia encontram Saga, Shura e Camus 
+                            debaixo dos escombros da Casa de Virgem.
+                            Saori ordena que eles levem os três Cavaleiros Renegados para a última casa. Hyoga e Shun chegam na Casa de Áries e 
+                            veem que o Relógio de Fogo já está aceso há oito horas. Seiya desperta em Star Hill (o local onde o Grande Mestre ia 
+                            meditar) e tem um mau pressentimento. Mu, Aiolia e Milo levam Saga, Shura e Camus até Saori. Kanon entrega para Saga 
+                            a adaga que ele utilizou há treze anos para tentar matar Atena. Então Saori se ajoelha diante de Saga e pede para ele 
+                            cortar-lhe a garganta.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/12.jpg"
                     },
                     {
-                        capitulo: 13,
+                        capitulo: 13,                               
                         titulo: "Capítulo 80: A Armadura de Atena",
                         subtitulo: "Atena no Kurosu",
                         legenda: "Lançamento em tankobon no Japão: 10 de maio de 1990; no Brasil: dezembro de 2013 (Editora JBC)",
                         texto: `
-                        
+                            Saori acaba rasgando a própria garganta com a Adaga. A borboleta de Myu observa tudo. Então, no Castelo de Hades, 
+                            Zelos conta para Radamanthys que Atena se matou. Pandora castiga Radamanthys, pois ele desobedeceu as ordens de 
+                            Hades e isso resultou na morte de vários espectros. Saga, Shura e Camus chegam ao Castelo de Hades com o corpo de 
+                            Saori. Seiya, Shiryu, Hyoga e Shun chegam aos pés da Estátua de Atena. Shion aparece e ordena que os Cavaleiros de 
+                            Bronze vão para o Castelo de Hades derrotá-lo.
+                            Eles chamam Shion de traidor, mas o antigo Mestre diz que nenhum deles traiu Atena, eles somente queriam o sangue 
+                            de Atena. Então Shion passa o sangue da Saori na estátua que diminui de tamanho e vira uma pequena estátua dourada. 
+                            Shion explica que foi tudo um plano deles para derrotar Hades, mas eles tinham que fingir ser servos de Hades ou 
+                            eles não teriam essas doze horas de vida para poder executar o plano. Ele também fala que a batalha começou e que 
+                            Atena e Shaka não estão fora de combate. Shion utiliza o sangue de Saori para restaurar as quatro Armaduras de Bronze.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/13.jpg"
                     },
@@ -1611,7 +1726,11 @@ const mangaClassicoVolumes = [
                         subtitulo: "Yuke! Nyu Kurosu",
                         legenda: "Lançamento em tankobon no Japão: 10 de maio de 1990; no Brasil: dezembro de 2013 (Editora JBC)",
                         texto: `
-                        
+                            Shion entrega a Armadura de Atena para Seiya. Em seguida, os quatro Cavaleiros de Bronze partem para o Castelo de 
+                            Hades. Shion desaparece. Dohko observava tudo, então ele também parte para o Castelo de Hades.
+                            Saga, Shura e Camus se apresentam para Pandora e eles dizem que só entregarão o corpo de Saori para Hades. Ela não 
+                            aceita e Zelos puxa o pano onde está o corpo de Atena e vê que está vazio, era tudo uma farsa. Camus golpeia Zelos 
+                            e Shura imobiliza Pandora, mas, com o nascer do Sol, os três começam passar mal. As doze horas acabaram.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/14.jpg"
                     },
@@ -1621,7 +1740,16 @@ const mangaClassicoVolumes = [
                         subtitulo: "Meikai e no Tobira",
                         legenda: "Lançamento em tankobon no Japão: 10 de maio de 1990; no Brasil: dezembro de 2013 (Editora JBC)",
                         texto: `
-                        
+                            Pandora ordena que todos saiam do Castelo de Hades. Então ela começa descer uma escadaria em espiral que há dentro 
+                            de um poço no Castelo. No lado de fora, Mu, Aiolia e Milo enfrentam Radamanthys, mas o poder dos três está reduzido 
+                            a um décimo da força por causa do cosmo de Hades que há ao redor do Castelo. Radamanthys joga os três dentro do 
+                            fosso que leva ao Mundo dos Mortos. Na sala de Pandora, Zelos chuta Camus por causa do golpe que o Cavaleiro de 
+                            Aquário aplicou no espectro.
+                            Radamanthys sente um cosmo poderoso se aproximar e então os Cavaleiros de Bronze chegam. Hyoga golpeia Zelos, mas 
+                            não dá tempo: Saga, Shura e Camus desaparecem nos braços dos Cavaleiros de Bronze. Por serem Cavaleiros de Bronze, 
+                            Radamanthys os ignora, porém Zelos quer enfrentá-los. Hyoga o golpeia e Zelos fica com medo. Radamanthys fala para 
+                            Zelos que não irá ajudá-lo. O espectro então vai com tudo pra cima de Hyoga, que vinga seu mestre aplicando a 
+                            Execução Aurora.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/15.jpg"
                     },
@@ -1631,7 +1759,17 @@ const mangaClassicoVolumes = [
                         subtitulo: "Mezameyo! Eito Senshizu",
                         legenda: "Lançamento em tankobon no Japão: 10 de maio de 1990; no Brasil: dezembro de 2013 (Editora JBC)",
                         texto: `
-                        
+                            Seiya desafia Radamanthys, que acha estranho os Cavaleiros de Bronze não estarem sendo afetados pelo poder de Hades. 
+                            Radamanthys é protegido por Valentine de Harpia e outros espectros. O Juiz da Morte ordena que toda a sua tropa vá 
+                            para o Mundo dos Mortos. Os demais espectros se apresentam, são Sylphid de Basilisco, Gordon de Minotauro e Queen de 
+                            Mandrágora. Radamanthys e os espectros pulam no fosso que dá para o Mundo das Trevas (o mesmo que Pandora desceu 
+                            anteriormente), mas Seiya se agarra a Valentine e cai junto com ele.
+                            Shiryu, Hyoga e Shun também se preparam para pular, mas Dohko aparece e impede que eles pulem. Então o Cavaleiro de 
+                            Libra explica sobre o Arayashiki, ou Oitavo Sentido, e que despertá-lo é a única maneira dos cavaleiros não ficarem 
+                            sobre as ordens de Hades dentro do Mundo dos Mortos. Entretanto, isso só é possível pois os Cavaleiros de Bronze 
+                            tiveram suas armaduras restauradas com o sangue de Atena. Os quatro pulam dentro do fosso enquanto o Castelo de Hades 
+                            desmorona.
+
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/16.jpg"
                     }
@@ -1648,7 +1786,36 @@ const mangaClassicoVolumes = [
                         subtitulo: "Watare! Akeron-gawa",
                         legenda: "Lançamento em tankobon no Japão: 10 de julho de 1990; no Brasil: janeiro de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Os dois Cavaleiros de Bronze seguem em frente e encontram a Porta do Inferno (ou Portal do Inferno) onde está escrito: 
+                            "Aquele que aqui entrar perde toda a esperança!". Os dois selam um pacto, de seguir em frente e nunca perder a esperança. 
+                            Atravessando a porta, eles avistam um imenso e longo rio, onde inúmeros mortos choram e gritam de tristeza. O primeiro 
+                            espectro surge: Caronte de Aqueronte, o barqueiro do Inferno. O barqueiro percebe que os dois estão vivos e reconhece os 
+                            dois Cavaleiros de Bronze como Cavaleiros de Atena (havia um alerta no Inferno, de que os Cavaleiros de Atena estavam 
+                            presentes no local).
+                            Seiya, como de costume, não tem muita paciência e parte para a briga. Caronte se defende com o seu Remo Giratório. Shun 
+                            salva Seiya graças a sua Corrente de Andrômeda. Seiya ataca novamente, mas tem seus meteoros repelidos. Caronte 
+                            simplesmente desiste de lutar e pergunta para os dois se eles tem dinheiro pois, se eles pagarem, ele aceita levá-los 
+                            para o outro lado do rio. Seiya perde a paciência com o espectro, mas Shun impede, dizendo que não é preciso lutar pois 
+                            ele tem a solução. Shun oferece o pentagrama (o famoso medalhão) como forma de pagamento. O espectro aceita de imediato. 
+                            Começa a travessia do rio. Caronte está cantando uma música muita entediante, o que cansa Seiya. De repente, o espectro 
+                            ataca Seiya, jogando-o para fora do barco.
+                            O Cavaleiro de Pégaso começa a se afogar porque mortos ficam segurando-o e puxando-o para o fundo do rio. Shun salva 
+                            Seiya, novamente, com sua corrente, mas o espectro ataca covardimente Shun. Seiya, à distância, dispara seus Meteoros 
+                            de Pégaso que, desta vez, atingem em cheio o espectro, que é jogado para fora do barco. Agora apenas Seiya e Shun estão 
+                            no barco! Caronte começa a se afogar, mas consegue convencer Shun de que, se ele morrer, os dois ficarão navegando 
+                            eternamente no rio. Shun, com sua tradicional bondade, salva o espectro com sua corrente. Seiya está com o remo do 
+                            Caronte nas mãos e, após um pedido de por favor do espectro e da insistências do Shun, entrega o remo. No exato momento 
+                            que ele entrega, o espectro trai os dois cavaleiros e dispara seu golpe Redemoinho Esmagador. Seiya voa longe mais uma 
+                            vez.
+                            Caronte parte para cima de Shun, mas o Cavaleiro de Bronze consegue se defender. Os dois se encaram e Caronte desiste 
+                            de novo da luta. Ele diz que nunca encontrou alguém com um olhar sem qualquer maldade. Algum tempo depois, Seiya acorda 
+                            no barco e Shun explica que o Caronte resolveu levá-los para o outro lado do rio novamente. Seiya não acredita muito, 
+                            mas aceita! Logo que avistam terra, Caronte explica que eles estão chegando na primeira prisão. O espectro explica que 
+                            o mundo das trevas é composto de oito prisões, três vales, dez fossos e quatro campos (ou esferas).
+                            Finalmente os três chegam no outro lado do rio. Seiya resolve partir rapidamente, mas é impedido pelo espectro que 
+                            resolve lutar novamente. Seiya pede para Shun não se intrometer. A luta começa, mas termina rapidamente pois Seiya 
+                            mata o espectro disparando poderosos Meteoros de Pégaso. O barqueiro cai no barco, junto com várias moedas, que segue 
+                            sem rumo de volta para o Rio. Seiya e Shun seguem para a primeira prisão!
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-1.jpg"
                     },
@@ -1658,7 +1825,26 @@ const mangaClassicoVolumes = [
                         subtitulo: "Shizukanaru Hotei",
                         legenda: "Lançamento em tankobon no Japão: 10 de julho de 1990; no Brasil: janeiro de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Seiya e Shun começam a subir uma imensa ladeira. No topo, eles encontram a Morada do Juízo, onde os mortos são 
+                            julgados. Um novo espectro aparece: Markino, um soldado do Inferno. Markino explica que naquele local, não é 
+                            permitido qualquer tipo de barulho e todos devem ficar quietos. Seiya começa a provocar o espectro, falando alto 
+                            e espirrando escandalosamente. Logo em seguida, Markino leva os dois Cavaleiros de Bronze para dentro da morada, 
+                            onde eles encontram o espectro Lune de Balron, que está substituindo o juiz Minos de Griffon. Lune começa a 
+                            reclamar com Markino, alegando que ele também estava fazendo muito barulho.
+                            Começa o julgamento de Seiya e Shun. Lune pegunta o nome dos cavaleiros, mas não encontra no grande livro. O 
+                            espectro pergunta novamente e Seiya, para provocar de novo, grita muito alto o seu nome. Markino dá um berro para 
+                            avisar Lune que aqueles dois são Cavaleiros de Atena que atravessaram o Rio Aqueronte. Lune se zanga novamente com 
+                            Markino e prende o soldado com seu chicote, que, com um movimento, acaba cortando o espectro em pedaços. Lune parte 
+                            para cima de Seiya e dispara o golpe Reencarnação, que mostra para Seiya alguns "pecados" que ele cometeu no passado 
+                            (como matar insetos, peixes etc). Com isso, o espectro envia Seiya para a sexta prisão, o Poço de Sangue, mas Seiya 
+                            é salvo pela Corrente de Andrômeda do Shun. Lune encara Shun e leva um susto. O espectro começa a dizer: "Não 
+                            acredito, você é ele!"
+                            Shun não entende nada. O espectro diz pra si mesmo que não é possível e ataca Andrômeda com seu chicote. Shun se 
+                            defende novamente com sua corrente! O espectro dispara o seu Chicote de Fogo e Shun tenta se defender com a Defesa 
+                            Circular. A defesa acaba sendo inútil e Lune corta o corpo de Shun em pedaços, restando a cabeça intacta. Lune pega 
+                            a cabeça do Shun, dizendo que vai enterrá-la, mas de repente Shun grita o nome de Lune. O espectro leva mais um 
+                            susto e começa a pedir desculpas, correndo para fora da morada. Radamanthys chega e pergunta o que está acontecendo!
+
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-2.jpg"
                     },
@@ -1668,7 +1854,24 @@ const mangaClassicoVolumes = [
                         subtitulo: "Kanon! Shutsujin",
                         legenda: "Lançamento em tankobon no Japão: 10 de julho de 1990; no Brasil: janeiro de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Ainda na morada, Shun, que está inteiro, acorda Seiya. Os dois se levantam e saem da Morada do Juízo por outra porta. 
+                            Do lado de fora, Lune conversa com Radamanthys e diz que foi iludido, pois, ao invés da cabeça, ele estava segurando 
+                            o próprio capacete da sua surplice.
+                            A pessoa que causou toda essa confusão na cabeça de Lune aparece: Kanon de Gêmeos! O Cavaleiro de Ouro mata Lune em 
+                            segundos, destruindo seu chicote e logo depois o corpo inteiro do espectro, tocando-o apenas com um dedo (Kanon 
+                            demonstra um poder incrível).
+                            Logo em seguida, ele pergunta para Radamanthys se ele quer ser o próximo a enfrentá-lo ou se ele quer levá-lo para 
+                            ver Hades pessoalmente. O espectro fica perplexo com tanta arrogância e tenta atacar Kanon. O Cavaleiro de Ouro 
+                            esquiva-se facilmente e diz ao espectro que ele só venceu três Cavaleiros de Ouro no Castelo de Hades porque, naquele 
+                            território, os Cavaleiros de Ouro só possuiam um décimo do poder devido a barreira imposta por Hades.
+                            Seiya e Shun chegam no local. Kanon avisa que eles terão que mudar de atitude caso queiram se manter vivos no Inferno. 
+                            Kanon ensina que eles não podem se entregar só porque feriram muitos inimigos no passado. Radamanthys é totalmente 
+                            ignorado neste momento! Seiya e Shun partem, já que eles tem a missão de entregar a Armadura de Atena para Saori. 
+                            Radamanthys ataca Kanon com sua Máxima Precaução, mas o Cavaleiro de Ouro revida com o Satã Imperial. O golpe parece 
+                            não surtir muitos efeitos em Radamanthys.
+                            Logo surgem mais espectros e Radamanthys avisa que eles morrerão caso tentem enfrentar Kanon. O espectro ainda avisa 
+                            que nem que eles fossem centenas estariam a altura de enfrentar Kanon. O aviso não fez os espectros mudarem de idéia e,
+                            mesmo antes de se apresentarem, Kanon dispara uma Explosão Galáctica, matando todos eles de uma vez só!
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-3.jpg"
                     },
@@ -1678,7 +1881,28 @@ const mangaClassicoVolumes = [
                         subtitulo: "Densetsu no Seinto! Orufe",
                         legenda: "Lançamento em tankobon no Japão: 10 de julho de 1990; no Brasil: janeiro de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Começa a chover no Inferno. Seiya e Shun partem para a segunda prisão e logo encontram um templo egípcio. Shun 
+                            reclama do cheiro horrível que aquele lugar tem. De repente, aparece um monstro de três cabeças (o Cérbero), que 
+                            está devorando os mortos. Shun diz para eles sairem do local sem fazer barulho, para que o monstro não os veja.
+                            Entretanto, o monstro ataca Seiya e o engole, porém, logo depois cospe o Pégaso para longe. Neste momento aparece 
+                            mais um espectro: Faraó de Esfinge. Faraó é o guardião da segunda prisão e explica que aqueles que pecaram por 
+                            ambição são enviados para a segunda prisão, local onde o Cérbero os devora. O monstro resolve atacar Shun desta 
+                            vez, mas ele se defende com suas correntes. Seiya, que foi atacado novamente, consegue contra-atacar e derruba uma 
+                            das cabeças do Cérbero. Shun utiliza a Grande Captura de Andrômeda e derruba as outras duas cabeças. Faraó fica 
+                            espantando e resolve atacar com sua harpa, porém é interrompido por um outro cavaleiro: é Orfeu de Lira, lendário 
+                            Cavaleiro de Prata cuja a força supera a dos Cavaleiros de Ouro.
+                            Seiya e Shun ficam assustados e Faraó explica que Orfeu não havia morrido como todos pensavam e foi até o Inferno 
+                            por vontade própria, resolvendo servir a Hades. Os Cavaleiros de Bronze resolvem questionar Orfeu, mas Faraó não 
+                            perde tempo e ataca com a sua Balança da Maldição. O som que é emitido da harpa funciona como uma maldição e Shun 
+                            rapidamente monta a Nebulosa de Andrômeda, na tentativa de defesa. Seiya contra-ataca com o Meteóro de Pégaso, mas 
+                            não tem efeito algum em Faraó.
+                            De repente, como numa maldição, o coração de Seiya começa a sair do seu corpo. O espectro diz que o coração dele 
+                            será colocada na balança sagrada para saber se ele é um ser maligno. Caso seja, o corpo e a alma do Seiya serão 
+                            destruídos imediatamente. Orfeu, que até agora estava parado, começa a tocar a sua Lira. A música de Orfeu quebra 
+                            a maldição do Faraó e o coração do Seiya volta ao seu corpo. O Cavaleiro de Prata dispara o seu Acorde Noturno, 
+                            diretamente em cima de Seiya e Shun, derrubando os dois.
+                            Orfeu diz para Faraó que ele mesmo irá matar os Cavaleiros de Bronze, enganando o espectro. Orfeu sai da segunda 
+                            prisão carregando Seiya e Shun nas costas. Logo eles chegam onde está Euridice, a sua amada que ficou petrificada.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-4.jpg"
                     },
@@ -1695,7 +1919,37 @@ const mangaClassicoVolumes = [
                         subtitulo: "Orufe, Kanashiki Rekuiemu",
                         legenda: "Lançamento em tankobon no Japão: 10 de setembro de 1990; no Brasil: fevereiro de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Seiya e Shun acordam novamente e se deparam com Eurídice petrificada. A amada de Orfeu não reconhece Shun e Seiya 
+                            e pergunta quem são eles. Shun responde, dizendo que eles são Cavaleiros de Atena. Eurídice fica feliz e diz que 
+                            há muito tempo esperava por eles.
+                            Ela começa a contar porque ficou petrificada: na Terra, Eurídice e Orfeu se amavam muito, porém um destino trágico 
+                            separou o casal quando Eurídice morreu ao ser picada por uma serpente. Orfeu foi pessoalmente ao Inferno, pedir a 
+                            vida de Eurídice de volta para Hades. Comovido com o som da Lira de Orfeu, Hades concedeu o direito de Eurídice 
+                            retornar a Terra. Pandora, que estava presente no local também, pediu para o espectro Faraó de Esfinge para que 
+                            ele impedisse que Eurídice e Orfeu voltassem. Quando Orfeu e Eurídice estavam perto da saída, Orfeu viu uma luz, 
+                            parecida com a luz do Sol, e neste exato momento Eurídice foi petrificada. Para não abandonar o seu amor, Orfeu 
+                            resolveu ficar no Inferno.
+                            Eurídice pede para Seiya e Shun levarem Orfeu de volta para a Terra, quando de repente Orfeu aparece. O Cavaleiro 
+                            de Prata fala para os Cavaleiros de Bronze fugirem, pois eles não podem enfrentar Hades sozinhos. Seiya, indignado, 
+                            fala para Orfeu que Atena está indo enfrentar Hades sozinha e eles precisam levar a Armadura de Atena para ela. 
+                            Orfeu muda de postura e diz que tem uma dívida com Hades. De repente, surge uma luz (igual a luz que Orfeu viu quando 
+                            Eurídice virou pedra). É Faraó de Esfinge, que aparece e rouba a Armadura de Atena das mão de Seiya. O espectro diz 
+                            que vai levar a Armadura de Atena para Pandora e questiona Orfeu, perguntando porque ele não matou os dois Cavaleiros 
+                            de Bronze.
+                            Orfeu pergunta para Faraó, se foi ele quem o enganou com a luz do Sol, petrificando Eurídice. O espectro responde 
+                            com arrogância, questionando o que Orfeu faria se fosse ele realmente. Orfeu responde de forma simples: se foi você, 
+                            este lugar será seu túmulo! O Cavaleiro de Prata consegue tomar de volta a Armadura de Atena e começa a tocar sua 
+                            Lira. Faraó também começa a tocar a sua harpa, para em seguida quebrar uma corda da Lira de Orfeu. Orfeu cai e o 
+                            espectro dispara a sua Balança da Maldição. Quando o espectro começou a dizer que o coração de Orfeu sairia do seu 
+                            corpo, acontece o contrário: o seu próprio coração sai do seu corpo e é colocado na balança sagrada. É claro que a 
+                            balança se inclinou dizendo que o Faraó é um ser maldoso. Orfeu começa a tocar sua Lira novamente e um espelho 
+                            (espelho de Pandora) cai da armadura do espectro. Foi com esse espelho que o Faraó conseguiu emitir aquela luz, 
+                            imitando raios de Sol. Orfeu quebra o espelho e agradece o Faraó por ter aberto seus olhos: agora ele entendeu que 
+                            é errado tentar ressuscitar alguém que já morreu.
+                            Eurídice fica feliz com as palavras de Orfeu. O Cavaleiro de Prata diz que vai voltar a lutar como um Cavaleiro de 
+                            Atena e logo em seguida quebra todas as cordas da harpa do Faraó. Sem qualquer ressentimento, Orfeu dispara o seu 
+                            Acorde Noturno e mata o espectro. Orfeu convoca os dois Cavaleiros de Bronze para seguirem com ele, já que Hades 
+                            aparece a cada treze dias, quando ele tem que tocar sua Lira para ele.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-5.jpg"
                     },
@@ -1705,7 +1959,32 @@ const mangaClassicoVolumes = [
                         subtitulo: "Hadesu! Shun he no Hyoi",
                         legenda: "Lançamento em tankobon no Japão: 10 de setembro de 1990; no Brasil: fevereiro de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Orfeu chega na Giudecca (para tocar Lira para Hades), trazendo consigo um baú. Pandora questiona Orfeu, perguntando 
+                            sobre o baú. O Cavaleiro de Prata diz que gostaria de mostrar o conteúdo apenas para Hades. Pandora não aceita e abre 
+                            o baú. Enquanto isso, Kanon encontra Eurídice. A amada de Orfeu explica que ele levou os dois Cavaleiros de Bronze 
+                            para Giudecca, onde tentarão matar Hades. Kanon acha tudo isso suicídio.
+                            De volta a Giudecca, Pandora se assusta ao ver apenas flores dentro do baú. Ainda desconfiada, ela começa a enfiar 
+                            sua lança dentro do baú, mas não encontra nada. Ela pede desculpas para Orfeu e pede para ele começar a tocar sua 
+                            Lira. Quando Orfeu ia começar a tocar, surge Radamanthys de Wyvern, um dos três juízes do mundo dos mortos. Logo em 
+                            seguida surgem: Aiacos de Garuda e Minos de Griffon, os outros dois juízes. Orfeu fica perplexo. Radamanthys pergunta 
+                            para Pandora porque ela chamou os três juízes para a Giudecca. Pandora explica que gostaria que eles ouvissem a música 
+                            de Orfeu. Orfeu, em pensamento, torce para que Seiya e Shun não morram, pois não é um bom sinal os três juízes estarem 
+                            lá exatamente hoje.
+                            Radamanthys não quer aceitar ter que ficar ouvindo a música de Orfeu, mas acaba sendo convencido por Pandora. Orfeu 
+                            começa a tocar sua Lira, quando Hades aparece no trono. Ele então dispara o sua Serenata da Viagem da Morte. Curiosamente, 
+                            todos começam a dormir (os três juízes, Pandora e Hades). Esta é a grande chance de Orfeu. Ele corre para atacar Hades, 
+                            mas é atingido pelas costas. É Radamanthys, que suspeitava da "traição" de Orfeu. Quando o espectro iria disparar mais 
+                            um golpe em Orfeu, é atingido pelos Meteoros de Pégaso de Seiya, que a esta altura já está fora do baú, assim como Shun. 
+                            Orfeu corre novamente para atacar Hades, mas estranha o rosto do Deus. Seiya vê o pentagrama utilizado por Hades e Shun 
+                            reconhece, dizendo que é idêntico ao seu. Quando Shun olha para Hades, ele fica perplexo e diz: sou eu!!!
+                            Orfeu resolve atacar e dispara o seu Acorde Perfeito. O golpe faz Hades desparecer. Radamanthys se aproveita da situação 
+                            e ataca Orfeu. Ele passa a utilizar Orfeu como escudo, caso Seiya e Shun queiram atacar. Orfeu pede para Seiya atacar, 
+                            sem se preocupar com ele. O Cavaleiro de Pégaso pede desculpas para Orfeu e dispara o seu Meteoro de Pégaso, que atinge 
+                            em cheio Radamanthys, mas também Orfeu.
+                            Orfeu morre nos braços de Seiya, dizendo que Atena é de responsabilidade deles agora. Radamanthys ainda está vivo e se 
+                            levanta. Shun fala para Radamanthys parar, porque eles não gostam de lutar. Radamanthys fica perplexo pois reconhece que 
+                            Shun tem a mesma voz de Hades, além de ser muito semelhante. Shun pede novamente para que Radamanthys pare. Desta vez 
+                            ele atende. Seiya, perplexo, diz que Shun mudou de personalidade e agora ele é Hades!!!
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-6.jpg"
                     },
@@ -1715,7 +1994,21 @@ const mangaClassicoVolumes = [
                         subtitulo: "Isoge! Judekka he",
                         legenda: "Lançamento em tankobon no Japão: 10 de setembro de 1990; no Brasil: fevereiro de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Kanon, Shiryu e Hyoga correm pelo Inferno para chegar até a Giudecca (Quarta Esfera, local onde está Hades). Shiryu 
+                            pergunta para Kanon se ele tem certeza sobre o fato de Seiya e os demais terem ido para a Oitava Esfera. Ao atravessar 
+                            a terceira prisão, eles são soterrados por pedras pelo espectro Rock de Golem, porém os três saem facilmente e 
+                            continuam seu caminho. O espectro os ataca, mas Shiryu o derrota facilmente com o Cólera do Dragão.
+                            Hyoga então percebe que Shiryu recuperou a visão. O Dragão explica que o mesmo ocorreu quando Máscara da Morte o mandou 
+                            para o mundo dos mortos na batalha das Doze Casas. O espectro Iwan de Troll surge, mas ele nem consegue falar seu nome, 
+                            pois Hyoga o derrota com o Pó de Diamante. Os três cavaleiros entram na Quarta Prisão e param perante o mar escuro.
+                            Na Giudecca, Radamanthys se apresenta para Pandora, que comenta que Hades tirou a Armadura de Andrômeda e agora descansa 
+                            em seu trono. Os três juízes ainda estão inconformados de Shun ser a reencarnação de Hades e questionam quem seria a 
+                            pessoa que estava dando às ordens para eles enquanto o imperador não despertava. Pandora ordena para que saiam e 
+                            destruam todos os Cavaleiros de Atena que ainda estão no Inferno.
+                            Na Quarta Prisão, Flégias de Lycaon surge numa jangada e é atacado pelo Cólera do Dragão de Shiryu e o Pó de Diamante 
+                            de Hyoga. Com o golpe Uivo Infernal, ele deixa os dois Cavaleiros de Bronze desacordados e joga seus corpos na jangada. 
+                            Porém Kanon derrota Flégias com o golpe Explosão Galáctica. Pandora chora e se desculpa, enquanto faz um curativo na 
+                            mão de Hades, após tê-lo ferido com a sua lança, quando ele estava no baú de Orfeu.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-7.jpg"
                     },
@@ -1725,7 +2018,27 @@ const mangaClassicoVolumes = [
                         subtitulo: "Dai go Purizun no Shitou!",
                         legenda: "Lançamento em tankobon no Japão: 10 de setembro de 1990; no Brasil: fevereiro de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Shiryu e Hyoga acordam na jangada e percebem que estão na Quinta Prisão. Um pouco à frente eles encontram Kanon perante 
+                            o espectro Stand de Besouro Mortal, que cai morto no chão. Kanon fala que chegou o próximo adversário. Os Cavaleiros 
+                            de Bronze olham para trás e veem Radamanthys se aproximando. Hyoga e Shiryu perguntam sobre Seiya e os outros. O juiz 
+                            então conta que Seiya e Orfeu estão em Cocytos, condenados por seus pecados e que Shun era Hades.
+                            Os cavaleiros ficam surpresos com a notícia, mas Radamanthys tem pressa em derrotá-los. Kanon se coloca à frente para 
+                            enfrentá-lo. Shiryu e Hyoga seguem para a Oitava Prisão, enquanto Radamanthys ataca Kanon, que aguenta o golpe, e lhe 
+                            conta que já deveria estar acostumado ao fato que um golpe não funciona duas vezes contra um cavaleiro. Kanon ataca 
+                            Radamanthys, que cai no chão, e percebe que seu corpo está enfraquecido devido aos acordes de Orfeu.
+                            Aiacos e Minos aparecem e zombam de Radamanthys, perguntando se ele precisa de ajuda. Kanon se prepara para enfrentar 
+                            os três. Aiacos o ataca, mas seu golpe não tem força total, pois Radamanthys o empurra, deixando Aiacos sem entender 
+                            nada. Minos também ataca Kanon e o prende em sua Marionete Cósmica. Minos controla o corpo de Kanon e quer torturá-lo. 
+                            Ele então começa quebrando o dedo do cavaleiro.
+                            Na Giudecca, Pandora sente um cosmo que a deixa apreensiva. É o cosmo de Ikki de Fênix. De volta a luta de Kanon, 
+                            Minos decide acabar de vez com o Cavaleiro de Ouro, mas Radamanthys intervém dizendo que ele quer derrotar o cavaleiro. 
+                            Minos vai dar o golpe final, mas suas cordas são cortadas por alguém. Os juízes olham para a frente e veem Ikki de Fênix. 
+                            Kanon conta para Ikki que Shun é Hades, mas o Cavaleiro de Fênix não acredita. Então Aiacos fala que Pandora está 
+                            cuidando de Shun/Hades na Giudecca.
+                            Nesse momento, Ikki se lembra que, quando criança, andava com Shun recém-nascido pelas ruas e em um dia encontrou com 
+                            Pandora, que levava um bebê enrolado em panos no colo dela. Ao olhar para os panos, ele enxergou o universo nele. 
+                            Aiacos ataca Ikki pelas costas. O Cavaleiro de Fênix se levanta do chão, chorando, pois entendeu que a intenção de 
+                            Shun é se sacrificar. Aiacos avança contra Ikki, que revida com um soco que faz o elmo de Garuda cair no chão.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-8.jpg"
                     },
@@ -1742,7 +2055,16 @@ const mangaClassicoVolumes = [
                         subtitulo: "Gekitotsu! Garuda Tai Fenikkusu",
                         legenda: "Lançamento em tankobon no Japão: 9 de novembro de 1990; no Brasil: março de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Na Quinta Prisão, Ikki pergunta qual dos três juízes será seu adversário. Aiacos então se propõe a enfrentar o Fênix. 
+                            Ikki tenta atacar Aiacos, que desvia facilmente e contra-ataca com o golpe Vôo da Garuda, lançando o cavaleiro no 
+                            alto. Então ele marca um “X” no chão e conta três segundos. Ikki cai no local marcado.
+                            Aiacos ataca novamente Ikki e marca outro “X”, mas, ao fim dos três segundos, Ikki não aparece. Então Aiacos sofre 
+                            um golpe e cai no chão. Aiacos se levanta e dá seu golpe fatal: Ilusão Galáctica. Fênix cai derrotado. Garuda se 
+                            prepara para voltar a enfrentar Kanon, que pede para Aiacos olhar para Ikki, pois o Fênix sempre renasce mais forte.
+                            Na Giudecca, Shun/Hades acorda e pede para Pandora trazer o Cavaleiro de Bronze, do qual ele sente o cosmo, até lá, 
+                            pois é um cosmo familiar para ele. Ikki ataca Aiacos com seu Golpe Fantasma de Fênix. O juiz cai numa ilusão criada 
+                            por Ikki, onde ele é derrotado. Quando ele desperta da ilusão, Ikki dá seu ataque final com o Ave Fênix. Em seguida, 
+                            Ikki é transportado dali e cai no chão do Palácio da Giudecca.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-9.jpg"
                     },
@@ -1752,7 +2074,20 @@ const mangaClassicoVolumes = [
                         subtitulo: "Gureitesuto Ekurippusu",
                         legenda: "Lançamento em tankobon no Japão: 9 de novembro de 1990; no Brasil: março de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Ikki está perante Pandora e Shun/Hades. O Fênix chama por Shun, mas Pandora o paralisa com sua lança. Pandora devolve 
+                            as lembranças de Ikki, que recorda de seu encontro com ela na infância. Na recordação, Pandora está carregando o bebê 
+                            no colo e quer tomar Shun para ela, para depositar a alma de Hades no corpo de Shun. Ikki não permite e, mesmo com 
+                            Pandora o atacando, o menino protege seu irmão. Pandora tenta se aproximar, mas sente um cosmo muito grande protegendo 
+                            Shun. Para não ferir Hades, ela decide ir embora e deixa o pingente para o bebê.
+                            No presente, Ikki se irrita pois ele achava o tempo todo que o pingente era de sua mãe. Pandora diz que, de tempos 
+                            em tempos, um reflexo de Shun surgia perante os espectros, pois era a vontade de Hades ressuscitar, mas ele não 
+                            conseguia enquanto o selo não se rompesse. Ikki dispara um golpe contra Hades, que Pandora não consegue segurar. Esse 
+                            golpe quebra o pingente e então Ikki se aproxima clamando para que Shun desperte. Pandora entra na frente, mas Ikki da 
+                            um tapa nela e a joga para longe. Ele ameaça e joga a lança contra ela, que quase a atinge.
+                            Fênix sobe até o trono e dá vários tapas em Shun/Hades para que ele desperte. Shun/Hades fala que não há como 
+                            desvincular a sua alma do corpo de Shun e joga o Fênix para longe. Pandora ameaça Ikki com sua lança, mas Shun/Hades 
+                            não permite, pois quer conversar com o Fênix. O deus conta seu plano: fazer um alinhamento planetário que causará um 
+                            Grande Eclipse, onde a Terra entrará numa nova Era Glacial e de escuridão, onde o mundo se tornará trevas.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-10.jpg"
                     },
@@ -1762,7 +2097,20 @@ const mangaClassicoVolumes = [
                         subtitulo: "Ikki Doukoku no Ken",
                         legenda: "Lançamento em tankobon no Japão: 9 de novembro de 1990; no Brasil: março de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Shun/Hades diz que nem Atena poderá impedir o Grande Eclipse, portanto não era para Ikki tentar. O cavaleiro lança 
+                            seu Ave Fênix contra o Deus, que não sente o golpe. Ikki tenta de novo, mas somente com o olhar, Hades joga Ikki longe. 
+                            O Fênix levanta e pergunta se Shun/Hades está querendo poupá-lo. Ele avança novamente, mas Shun/Hades revida.
+                            O Deus se prepara para dar um golpe de misericórdia, mas seu corpo fica paralisado. Então sua própria mão vai até sua 
+                            garganta. Ikki enxerga a alma de Shun, que suplica para que o Fênix ataque Hades. Vendo que o irmão está honrando a 
+                            constelação de Andrômeda, Ikki avança para dar o golpe final, mas Pandora atinge Fênix com sua lança. Surge então a 
+                            Corrente de Andrômeda, que protege Ikki contra Pandora. Ikki aplica seu golpe contra Shun/Hades.
+                            Shiryu e Hyoga estão na entrada do Labirinto da Sexta Prisão e sentem os cosmos de Ikki e Shun. Ikki arranca o coração 
+                            de Shun/Hades. O coração dele parece um verme. Fênix então joga o coração no chão e pisa nele. Fênix ergue Shun do chão 
+                            e, no local onde Ikki arrancou o coração de Hades, surge um monstro que ataca o cavaleiro. Seiya acorda em Cocytos, onde 
+                            ele está enterrado no gelo e percebe que tudo isso foi um sonho.
+                            Enquanto isso na Giudecca, o verdadeiro Ikki conteve seu golpe, pois não conseguiu atacar seu irmão. Os cabelos loiros 
+                            de Shun/Hades tornam-se negros, mostrando que a transformação está completa. Hades/Shun ataca Ikki, que é derrotado. 
+                            Ele ordena que Pandora se desfaça do corpo do cavaleiro. Hades sente um cosmo poderoso.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-11.jpg"
                     },
@@ -1772,8 +2120,21 @@ const mangaClassicoVolumes = [
                         subtitulo: "Kokiyutosu no Shitou",
                         legenda: "Lançamento em tankobon no Japão: 9 de novembro de 1990; no Brasil: março de 2014 (Editora JBC)",
                         texto: `
-                        
-                        `,
+                            Hades está surpreso com o cosmo que ele sente. Pandora ordena para que o espectro Valentine de Harpia leve o corpo de 
+                            Ikki para Cocytos. Pandora pergunta se Hades quer descansar no templo, mas ele ordena que Pandora saia, pois ele 
+                            descansará no trono e não é para ninguém incomodá-lo. Ele escuta alguém adentrar a sala. É Shaka de Virgem.
+                            Em Cocytos, Valentine joga o corpo de Ikki próximo ao de Seiya, que ainda está com parte do corpo enterrado no gelo. 
+                            Valentine diz que Cocytos é o local onde aqueles que enfrentam aos deuses são enterrados e mostra os corpos de Aiolia, 
+                            Mu e Milo que estão lá também. O espectro está indo embora, mas Seiya o desafia para uma batalha e relembra que no 
+                            Castelo de Hades, Valentine disse que, se Seiya chegasse vivo ao Inferno, ele o enfrentaria. Valentine se recusa, 
+                            então Seiya diz que está com a Armadura de Atena. Valentine tira Seiya do gelo, o ergue e pergunta sobre a armadura. 
+                            Seiya revida com um chute e se solta. Pégaso está muito cansado para lutar. Valentine começa golpear Seiya para tomar 
+                            a Armadura de Atena.
+                            Na Giudecca, Shaka fala para Hades/Shun que esperava encontrá-lo somente no Elíseos. Shaka pretende atacar Hades/Shun, 
+                            mas Saori intervém e o deus da morte entende que o cosmo que ele sentia era dela. Seiya derruba a Armadura de Atena, 
+                            após o último golpe de Valetine. O espectro vai pegar, mas o Cavaleiro de Bronze segura a armadura e começa a expandir 
+                            seu cosmo. Seiya se levanta e chuta Valentine, destruindo a surplice do espectro.
+                        `,  
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-12.jpg"
                     },
                 ]
@@ -1789,7 +2150,33 @@ const mangaClassicoVolumes = [
                         subtitulo: "Hadesu wo Oe!",
                         legenda: "Lançamento em tankobon no Japão: 10 de janeiro de 1991; no Brasil: abril de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Hades/Shun pergunta se Saori veio oferecer sua vida para ele. Shaka pede para Saori se afastar, para ele atacar o 
+                            Deus, mas Saori diz que ele não pode fazer isso pois é Shun que está ali. Shaka argumenta que é o corpo de Shun que 
+                            está ali, porém Saori segura a mão do Cavaleiro de Ouro e diz que não adianta atacar somente o corpo e deixar a alma. 
+                            Ela sobe os degraus até Hades/Shun e diz que veio fazer um pedido. A deusa então se ajoelha perante Hades/Shun e 
+                            suplica para que ele pare com o Grande Eclipse.
+                            O deus da morte zomba dizendo que eles já se enfrentaram tantas vezes no passado e agora ela se ajoelha. Ele diz que 
+                            o Grande Eclipse está em progresso e ele não irá pará-lo. Saori diz que sabe disso e oferece sua vida em troca do 
+                            fim do eclipse. Hades/Shun pergunta se ela realmente quer se sacrificar. Ao ouvi-la dizendo que sim, ele ordena que 
+                            Shaka pegue a lança de Pandora que estava no chão e mate Atena.
+                            O Cavaleiro de Virgem pega a lança, mas se recusa a matá-la, então ele atira a lança em direção ao deus da morte. 
+                            Saori consegue pegar a lança no ar e a joga no chão. Hades/Shun pega a lança e ameaça Shaka, porém a deusa diz que 
+                            é ela que ele quer. Irritado, Hades/Shun tenta atravessar Saori com a lança, mas ela segura a lamina com suas mãos. 
+                            Hades/Shun pergunta se ela mudou de ideia, em se sacrificar. Ela diz que não permitirá a morte de ninguém enquanto 
+                            ele não impedir o Grande Eclipse. Saori expande seu cosmo e diz que o dever dela é proteger toda vida que existe. 
+                            Hades/Shun se contorce ao encostar no sangue de Atena que escorre pela lança. Saori sente que seu sangue está ajudando 
+                            Shun a despertar. Ela então começa incentivar Shun a eliminar a alma de Hades de seu corpo.
+                            Hades começa a se contorcer de dor e abandona o corpo de Shun. A alma do deus paira sobre eles e Hades não entende o 
+                            porque de ter sido expelido por Shun. Saori diz que a alma de Shun despertou ao entrar em contato com seu sangue e que 
+                            Hades deve ir embora, pois não há corpo para hospedá-lo na Terra. Com raiva, o deus da morte avança contra Atena, 
+                            dizendo que ninguém vai impedir seus planos. Atena atira a lança contra a alma de Hades e uma grande explosão cósmica 
+                            acontece.
+                            Seiya entra correndo na Giudecca e encontra Shun caído no chão. O Pégaso pergunta sobre Atena, mas o Cavaleiro de 
+                            Andrômeda diz que sentiu os cosmos que estavam na sala irem para o fundo. Os dois Cavaleiros de Bronze vão até lá e 
+                            encontram um muro gigantesco, sem saída. Shaka surge e diz que esse é o limite final do Inferno, o Muro das Lamentações. 
+                            Seiya sugere que eles devem tentar destruir o muro. Porém o Cavaleiro de Virgem diz que, mesmo unindo suas forças, eles 
+                            são incapazes de arranhar o muro. Seiya então tenta disparar golpes contra o Muro, mas é inútil. O Pégaso pergunta o que 
+                            será que tem do outro lado do muro. Shaka deduz que devem ser os Campos Elíseos.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-13.jpg"
                     },
@@ -1799,8 +2186,22 @@ const mangaClassicoVolumes = [
                         subtitulo: "Uchiyabure! Nageki no Kabe",
                         legenda: "Lançamento em tankobon no Japão: 10 de janeiro de 1991; no Brasil: abril de 2014 (Editora JBC)",
                         texto: `
-                        
-                        `,
+                            Seiya entrega a Armadura de Atena para Shun, que pergunta o que o Pégaso vai fazer. Seiya responde que vai elevar seu 
+                            cosmo ao máximo e se atirar contra o muro. Shun debate dizendo que nem Shaka conseguiu arranhar o muro. Seiya discorda, 
+                            pois eles prometeram derrotar Hades e então ele corre contra o muro. Shaka entra na frente e diz que não adianta. Seiya 
+                            não aceita e continua correndo em direção ao muro, mas Shaka acerta um soco em Seiya para impedí-lo.
+                            Shaka se recorda que já ouviu que, para destruir o Muro das Lamentações, é necessário a luz do Sol. Shun tenta 
+                            argumentar e Shaka concorda que é difícil, pois eles estão no ponto mais profundo do Inferno. Shaka se prepara para 
+                            destruir o Muro. Shun pergunta se Shaka poupou Seiya para ele se sacrificar no lugar de Seiya.
+                            Em Cocytos, quatro espectros encontram o corpo de Valentine e averiguam que o Espectro de Harpia faleceu devido a 
+                            diversos golpes. Eles deduzem que foi Seiya, então eles começam a sentir um grande cosmo. É o cosmo de Atena que faz 
+                            com que os três Cavaleiros de Ouro ali enterrados (Mu, Aiolia e Milo) se levantem. Os Cavaleiros de Ouro eliminam os 
+                            Espectros.
+                            Shaka medita e aumenta seu cosmo para poder derrubar o muro. Alguém aparece, coloca a mão no seu ombro e fala para ele 
+                            parar com isso. Shaka olha para trás e vê Dohko de Libra, que diz que um homem como Shaka não deve morrer sozinho. Mu, 
+                            Aiolia e Milo chegam no local e o Cavaleiro de Áries devolve o Rosário para Shaka. Dohko diz que agora eles podem 
+                            derrubar o Muro.
+                        `,  
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-14.jpg"
                     },
                     {
@@ -1809,7 +2210,31 @@ const mangaClassicoVolumes = [
                         subtitulo: "Shuketsu! Gourudo Kurosu",
                         legenda: "Lançamento em tankobon no Japão: 10 de janeiro de 1991; no Brasil: abril de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Dohko diz que é possível recriar a luz do Sol ao concentrar a força dos Cavaleiros do Ouro. Shun pergunta como. Libra 
+                            então explica que as constelações do zodíaco estão na rota do Sol e que as Doze Armaduras de Ouro armazenam uma fração 
+                            do raio do Sol dentro de cada traje. Dohko confirma que se os Cavaleiros Dourados que estão ali elevarem seus cosmos ao 
+                            máximo, eles podem destruir o muro. Ele entrega para cada um deles uma das armas de libra, para eles tentarem derrubar 
+                            o Muro. Eles elevam seus cosmos e lançam as armas de Libra contra o Muro.
+                            Enquanto isso, no Santuário, Jabu de Unicórnio, Nachi de Lobo, Ichi de Hidra observam o Grande Eclipse. Ichi diz que 
+                            tem a impressão que não vai mais ver a luz do Sol. Shina aparece e discorda, dizendo que os amigos deles estão no 
+                            Inferno dando o melhor de si. Marin aparece dizendo que há sim a possibilidade de não verem mais o Sol. Shina pergunta 
+                            onde Marin estava. Nesse momento, uma luz sai da Casa de Sagitário. Logo após, luzes saem das outras casas dos Cavaleiros 
+                            de Ouro que morreram. Shina diz que as almas deles partiram para o mundo das trevas.
+                            No Muro das Lamentações, os cinco Cavaleiros de Ouro estão caídos, após não conseguirem atacar o muro. Seiya pede para 
+                            que eles o deixem ajudar também. Dohko fala que só é possível se todos os Cavaleiros Dourados tentassem. Eis que surgem 
+                            as outras seis Armaduras de Ouro e elas começam a ressoar. Kanon ainda ruma até a Giudecca. Ele sente a Armadura de 
+                            Gêmeos ressoar em resposta às outras. Radamanthys aparece e diz que não pode deixar Kanon prosseguir. O cavaleiro então 
+                            expele sua Armadura de Ouro. O juiz fica impressionado e Kanon diz que mandará a armadura para seu irmão. Ele diz que 
+                            sua missão termina ali. Radamanthys ataca, mas Kanon agarra o espectro e se sacrifica com uma Explosão Galáctica para 
+                            derrotar o espectro. Shiryu e Hyoga veem ao longe uma luz que é Kanon se sacrificando. A Armadura de Gêmeos chega ao 
+                            Muro.
+                            Com todas as Armaduras de Ouro reunidas, elas se fragmentam e vestem os sete Cavaleiros de Ouro que faltavam: Aldebaran, 
+                            Saga, Máscara da Morte, Aiolos, Shura, Camus e Afrodite. Aiolos de Sagitário aponta sua flecha contra o Muro. Dohko pede 
+                            para Seiya e Shun sairem dali, pois somente eles podem atravessar o muro após a destruição dele, já que armaduras de 
+                            ambos foram banhadas com o sangue de Atena.
+                            Dohko então diz que o corpo verdadeiro de Hades está nos Elíseos e eles devem destruí-lo para derrotar o deus. Seiya e 
+                            Shun saem. Os Doze Cavaleiros de Ouro elevam seus cosmos ao máximo e atacam o muro. Minos chega à Giudecca e tira Seiya 
+                            e Shun da porta para o Muro. Ele abre a porta e recebe o impacto da força dos Cavaleiros de Ouro.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-15.jpg"
                     },
@@ -1819,7 +2244,15 @@ const mangaClassicoVolumes = [
                         subtitulo: "Heru to Yutopia no Aida!",
                         legenda: "Lançamento em tankobon no Japão: 10 de janeiro de 1991; no Brasil: abril de 2014 (Editora JBC)",
                         texto: `
-                        
+                            A Giudecca é destruída. Hyoga e Shiryu chegam até lá e entram nas ruínas. Seiya e Shun estão no Muro das Lamentações, 
+                            onde um buraco foi aberto. Só restaram as Doze Armaduras de Ouro.
+                            Hyoga e Shiryu chegam até o Muro das Lamentações também. Os quatro lamentam o sacrifício dos Cavaleiros de Ouro e, em 
+                            seguida, entram no buraco, mas Shiryu pressente algo e fica para trás. Ao chegar no outro lado do Muro, Seiya, Shun e 
+                            Hyoga encontram uma dimensão onde o tempo e o espaço estão distorcidos. Ao fundo, um círculo de luz indica que ali é a 
+                            entrada para os Elíseos.
+                            Três espectros aparecem para impedir Shiryu: Sylphid de Basilisco, Gordon de Minotauro e Queen de Mandrágora. Eles 
+                            atacam Shiryu, que revida usando a Excalibur. Seiya e Shun saltam no espaço para chegar ao Elíseos. Hyoga fica para 
+                            trás, pois Minos ainda está vivo.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/inferno-16.jpg"
                     },
@@ -1829,7 +2262,19 @@ const mangaClassicoVolumes = [
                         subtitulo: "Erishion e no Michi!",
                         legenda: "Lançamento em tankobon no Japão: 10 de janeiro de 1991; no Brasil: dezembro de 2003 (Conrad Editora) e abril de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Minos quer impedir que Hyoga, Seiya e Shun cheguem ao Elíseos. Entretanto, Hyoga cria um esquife de gelo separando eles 
+                            do juiz do inferno. Minos destrói o esquife enquanto Seiya pede para Hyoga deixar ele para trás e saltar para o espaço 
+                            também. O Cisne se nega, pois percebe que correm o risco de Minos os atrapalhar. Hyoga então vai servir como um 
+                            escudo, protegendo seus amigos. O cavaleiro ataca com o Pó de Diamante, mas o espectro não sente nada e usa sua 
+                            Marionete Cósmica contra Hyoga. Seiya e Shun começam a sentir a pressão do espaço e são arrastados para o caminho 
+                            oposto aos Elíseos. Seiya eleva seu cosmo e as asas da Armadura de Pégaso se abrem, fazendo com que Seiya segure 
+                            Shun e juntos rumem aos Elíseos. Hyoga, vendo que Seiya e Shun atravessaram o espaço, utiliza sua Execução Aurora em 
+                            Minos e também salta para o espaço, mas o Cisne ainda está preso à Minos por um fio. Minos salta para impedir Hyoga, 
+                            mas ele é pulverizado no espaço. Hyoga então entende que é graças ao sangue de Atena que eles podem chegar aos Elíseos. 
+                            Shiryu continua sua luta contra os três espectros. Queen ataca o Dragão, que contra ataca com a Excalibur. Gordon 
+                            também ataca, mas é jogado ao chão com o Cólera do Dragão. Sylphid se prepara para dar o golpe final no cavaleiro e 
+                            o ataca. Shiryu é arremessado, mas o muro contém o corpo dele. Então o Dragão se levanta novamente, eleva seu cosmo e 
+                            ataca Sylphid.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/eliseos-1.jpg"
                     },
@@ -1846,7 +2291,13 @@ const mangaClassicoVolumes = [
                         subtitulo: "Shitou! San tai Ichi!!",
                         legenda: "Lançamento em tankobon no Japão: 8 de março de 1991; no Brasil: maio de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Sylphid cai no chão. Os espectros resolvem unir suas forças para derrotar Shiryu. O Dragão pensa em Shunrei que está 
+                            nos Cinco Picos Antigos de Rozan rezando por ele. Os espectros unem seus ataque contra Shiryu que contra-ataca usando 
+                            o Cólera dos 100 Dragões. A força do golpe arremessa Shiryu dentro do buraco do muro, ele cai no espaço, mas é salvo 
+                            por Hyoga, que também abriu as asas da Armadura de Cisne. Sylphid vai atrás de Shiryu e também salta para o espaço, 
+                            mas seu corpo é despedaçado. Os dois Cavaleiros de Bronze seguem para os Elíseos. Ikki também chega até o limite entre 
+                            o muro e o espaço. Pandora chega dizendo que a Armadura de Fênix não foi banhada pelo sangue de Atena. Pandora abraça 
+                            Ikki e diz que deixará o Fênix ir desde que ele vingue-a.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/eliseos-2.jpg"
                     },
@@ -1856,7 +2307,22 @@ const mangaClassicoVolumes = [
                         subtitulo: "Pandora, Hai'iro no Tsuioku ...",
                         legenda: "Lançamento em tankobon no Japão: 8 de março de 1991; no Brasil: maio de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Os últimos espectros chegam no muro e observam Ikki com Pandora. Fênix não entende o que Pandora disse e pergunta se é 
+                            por isso que ela tirou ele do Cocytos. Ela conta que se recordou de seu passado. Vemos um flashback que conta sobre a 
+                            família de Pandora, que cresceu no Castelo de Heinstein. Quando criança, Pandora passeava com seus cachorros pelo 
+                            jardim e encontrou uma cabana distante, fechada com um pesado cadeado há duzendo anos. Então as portas se abriram e 
+                            ela entrou na cabana atraída por uma força invisível. Lá dentro havia uma urna com um selo de Atena, lacrando-a. Ela 
+                            então abriu e de dentro saiu duas almas que estavma presas ali há duzentos anos. Eles se apresentaram como Hypnos, Deus 
+                            do Sono e Thanatos, Deus da Morte. Em seguira, falaram que em breve a mãe de Pandora daria a luz a Hades e que ela 
+                            deveria proteger seu irmão antes do Selo de Atena se romper. Mais a frente, a mãe de Pandora dá a luz ao bebê e todos 
+                            do castelo morreram. O castelo se tornou um lugar sem qualquer tipo de vida e tornou-se o Castelo de Hades. Ikki deduz 
+                            que, à partir de então, ela começou a procurar Shun para ser o hospedeiro do Deus. Pandora explica que estava em transe 
+                            e em todos aqueles anos ela enxergou o mundo cinza. Só agora ela pode voltar a ver graças ao cosmo dos Cavaleiros de 
+                            Bronze e ela se arrepende de tudo. Pandora entrega para Ikki um amuleto e ela o amarra no pulso dele. É esse amuleto 
+                            que permite que ela entre no Inferno. Com a transferência do amuleto, Pandora começa sentir dores. A garota alerta Ikki 
+                            para que eles tomem cuidado com Hypnos e Thanatos. Os últimos espectros chegam para impedir Ikki, mas ele derrota todos 
+                            com o Ave Fênix. Todas as 108 pérolas do rosário de Shaka estão negras. O Cavaleiro de Fênix percebe que Pandora faleceu 
+                            e parte para os Elíseos.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/eliseos-3.jpg"
                     },
@@ -1866,7 +2332,31 @@ const mangaClassicoVolumes = [
                         subtitulo: "Tanatosu to Hyupunosu!",
                         legenda: "Lançamento em tankobon no Japão: 8 de março de 1991; no Brasil: maio de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Uma introdução conta que acima do Rio Aqueronte, às margens do Rio Lete, encontra-se o paraíso, chamado de Elíseos. 
+                            Duas fadas entram correndo no Templo de Thanatos. O deus está tocando harpa com algumas fadas em volta e ele pergunta 
+                            o porque de tanto barulho. Elas contam que um homem coberto de sangue, suor e lama está nos jardins dos Campos Elíseos. 
+                            Seiya caminha pelo jardim e cai no chão, ele pergunta por Atena para uma fada que está por perto e ela sai correndo. 
+                            Thanatos aparece e diz que Seiya está assustando as fadas. Ele se apresenta e Pégaso pergunta se ele é um espectro. 
+                            Thanatos diz que não é um espectro e que é o braço direito de Hades desde o início dos tempos. Seiya pergunta onde 
+                            está Atena. O deus diz que Atena está morta e que nesse momento Hypnos deve estar entregando o corpo dela para Hades. 
+                            Seiya avança contra Thanatos, que joga o cavaleiro para longe. O deus diz que não deve satisfações ao Pégaso e se 
+                            prepara para atacar, mas Hypnos interrompe dizendo que não pode derramar o sangue do cavaleiro em uma terra imaculada 
+                            como aquela. Hypnos então questiona o porque de Thanatos ter matado Pandora, dando a entender que ele compreende a 
+                            morte de modo tão leviano. Seiya ouve a conversa dos dois e descobre que Ikki saiu vivo de Cocytos e está nos Elíseos. 
+                            Thanatos diz que Pandora e os espectros não tinham mais utilidades e os dois são suficientes, pois eles já entregaram o 
+                            corpo de Atena para Hades. Hypnos fala que entregou Atena para Hades, mas não a matou. Seiya pergunta onde ela está 
+                            então. Hypnos aponta para o Templo de Hades, onde Saori está presa dentro de um Vaso Gigante que está drenando todo 
+                            sangue dela. Hypnos diz que somente Hades tem direito sobre a vida e a morte, mas na hora que o vaso se tingir de 
+                            vermelho, ela morrerá. Seiya então parte para o Templo de Hades. Thanatos fala para Hypnos que não permitirá que o 
+                            cavaleiro entre no templo, mesmo tendo que derramar o sangue do rapaz. Hypnos fala para ele fazer o que quiser, 
+                            desde que não derrame sangue no templo. Thanatos então lança uma esfera de energia contra Seiya, que abre as asas 
+                            da Armadura de Pégaso e escapa do golpe. Dos céus, Seiya lança os Meteoros de Pégaso contra o deus. Hypnos diz que 
+                            o cavaleiro não tem nada a perder e que Thanatos deveria tomar cuidado. Com raiva, Thanatos golpeia novamente o 
+                            Pégaso, desta vez atingindo-o, quebrando sua armadura e derrubando-o no chão. No Santuário, o eclipse continua e 
+                            Marin fala para os Cavaleiros de Bronze manterem a calma. Shina questiona onde Marin estava esse tempo todo. Kiki 
+                            então chega com uma garota, da qual Marin disse que é a menina que Seiya procura há anos. Nos Elíseos, Thanatos 
+                            anuncia que dará o golpe de misericórdia em Seiya, mas o cavaleiro diz que tem muitas pessoas para proteger e 
+                            encontrar. Ele então lança o Cometa de Pégaso contra o deus.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/eliseos-4.jpg"
                     },
@@ -1876,7 +2366,18 @@ const mangaClassicoVolumes = [
                         subtitulo: "Sono Hito wa Seika!",
                         legenda: "Lançamento em tankobon no Japão: 8 de março de 1991; no Brasil: maio de 2014 (Editora JBC)",
                         texto: `
-                        
+                            No Santuário, Marin conta que a garota que ela trouxe é Seika, a irmã do Seiya. Entretanto, ela perdeu sua memória. 
+                            Nos Elíseos, o Cometa de Pégaso não surtiu nenhum efeito em Thanatos. O Deus da Morte percebe que o golpe fez uns 
+                            arranhões em seus dedos e isso o deixa revoltado. Ele começa a pisar e chutar Seiya, mesmo assim ele quer destruir 
+                            a alma do cavaleiro. No Santuário, Marin conta que Seika ficou anos sem memória no vilarejo próximo ao Santuário. 
+                            Deduzindo que a menina veio atrás do irmão, Marin saiu em busca dela pela Grécia. Shina diz que achava que Marin 
+                            era a irmã de Seiya, pois ela também procura o irmão. A Amazona de Águia contempla o Sol em silêncio. Seika começa 
+                            a passar mal. É Thanatos que quer matar a menina para Seiya sofrer. Ele conta que pode matar mesmo distante, igual 
+                            fez com Pandora. Ao saber que Seika está no Santuário, Seiya eleva seu cosmo, tenta atacar Thanatos de novo e falha. 
+                            Na Grécia, Kiki percebe as energias cósmicas que tentam atingir Seika. Com sua telecinese, ele começa a instruir de 
+                            onde as energias vem para Marin e os demais protegerem Seika. Eles escutam a voz de Thanatos que diz para sairem da 
+                            frente para ele eliminar a menina. Marin, Shina, Kiki e os Cavaleiros de Bronze cercam Seika e a protegem dos ataque 
+                            do deus.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/eliseos-5.jpg"
                     },
@@ -1886,7 +2387,21 @@ const mangaClassicoVolumes = [
                         subtitulo: "Kesshu! Buronzu Seinto",
                         legenda: "Lançamento em tankobon no Japão: 8 de março de 1991; no Brasil: maio de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Marin, Shina e os Cavaleiros de Bronze começam a mandar, através do cosmo, pensamentos de incentivo para Seiya derrotar 
+                            Thanatos. O deus tenta dar o golpe final em Seika, mas ela é salva por um campo de proteção feito pelos seus defensores. 
+                            Com raiva, Thanatos reúne suas forças para eliminar eles. Seiya não quer permitir o sacrifício deles, então ele segura 
+                            o deus pelas costas e usa seu golpe Turbilhão de Pégaso. Thanatos desaparece e Seiya cai sozinho no chão. O deus 
+                            reaparece e decide eliminar a todos de uma vez, mas ele é contido pela Corrente de Andrômeda. Shun está perto deles 
+                            e diz que vai proteger Seiya, mas Thanatos o joga longe e mesmo a Defesa Circular não consegue proteger Shun do golpe. 
+                            O deus vai atacar Shun, mas é impedido pelo Cólera do Dragão de Shiryu. Thanatos revida com um golpe que joga o Dragão 
+                            no chão. Ele tenta golpear Shiryu, mas em seguida tem metade do corpo congelado por Hyoga graças ao Pó de Diamante. 
+                            Hyoga vai até Shiryu e ambos são surpreendidos por um golpe de Thanatos. O deus pergunta se todos já chegaram, então 
+                            eis que surge Ikki. O Fênix diz que veio se vingar e tenta golpear Thanatos, que desvia e rompe o amuleto que Pandora 
+                            deu para o cavaleiro. Ikki revida com o Ave Fênix, que acaba atingindo Thanatos e derrubando seu elmo. Com raiva, o 
+                            deus usa seu golpe Providência Divina contra o cavaleiro. Thanatos se aproxima para dar o golpe final, mas escuta ao 
+                            longe o ressoar das Doze Armaduras de Ouro. Ele da risada, pois para chegar aos Elíseos as armaduras precisariam da 
+                            ajuda de um deus. Seiya, Shiryu, Hyoga e Shun se levantam. Thanatos dá um golpe que arremessa os cinco Cavaleiros de 
+                            Bronze longe. Eis que ele sente a aproximação das Armaduras de Ouro e sente que o cosmo que as envia é de Poseidon.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/eliseos-6.jpg"
                     },
@@ -1896,7 +2411,14 @@ const mangaClassicoVolumes = [
                         subtitulo: "Kaiou Yori no Engun",
                         legenda: "Lançamento em tankobon no Japão: 8 de março de 1991; no Brasil: maio de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Thanatos não entende como Poseidon está intervindo, sendo que ele foi preso por Saori na ultima batalha. As Armaduras 
+                            de Sagitário, Libra, Aquário, Virgem e Leão chegam nos Elíseos e vestem respectivamente Seiya, Shiryu, Hyoga, Shun e 
+                            Ikki. No Cabo Sunion, Sorento conversa com Julian Solo e pergunta o que aconteceu, pois o rapaz fica estranho 
+                            momentaneamente. Julian volta a se tornar Poseidon e conta para Sorento que resolveu ajudar para impedir o Grande 
+                            Eclipse. Como a alma dele está presa na Ânfora, ele não pode ajudar mais que isso. Julian Solo desperta e Sorento 
+                            percebe que Poseidon, mesmo sendo inimigo de Atena, não quer que o mundo mergulhe nas trevas. Thanatos conta para 
+                            Seiya e para os outros que foi Poseidon que os ajudou, mas ele zomba, pois perante os deuses, as Armaduras de Ouro 
+                            são inúteis. Com apenas um golpe, Thanatos destrói as cinco Armaduras Douradas.
                         `,
                         imagem: "Capítulo : https://www.cavzodiaco.com.br/imagens-mangas/hades/eliseos-7.jpg"
                     },
@@ -1913,7 +2435,26 @@ const mangaClassicoVolumes = [
                         subtitulo: "Densetsu no Goddo Kurosu!",
                         legenda: "Lançamento em tankobon no Japão: 10 de abril de 1991; no Brasil: junho de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Os cinco Cavaleiros de Bronze caem no chão com suas armaduras destruídas. Com a queda, Seiya derruba a miniatura da 
+                            Armadura de Atena. Thanatos pega a miniatura do chão. Caído no chão, Seiya começa ouvir, através do cosmo, as orações 
+                            de Saori, Marin, Shina e de seus amigos para que eles derrotem Hades. Pensando na irmã, Seiya começa a se levantar e 
+                            grita o nome de Seika, que ressoa pelo universo. No Santuário, Seika escuta o grito e também grita pelo nome do irmão. 
+                            Ao ouvir a voz da irmã, Seiya eleva seu cosmo ao máximo e seu corpo começa a brilhar, deixando Thanatos espantado. 
+                            No Templo de Hypnos, o deus do sono se inquieta com a demora da batalha de seu irmão gêmeo com os cavaleiros. Hypnos 
+                            então recorda-se de que na última vez que as armaduras dos cavaleiros foram banhadas com o sangue de Atena, elas se 
+                            tornaram Armaduras Divinas. Seiya surge vestindo a Armadura Divina de Pégaso. Thanatos fica espantado ao ver Seiya e 
+                            Hypnos aparece confirmando que a Armadura de Bronze se tornou uma Armadura divina. Thanatos fica receoso achando que 
+                            Seiya é um escolhido por Zeus, mas Hypnos o acalma dizendo que isso já ocorreu uma vez, que foi por causa do sangue de 
+                            Atena. Thanatos diz para Hypnos que eles não devem temer, afinal ele é apenas um cavaleiro normal. Thanatos ataca 
+                            Seiya, que desta vez consegue desviar. O Pégaso revida chutando a mão do Deus, pegando de volta a miniatura da Armadura 
+                            de Atena. Seiya diz que levará a miniatura para Atena, mas Thanatos o ataca para impedi-lo. Seiya consegue se defender 
+                            do golpe e dispara o Meteoros de Pégaso contra o deus, que cai no chão com sua armadura destruída. Thanatos levanta, 
+                            mas Seiya dá um golpe final, derrotando seu adversário. Seiya corre para o Templo de Hades, mas Hypnos entra na frente. 
+                            O cavaleiro não se intimida e dispara seus meteoros contra o deus do sono, que, ao defender, deixa o Pégaso escapar. 
+                            Hypnos até tenta impedir Seiya novamente, mas Ikki o ataca. Hypnos joga Ikki longe. O Fênix levanta e Hypnos se prepara 
+                            para atacá-lo de novo, mas Shun, com suas correntes, segura o pulso do deus. Hypnos se irrita, mas percebe que aquela 
+                            corrente não é a que Thanatos destruiu e sim uma nova. Eis que surge em Shun a Armadura Divina de Andrômeda. Seiya entra 
+                            no Templo de Hades e encontra o vaso onde Saori está presa tingido de vermelho.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/eliseos-8.jpg"
                     },
@@ -1923,7 +2464,17 @@ const mangaClassicoVolumes = [
                         subtitulo: "Totsunyu! Hadesu Shinden",
                         legenda: "Lançamento em tankobon no Japão: 10 de abril de 1991; no Brasil: junho de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Seiya percebe que o vaso está quase completamente vermelho. Mesmos com seus golpes, o recipiente nem é arranhado. 
+                            Seiya percebe que há uma torre no templo com a estátua de um anjo no topo. A alma de Hades fica rodeando essa estátua 
+                            e diz para Seiya que um mortal nunca vai destruir o vaso. Shun fala para Ikki ir para o templo ajudar Seiya. Hypnos 
+                            se enfurece e ataca Shun, que revida com a Onda Relâmpago. Hypnos então aplica o golpe Sonolência Eterna em Shun. 
+                            O deus se prepara para dar o golpe de misericórdia em Andrômeda. Hyoga e Shiryu elevam seus cosmos e surgem as 
+                            Armaduras Divinas de Cisne e de Dragão. Hypnos aplica seu golpe em Hyoga e Shiryu, que desviam, pois um golpe não 
+                            funciona duas vezes contra um cavaleiro. Com o Pó de Diamante e o Cólera do Dragão, eles derrotam o deus do sono. No 
+                            Templo de Hades, o ataque de Seiya se volta contra ele mesmo. Ikki chega no templo e vê a alma de Hades, que zomba dele. 
+                            O cavaleiro ataca com o Ave Fênix, que se volta contra ele. Ikki então é arremessado contra o vaso onde está Saori. 
+                            Hades diz que eliminará os dois. Ikki, como está ajoelhado perante o vaso com o sangue de Atena, ao ser banhado pelo 
+                            sangue, sua armadura se restaura e surge a Armadura Divina de Fênix.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/eliseos-9.jpg"
                     },
@@ -1933,7 +2484,13 @@ const mangaClassicoVolumes = [
                         subtitulo: "Hadesu! Shinwayori no Kakusei",
                         legenda: "Lançamento em tankobon no Japão: 10 de abril de 1991; no Brasil: junho de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Com o traje divino, Ikki e Seiya atacam o vaso com o Ave Fênix e o Meteoro de Pégaso. Ambos os golpes voltam contra 
+                            os cavaleiros, que caem no chão. Ikki percebe que na base da torre, onde a alma de Hades circunda, existe um Mausoléu. 
+                            Eles deduzem que deve ser onde está o corpo do deus. Os dois cavaleiros decidem atacar o Mausoléu, para desespero de 
+                            Hades. Eles aplicam seus golpes. Nos jardins, Hypnos está caído no chão. Shiryu e Hyoga ouvem um grande barulho. 
+                            Hypnos diz que eles devem impedir que o corpo de Hades seja destruído, senão tudo se tornará cinzas. Seiya e Ikki 
+                            estão dentro do Mausoléu, mas acontece uma explosão e Hades se ergue do Mausoléu com seu verdadeiro corpo. Hypnos 
+                            antes de morrer, anuncia para Hyoga e Shiryu que
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/eliseos-10.jpg"
                     },
@@ -1943,7 +2500,34 @@ const mangaClassicoVolumes = [
                         subtitulo: "Hikari Afureru Sekai e ...!",
                         legenda: "Lançamento em tankobon no Japão: 10 de abril de 1991; no Brasil: junho de 2014 (Editora JBC)",
                         texto: `
-                        
+                            Hades, apenas com o olhar, atira Seiya e Ikki longe. O vaso onde Saori está flutua e pousa na frente do deus da 
+                            morte. Hades puxa sua espada e ataca o vaso, mas Ikki entra na frente para receber o golpe. Ikki cai no chão e 
+                            Seiya vai até eles. Hades ataca novamente com sua espada, mas Seiya segura a lâmina. Hades fala que os humanos, 
+                            com sua audácia, vão acabar querendo confrontar os deuses. Seiya não concorda com os ideias de Hades e tenta 
+                            atacar o deus, que revida. Seiya se coloca na frente do vaso. Shiryu, Hyoga e Shun surgem atacando Hades. O ataque 
+                            surpresa desestabiliza o deus. Os cinco Cavaleiros de Broze queimam seu cosmos e atacam o adversário. Hades 
+                            aguenta o impacto e os arremessa longe. Tanto as Armaduras Divinas quanto a Armadura de Hades sofrem rachaduras. 
+                            O deus fica surpreso ao ver Seiya se levantando novamente. Ver a determinação de Pégaso faz com que Hades lembre 
+                            que, no passado, já enfrentou esse mesmo cavaleiro, que foi o único homem que conseguiu feri-lo. Seiya lança seu 
+                            Cometa de Pégaso contra o deus, mesmo assim ele é arremessado e a miniatura da Armadura de Atena cai no chão. Seiya 
+                            estende sua mão para pegar a miniatura, mas Hades acerta o braço do cavaleiro com sua espada. Hades ergue sua 
+                            espada e mostra que o Grande Eclipse se concretizou. No Santuário, Marin diz que a derrota é iminente, mas Seika 
+                            interrompe dizendo que ainda sente a vida dos cavaleiros que estão no Elíseos. Hades ataca Seiya com sua espada, 
+                            mas o cavaleiro é protegido por uma esfera de energia. Os demais também são envoltos por essa esfera. Do vaso, 
+                            Saori diz para os cavaleiros retornarem ao mundo dos homens. O vaso volta a ficar branco. Hades ataca o vaso para 
+                            impedir a ressurreição de Atena, mas Seiya joga a Armadura de Atena para dentro do vaso. Saori ressurge trajando a 
+                            sua Armadura Divina. Hades percebe que Saori só permitiu ser presa para forçar a aparição de Hades. O deus a ataca, 
+                            mas Atena se defende com o escudo. Hades pergunta o porque dela insistir em salvar os homens. Saori diz que o deus 
+                            está errado e seu pecado é o orgulho. Com raiva, Hades ataca Saori, que é derrubada no chão. Hades ataca Atena pra 
+                            valer. Seiya sai de sua esfera de proteção e entra na frente, recebendo a espada do deus da morte, porém revidando 
+                            com um golpe que faz com que Hades seja arremessado contra o Mausoléu. Seiya cai morto aos pés de Saori. Hades toma 
+                            de volta sua espada e diz que o sacrifício de Seiya foi inútil. Atena então fala que Hades não conhece o amor. 
+                            Shiryu, Hyoga, Shun e Ikki saem de suas esferas e atacam o deus. Com o impulso do ataque dos cavaleiros, Saori 
+                            arremessa seu cetro contra Hades, atravessando o deus da morte. Derrotado, Hades diz que, ao desaparecer, tudo o 
+                            que ele construiu (o Inferno e os Campos Elíseos) desaparece também. Tudo começa a desmoronar e Saori fala para os 
+                            cavaleiros que agora eles vão retornar para o mundo de luz. No Santuário, o Grande Eclipse acaba. Marin diz que tem 
+                            certeza que Seiya irá voltar para esse maravilhoso mundo de luz. A história termina com uma imagem das cinco 
+                            constelações no céu.
                         `,
                         imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/eliseos-11.jpg"
                     }
