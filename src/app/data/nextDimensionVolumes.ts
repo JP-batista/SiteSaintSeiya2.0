@@ -4,14 +4,16 @@ const nextDimensionVolumes = [
     {
         volume: 1,
         titulo: "Volume 1",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/1.jpg",
+        capa: "/capasNextDimension/1.jpg",
         capitulos: [
           {
               capitulo: 0,
               titulo: "Prólogo",
               subtitulo: "Josho",
               legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: setembro de 2011",
-              texto: "",
+              texto: `
+                A história começa com uma recapitulação da luta dos atuais Cavaleiros de Bronze (Seiya de Pégaso, Shiryu de Dragão, Hyoga de Cisne, Shun de Andrômeda e Ikki de Fênix) contra o Deus Hades. Os Cavaleiros de Bronze estão vestindo as suas Armaduras Divinas. Aparentemente eles não estão sendo páreos para Hades, mas em um determinado momento da luta, Hades reconhece Pégaso, dizendo que já lutou contra ele no passado (em outra encarnação). Nisso aparece a imagem do antigo hospedeiro de Hades em um jardim florido!
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/0.jpg",
               imagem_alternativa: ""
           },
@@ -20,7 +22,10 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 1: Dohko e Shion!",
               subtitulo: "Doko to Shion",
               legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: setembro de 2011",
-              texto: "",
+              texto: `
+                Dohko e Shion eram Cavaleiros de Bronze (suas constelações não foram citadas, mas provavelmente Dohko era da constelação de Dragão ou de Tigre e Shion era da constelação de Escultor, armadura considerada perdida nos tempos atuais).
+                O atual Mestre do Santuário (nome não divulgado, mas seria ele um antigo Cavaleiro de Ouro, da geração anterior de Dohko e Shion?) nomeou-os Cavaleiros de Ouro, para que eles ajudem na luta contra Hades. Dohko quer partir imediatamente para o Elíseos, local onde está Hades, mas Shion tenta impedi-lo!
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/1.jpg",
               imagem_alternativa: ""
           },
@@ -29,7 +34,10 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 2: Alone!",
               subtitulo: "Aron",
               legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: setembro de 2011",
-              texto: "",
+              texto: `
+                Dohko de Libra e Shion de Áries iniciaram a luta entre eles, cada um disparando seus respectivos golpes: Cólera dos Cem Dragões (Dohko) e Revolução Estelar (Shion). Os dois começam a conversar e sabem que se continuarem, começarão uma Guerra dos Mil Dias. Shion assume que não poderá fazer nada para impedir que Dohko vá até onde Hades está e o jovem Cavaleiro de Libra fala que este é o momento certo para matar Hades. Shion explica que o próprio mestre disse que a Guerra Santa contra Hades poderia começar a qualquer momento (na Guerra Santa de 250 anos atrás, os exércitos de Atena e de Hades travaram uma terrível batalha até a morte).
+                Shion entende que deve ir ajudar Dohko e os dois partem para onde Hades está. Chegando lá, Dohko é imobilizado por um jovem loiro. Shion não tem dúvidas de que este jovem é na verdade Hades, que já encarnou na Terra e escolheu como hóspode um jovem de coração puro. Curiosamente, o jovem ajuda Dohko, curando seus ferimentos. O cosmo ameaçador sumiu e, aproveitando-se desta brecha, Shion resolve atacar o jovem. De repente, surge um outro garoto, chamado Tenma de Pégaso, dizendo: Parem, o que querem com meu amigo Alone?
+              `,    
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/2.jpg",
               imagem_alternativa: ""
           },
@@ -38,7 +46,9 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 3: Tenma!",
               subtitulo: "Tenma",
               legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: setembro de 2011",
-              texto: "",
+              texto: `
+                Um rapaz aparece e impede o assassinato do garoto loiro pelos Cavaleiros de Ouro. Ele apresenta-se como Tenma, assim como o frágil garoto que revela seu nome: Alone. Logo Tenma parte para cima dos dourados, que se defendem com facilidade, mas, neste meio tempo, Tenma consegue fugir em seu cavalo, levando o jovem alvo dos Cavaleiros de Ouro. Um barril, que estava preso ao cavalo, cai revelando a urna da Armadura sagrada de Pégaso.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/3.jpg",
               imagem_alternativa: ""
           },
@@ -47,7 +57,9 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 4: Amigo!",
               subtitulo: "Tomo",
               legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: setembro de 2011",
-              texto: "",
+              texto: `
+                Tenma pergunta para Alone se ele não se machucou na fuga. O garoto diz ter pequenos arranhões. Ao virar-se para Alone, Tenma vê a figura do terrível deus do submundo, Hades, mas pensa ser apenas uma alucinação. Neste momento, Tenma percebe que um barril que carregava junto de si caiu e diz que tem que voltar para recuperar o seu conteúdo. Os dois voltam, mas quando Tenma encontra o que queria, os Cavaleiros de Ouro já estão ao lado da urna da Armadura de Pégaso.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/4.jpg",
               imagem_alternativa: ""
           },
@@ -56,7 +68,9 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 5: Espada!",
               subtitulo: "Meio no Ken",
               legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: setembro de 2011",
-              texto: "",
+              texto: `
+                Dokho pergunta se o rapaz sabe o que tem dentro da urna. Tenma diz que não, mas sabe que só deve abrí-la quando se deparar com o mal. Ele então abre a urna e veste a Armadura de Pégaso. Tenma se assusta com aquilo, mas os Cavaleiros de Ouro explicam o que é uma armadura sagrada. Neste meio tempo, Alone é atraído para uma construção e, lá dentro, o frágil menino encontra uma espada. Ela o atrai tanto que ele acaba sendo surpreendido por uma moça (Pandora). Pandora diz que ele é o Imperador Hades.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/5.jpg",
               imagem_alternativa: ""
           },
@@ -65,7 +79,9 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 6: Despertar de Hades!",
               subtitulo: "Meio Kakusei",
               legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: setembro de 2011",
-              texto: "",
+              texto: `
+                A garota diz que Alone é Hades, mas ele reluta em acreditar. Ela pede que ele retire a espada da pedra pois isso provará que ele é Hades. Enquanto isso, Tenma discute com Dohko, mas logo Shion derruba o Cavaleiro de Bronze. Dohko ainda diz que quer levar Tenma para treinar no Santuário, mas Shion diz que ele só quer saber quem deu a Armadura de Pégaso ao rapaz. Nisso ambos sentem o despertar de Hades na construção. Alone já havia conseguido tirar a espada.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/6.jpg",
               imagem_alternativa: ""
           },
@@ -74,7 +90,9 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 7: Castelo de Hades!",
               subtitulo: "Hadesu-jo",
               legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: setembro de 2011",
-              texto: "",
+              texto: `
+                Alone cai pedindo ajuda a Tenma, mas isso não passa de um sonho de Tenma. Mesmo assim, o rapaz corre para ajudar o amigo enquanto Pandora anuncia o despertar dos 108 espectros e o surgimento do Castelo de Hades. Shion e Dohko preveem o ressurgimento completo de Hades ao ver o castelo. Eles tentam impedir Tenma, que acaba os ignorando sem saber que no castelo não terá força alguma. Já perto do mausoléu onde Alone estava, Tenma chega e fala com seu amigo.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/7.jpg",
               imagem_alternativa: ""
           },
@@ -83,7 +101,9 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 8: Espectros!",
               subtitulo: "Supekuta",
               legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: setembro de 2011",
-              texto: "",
+              texto: `
+                Tenma chama Alone, que o ignora. Ao tentar se aproximar do amigo, Pandora o derruba com seu poder. Logo após isso, três soldados de Hades aparecem e começam a agredir o Cavaleiro de Pégaso, que tenta reagir sem sucesso.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/8.jpg",
               imagem_alternativa: ""
           },
@@ -92,7 +112,9 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 9: Campo de Força!",
               subtitulo: "Kekkai",
               legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: setembro de 2011",
-              texto: "",
+              texto: `
+                Os Cavaleiros de Ouro ajudam Tenma e aconselham todos irem embora, pois o campo de força de Hades diminui suas forças para um décimo. Tenma diz não se importar e que seu mestre lhe ensinou não deixar amigos para trás. Shion e Dohko perguntam quem treinou Tenma. O Cavaleiro de Pégaso responde que o nome do seu mestre é Suikyô de Taça. Os Cavaleiros de Ouro se surpreendem, já que eles foram amigos de Suikyô na infância, mas se recordam que há pouco tempo, em uma investigação sobre Hades, ele havia sumido. Neste meio tempo, surge Vermeer de Griffon, que derruba Tenma e depois abate também Dohko e Shion.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/9.jpg",
               imagem_alternativa: ""
           },
@@ -101,7 +123,9 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 10: Suikyô!",
               subtitulo: "Suikyô",
               legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: setembro de 2011",
-              texto: "",
+              texto: `
+                Vermeer é devastador. Ele controla, com sua poderosa técnica, os dois Cavaleiros de Ouro, porém Tenma interfere, atacando o juiz. Nada acontece devido ao campo de força de Hades. Quando o espectro de Griffon decide acabar com tudo e matar os três Cavaleiros de Atena, aparece o espectro de Garuda, um dos juízes do mundo dos mortos. Ele avisa para Vermeer que Pandora quer a sua presença. Os Cavaleiros de Atena reconhecem a voz do espectro de Garuda. Quem será ele? Ele é nada mais nada menos do que Suikyô!
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/10.jpg",
               imagem_alternativa: ""
           },
@@ -110,7 +134,9 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 11: Aquecer!",
               subtitulo: "Nukumori",
               legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: setembro de 2011",
-              texto: "",
+              texto: `
+                O capítulo começa com uma lembrança de Alone, durante uma tempestade, se abrigando em uma pequena casa. De repente, Tenma entra de forma brusca no local. O fogo da lareira parece insuficiente para os dois. Alone joga as suas ferramentas de pintura na lareira, fazendo o fogo aumentar. Após isso, Alone dorme e Tenma se aproveita deste momento para roubar as coisas do bondoso menino. No caminho da fuga, ele encontra um homem que o leva de volta para a casa. Esse homem é Suikyô. Ao voltar, Alone fica feliz ao ver que Tenma está bem. Suikyô aquece as crianças com seu cosmo. De volta na batalha, Suikyô diz que o mundo só pode ser limpo por Hades.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/11.jpg",
               imagem_alternativa: ""
           },
@@ -119,7 +145,10 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 12: Campo de Força!",
               subtitulo: "Kuraterisu no Mizu",
               legenda: "Lançamento em tankobon no Japão: 6 de fevereiro de 2009; no Brasil: setembro de 2011",
-              texto: "",
+              texto: `
+                Vermeer de Griffon estranha Suikyô não matar logo os Cavaleiros de Atena e diz que duvida que seu companheiro faça isso, tendo em vista que eles já estiveram do mesmo lado. Suikyô resolve então arrancar a cabeça de Tenma, mas um soldado aparece e diz que eles (Suikyô e Vermeer) têm a presença exigida no Castelo de Hades. Ambos vão e deixam os três cavaleiros para o espectro soldado matar, já que estavam desacordados e sob o efeito da barreira de Hades. Quando o espectro está prestes a matar Tenma, o cavalo do garoto acaba salvando todos, revelando em seguida a Armadura de Prata de Taça dentro de um barril que o próprio cavalo carregava.
+                Tenma acorda e vê Dohko e Shion bem. Os dois explicam que o seu cavalo, chamado Pégaso, os salvou. Dohko explica que a Armadura de Taça era utilizada por Atena em momentos especiais durante a mitologia e por isso quem tomasse tal água de sua taça teria seus ferimentos curados, porém eles observam mais uma das qualidades da armadura que é a de mostrar o futuro. Dohko estranha ao se ver velho no reflexo, Shion se vê como Mestre do Santuário, porém não conta isso a ninguém. Tenma não entende quem é aquele homem parecido com ele que está numa cadeira de rodas.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/12.jpg",
               imagem_alternativa: ""
           }
@@ -128,7 +157,7 @@ const nextDimensionVolumes = [
     {
         volume: 2,
         titulo: "Volume 2",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/2.jpg",
+        capa: "/capasNextDimension/2.jpg",
         capitulos: [
           {
               capitulo: 13,
@@ -229,7 +258,7 @@ const nextDimensionVolumes = [
     {
         volume: 3,
         titulo: "Volume 3",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/3.jpg",
+        capa: "/capasNextDimension/3.jpg",
         capitulos: [
           {
               capitulo: 20,
@@ -299,7 +328,7 @@ const nextDimensionVolumes = [
     {
         volume: 4,
         titulo: "Volume 4",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/4.jpg",
+        capa: "/capasNextDimension/4.jpg",
         capitulos: [
           {
               capitulo: 27,
@@ -369,7 +398,7 @@ const nextDimensionVolumes = [
     {
         volume: 5,
         titulo: "Volume 5",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/5.jpg",
+        capa: "/capasNextDimension/5.jpg",
         capitulos: [
           {
               capitulo: 34,
@@ -439,7 +468,7 @@ const nextDimensionVolumes = [
     {
         volume: 6,
         titulo: "Volume 6",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/6.jpg",
+        capa: "/capasNextDimension/6.jpg",
         capitulos: [
           {
               capitulo: 41,
@@ -509,7 +538,7 @@ const nextDimensionVolumes = [
     {
         volume: 7,
         titulo: "Volume 7",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/7.jpg",
+        capa: "/capasNextDimension/7.jpg",
         capitulos: [
           {
               capitulo: 48,
@@ -579,7 +608,7 @@ const nextDimensionVolumes = [
     {
         volume: 8,
         titulo: "Volume 8",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/8.jpg",
+        capa: "/capasNextDimension/8.jpg",
         capitulos: [
           {
               capitulo: 55,
@@ -649,7 +678,7 @@ const nextDimensionVolumes = [
     {
         volume: 9,
         titulo: "Volume 9",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/9.jpg",
+        capa: "/capasNextDimension/9.jpg",
         capitulos: [
           {
               capitulo: 62,
@@ -719,7 +748,7 @@ const nextDimensionVolumes = [
     {
         volume: 10,
         titulo: "Volume 10",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/10.jpg",
+        capa: "/capasNextDimension/10.jpg",
         capitulos: [
           {
               capitulo: "Especial",
@@ -798,7 +827,7 @@ const nextDimensionVolumes = [
     {
         volume: 11,
         titulo: "Volume 11",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/11.jpg",
+        capa: "/capasNextDimension/11.jpg",
         capitulos: [
           {
               capitulo: 75,
@@ -868,7 +897,7 @@ const nextDimensionVolumes = [
     {
         volume: 12,
         titulo: "Volume 12",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/12.jpg",
+        capa: "/capasNextDimension/12.jpg",
         capitulos: [
           {
               capitulo: 82,
@@ -938,7 +967,7 @@ const nextDimensionVolumes = [
     {
         volume: 13,
         titulo: "Volume 13",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/13.jpg",
+        capa: "/capasNextDimension/13.jpg",
         capitulos: [
           {
               capitulo: 89,
@@ -1008,7 +1037,7 @@ const nextDimensionVolumes = [
     {
         volume: 14,
         titulo: "Volume 14",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/14.jpg",
+        capa: "/capasNextDimension/14.jpg",
         capitulos: [
           {
               capitulo: 96,
@@ -1078,7 +1107,7 @@ const nextDimensionVolumes = [
     {
         volume: 15,
         titulo: "Volume 15",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/15.jpg",
+        capa: "/capasNextDimension/15.jpg",
         capitulos: [
           {
               capitulo: 103,
@@ -1157,14 +1186,24 @@ const nextDimensionVolumes = [
     {
         volume: 16,
         titulo: "Volume 16",
-        capa: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/16.jpg",
+        capa: "/capasNextDimension/16.jpg",
         capitulos: [
           {
               capitulo: 111,
               titulo: "Capítulo 111: Flecha da Deusa",
               subtitulo: "---",
               legenda: "Lançamento em tankobon no Japão: ---; no Brasil: ---",
-              texto: "",
+              texto: `
+                As Armaduras de Ouro, menos a de Sagitário, se reúnem na Casa de Serpentário e cercam Saori para protegê-la. 
+                Enquanto isso, Chagall de Wyvern tenta levantar Sasha. para levá-la ao Castelo de Hades, mas desiste devido ao 
+                seu peso incomum.
+                A Armadura de Ouro de Sagitário aparece e veste o corpo de Tenma. A voz de Sasha chega até a cabeça desnorteada 
+                de Tenma e o instrui a soltar uma flecha em direção à Casa de Serpentário.
+                O corpo de Tenma começa a se mover por conta própria e ele segura a flecha. Chagall fica em seu caminho, 
+                tentando detê-lo com um golpe, mas a flecha que ele dispara atravessa o corpo do espectro de Wyvern e voa 
+                em direção a Casa de Serpentário. Chagall desaparece, deixando apenas a sua surplice no local. A flecha 
+                segue o seu caminho até o Santuário, onde todos os destinos serão decididos.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/111.jpg",
               imagem_alternativa: ""
            },
@@ -1173,7 +1212,15 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 112: O Brasão Ardente",
               subtitulo: "---",
               legenda: "Lançamento em tankobon no Japão: ---; no Brasil: ---",
-              texto: "",
+              texto: `
+                As Armaduras de Ouro formam uma proteção ao redor de Atena, na mesma disposição do Relógio de Fogo. Desta 
+                forma, qualquer inimigo que dê um passo para dentro será instantaneamente aniquilado pelo cosmo dourado.
+                Com a ausência da Armadura de Sagitário no local, a proteção fica enfraquecida, o que faz Asclépio "furar" a barreira e se 
+                colocar diante de Atena.
+                Nos dias atuais, o centro do Relógio de Fogo foi transformado no emblema da Constelação de Serpentário. De volta ao passado, 
+                quando Asclépio está prestes a matar Saori, uma flecha dourada surge e o atinge por trás. Em seguida, Asclépio e a parte 
+                modificada do Relógio de Fogo, nos dias atuais, começam a queimar.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/112.jpg",
               imagem_alternativa: ""
            },
@@ -1182,7 +1229,16 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 113: Mudança de pele",
               subtitulo: "---",
               legenda: "Lançamento em tankobon no Japão: ---; no Brasil: ---",
-              texto: "",
+              texto: `
+                Asclépio, que parou de se mover, de repente espalha suas escamas e revive através do processo de mudança de 
+                pele. Ele ataca Ikki e os outros Cavaleiros de Bronze que estavam segurando as suas pernas, para em seguida 
+                tentar matar Saori novamente.
+                O corpo de Asclépio volta a queimar de forma intensa por causa da flecha de Sagitário, que permanece cravada 
+                no corpo dele. Os cosmos de todas as Armaduras de Ouro se concentram na flecha, completando a proteção divina 
+                e evitando que o Serpentário atinja Atena. Asclépio então desaparece.
+                No Castelo de Hades, Pandora é notificada que a Espada de Hades sumiu. Neste momento, Alone, segurando a Espada 
+                de Hades, aparece diante de Tenma.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/113.jpg",
               imagem_alternativa: ""
            },
@@ -1191,7 +1247,15 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 114: Espada do Senhor das Trevas",
               subtitulo: "---",
               legenda: "Lançamento em tankobon no Japão: ---; no Brasil: ---",
-              texto: "",
+              texto: `
+                Nos dias atuais, Marin se junta a Shina no Santuário. Elas correm para o lado de Seiya e a Espada de Hades 
+                aparece no peito do Cavaleiro de Pégaso.
+                No Passado, Alone surge diante de Tenma, identifica-se como Hades e tenta matar Sasha, mas volta a si depois 
+                de ferir Tenma. Alone perde a consciência no processo de despedida de Tenma e Sasha.
+                No Santuário, um relógio estelar aparece diante de Ikki e dos outros, sinalizando que o limite do tempo está 
+                próximo. Odisseu ressuscita. Para salvar o Santuário que começou a desmoronar, ele devolve a Saori sua forma 
+                original e aponta a Espada de Khrysos para ela. Qual será o destino de Seiya, Tenma e Saori?
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/114.jpg",
               imagem_alternativa: ""
            },
@@ -1200,7 +1264,23 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 115: Morte de Atena",
               subtitulo: "---",
               legenda: "Lançamento em tankobon no Japão: ---; no Brasil: ---",
-              texto: "",
+              texto: `
+                Odisseu diz que Atena deve morrer para que o universo não seja destruído. Saori pede desculpas e diz que não 
+                veio ao passado para destruir o universo. Em seguida, ela pega a espada de Khrysos, que Odisseu estava 
+                apontando para ela, e a encosta em sua própria garganta. A deusa revela que veio ao passado com a intenção de 
+                morrer desde o início, para justamente salvar Seiya, que foi seu escudo ao protegê-la da Espada de Hades.
+                Odisseu diz que todos os cavaleiros estão lá para proteger Atena e que é natural que eles dediquem suas vidas 
+                a ela. Saori refuta que os cavaleiros são seus servos e diz que eles são companheiros que protegem o amor e a 
+                justiça na Terra, sendo amigos insubstituíveis. Ikki e os outros choram ao ouvir isso. Neste instante, Saori 
+                comete suicídio. Temos um silêncio grande entre todos, incluindo Odisseu, que fica intrigado sobre como a morte 
+                de Atena salvará Seiya.
+                No Templo de Artemis, Calisto avisa a deusa sobre a situação. Artemis não fica desesperada porque entende que, 
+                apesar de ter criado vínculo com os humanos, Atena não será tola o bastante para destruição o universo.
+                Nos dias atuais, no Santuário, Marin e Shina tentam puxar a Espada de Hades que está presa em Seiya, mas, só de 
+                tocarem na espada, elas recebem um choque, como um raio, e caem. Tohma aparece de repente, agarra a Espada de 
+                Hades e pede ajuda a Marin e Shina. Os três agarram a espada, mas são jogados longe novamente. Nesse momento, 
+                a corrente de flores no pulso do Seiya libera um grande cosmo.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/115.jpg",
               imagem_alternativa: ""
            },
@@ -1209,7 +1289,24 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 116: Caminho de Flores",
               subtitulo: "---",
               legenda: "Lançamento em tankobon no Japão: ---; no Brasil: ---",
-              texto: "",
+              texto: `
+                A corrente de flores de Seiya envolve a Espada de Hades, impedindo-a de atingir seu coração. No passado, as 
+                correntes de flores de Saori, Ikki e dos outros são desfiadas, entrelaçadas e se estendem para o céu, 
+                tornando-se um caminho para retornar ao futuro.
+                Enquanto isso, as correntes de flores de Tenma, Sasha e Alone também estão emaranhadas na Espada de Hades que 
+                perfurou Tenma. No entanto, as espadas fincadas em Seiya e Tenma começam a se mover novamente. Odisseu percebe 
+                o paradeiro da outra corrente da vida e está determinado a não deixar Saori e os cavaleiros de "futuro" 
+                morrerem. Ele presta os primeiros socorros a Saori e avisa Ikki e os outros para que usem suas últimas forças 
+                para se levantarem e levarem Saori de volta para casa, embora não seja possível saber se ela vai sobreviver ou 
+                não. Ikki e os outros retornam ao presente, pouco antes de o último grão da ampulheta cair.
+                A corrente de flores, que cumpriu seu papel, vai em busca de reforços para a Espada de Hades, que perfura Tenma. 
+                A Espada de Hades, que estava enrolada na corrente de flores como nenhuma outra, desaparece, assim como a espada 
+                que perfurou Seiya. Odisseu diz que, mesmo retornando ao presente, os Cavaleiros e Atena terão que travar uma 
+                nova batalha. O Serpentário diz que, com a partida deles, o mundo do passado voltará ao normal e os eventos 
+                daquele tempo serão apagados da memória de todos. Além disso, Tenma e os cavaleiros finalmente enfrentarão a 
+                verdadeira guerra santa contra o exército de Hades. Após fazer estas previsões, Odisseu desaparece junto com 
+                a Casa de Serpentário. Enquanto isso, o imortal Asclépio espera na prisão do Tártaro por sua chance de retornar.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/116.jpg",
               imagem_alternativa: ""
            },
@@ -1218,7 +1315,21 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 117: Apolo, o Deus do Sol",
               subtitulo: "---",
               legenda: "Lançamento em tankobon no Japão: ---; no Brasil: ---",
-              texto: "",
+              texto: `
+                Sasha acorda quando Saori volta para o presente. Tenma promete proteger Sasha pelos próximos anos, enquanto 
+                Alone sai do local em silêncio. No Santuário, os Cavaleiros de Ouro do passado aguardam a chegada de Atena.
+                Nos dias atuais, Seiya acorda e, enquanto Shina explica a situação, Marin percebe que Tohma não está mais lá. 
+                O Anjo é recebido por Calisto no Templo de Ártemis, mas ele se rebela, dizendo que não dará mais ouvidos a 
+                serva de Artemis. Ela o puni fisicamente e diz estar decepcionada com ele, um dos quatro guerreiros do deus 
+                Apolo.
+                Enquanto isso, Saori e os quatro Cavaleiros de Bronze vão até Artemis para serem julgados. Saori é condenada 
+                a ficar mil anos na Rocha do Olimpo, enquanto os Cavaleiros de Bronze são condenados a serem destituídos de 
+                seus títulos de cavaleiros e deverão pagar pelos seus crimes ficando 100 anos na Prisão da Lua.
+                Saori diz que os cavaleiros estavam apenas obedecendo a ela e espera que o julgamento deles seja revisto. 
+                Artemis pede que Atena aceite a justiça enquanto ainda pode, pois ela nunca será perdoada caso o seu irmão 
+                Apolo, o mais justo dos doze deuses do Olimpo, descubra tudo o que aconteceu. Neste momento, Apolo aparece 
+                vindo do céu, em uma carruagem com três cavalos e totalmente armado.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/117.jpg",
               imagem_alternativa: ""
            },
@@ -1227,7 +1338,27 @@ const nextDimensionVolumes = [
               titulo: "Capítulo 118: Ventos do futuro",
               subtitulo: "---",
               legenda: "Lançamento em tankobon no Japão: ---; no Brasil: ---",
-              texto: "",
+              texto: `
+                Apolo chega ao Templo de Artemis. Os três cavalos que estavam puxando a carruagem retornam às suas formas de 
+                guerreiros celestiais. O deus do Sol critica o julgamento de Artemis, dizendo que foi muito brando. Apolo 
+                então declara que Saori será corrompida em uma serva celestial por 3.000 anos, todo o Santuário será queimado 
+                e todos os cavaleiros serão mortos.
+                Saori não está satisfeita com a punição de ninguém além dela e está furiosa com o fato de que tudo na Terra 
+                deixará de existir. Apolo retruca dizendo que ela deve ficar satisfeita, porque se Zeus descobrir, ele vai 
+                querer destruir toda a Terra e não apenas o Santuário. Ele ainda diz que tudo isso é fruto do tratamento que 
+                os deuses dão aos humanos, os mimando demais. Isso tornou os humanos arrogantes, contaminando toda a Terra.
+                Seiya entra em cena, golpeia algumas Satélites de Artemis e em seguida agradece a Ikki e os outros. Em seguida 
+                ele se ajoelha diante de Apolo e pede que ele salve todos em troca da sua própria vida. Um dos anjos de Apolo 
+                se irrita e golpeia Seiya, que cai no chão. Apolo não gosta da forma insolente de Seiya, dizendo que, mesmo 
+                que existam centenas de milhões de vidas humanas, elas não podem ser comparadas a de um deus.
+                Saori então toma uma grande decisão: ela pede para deixar de ser uma deusa, se tornando uma humana com vida 
+                própria, em troca de toda essa punição. Apolo confirma novamente se essa é a intenção dela. Artemis tenta 
+                impedir. No momento em que Saori concorda, ela e Seiya são enviados de volta ao mundo humano com suas memórias 
+                apagadas. Apolo e Artemis não estão felizes com esta situação, sendo que Artemis até chora por sua irmã menor.
+                A bruxinha Hécate conversa com Cronos e diz que os planos dele deram certo e agora Atena e os seus cavaleiros 
+                perderam a memória. Ela ainda comemora o fato de ter conseguido o cabelo de Atena e, por isso, ter se tornado 
+                jovem novamente.
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/118.jpg",
               imagem_alternativa: ""
            },
@@ -1236,7 +1367,13 @@ const nextDimensionVolumes = [
               titulo: "Epílogo",
               subtitulo: "---",
               legenda: "Lançamento em tankobon no Japão: ---; no Brasil: ---",
-              texto: "",
+              texto: `
+                Saori, que veio em uma viagem ao Santuário que desmoronou completamente, recebe um buquê de flores de Shun, 
+                dono de uma floricultura. Os dois percebem que o testamento de Aiolos está gravado na parede, mas não se 
+                lembram dele. Saori deixa Shun, mas sente que aquele local traz nostalgia para ela. Em seguida, ela passa 
+                por Seiya em frente ao testamento e começa a chorar, no mesmo momento em que o seu chapéu é levado pelo 
+                vento. É o ponto final da história!
+              `,
               imagem: "https://www.cavzodiaco.com.br/imagens-mangas/nextdimension/epilogo.jpg",
               imagem_alternativa: ""
            }

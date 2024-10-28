@@ -8,7 +8,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 1,
                 titulo: "Volume 1: Os Cavaleiros de Athena",
-                capa: "https://i.pinimg.com/originals/7c/74/c1/7c74c16dc9176cfb2e9a6dc16662f385.jpg",
+                capa: "/capasMangaClassicoTanko/1.jpg",
                 capitulos: [
                   {
                       capitulo: 1,
@@ -92,7 +92,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 2,
                 titulo: "Volume 2: Combate Mortal! Pégaso Contra Dragão",
-                capa: "https://i.pinimg.com/originals/9c/07/79/9c07793be80bf8945cf60e12add2eddb.jpg",
+                capa: "/capasMangaClassicoTanko/2.jpg",
                 capitulos: [
                   {
                       capitulo: 5,
@@ -160,7 +160,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 3,
                 titulo: "Volume 3: Fênix! O Guerreiro que Veio do Inferno",
-                capa: "https://i.pinimg.com/originals/9a/cb/ad/9acbadf8c1d1ca07a3d8ba06a63f7ac1.jpg",
+                capa: "/capasMangaClassicoTanko/3.jpg",
                 capitulos: [
                   {
                       capitulo: 9,
@@ -224,7 +224,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 4,
                 titulo: "Volume 4: Banho de Sangue! As Armaduras Negras",
-                capa: "https://i.pinimg.com/originals/0c/4b/74/0c4b74b918f3b0bef8190fe6469b958f.jpg",
+                capa: "/capasMangaClassicoTanko/4.jpg",
                 capitulos: [
                   {
                       capitulo: 13,
@@ -307,7 +307,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 5,
                 titulo: "Volume 5: Armadura de Prata! A Beleza Assassina",
-                capa: "https://i.pinimg.com/originals/03/eb/83/03eb83c863b6bd92623183f5d2253cae.jpg",
+                capa: "/capasMangaClassicoTanko/5.jpg",
                 capitulos: [
                   {
                       capitulo: 18,
@@ -388,7 +388,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 6,
                 titulo: "Volume 6: Lutem! Em Prol de Athena",
-                capa: "https://i.pinimg.com/originals/50/49/25/504925bb4e6fcdf9820aa6b416e125ad.jpg",
+                capa: "/capasMangaClassicoTanko/6.jpg",
                 capitulos: [
                   {
                       capitulo: 22,
@@ -447,7 +447,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 7,
                 titulo: "Volume 7: Colisão Violenta! A Armadura de Ouro",
-                capa: "https://i.pinimg.com/originals/d4/92/3a/d4923a186a4980e4d1c4d8c18fc53219.jpg",
+                capa: "/capasMangaClassicoTanko/7.jpg",
                 capitulos: [
                   {
                       capitulo: 25,
@@ -522,7 +522,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 8,
                 titulo: "Volume 8: Santuário! As Doze Casas",
-                capa: "https://i.pinimg.com/originals/2a/1e/18/2a1e18aa3dce4d7c1fdfe3fdfb16e948.jpg",
+                capa: "/capasMangaClassicoTanko/8.jpg",
                 capitulos: [
                   {
                       capitulo: 28,
@@ -593,7 +593,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 9,
                 titulo: "Volume 9: Por Nossa Deusa",
-                capa: "https://i.pinimg.com/originals/b9/0c/b7/b90cb7f7bb000f46351dcfae0f9842dd.jpg",
+                capa: "/capasMangaClassicoTanko/9.jpg",
                 capitulos: [
                   {
                       capitulo: 32,
@@ -665,7 +665,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 10,
                 titulo: "Volume 10: Shaka! O Homem Mais Próximo de Deus",
-                capa: "https://i.pinimg.com/originals/6e/f6/1c/6ef61c395e5d3a1c689df667ef019212.jpg",
+                capa: "/capasMangaClassicoTanko/10.jpg",
                 capitulos: [
                   {
                       capitulo: 35,
@@ -729,7 +729,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 11,
                 titulo: "Volume 11: Jovens! Confiamos Athena a Vocês",
-                capa: "https://i.pinimg.com/originals/93/7b/7e/937b7ed4d0cf3c779d625747c1ba5971.jpg",
+                capa: "/capasMangaClassicoTanko/11.jpg",
                 capitulos: [
                   {
                       capitulo: 38,
@@ -799,7 +799,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 12,
                 titulo: "Volume 12: Combate Mortal na Sala do Grande Mestre!",
-                capa: "https://i.pinimg.com/originals/1c/bc/f4/1cbcf47420f4cc14ef6051c81d1f8ea6.jpg",
+                capa: "/capasMangaClassicoTanko/12.jpg",
                 capitulos: [
                   {
                       capitulo: 42,
@@ -863,7 +863,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 13,
                 titulo: "Volume 13: A Ressurreição de Athena",
-                capa: "https://i.pinimg.com/originals/b6/d0/61/b6d061c1b68c06d5e77a711f1c3ed1bc.jpg",
+                capa: "/capasMangaClassicoTanko/13.jpg",
                 capitulos: [
                   {
                       capitulo: 45,
@@ -932,7 +932,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 14,
                 titulo: "Volume 14: Coroação!! O Rei dos Mares Poseidon!",
-                capa: "https://i.pinimg.com/originals/1f/bd/f1/1fbdf16a60d65ed45ce300145068aa8d.jpg",
+                capa: "/capasMangaClassicoTanko/14.jpg",
                 capitulos: [
                   {
                       capitulo: 1,
@@ -1022,7 +1022,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 15,
                 titulo: "Volume 15: Santuário Submarino! Os Sete Pilares",
-                capa: "https://i.pinimg.com/originals/52/15/9f/52159f51fbc59d7e0ad92a6a624132e7.jpg",
+                capa: "/capasMangaClassicoTanko/15.jpg",
                 capitulos: [
                   {
                       capitulo: 5,
@@ -1097,7 +1097,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 16,
                 titulo: "Volume 16: O Caçador de Corações",
-                capa: "https://i.pinimg.com/originals/c7/90/3f/c7903fdbc1e48aea28e00aa56f6eec5e.jpg",
+                capa: "/capasMangaClassicoTanko/16.jpg",
                 capitulos: [
                     {
                         capitulo: 9,
@@ -1178,7 +1178,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 17,
                 titulo: "Volume 17: Ecoe! A Oração de Athena",
-                capa: "https://i.pinimg.com/originals/f7/16/d1/f716d1d16bed4aeca5b498b6c5e896ba.jpg",
+                capa: "/capasMangaClassicoTanko/17.jpg",
                 capitulos: [
                     {
                         capitulo: 13,
@@ -1258,7 +1258,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 18,
                 titulo: "Volume 18: Além das Ondas Azuis",
-                capa: "https://i.pinimg.com/originals/84/75/cf/8475cffcccbb55ab44a0edc19c3709f0.jpg",
+                capa: "/capasMangaClassicoTanko/18.jpg",
                 capitulos: [
                     {
                         capitulo: 17,
@@ -1360,7 +1360,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 19,
                 titulo: "Volume 19: Ressurreição! As 108 Estrelas Maléficas de Hades",
-                capa: "https://i.pinimg.com/originals/8a/e7/15/8ae7153542b5153641ef7e205c5ea04c.jpg",
+                capa: "/capasMangaClassicoTanko/19.jpg",
                 capitulos: [
                     {
                         capitulo: 1,
@@ -1499,7 +1499,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 20,
                 titulo: "Volume 20: Colisão! As Doze Casas",
-                capa: "https://i.pinimg.com/originals/7c/07/18/7c0718014d67f643a6e1de4813f6f1f2.jpg",
+                capa: "/capasMangaClassicoTanko/20.jpg",
                 capitulos: [
                     {
                         capitulo: 5,
@@ -1592,7 +1592,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 21,
                 titulo: "Volume 21: Sob as Árvores Salas Gêmeas...",
-                capa: "https://i.pinimg.com/originals/16/46/d9/1646d99c2ce3671546fb240fa500bf1e.jpg",
+                capa: "/capasMangaClassicoTanko/21.jpg",
                 capitulos: [
                     {
                         capitulo: 8,
@@ -1680,7 +1680,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 22,
                 titulo: "Volume 22: Desperte!! Oitavo Sentido",
-                capa: "https://i.pinimg.com/originals/69/3c/22/693c22d734e1052f580dd35349fbfbf1.jpg",
+                capa: "/capasMangaClassicoTanko/22.jpg",
                 capitulos: [
                     {
                         capitulo: 12,
@@ -1778,7 +1778,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 23,
                 titulo: "Volume 23: Inferno - O Portão do Desepero",
-                capa: "https://i.pinimg.com/originals/96/77/b7/9677b701663daa5b6420566a6971a7c3.jpg",
+                capa: "/capasMangaClassicoTanko/23.jpg",
                 capitulos: [
                     {
                         capitulo: 1,
@@ -1911,7 +1911,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 24,
                 titulo: "Volume 24: Rei das Trevas! O Nascimento da Alma",
-                capa: "https://i.pinimg.com/originals/fa/1c/03/fa1c03b9c05af6e9210960a4a8dfad6a.jpg",
+                capa: "/capasMangaClassicoTanko/24.jpg",
                 capitulos: [
                     {
                         capitulo: 5,
@@ -2047,7 +2047,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 25,
                 titulo: "Volume 25: O Grande Eclipse",
-                capa: "https://i.pinimg.com/originals/22/65/19/2265191b1e8d026daa5b5e097d5fc205.jpg",
+                capa: "/capasMangaClassicoTanko/25.jpg",
                 capitulos: [
                     {
                         capitulo: 9,
@@ -2142,7 +2142,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 26,
                 titulo: "Volume 26: O Caminho para os Campos Elísios!",
-                capa: "https://i.pinimg.com/originals/fe/90/0b/fe900bf2ad31908543c54ba4410315ef.jpg",
+                capa: "/capasMangaClassicoTanko/26.jpg",
                 capitulos: [
                     {
                         capitulo: 13,
@@ -2283,7 +2283,7 @@ const mangaClassicoVolumes = [
             {
                 volume: 27,
                 titulo: "Volume 27: Thanatos e Hypnos!",
-                capa: "https://i.pinimg.com/originals/ce/11/6e/ce116e7b4c51afe37cf9da6829ec54dd.jpg",
+                capa: "/capasMangaClassicoTanko/27.jpg",
                 capitulos: [
                     {
                         capitulo: 2,
@@ -2420,14 +2420,14 @@ const mangaClassicoVolumes = [
                             Seiya e para os outros que foi Poseidon que os ajudou, mas ele zomba, pois perante os deuses, as Armaduras de Ouro 
                             são inúteis. Com apenas um golpe, Thanatos destrói as cinco Armaduras Douradas.
                         `,
-                        imagem: "Capítulo : https://www.cavzodiaco.com.br/imagens-mangas/hades/eliseos-7.jpg"
+                        imagem: "https://www.cavzodiaco.com.br/imagens-mangas/hades/eliseos-7.jpg"
                     },
                 ]
             },
             {
                 volume: 28,
                 titulo: "Volume 28: Para um Mundo Onde a Luz Transborda...!",
-                capa: "https://i.pinimg.com/originals/b4/3a/e7/b43ae74459c0a5149978877a230c576d.jpg",
+                capa: "/capasMangaClassicoTanko/28.jpg",
                 capitulos: [
                     {
                         capitulo: 8,

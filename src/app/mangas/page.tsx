@@ -7,13 +7,13 @@ export default function MangasPage() {
     {
       name: 'Cavaleiros do Zodíaco (Clássico)',
       description: 'O mangá clássico que deu origem à saga, acompanhando Seiya e os outros Cavaleiros de Bronze em suas aventuras.',
-      image: 'https://i.pinimg.com/originals/13/14/2d/13142d68102e818c64411f8c00c75a10.jpg',
+      image: '/capasMangaClassicoTanko/1.jpg',
       link: '/mangas/classico',
     },
     {
       name: 'Lost Canvas',
       description: 'A história da Guerra Santa anterior, com Tenma e Alone como os novos protagonistas.',
-      image: 'https://i.pinimg.com/originals/0a/58/18/0a58187f91b549165c6f28b4506cea76.jpg',
+      image: '/capasLostCanvas/1.jpg',
       link: '/mangas/lost-canvas',
     },
     {
@@ -33,6 +33,12 @@ export default function MangasPage() {
       description: 'Uma série de histórias paralelas sobre os Cavaleiros de Ouro da saga Lost Canvas.',
       image: 'https://www.jbchost.com.br/editorajbc/wp-content/uploads/2022/10/lost-canvas-gaiden-01-capa-p.jpg',
       link: '/mangas/lost-canvas-gaiden',
+    },
+    {
+      name: 'Cavaleiros do Zodíaco (Kanzenban)',
+      description: 'O mangá clássico que deu origem à saga, acompanhando Seiya e os outros Cavaleiros de Bronze em suas aventuras.',
+      image: '/capasMangaClassicoKanzenban/1.jpg',
+      link: '/mangas/Kanzenban',
     },
     {
       name: 'Final Edition',
