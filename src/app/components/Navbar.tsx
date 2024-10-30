@@ -86,6 +86,7 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
               }`}
             >
               <Link href="/mangas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Mangás">Mangás</Link>
+              <Link href="/animes" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Mangás">Anime</Link>
               <Link href="/soundtrack" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Trilha Sonora">Trilha Sonora</Link>
               <Link href="/videos/battle-videos" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Vídeos de Batalhas">Vídeos de Batalhas</Link>
               <Link href="/timeline" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Linha do Tempo">Linha do Tempo</Link>
@@ -133,6 +134,7 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
       {isMenuOpen && (
         <nav className="md:hidden bg-gray-900 p-4 space-y-2">
           <Link href="/mangas" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Mangás">Mangás</Link>
+          <Link href="/animes" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Mangás">Animes</Link>
           <Link href="/soundtrack" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Trilha Sonora">Trilha Sonora</Link>
           <Link href="/videos/battle-videos" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Vídeos de Batalhas">Vídeos de Batalhas</Link>
           <Link href="/timeline" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Linha do Tempo">Linha do Tempo</Link>

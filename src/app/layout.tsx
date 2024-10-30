@@ -1,10 +1,11 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation'; // Importando usePathname do next/navigation
 import './styles/globals.css';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';  // Importando o Footer
+import Footer from './components/Footer';
 import Header from './components/Header';
-import { getFavoriteCharacter } from './utils/favoriteCharacter'; // Função utilitária para pegar o personagem favorito do localStorage
+import { getFavoriteCharacter } from './utils/favoriteCharacter';
 
 export default function RootLayout({
   children,
@@ -13,13 +14,13 @@ export default function RootLayout({
 }) {
   const [theme, setTheme] = useState('santuary');
   const [favoriteCharacter, setFavoriteCharacter] = useState<string | null>(null);
+  const pathname = usePathname(); // Usando usePathname para obter o caminho atual
 
   useEffect(() => {
-    // Recupera o personagem favorito do localStorage ao carregar a página
     const storedFavorite = getFavoriteCharacter();
     if (storedFavorite) {
       setFavoriteCharacter(storedFavorite);
-      setTheme(storedFavorite); // Usa o nome do personagem para definir o tema baseado no personagem favorito
+      setTheme(storedFavorite);
     }
   }, []);
 
@@ -30,15 +31,17 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <title>Saint Seiya</title> {/* Adicionando o título da página */}
+        <title>Saint Seiya</title>
       </head>
       <body className={`${theme}`}>
+        {/* Navbar é exibido em todas as páginas */}
         <Navbar onThemeChange={handleThemeChange} />
-        <Header />
+        {/* Header e Footer serão exibidos apenas se a rota não for "/teste" */}
+        {pathname !== '/teste' && <Header />}
         <div className="container mx-auto p-4">
           {children}
         </div>
-        <Footer /> {/* Incluindo o Footer aqui */}
+        {pathname !== '/teste' && <Footer />}
       </body>
     </html>
   );
