@@ -250,14 +250,35 @@ const Musicas = [
                 musicas: [
                     {
                         name: 'Saints Death - Saint Seiya- The Lost Canvas (slowed + reverb)',
-                        src: '/lost-canvas/Saints Death - Saint Seiya- The Lost Canvas (slowed + reverb).mp3',
+                        src: '/lost-canvas/Saints Death - Saint Seiya- The Lost Canvas (slowed reverb).mp3',
                         img: 'https://i.ytimg.com/vi/SbRTxAvUn44/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgsIE4ofzAP&rs=AOn4CLASMP9kEBCIlAv4TwEl6leTku2Gqw',
                     },
                     {
                         name: 'Virgo Asmita - Saint Seiya- The Lost Canvas (slowed + reverb)',
-                        src: '/lost-canvas/Virgo Asmita - Saint Seiya- The Lost Canvas (slowed + reverb).mp3',
+                        src: '/lost-canvas/Virgo Asmita - Saint Seiya- The Lost Canvas (slowed reverb).mp3',
                         img: 'https://i.ytimg.com/vi/6TSA9ggsHq4/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFUoRDAP&rs=AOn4CLA1259V8h4bXfhccpTtgduR0byCoQ',
                     },
+                    {
+                        name: 'Jamil - Saint Seiya- The Lost Canvas',
+                        src: '/lost-canvas/Jamil - Saint Seiya- The Lost Canvas (slowed reverb).mp3',
+                        img: 'https://i.ytimg.com/vi/tn7UHjSjZY8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFooQTAP&rs=AOn4CLD3ygbYE13ug9ahos7_74IuGwQeTA',
+                    },
+                    {
+                        name: 'Promised Wreath - Saint Seiya- The Lost Canvas',
+                        src: '/lost-canvas/Promised Wreath - Saint Seiya- The Lost Canvas (slowed reverb).mp3',
+                        img: 'https://i.ytimg.com/vi/3PrtqHLabB4/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhDIFcoZTAP&rs=AOn4CLDso7UOQSNGiWUs0YVJNKLRQ0IywQ',
+                    },
+                    {
+                        name: 'Rest - Saint Seiya- The Lost Canvas',
+                        src: '/lost-canvas/Rest - Saint Seiya- The Lost Canvas (slowed reverb).mp3',
+                        img: 'https://i.ytimg.com/vi/WO8AQhtakAo/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFsoPTAP&rs=AOn4CLAMoEBppMLb_Wd6HVK66aem_BFQhg',
+                    },
+                ]
+            },
+            {
+                tipo: 4,
+                titulo: "Trilhas",
+                musicas: [
                     {
                         name: '',
                         src: '/lost-canvas/.mp3',
