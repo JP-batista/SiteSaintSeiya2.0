@@ -210,13 +210,71 @@ const Musicas = [
                         src: '/lost-canvas/The-Pope-and-Hades-Saint-Seiya-The-Lost-Canvas-_slowed-reverb_.mp3',
                         img: 'https://i.ytimg.com/vi/eDVbOJETsso/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhLIF4oZTAP&rs=AOn4CLDu-N8jSUI3n6Q9xOSfH5ztquoL7A',
                     },
+                    
+                ],
+            },
+            {
+                tipo: 3,
+                titulo: "Trilhas",
+                musicas: [
+                    {
+                        name: 'The Cathedral in the Forest - Saint Seiya- The Lost Canvas',
+                        src: '/lost-canvas/The Cathedral in the Forest - Saint Seiya- The Lost Canvas (slowed + reverb).mp3',
+                        img: 'https://i.ytimg.com/vi/3pT8sg-bhG0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhHIEIocjAP&rs=AOn4CLC89jISYmMiGk8XuLuaGCh_nPZpXg',
+                    },
                     {
                         name: '',
                         src: '/lost-canvas/.mp3',
                         img: '',
                     },
-                ],
-            }
+                    {
+                        name: '',
+                        src: '/lost-canvas/.mp3',
+                        img: '',
+                    },
+                    {
+                        name: '',
+                        src: '/lost-canvas/.mp3',
+                        img: '',
+                    },
+                    {
+                        name: '',
+                        src: '/lost-canvas/.mp3',
+                        img: '',
+                    },
+                ]
+            },
+            {
+                tipo: 3,
+                titulo: "Trilhas",
+                musicas: [
+                    {
+                        name: '',
+                        src: '/lost-canvas/.mp3',
+                        img: '',
+                    },
+                    {
+                        name: '',
+                        src: '/lost-canvas/.mp3',
+                        img: '',
+                    },
+                    {
+                        name: '',
+                        src: '/lost-canvas/.mp3',
+                        img: '',
+                    },
+                    {
+                        name: '',
+                        src: '/lost-canvas/.mp3',
+                        img: '',
+                    },
+                    {
+                        name: '',
+                        src: '/lost-canvas/.mp3',
+                        img: '',
+                    },
+                ]
+            },
         ]
     },
     {
