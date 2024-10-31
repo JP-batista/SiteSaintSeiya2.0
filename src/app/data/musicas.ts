@@ -222,6 +222,26 @@ const Musicas = [
                         src: '/lost-canvas/The Cathedral in the Forest - Saint Seiya- The Lost Canvas (slowed + reverb).mp3',
                         img: 'https://i.ytimg.com/vi/3pT8sg-bhG0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhHIEIocjAP&rs=AOn4CLC89jISYmMiGk8XuLuaGCh_nPZpXg',
                     },
+                    {
+                        name: 'Oushiza no Aldebaran - Saint Seiya- The Lost Canvas',
+                        src: '/lost-canvas/Oushiza no Aldebaran - Saint Seiya- The Lost Canvas (slowed + reverb).mp3',
+                        img: 'https://i.ytimg.com/vi/x2_TUT2NQNo/hq720.jpg?sqp=-oaymwE3CNAFEJQDSFXyq4qpAykIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigINCAAQARiMASBRKBUwDw==&rs=AOn4CLBhA-9Zsn7qk_rzNcSf5n0e6KdBuA',
+                    },
+                    {
+                        name: '',
+                        src: '/lost-canvas/.mp3',
+                        img: '',
+                    },
+                    {
+                        name: '',
+                        src: '/lost-canvas/.mp3',
+                        img: '',
+                    },
+                    {
+                        name: '',
+                        src: '/lost-canvas/.mp3',
+                        img: '',
+                    },
                 ]
             },
             {
