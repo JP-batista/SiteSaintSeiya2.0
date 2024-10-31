@@ -167,36 +167,30 @@ const Musicas = [
         Tipos: [
             {
                 tipo: 1,
-                titulo: "Aberturas",
+                titulo: "Aberturas e Encerramentos",
                 musicas: [
                     {
                         name: 'The Realm of Athena - Saint Seiya - The Lost Canvas',
                         src: '/lost-canvas/The Realm of Athena - Saint Seiya- The Lost Canvas (slowed + reverb).mp3',
                         img: 'https://i.ytimg.com/vi/alMTBrhmxR4/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhDIFMocjAP&rs=AOn4CLC2IZAW6KS76CmfylC9ikoa74aWLA',
                     },
+                    {
+                        name: 'Hana no Kusari - Saint Seiya - The Lost Canvas',
+                        src: '/lost-canvas/Hana no Kusari - Saint Seiya- The Lost Canvas (slowed + reverb).mp3',
+                        img: 'https://i.ytimg.com/vi/_Jdn9VrQ4DY/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIF8oRTAP&rs=AOn4CLD_60hs2ohwLMyC7bcZ3a8ttRBqfA',
+                    },
                 ],
             },
             {
                 tipo: 2,
-                titulo: "Encerramentos",
+                titulo: "Trilhas",
                 musicas: [
                     {
-                        name: 'Hana no Kusari - Saint Seiya - The Lost Canvas',
-                        src: '/lost-canvas/Hana no Kusari - Saint Seiya- The Lost Canvas (slowed + reverb).mp3',
-                        img: 'https://i.ytimg.com/vi/MnkHc4gEknM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD1Fu1tXf0CbWzWo96f5PHySr_XHQ',
+                        name: 'Cloth no Hokori - Saint Seiya - The Lost Canvas',
+                        src: '/lost-canvas/Cloth no Hokori - Saint Seiya_ The Lost Canvas (slowed + reverb).mp3',
+                        img: 'https://i.ytimg.com/vi/P9UjbOKkAl0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIEgoRTAP&rs=AOn4CLARUB5HS0ox1x4VNUb2ek2vo1qUTA',
                     },
                 ],
-            },
-            {
-                tipo: 3,
-                titulo: "Outros",
-                musicas: [
-                    {
-                        name: 'Hana no Kusari - Saint Seiya - The Lost Canvas',
-                        src: '/lost-canvas/Hana no Kusari - Saint Seiya- The Lost Canvas (slowed + reverb).mp3',
-                        img: 'https://i.ytimg.com/vi/MnkHc4gEknM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD1Fu1tXf0CbWzWo96f5PHySr_XHQ',
-                    },
-                ]
             }
         ]
     },
