@@ -232,13 +232,27 @@ const Musicas = [
                         src: '/lost-canvas/Tenma and Alone from the Young Days - Saint Seiya- The Lost Canvas.mp3',
                         img: 'https://i.ytimg.com/vi/2cki15TGCYk/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFcoVTAP&rs=AOn4CLCVZHhKp_6GogP9dllzIDuKEEA6lg',
                     },
+                    {
+                        name: 'Pegasus Saint - Saint Seiya- The Lost Canvas',
+                        src: '/lost-canvas/Pegasus Saint - Saint Seiya- The Lost Canvas (slowed + reverb).mp3',
+                        img: 'https://i.ytimg.com/vi/FEnGEUHSaEc/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgvICsofzAP&rs=AOn4CLAC4W6RSb-n1gFgmVtJHiMzUbpYZA',
+                    },
+                    {
+                        name: 'The Lost Canvas - Saint Seiya- The Lost Canvas',
+                        src: '/lost-canvas/The Lost Canvas - Saint Seiya- The Lost Canvas (slowed + reverb).mp3',
+                        img: 'https://i.ytimg.com/vi/st3U21oxSi0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhKIGEoZTAP&rs=AOn4CLARvgKPE_7IYKiJsnVcRkIf_MGLHg',
+                    },
                 ]
             },
             {
-                tipo: 3,
+                tipo: 4,
                 titulo: "Trilhas",
                 musicas: [
-                    
+                    {
+                        name: '',
+                        src: '/lost-canvas/.mp3',
+                        img: '',
+                    },
                 ]
             },
         ]
