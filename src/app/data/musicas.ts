@@ -232,47 +232,13 @@ const Musicas = [
                         src: '/lost-canvas/Tenma and Alone from the Young Days - Saint Seiya- The Lost Canvas.mp3',
                         img: 'https://i.ytimg.com/vi/2cki15TGCYk/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFcoVTAP&rs=AOn4CLCVZHhKp_6GogP9dllzIDuKEEA6lg',
                     },
-                    {
-                        name: '',
-                        src: '/lost-canvas/.mp3',
-                        img: '',
-                    },
-                    {
-                        name: '',
-                        src: '/lost-canvas/.mp3',
-                        img: '',
-                    },
                 ]
             },
             {
                 tipo: 3,
                 titulo: "Trilhas",
                 musicas: [
-                    {
-                        name: '',
-                        src: '/lost-canvas/.mp3',
-                        img: '',
-                    },
-                    {
-                        name: '',
-                        src: '/lost-canvas/.mp3',
-                        img: '',
-                    },
-                    {
-                        name: '',
-                        src: '/lost-canvas/.mp3',
-                        img: '',
-                    },
-                    {
-                        name: '',
-                        src: '/lost-canvas/.mp3',
-                        img: '',
-                    },
-                    {
-                        name: '',
-                        src: '/lost-canvas/.mp3',
-                        img: '',
-                    },
+                    
                 ]
             },
         ]
