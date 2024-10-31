@@ -187,8 +187,33 @@ const Musicas = [
                 musicas: [
                     {
                         name: 'Sasha no Inori - Saint Seiya: The Lost Canvas',
-                        src: '/lost-canvas/Sasha no Inori - Saint Seiya_ The Lost Canvas (slowed + reverb) - 𝐙𝐀𝐈𝐅𝐋𝐎𝐖.mp3',
+                        src: '/lost-canvas/Sasha-no-Inori-Saint-Seiya-The-Lost-Canvas-_slowed-reverb_.mp3',
                         img: 'https://i.ytimg.com/vi/i5Lk-t3PTgY/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgpIDcofzAP&rs=AOn4CLDvvJnhSGBKZpbC-dt5kokaQAQ0Xw',
+                    },
+                    {
+                        name: 'Cloth no Hokori - Saint Seiya: The Lost Canvas',
+                        src: '/lost-canvas/Cloth-no-Hokori-Saint-Seiya-The-Lost-Canvas-_slowed-reverb_.mp3',
+                        img: 'https://i.ytimg.com/vi/P9UjbOKkAl0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIEgoRTAP&rs=AOn4CLARUB5HS0ox1x4VNUb2ek2vo1qUTA',
+                    },
+                    {
+                        name: 'Dohko of the Libra - Saint Seiya: The Lost Canvas',
+                        src: '/lost-canvas/Dohko-of-the-Libra-Saint-Seiya-The-Lost-Canvas-_slowed-reverb_.mp3',
+                        img: 'https://i.ytimg.com/vi/aSk3lkk5W6I/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgdIF0ocjAP&rs=AOn4CLCFxFMUARqz_ZaDuVzQEFV2XIsr6Q',
+                    },
+                    {
+                        name: 'Kizuna - Saint Seiya: The Lost Canvas',
+                        src: '/lost-canvas/Kizuna-Saint-Seiya-The-Lost-Canvas-_slowed-reverb_.mp3',
+                        img: 'https://i.ytimg.com/vi/TAcszk_9I0A/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgnIDEofzAP&rs=AOn4CLCFErMoQFKv0nqSxeEh-JCDki405g',
+                    },
+                    {
+                        name: 'The Pope and Hades - Saint Seiya: The Lost Canvas',
+                        src: '/lost-canvas/The-Pope-and-Hades-Saint-Seiya-The-Lost-Canvas-_slowed-reverb_.mp3',
+                        img: 'https://i.ytimg.com/vi/eDVbOJETsso/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhLIF4oZTAP&rs=AOn4CLDu-N8jSUI3n6Q9xOSfH5ztquoL7A',
+                    },
+                    {
+                        name: '',
+                        src: '/lost-canvas/.mp3',
+                        img: '',
                     },
                 ],
             }
