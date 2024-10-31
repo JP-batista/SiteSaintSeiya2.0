@@ -65,7 +65,7 @@ const Musicas = [
             },
             {
                 tipo: 3,
-                titulo: "Outros",
+                titulo: "Trilhas",
                 musicas: [
                     {
                         name: 'Advent of Artemis - Saint Seiya',
@@ -92,6 +92,12 @@ const Musicas = [
                         src: '/soundtrack/outras/Dream Traveller - Saint Seiya (slowed + reverb).mp3',
                         img: 'https://i.ytimg.com/vi/OVD7RN75JXQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIEgoQTAP&rs=AOn4CLD_DO2J13dor0Y16gwqayuTVOkNkg',
                     },
+                ]
+            },
+            {
+                tipo: 4,
+                titulo: "Trilhas",
+                musicas: [
                     {
                         name: 'Galaxian Wars - Saint Seiya',
                         src: '/soundtrack/outras/Galaxian Wars - Saint Seiya (slowed reverb).mp3',
@@ -117,6 +123,12 @@ const Musicas = [
                         src: '/soundtrack/outras/Never - Saint Seiya (slowed + reverb).mp3',
                         img: 'https://i.ytimg.com/vi/OMEOeFQssvA/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIEAoUDAP&rs=AOn4CLBkgHJhV55kdbDjuDH26pvPwdJ4oA',
                     },
+                ]
+            },
+            {
+                tipo: 5,
+                titulo: "Trilhas",
+                musicas: [
                     {
                         name: 'Pegasus Ryu Sei Ken - Saint Seiya',
                         src: '/soundtrack/outras/Pegasus Ryu Sei Ken - Saint Seiya (slowed + reverb).mp3',
@@ -142,6 +154,12 @@ const Musicas = [
                         src: '/soundtrack/outras/Sad Brothers - Saint Seiya (slowed + reverb).mp3',
                         img: 'https://i.ytimg.com/vi/wMrtnfnwKO8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhLIEQofzAP&rs=AOn4CLAKpDEpyczx66x7jxcN3WOYfroUyA',
                     },
+                ]
+            },
+            {
+                tipo: 6,
+                titulo: "Trilhas",
+                musicas: [
                     {
                         name: 'Saint of Hope - Saint Seiya',
                         src: '/soundtrack/outras/Saint of Hope - Saint Seiya (slowed + reverb).mp3',
