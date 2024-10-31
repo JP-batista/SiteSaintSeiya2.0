@@ -249,6 +249,16 @@ const Musicas = [
                 titulo: "Trilhas",
                 musicas: [
                     {
+                        name: 'Saints Death - Saint Seiya- The Lost Canvas (slowed + reverb)',
+                        src: '/lost-canvas/Saints Death - Saint Seiya- The Lost Canvas (slowed + reverb).mp3',
+                        img: 'https://i.ytimg.com/vi/SbRTxAvUn44/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgsIE4ofzAP&rs=AOn4CLASMP9kEBCIlAv4TwEl6leTku2Gqw',
+                    },
+                    {
+                        name: 'Virgo Asmita - Saint Seiya- The Lost Canvas (slowed + reverb)',
+                        src: '/lost-canvas/Virgo Asmita - Saint Seiya- The Lost Canvas (slowed + reverb).mp3',
+                        img: 'https://i.ytimg.com/vi/6TSA9ggsHq4/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFUoRDAP&rs=AOn4CLA1259V8h4bXfhccpTtgduR0byCoQ',
+                    },
+                    {
                         name: '',
                         src: '/lost-canvas/.mp3',
                         img: '',
