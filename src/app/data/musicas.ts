@@ -228,9 +228,9 @@ const Musicas = [
                         img: 'https://i.ytimg.com/vi/x2_TUT2NQNo/hq720.jpg?sqp=-oaymwE3CNAFEJQDSFXyq4qpAykIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigINCAAQARiMASBRKBUwDw==&rs=AOn4CLBhA-9Zsn7qk_rzNcSf5n0e6KdBuA',
                     },
                     {
-                        name: '',
-                        src: '/lost-canvas/.mp3',
-                        img: '',
+                        name: 'Tenma and Alone from the Young Days - Saint Seiya- The Lost Canvas',
+                        src: '/lost-canvas/Tenma and Alone from the Young Days - Saint Seiya- The Lost Canvas.mp3',
+                        img: 'https://i.ytimg.com/vi/2cki15TGCYk/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFcoVTAP&rs=AOn4CLCVZHhKp_6GogP9dllzIDuKEEA6lg',
                     },
                     {
                         name: '',
