@@ -1,4 +1,3 @@
-// src/app/musicas/page.tsx
 "use client";
 
 import { useState, useEffect, useRef } from 'react';
@@ -115,7 +114,6 @@ export default function MusicasPage() {
     <div className="flex h-[calc(100vh-8rem)] overflow-hidden p-4">
       {/* Lado Esquerdo: Música Atual (Fixo) */}
       <div className="w-1/4 bg-gray-800 p-6 flex flex-col items-center shadow-lg rounded-lg h-full sticky top-0">
-        {/* Aqui é o conteúdo fixo, não alterado */}
         <img
           src={currentMusic.img}
           alt={currentMusic.name}
@@ -208,7 +206,7 @@ export default function MusicasPage() {
                     alt={saga.titulo} 
                     className="w-auto h-24 object-cover rounded-md mb-1"
                 />
-                </div>
+              </div>
               {saga.titulo}
             </button>
           ))}
@@ -234,7 +232,9 @@ export default function MusicasPage() {
             {/* Carrossel de músicas */}
             <div 
             className="flex space-x-4 overflow-x-scroll no-scrollbar pl-8 transition-transform duration-300 ease-in-out" 
-            ref={(el) => (carouselsRef.current[tipo.titulo] = el as HTMLDivElement)}
+            ref={(el) => {
+              carouselsRef.current[tipo.titulo] = el;
+            }}
             >
             {filteredMusics(tipo.musicas).map((music) => (
                 <div 
