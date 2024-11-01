@@ -175,8 +175,50 @@ const Musicas = [
                         src: '/soundtrack/outras/Tranquility - Saint Seiya (slowed + reverb).mp3',
                         img: 'https://i.pinimg.com/originals/73/93/23/739323d3b40c000f1d0a1f092713adad.png',
                     },
+                    {
+                        name: 'For The Lovely Earth - Saint Seiya',
+                        src: '/soundtrack/outras/For The Lovely Earth - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/Q0tGf7g-yB0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgUIFkofzAP&rs=AOn4CLChALg9OcGE2dEySYNepX5WcdvIhg',
+                    },
+                    
+                    {
+                        name: 'Saints vs Devils - Saint Seiya- The Hades PS2 ',
+                        src: '/soundtrack/outras/Saints vs Devils - Saint Seiya- The Hades PS2 (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/epo9zVnfGF0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhaIDAofzAP&rs=AOn4CLDx6n_5z7mqsHX7GiKlrk3QCyZn3g',
+                    },
                 ]
-            }
+            },
+            {
+                tipo: 6,
+                titulo: "Trilhas",
+                musicas: [
+                    {
+                        name: 'Abels Harp - Saint Seiya',
+                        src: '/soundtrack/outras/Abels Harp - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/G-fiGNC5gCY/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIE0oQTAP&rs=AOn4CLC4Yx60WtgXBxL1GfssmiWwil8zSA',
+                    },
+                    {
+                        name: 'Elysium - Saint Seiya',
+                        src: '/soundtrack/outras/Elysium - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/OGnGh3BubpI/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhRIFgoZTAP&rs=AOn4CLA0WhmjcfN5YcNf1UjxLSd56CsTqA',
+                    },
+                    {
+                        name: 'Ikkis Theme - Saint Seiya',
+                        src: '/soundtrack/outras/Ikkis Theme - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/6VC43EOgIZE/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgiIGUoYTAP&rs=AOn4CLAkw7QlbqQH3NyQiWzjop_u45BM9A',
+                    },
+                    {
+                        name: 'Lonely My Way - Saint Seiya',
+                        src: '/soundtrack/outras/Lonely My Way - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/PXI9AdPDeQg/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhAIGUoTjAP&rs=AOn4CLCQ8uEOG7Jk1yTlMo2Q6mApIbBldA',
+                    },
+                    {
+                        name: 'Rozan Hyaku Ryu Ha - Saint Seiya- The Hades PS2',
+                        src: '/soundtrack/outras/Rozan Hyaku Ryu Ha - Saint Seiya- The Hades PS2 (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/XuUuC2_h3cM/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgnIGYocjAP&rs=AOn4CLAe5Tczyg_sqDx4wyTM04zS-NVFJg',
+                    },
+                ]
+            },
         ]
     },
     {
@@ -298,9 +340,29 @@ const Musicas = [
                 titulo: "Trilhas",
                 musicas: [
                     {
-                        name: '',
-                        src: '/lost-canvas/.mp3',
-                        img: '',
+                        name: 'A Far Memory - Saint Seiya- The Lost Canvas',
+                        src: '/lost-canvas/A Far Memory - Saint Seiya- The Lost Canvas (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/BPANGXWH_2Y/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIEsoKDAP&rs=AOn4CLCV_uFgi7GjDVkCZIc4xC7M_lSPLw',
+                    },
+                    {
+                        name: 'Cosmo - Saint Seiya- The Lost Canvas',
+                        src: '/lost-canvas/Cosmo - Saint Seiya- The Lost Canvas (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/s36aj-08wpo/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgaIFMofzAP&rs=AOn4CLADLt51k5qs50EE5jkY4G02vxIY7w',
+                    },
+                    {
+                        name: 'Pandora - Saint Seiya- The Lost Canvas',
+                        src: '/lost-canvas/Pandora - Saint Seiya- The Lost Canvas (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/PKZ6MW_Z1Yk/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhOIFAoZTAP&rs=AOn4CLDrIOePNFWLJ-vX957fpPAQnOGOEA',
+                    },
+                    {
+                        name: 'Saints Training - Saint Seiya- The Lost Canvas',
+                        src: '/lost-canvas/Saints Training - Saint Seiya- The Lost Canvas (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/mnfAbMjpgVU/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg2IFYofzAP&rs=AOn4CLDJdabOWKFInRkH1bGlsPcN_5HyIw',
+                    },
+                    {
+                        name: 'The Grey Canvas - Saint Seiya- The Lost Canvas',
+                        src: '/lost-canvas/The Grey Canvas - Saint Seiya- The Lost Canvas (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/omeDTAQFXMg/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgpIDYofzAP&rs=AOn4CLBe_seaPcN20vKAKfbgtivUv-n0hw',
                     },
                 ]
             },

@@ -240,7 +240,7 @@ export default function MusicasPage() {
                 <div 
                 key={music.name} 
                 onClick={() => selectMusic(music)} 
-                className="bg-gray-800 w-48 p-3 rounded-lg cursor-pointer transform hover:scale-105 transition-all duration-300 shadow-md flex-shrink-0 hover:bg-gray-700"
+                className="bg-gray-800 w-48 p-3 rounded-lg cursor-pointer shadow-md flex-shrink-0 hover:bg-gray-700 duration-300"
                 >
                 <img 
                     src={music.img} 
