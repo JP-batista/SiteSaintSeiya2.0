@@ -271,15 +271,55 @@ export default function HomePage() {
       {/* Trilha Sonora Section */}
       <section className="my-16">
         <h2 className="text-3xl md:text-4xl font-extrabold text-yellow-400 text-center mb-10">Trilhas Sonoras</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
-          <Link href="/soundtrack">
+        <div className="flex justify-center items-center ">
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-              <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-4">Trilha Sonora</h3>
               <p className="text-gray-300 text-md md:text-lg">
                 Ouça as músicas épicas de Saint Seiya enquanto explora o site.
               </p>
             </div>
-          </Link>
+        </div>
+        <div className="grid grid-cols-4 gap-3 mb-6 p-4">
+        <Link href="/soundtrack" key="Classico" className="bg-yellow-500 rounded-lg p-2 font-bold text-center transform hover:scale-105 transition duration-300 shadow-md">
+          <div className="flex justify-center items-center">
+            <img 
+              src={`/images/classico.png`} 
+              alt="Classico" 
+              className="w-auto h-24 object-cover rounded-md mb-1"
+            />
+          </div>
+          Classico
+        </Link>
+        <Link href="/soundtrack" key="lost Canvas" className="bg-yellow-500 rounded-lg p-2 font-bold text-center transform hover:scale-105 transition duration-300 shadow-md">
+          <div className="flex justify-center items-center">
+            <img 
+              src={`/images/lost-canvas.png`} 
+              alt="Lost Canvas" 
+              className="w-auto h-24 object-cover rounded-md mb-1"
+            />
+          </div>
+          Lost Canvas
+        </Link>
+        <Link href="/soundtrack" key="Omega" className="bg-yellow-500 rounded-lg p-2 font-bold text-center transform hover:scale-105 transition duration-300 shadow-md">
+          <div className="flex justify-center items-center">
+            <img 
+              src={`/images/omega.png`} 
+              alt="Omega" 
+              className="w-auto h-24 object-cover rounded-md mb-1"
+            />
+          </div>
+          Omega
+        </Link>
+        <Link href="/soundtrack" key="Soul of Gold" className="bg-yellow-500 rounded-lg p-2 font-bold text-center transform hover:scale-105 transition duration-300 shadow-md">
+          <div className="flex justify-center items-center">
+            <img 
+              src={`/images/soul-of gold.png`} 
+              alt="Soul of Gold" 
+              className="w-auto h-24 object-cover rounded-md mb-1"
+            />
+          </div>
+          Soul of Gold
+        </Link>
+
         </div>
       </section>
       {/* Seção Principal */}

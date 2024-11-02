@@ -189,7 +189,7 @@ const Musicas = [
                 ]
             },
             {
-                tipo: 6,
+                tipo: 7,
                 titulo: "Trilhas",
                 musicas: [
                     {
@@ -216,6 +216,358 @@ const Musicas = [
                         name: 'Rozan Hyaku Ryu Ha - Saint Seiya- The Hades PS2',
                         src: '/soundtrack/outras/Rozan Hyaku Ryu Ha - Saint Seiya- The Hades PS2 (slowed + reverb).m4a',
                         img: 'https://i.ytimg.com/vi/XuUuC2_h3cM/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgnIGYocjAP&rs=AOn4CLAe5Tczyg_sqDx4wyTM04zS-NVFJg',
+                    },
+                    
+                ]
+            },
+            {
+                tipo: 8,
+                titulo: "Trilhas",
+                musicas: [
+                    {
+                        name: 'Blue Dream (Instrumental) - Saint Seiya',
+                        src: '/soundtrack/outras/Blue Dream (Instrumental) - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/4KVlYyYhqbg/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhUIGIoZTAP&rs=AOn4CLBoMOjpTciFh67PFT-v6wd9EZcySw',
+                    },
+                    {
+                        name: 'Death Trip Serenade - Saint Seiya',
+                        src: '/soundtrack/outras/Death Trip Serenade - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/0gANKLoqMCQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhJIE0oZTAP&rs=AOn4CLBOU7J3UxZHGjGVEcuCN_CjauVFnA',
+                    },
+                    {
+                        name: 'Frey, Hero of Love and Justice - Saint Seiya',
+                        src: '/soundtrack/outras/Frey, Hero of Love and Justice - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/bxQTsFHTlRQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_g6AArgIigIMCAAQARhWIFkoZTAP&rs=AOn4CLCfsRiRbahEUn428ZguoReReALu7g',
+                    },
+                    {
+                        name: 'Mimes Requiem - Saint Seiya',
+                        src: '/soundtrack/outras/Mimes Requiem - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/6PG95r-YSno/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IEYoJjAP&rs=AOn4CLCQizcIP2s56ft3JFLyoX_4VVMQWA',
+                    },
+                    {
+                        name: 'Under the Wood of the Tree - Saint Seiya',
+                        src: '/soundtrack/outras/Under the Wood of the Tree - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/ZAATO0ycWWM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBOzK0uDhrYyIdVivLnAEIsaABLvQ',
+                    },
+                    
+                ]
+            },
+            {
+                tipo: 9,
+                titulo: "Trilhas",
+                musicas: [
+                    {
+                        name: 'Bell of Angelus Prayer - Saint Seiya',
+                        src: '/soundtrack/outras/Bell of Angelus Prayer - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/yRqdrDjR6kI/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_ICkoIDAP&rs=AOn4CLCF0ETvtKMUF5iDbIxfiQQoD-U_tA',
+                    },
+                    {
+                        name: 'Camus Death - Saint Seiya',
+                        src: '/soundtrack/outras/Camus Death - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/U-F6O5k11To/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg3IEsofzAP&rs=AOn4CLAdKzc9pXfwj1q_HV7NQBnBsL7JoA',
+                    },
+                    {
+                        name: 'Cygnus _ Warrior of Ice - Saint Seiya',
+                        src: '/soundtrack/outras/Cygnus _ Warrior of Ice - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/6qqwSHk3IPo/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IDYoGzAP&rs=AOn4CLAchEcptIns0fwhV1MJvbnZKj3nww',
+                    },
+                    {
+                        name: 'Dead End Symphony - Saint Seiya',
+                        src: '/soundtrack/outras/Dead End Symphony - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/uTWKQJI7KpA/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IFcoEzAP&rs=AOn4CLAfTd5FKEvT9wP7jTC14ttSqNx0-w',
+                    },
+                    {
+                        name: 'Deukalions Big Floods - Saint Seiya',
+                        src: '/soundtrack/outras/Deukalions Big Floods - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/DHwJzJ8Y2co/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_ICooXzAP&rs=AOn4CLBPih4pfgfwK8fMAaCUA8kRM0_YoQ',
+                    },
+                    
+                ]
+            },
+            {
+                tipo: 10,
+                titulo: "Trilhas",
+                musicas: [
+                    {
+                        name: 'Fight of Knights - Saint Seiya',
+                        src: '/soundtrack/outras/Fight of Knights - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/Yn8a3gMAAK4/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg0IE0ocjAP&rs=AOn4CLBbEhxilaOBJcRmS8zoL-ixc3EquA',
+                    },
+                    {
+                        name: 'Gather Under the Supervision of Athena - Saint Seiya',
+                        src: '/soundtrack/outras/Gather Under the Supervision of Athena - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/2NvMdB8wCiE/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhoIDgocjAP&rs=AOn4CLCQeQk3pKTV3w8eVROxsxMW3iPOpg',
+                    },
+                    {
+                        name: 'Inside a Dream - Saint Seiya',
+                        src: '/soundtrack/outras/Inside a Dream - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/UhdWwJ0x-Y0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IEooFzAP&rs=AOn4CLDPczcFpxeszpwn9D3MGalHwTACRQ',
+                    },
+                    {
+                        name: 'Shuns Theme - Saint Seiya',
+                        src: '/soundtrack/outras/Shuns Theme - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/aT7ruP0Hh6E/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgoIF4ofzAP&rs=AOn4CLDEVqXjAIPeoqDZzp9-TNswLN0WaA',
+                    },
+                    {
+                        name: 'Siren Sorrento - Saint Seiya',
+                        src: '/soundtrack/outras/Siren Sorrento - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/09rZj4TbKW4/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IDkoKTAP&rs=AOn4CLCDwfFta30zrw7Pj9yk9NzEUqGgSg',
+                    },
+                    
+                ]
+            },
+            {
+                tipo: 11,
+                titulo: "Trilhas",
+                musicas: [
+                    {
+                        name: 'Aria of the Three - Saint Seiya (slowed + reverb).m4a',
+                        src: '/soundtrack/outras/Aria of the Three - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/M12CduLoGRc/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhMIGUoYDAP&rs=AOn4CLAsu7M4ZRHE0J6sBK8725JXsIPBZA',
+                    },
+                    {
+                        name: 'Athenas Love - Saint Seiya',
+                        src: '/soundtrack/outras/Athenas Love - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/-up1Mlw4OZo/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhjIBcofzAP&rs=AOn4CLAhsRrfHTl3IIB5mmDllzY258PmCw',
+                    },
+                    {
+                        name: 'Athenas Theme - Saint Seiya',
+                        src: '/soundtrack/outras/Athenas Theme - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/6VC8xIgfdL8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIEEoVDAP&rs=AOn4CLBZ4GLlTSaZE51xrvpT8c76t7X0oQ',
+                    },
+                    {
+                        name: 'Corona Temples Destruction - Saint Seiya',
+                        src: '/soundtrack/outras/Corona Temples Destruction - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/ud2kn_6mnK8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IFgoKjAP&rs=AOn4CLAy2MyTSzyIDfCGQmjIvXvvUSviCw',
+                    },
+                    {
+                        name: 'Cosmo of Friendship - Saint Seiya',
+                        src: '/soundtrack/outras/Cosmo of Friendship - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/Ed-CkYBAgq4/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_ICsoEzAP&rs=AOn4CLDYdOYQCf_LpSyI56rS2sHrBvBpDg',
+                    },
+                    
+                ]
+            },
+            {
+                tipo: 12,
+                titulo: "Trilhas",
+                musicas: [
+                    {
+                        name: 'Era of Legend - Saint Seiya',
+                        src: '/soundtrack/outras/Era of Legend - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/3Qj-F2wvmsE/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg4IB0ofzAP&rs=AOn4CLB90HtPm1PpriFZud8dOG7JB2ByOg',
+                    },
+                    {
+                        name: 'Last Holy War - Gold Saints Sacrifice - Saint Seiya',
+                        src: '/soundtrack/outras/Last Holy War - Gold Saints Sacrifice - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/QGJd8r_PT2I/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIE4oOzAP&rs=AOn4CLDmYuaQpusugkktgOJ8zm7QxOWahg',
+                    },
+                    {
+                        name: 'Marin and Touma - Saint Seiya',
+                        src: '/soundtrack/outras/Marin and Touma - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/AY6uqOxM61c/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_ICAoGDAP&rs=AOn4CLArYl9YcTl9mb5R04Byu5kXxAxbVg',
+                    },
+                    {
+                        name: 'Mermaids Calling - Saint Seiya',
+                        src: '/soundtrack/outras/Mermaids Calling - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/RW3637xddc4/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IEQoJzAP&rs=AOn4CLC2DMxRmruEP-uLeqt2RkE7LDVxZw',
+                    },
+                    {
+                        name: 'Asgards Brothers and Sisters - Saint Seiya',
+                        src: '/soundtrack/outras/Asgards Brothers and Sisters - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/Z-nHpAmxtK0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgyIGYocjAP&rs=AOn4CLBYpeZj1pI2_GH36bYRo2cH-B4HEg',
+                    },
+                    
+                ]
+            },
+            {
+                tipo: 13,
+                titulo: "Trilhas",
+                musicas: [
+                    {
+                        name: 'Athenas Death - Saint Seiya',
+                        src: '/soundtrack/outras/Athenas Death - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/RXR0ZDGigNA/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhuIEUocjAP&rs=AOn4CLDcfmpYYbwPy-uDAeBtIN0gFh-u4w',
+                    },
+                    {
+                        name: 'Beautiful Gold Saints - Saint Seiya',
+                        src: '/soundtrack/outras/Beautiful Gold Saints - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/NlRpMBD2gW0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IEsoGTAP&rs=AOn4CLCa0e-dhGN7UBH5pgb44bbZ4q4mqg',
+                    },
+                    {
+                        name: 'Black Saints Challenge - Saint Seiya',
+                        src: '/soundtrack/outras/Black Saints Challenge - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/SVkz-ASMG6c/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhCIF0oZTAP&rs=AOn4CLDKDpnWCp6OnuxUEWB7BOrTU92y2w',
+                    },
+                    {
+                        name: 'Child of Dawn - Shakas Death - Saint Seiya',
+                        src: '/soundtrack/outras/Child of Dawn - Shakas Death - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/C_mu9qJEjkM/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIEooJjAP&rs=AOn4CLDMgL2kNhbMxf2WUqI3Agi3dKxTmQ',
+                    },
+                    {
+                        name: 'God Warrior vs Saint - Saint Seiya',
+                        src: '/soundtrack/outras/God Warrior vs Saint - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/9dWwsTVjVBA/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARguIEcofzAP&rs=AOn4CLB3JvZ1JxjQgLl9DMQBNfjfRpQfvA',
+                    },
+                    
+                ]
+            },
+            {
+                tipo: 14,
+                titulo: "Trilhas",
+                musicas: [
+                    {
+                        name: 'Heated Saints - Saint Seiya',
+                        src: '/soundtrack/outras/Heated Saints - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/JZo4RXBy1FU/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIGMoLTAP&rs=AOn4CLCWPjrrN10FDbKfGkHnl8OvkrFoCw',
+                    },
+                    {
+                        name: 'Pandora No Hako - Saint Seiya',
+                        src: '/soundtrack/outras/Pandora No Hako - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/xSCZrfdUENI/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhHIEMoZTAP&rs=AOn4CLBjpOXU9UyZ5e51PYCCASVSZxJFpw',
+                    },
+                    {
+                        name: 'Polaris Hilda - Saint Seiya',
+                        src: '/soundtrack/outras/Polaris Hilda - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/Fj147cG1y-w/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFgoZTAP&rs=AOn4CLB7xaXjgSt_WoIBmUa5nekn8Vh0_w',
+                    },
+                    {
+                        name: 'Taiyô Shinden no Hôkai - Saint Seiya',
+                        src: '/soundtrack/outras/Taiyô Shinden no Hôkai - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/CGNx0XMro-c/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIDsoOzAP&rs=AOn4CLASZAQal3kUb_V1pCsQfIbkxJ4Y6Q',
+                    },
+                    {
+                        name: 'The Arrival of the Emperor of the Sea',
+                        src: '/soundtrack/outras/The Arrival of the Emperor of the Sea (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/wkwOuGJbdG4/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgZIEgofzAP&rs=AOn4CLBur_TW3tIg0p5Y8irfDdtJpaFujw',
+                    },
+                    
+                ]
+            },
+            {
+                tipo: 15,
+                titulo: "Trilhas",
+                musicas: [
+                    {
+                        name: 'Abels Theme - Saint Seiya',
+                        src: '/soundtrack/outras/Abels Theme - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/ORk4QdiPmDM/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIFYoKTAP&rs=AOn4CLDGFRmNk6ZlJW89USN1rlMvacikeg',
+                    },
+                    {
+                        name: 'Another Field - Shaka Theme - Saint Seiya',
+                        src: '/soundtrack/outras/Another Field - Shaka Theme - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/oKlhVqXJY1Q/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IEcoHjAP&rs=AOn4CLCqGynipIo8JYhcXHdXsrrNiwOyCQ',
+                    },
+                    {
+                        name: 'Burn Cosmos - Saint Seiya',
+                        src: '/soundtrack/outras/Burn Cosmos - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/6So6CppblyY/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIF4oSDAP&rs=AOn4CLAkT4BmUTTF46v2qr7FEzkOynzSeQ',
+                    },
+                    {
+                        name: 'Dead or Dead - Saint Seiya',
+                        src: '/soundtrack/outras/Dead or Dead - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/r335d9pOuxQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgwIEUofzAP&rs=AOn4CLAvAaftXA9RjSE1f3fAkSCqFTN2aA',
+                    },
+                    {
+                        name: 'Devil Temple - Saint Seiya',
+                        src: '/soundtrack/outras/Devil Temple - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/tS7F1lnF-_8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIEQoXDAP&rs=AOn4CLA5Ft2o3Z-2fKDtAzkJqarWkzOhiA',
+                    },
+                    
+                ]
+            },
+            {
+                tipo: 16,
+                titulo: "Trilhas",
+                musicas: [
+                    {
+                        name: 'Fallen Angel vs Saint - Saint Seiya',
+                        src: '/soundtrack/outras/Fallen Angel vs Saint - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/gMALGz2DPBw/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhIIEMoZTAP&rs=AOn4CLDMx_8PZ1LbherSLd_youvO0Dtzyw',
+                    },
+                    {
+                        name: 'Find Balmung Sword - Saint Seiya',
+                        src: '/soundtrack/outras/Find Balmung Sword - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/eEBdbJINmqg/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFAoTzAP&rs=AOn4CLDRiSdS3sK_4g6_sUIDZ2U-9Jpo3Q',
+                    },
+                    {
+                        name: 'Hoo Yoku Ten Shoo - Saint Seiya',
+                        src: '/soundtrack/outras/Hoo Yoku Ten Shoo - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/ekvDz5UiXac/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyID4oTDAP&rs=AOn4CLA-cFQxN36HJzot-LHiJwRGIPYTRw',
+                    },
+                    {
+                        name: 'Ikkis Arrival - Saint Seiya',
+                        src: '/soundtrack/outras/Ikkis Arrival - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/9A_AnTR17H4/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgxICoofzAP&rs=AOn4CLB70m6V0GjzH2ZbaxA4wxU-4jHN5A',
+                    },
+                    {
+                        name: 'Legend of Poseidon - Saint Seiya',
+                        src: '/soundtrack/outras/Legend of Poseidon - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/VL2aD0g4XIs/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgkIE8ofzAP&rs=AOn4CLAEzG9JFxEi9nD2tS7c504aGKMOLw',
+                    },
+                    
+                ]
+            },
+            {
+                tipo: 17,
+                titulo: "Trilhas",
+                musicas: [
+                    {
+                        name: 'New wars comes up - Saint Seiya',
+                        src: '/soundtrack/outras/New wars comes up - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/nwzmlzWTqfg/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgiICkofzAP&rs=AOn4CLDOnNFs8S_iU6OOMDv7ed3kVS910A',
+                    },
+                    {
+                        name: 'Nibelungen Ring - Saint Seiya',
+                        src: '/soundtrack/outras/Nibelungen Ring - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/ab3BreRLDIc/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg6IFwoZTAP&rs=AOn4CLAEzADcE4p9t3Q3mhelDOLZ5DraOA',
+                    },
+                    {
+                        name: 'Night Before Battle - Saint Seiya',
+                        src: '/soundtrack/outras/Night Before Battle - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/Znahnz2DxTE/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgyIFsocjAP&rs=AOn4CLC4dbA7LMoKDFuKiVHNHD3Pq8fHRA',
+                    },
+                    {
+                        name: 'Overture - Saint Seiya',
+                        src: '/soundtrack/outras/Overture - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/jtzR85QvIRI/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg5ICgofzAP&rs=AOn4CLDUgTKa4_iNgGamNCpoh92K8kkzSQ',
+                    },
+                    {
+                        name: 'Pope Ares - Saint Seiya',
+                        src: '/soundtrack/outras/Pope Ares - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/b5ph7U1S964/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_ID0oKTAP&rs=AOn4CLDqk68RPjXazSaj1WtIjigDR_HtkA',
+                    },
+                    
+                ]
+            },
+            {
+                tipo: 18,
+                titulo: "Trilhas",
+                musicas: [
+                    {
+                        name: 'Sacred God Hades - Saint Seiya',
+                        src: '/soundtrack/outras/Sacred God Hades - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/8j7zcgLBcKA/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhJIFYoZTAP&rs=AOn4CLAZuc60WMClrdZnLo0ihsfByY5tAw',
+                    },
+                    {
+                        name: 'Save Goddess! - Saint Seiya',
+                        src: '/soundtrack/outras/Save Goddess! - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/yQCV6M3gGwU/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhSIEsoZTAP&rs=AOn4CLADkxE3wh736oW4votKIMnv-F1bnA',
+                    },
+                    {
+                        name: 'The Hope - Saint Seiya- Legend of Sanctuary',
+                        src: '/soundtrack/outras/The Hope - Saint Seiya- Legend of Sanctuary (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/nA7gbRj4ohU/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIEQoOTAP&rs=AOn4CLAC4-sLDY4omGAdMdJOTYNBqeBGHQ',
+                    },
+                    {
+                        name: 'The Supremacy of the Microcosm - Saint Seiya',
+                        src: '/soundtrack/outras/The Supremacy of the Microcosm - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/TwCipPviDRM/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIDcoSTAP&rs=AOn4CLABcZFPvX5C-y73wprRWTIM9pqcGQ',
+                    },
+                    {
+                        name: 'Time of Ordeal - Saint Seiya',
+                        src: '/soundtrack/outras/Time of Ordeal - Saint Seiya (slowed + reverb).m4a',
+                        img: 'https://i.ytimg.com/vi/sv3d2if1sLQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IBYoEzAP&rs=AOn4CLCCi80OReSeldpIJbVPmv5r0Up0lg',
                     },
                 ]
             },
@@ -336,7 +688,7 @@ const Musicas = [
                 ]
             },
             {
-                tipo: 4,
+                tipo: 5,
                 titulo: "Trilhas",
                 musicas: [
                     {
@@ -452,7 +804,7 @@ const Musicas = [
         titulo: "Soul of Gold",
         Tipos: [
             {
-                tipo: 3,
+                tipo: 1,
                 titulo: "Trilhas",
                 musicas: [
                     {
