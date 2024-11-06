@@ -58,7 +58,7 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
               alt="Logo Os Cavaleiros do Zodíaco"
               className="w-16 h-auto mr-2 hover:scale-105 transition-transform duration-300"
             />
-            <strong className="text-lg md:text-2xl">Os Cavaleiros do Zodíaco</strong>
+            <strong className="text-lg md:text-2xl text-white">Os Cavaleiros do Zodíaco</strong>
           </Link>
         </div>
 

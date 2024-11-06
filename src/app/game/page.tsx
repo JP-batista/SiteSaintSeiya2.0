@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import characters from "../data/characters"; // Certifique-se de que os dados dos personagens estão aqui
+import characters from "../data/charactersDLE"; // Certifique-se de que os dados dos personagens estão aqui
 
 // Definindo o tipo dos personagens para melhorar a tipagem
 type Character = {
@@ -234,9 +234,6 @@ export default function GamePage() {
             </button>
           </form>
 
-          {/* Continuação do código... */}
-
-
           <div className="w-full max-w-3xl">
             <h2 className="text-3xl mb-6 text-center">Tentativas</h2>
             <div className="">
@@ -410,7 +407,7 @@ export default function GamePage() {
             </div>
           </div>
           <div className="mt-6 bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold mb-4 text-center text-yellow-400">Indicadores de cor</h3>
+            <h3 className="text-xl font-bold mb-4 text-center text-yellow-400">Indicadores</h3>
             <div className="flex items-center justify-around space-x-4">
                 
                 <div className="flex flex-col items-center">

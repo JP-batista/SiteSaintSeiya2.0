@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Tema Santuário */
+/* Configuração do background padrão */
+body {
+  background-image: url('https://i.pinimg.com/originals/84/1b/c0/841bc0ef61518645f58293d7b2167f57.png');
+  background-size: cover;
+  background-attachment: fixed; /* Mantém o background fixo */
+  background-position: center;
+  background-color: black; /* Fallback */
+  padding-top: 80px; /* Ajuste conforme necessário para a altura da barra de navegação */
+}
+
 .santuary {
   background-image: url('https://i.pinimg.com/originals/84/1b/c0/841bc0ef61518645f58293d7b2167f57.png');
   background-size: cover;
@@ -68,24 +77,6 @@
   background-color: black; /* Fallback */
 }
 
-/* Padding para ajustar a navbar e o conteúdo */
-body {
-  padding-top: 80px; /* Ajuste conforme necessário para a altura da barra de navegação */
-}
-
-/* Temas de Personagens Favoritos */
-.seiya {
-  background-color: #FF6347; /* Cor personalizada para Seiya */
-}
-
-.shiryu {
-  background-color: #2E8B57; /* Cor personalizada para Shiryu */
-}
-
-.hyoga {
-  background-color: #4682B4; /* Cor personalizada para Hyoga */
-}
-
 /* Hide scrollbar in the carousel container */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -96,12 +87,6 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
-

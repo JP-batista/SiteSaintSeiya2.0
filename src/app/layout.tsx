@@ -35,13 +35,13 @@ export default function RootLayout({
       </head>
       <body className={`${theme}`}>
         {/* Navbar é exibido em todas as páginas */}
-        <Navbar onThemeChange={handleThemeChange} />
+        {pathname !== '/login' && pathname !== '/login/signin' && pathname !== '/login/signup' && <Navbar onThemeChange={handleThemeChange} />}
         {/* Header e Footer serão exibidos apenas se a rota não for "/soundtrack" */}
-        {pathname !== '/soundtrack' && <Header />}
+        {pathname !== '/soundtrack' && pathname !== '/game' && pathname !== '/login' && pathname !== '/login/signin' && pathname !== '/login/signup' && <Header />}
         <div className="container mx-auto p-4">
           {children}
         </div>
-        {pathname !== '/soundtrack' && <Footer />}
+        {pathname !== '/soundtrack' && pathname !== '/login' && pathname !== '/login/signin' && pathname !== '/login/signup' && <Footer />}
       </body>
     </html>
   );

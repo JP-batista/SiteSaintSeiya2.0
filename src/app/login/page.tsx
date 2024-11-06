@@ -1,63 +1,72 @@
-"use client"; // Marca este componente como Client Component
+// src/app/login/page.tsx
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation'; // Usando next/navigation
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function LoginPage() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const router = useRouter(); // Usando useRouter de next/navigation
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    // Verifica se ambos os campos foram preenchidos
-    if (username && password) {
-      // Redireciona para a página inicial
-      router.push('/');
-    } else {
-      alert('Por favor, preencha ambos os campos de usuário e senha.');
-    }
-  };
-
   return (
-    <div className="flex items-center justify-center ">
-      <div className="max-w-md w-full bg-gray-800 p-8 rounded-lg shadow-lg">
-        <h1 className="text-4xl text-yellow-400 mb-6 text-center font-bold">Login</h1>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-6">
-            <label className="block text-gray-300 text-sm font-bold mb-2" htmlFor="username">
-              Usuário
-            </label>
-            <input
-              id="username"
-              type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)} // Atualiza o estado do campo "usuário"
-              className="w-full p-3 bg-gray-900 text-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 transition duration-300 ease-in-out"
-              placeholder="Digite seu usuário"
+    <div className="min-h-screen flex items-center justify-center overflow-hidden fixed inset-0 p-8">
+      <div className="rounded-lg max-w-6xl w-full p-12 flex flex-col md:flex-row shadow-lg">
+        
+        {/* Esquerda: Formulário de login */}
+        <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
+          <div className="text-center mb-8">
+            {/* Logo do Syner maior e centralizada */}
+            <img
+              src="/icons/logo4.png"
+              alt="Logo do Atena"
+              width={300}
+              height={300}
+              className="rounded-full transition-transform duration-500 hover:scale-105"
             />
           </div>
-          <div className="mb-6">
-            <label className="block text-gray-300 text-sm font-bold mb-2" htmlFor="password">
-              Senha
-            </label>
-            <input
-              id="password"
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)} // Atualiza o estado do campo "senha"
-              className="w-full p-3 bg-gray-900 text-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 transition duration-300 ease-in-out"
-              placeholder="Digite sua senha"
+
+          {/* Botões de ação */}
+          <div className="space-y-6 w-full max-w-xs">
+            {/* Botão de criar conta */}
+            <Link href="/login/signup">
+              <button className="bg-yellow-500 text-gray-900 w-full py-4 rounded-lg font-semibold hover:bg-yellow-600 transition-all duration-300">
+                Criar Conta
+              </button>
+            </Link>
+            {/* Botão de login com Google */}
+            <button className="bg-white border border-gray-300 w-full py-4 rounded-lg flex items-center justify-center space-x-2 font-semibold hover:bg-gray-300 transition-colors duration-300">
+              <Image
+                src="/icons/google-logo.png"
+                alt="Google Logo"
+                width={24}
+                height={24}
+              />
+              <span>Continuar com o Google</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Linha de divisão */}
+        <div className="w-[1px] bg-gray-500 mx-8 hidden md:block"></div>
+
+        {/* Direita: Texto descritivo */}
+        <div className="w-full md:w-1/2 flex flex-col items-center justify-center pl-8">
+          {/* Logo adicional */}
+          <div className="text-center mb-8">
+            <img
+              src="https://i.pinimg.com/originals/cf/38/b3/cf38b3ac9fc826e5e8b9c620f570fa4e.png"
+              alt="Logo LOS"
+              className="w-auto h-auto hover:scale-105 transition-transform duration-500 ease-in-out"
             />
           </div>
-          <button
-            type="submit"
-            className="w-full bg-yellow-500 text-black font-bold py-2 rounded-lg hover:bg-yellow-400 transition-colors duration-300 shadow-lg hover:shadow-xl"
-          >
-            Entrar
-          </button>
-        </form>
+
+          <p className="text-gray-300 text-lg mb-8 text-center">
+            Explore o universo dos Cavaleiros do Zodíaco! Descubra sagas épicas, personagens icônicos e batalhas lendárias neste portal dedicado ao mundo de Saint Seiya.
+          </p>
+          <div className="text-center w-full max-w-xs">
+            <Link href="/login/signin">
+              <button className="bg-yellow-500 text-gray-900 w-full py-4 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300">
+                Login
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
