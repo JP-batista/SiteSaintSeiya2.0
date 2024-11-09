@@ -34,14 +34,32 @@ export default function RootLayout({
         <title>Saint Seiya</title>
       </head>
       <body className={`${theme}`}>
-        {/* Navbar é exibido em todas as páginas */}
-        {pathname !== '/login' && pathname !== '/login/signin' && pathname !== '/login/signup' && <Navbar onThemeChange={handleThemeChange} />}
-        {/* Header e Footer serão exibidos apenas se a rota não for "/soundtrack" */}
-        {pathname !== '/soundtrack' && pathname !== '/game' && pathname !== '/login' && pathname !== '/login/signin' && pathname !== '/login/signup' && <Header />}
+        {
+          pathname !== '/login' && 
+          pathname !== '/login/signin' && 
+          pathname !== '/login/signup' && 
+          <Navbar onThemeChange={handleThemeChange} />
+        }
+        {
+          pathname !== '/soundtrack' && 
+          pathname !== '/game' && pathname !== '/login' && 
+          pathname !== '/login/signin' && 
+          pathname !== '/login/signup' && 
+          pathname !== '/perfil' && 
+          pathname !== '/quiz' && 
+          pathname !== '/mapas/mapa-doze-casas' && 
+          <Header />
+        }
         <div className="container mx-auto p-4">
           {children}
         </div>
-        {pathname !== '/soundtrack' && pathname !== '/login' && pathname !== '/login/signin' && pathname !== '/login/signup' && <Footer />}
+        {
+          pathname !== '/soundtrack' && 
+          pathname !== '/login' && 
+          pathname !== '/login/signin' && 
+          pathname !== '/login/signup' && 
+          <Footer />
+        }
       </body>
     </html>
   );

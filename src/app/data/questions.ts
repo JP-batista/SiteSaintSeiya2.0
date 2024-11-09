@@ -1,6 +1,148 @@
 // src/app/data/questions.ts
 
 export const questions = [
+
+  {
+    difficulty: "easy",
+    question: "Qual é o nome do protagonista de 'Os Cavaleiros do Zodíaco'?",
+    options: ["Seiya de Pégaso", "Shiryu de Dragão", "Hyoga de Cisne"],
+    answer: "Seiya de Pégaso"
+  },
+  {
+    difficulty: 'medium',
+    question: 'Qual é a principal habilidade de Shaka de Virgem?',
+    options: ['Manipulação de ilusões', 'Controle de raios cósmicos', 'Domínio do gelo'],
+    answer: 'Manipulação de ilusões',
+  },
+  {
+    difficulty: 'hard',
+    question: 'Qual cavaleiro de ouro é conhecido por seu domínio sobre o veneno?',
+    options: ['Shura de Capricórnio', 'Afrodite de Peixes', 'Milo de Escorpião'],
+    answer: 'Afrodite de Peixes',
+  },
+  {
+    difficulty: "impossible",
+    question: "No filme 'Prólogo do Céu', qual é o nome do deus que Seiya enfrenta no final e que busca destruir a humanidade?",
+    options: ["Apolo", "Zeus", "Hades"],
+    answer: "Apolo"
+  },
+  {
+    difficulty: "easy",
+    question: "Qual é a deusa que os Cavaleiros juram proteger?",
+    options: ["Atena", "Afrodite", "Hera"],
+    answer: "Atena"
+  },
+  {
+    difficulty: "easy",
+    question: "Quantas casas do zodíaco os Cavaleiros de Bronze precisam atravessar no Santuário?",
+    options: ["12", "10", "8"],
+    answer: "12"
+  },
+  {
+    difficulty: "easy",
+    question: "Qual Cavaleiro de Bronze possui a habilidade de ressurgir das cinzas?",
+    options: ["Ikki de Fênix", "Shun de Andrômeda", "Hyoga de Cisne"],
+    answer: "Ikki de Fênix"
+  },
+  {
+    difficulty: "easy",
+    question: "Em 'The Lost Canvas', quem é o Cavaleiro de Pégaso?",
+    options: ["Tenma", "Seiya", "Kouga"],
+    answer: "Tenma"
+  },
+  {
+    difficulty: "easy",
+    question: "Qual é o nome do irmão de Shun de Andrômeda?",
+    options: ["Ikki", "Shiryu", "Hyoga"],
+    answer: "Ikki"
+  },
+  {
+    difficulty: "easy",
+    question: "Em 'Saint Seiya Omega', quem é o novo Cavaleiro de Pégaso?",
+    options: ["Kouga", "Seiya", "Tenma"],
+    answer: "Kouga"
+  },
+  {
+    difficulty: "easy",
+    question: "Qual Cavaleiro de Ouro é conhecido como 'O Homem Mais Próximo de Deus'?",
+    options: ["Shaka de Virgem", "Saga de Gêmeos", "Aiolos de Sagitário"],
+    answer: "Shaka de Virgem"
+  },
+  {
+    difficulty: "easy",
+    question: "Qual é o golpe mais poderoso de Seiya de Pégaso?",
+    options: ["Meteoro de Pégaso", "Cometa de Pégaso", "Trovão de Pégaso"],
+    answer: "Meteoro de Pégaso"
+  },
+  {
+    difficulty: "easy",
+    question: "Em 'Next Dimension', quem é o Cavaleiro de Ouro de Ofiúco?",
+    options: ["Odysseus", "Shion", "Dohko"],
+    answer: "Odysseus"
+  },
+  {
+    difficulty: "easy",
+    question: "Qual Cavaleiro de Bronze é conhecido por sua corrente defensiva?",
+    options: ["Shun de Andrômeda", "Seiya de Pégaso", "Hyoga de Cisne"],
+    answer: "Shun de Andrômeda"
+  },
+  {
+    difficulty: "easy",
+    question: "Em 'Episódio G', qual Cavaleiro de Ouro é o protagonista?",
+    options: ["Aiolia de Leão", "Mu de Áries", "Shaka de Virgem"],
+    answer: "Aiolia de Leão"
+  },
+  {
+    difficulty: "easy",
+    question: "Qual é o nome do irmão gêmeo de Saga de Gêmeos?",
+    options: ["Kanon", "Shion", "Dohko"],
+    answer: "Kanon"
+  },
+  {
+    difficulty: "easy",
+    question: "Qual Cavaleiro de Ouro é responsável pela Casa de Touro?",
+    options: ["Aldebaran", "Shura", "Milo"],
+    answer: "Aldebaran"
+  },
+  {
+    difficulty: "easy",
+    question: "Em 'The Lost Canvas', quem é o Cavaleiro de Ouro de Peixes?",
+    options: ["Albafica", "Afrodite", "Pisces"],
+    answer: "Albafica"
+  },
+  {
+    difficulty: "easy",
+    question: "Qual Cavaleiro de Bronze treinou nos Cinco Picos de Rozan?",
+    options: ["Shiryu de Dragão", "Seiya de Pégaso", "Hyoga de Cisne"],
+    answer: "Shiryu de Dragão"
+  },
+  {
+    difficulty: "easy",
+    question: "Qual é o nome do Cavaleiro de Ouro de Sagitário?",
+    options: ["Aiolos", "Aiolia", "Shura"],
+    answer: "Aiolos"
+  },
+  {
+    difficulty: "easy",
+    question: "Em 'Saint Seiya Omega', quem é a deusa que os Cavaleiros protegem?",
+    options: ["Atena", "Artemis", "Afrodite"],
+    answer: "Atena"
+  },
+  {
+    difficulty: "easy",
+    question: "Qual Cavaleiro de Ouro é conhecido por sua técnica 'Cólera do Dragão'?",
+    options: ["Shiryu de Dragão", "Shura de Capricórnio", "Dohko de Libra"],
+    answer: "Shiryu de Dragão"
+  },
+  {
+    difficulty: "easy",
+    question: "Em 'Next Dimension', quem é o Cavaleiro de Ouro de Áries?",
+    options: ["Shion", "Mu", "Kiki"],
+    answer: "Shion"
+  },
+
+
+
   // Perguntas Fáceis
   {
     difficulty: 'easy',
@@ -542,5 +684,119 @@ export const questions = [
     question: 'Qual cavaleiro foi ressuscitado por Hades para lutar contra os cavaleiros de bronze na saga final?',
     options: ['Kanon de Gêmeos', 'Saga de Gêmeos', 'Aioros de Sagitário'],
     answer: 'Saga de Gêmeos',
+  },
+  {
+    difficulty: "impossible",
+    question: "No mangá clássico, qual é o nome do Cavaleiro de Prata que possui a habilidade de manipular o som e enfrenta Shun de Andrômeda?",
+    options: ["Orfeu de Lira", "Misty de Lagarto", "June de Camaleão"],
+    answer: "Orfeu de Lira"
+  },
+  {
+    difficulty: "impossible",
+    question: "Em 'The Lost Canvas', qual é o verdadeiro nome do Cavaleiro de Ouro de Peixes, conhecido por sua beleza e técnicas com rosas?",
+    options: ["Albafica", "Lugonis", "Pisces"],
+    answer: "Albafica"
+  },
+  {
+    difficulty: "impossible",
+    question: "No 'Episódio G', qual Cavaleiro de Ouro enfrenta o Titã Ceo e utiliza a técnica 'Extinção Estelar'?",
+    options: ["Mu de Áries", "Shaka de Virgem", "Aiolia de Leão"],
+    answer: "Mu de Áries"
+  },
+  {
+    difficulty: "impossible",
+    question: "Em 'Saint Seiya Omega', qual é o nome do Cavaleiro de Ouro de Gêmeos que possui uma personalidade dividida e enfrenta Kouga?",
+    options: ["Paradox", "Integra", "Genbu"],
+    answer: "Paradox"
+  },
+  {
+    difficulty: "impossible",
+    question: "No mangá 'Next Dimension', qual Cavaleiro de Ouro é revelado como o mestre de Shion de Áries e Dohko de Libra?",
+    options: ["Sage de Câncer", "Hakurei de Altar", "Shijima de Virgem"],
+    answer: "Hakurei de Altar"
+  },
+  {
+    difficulty: "impossible",
+    question: "Em 'The Lost Canvas Gaiden', qual Cavaleiro de Ouro é conhecido por sua habilidade de manipular o fogo e possui uma saúde debilitada?",
+    options: ["Kardia de Escorpião", "Degel de Aquário", "El Cid de Capricórnio"],
+    answer: "Kardia de Escorpião"
+  },
+  {
+    difficulty: "impossible",
+    question: "No filme 'Prólogo do Céu', qual é o nome da deusa que é irmã de Atena e busca puni-la por suas ações na Terra?",
+    options: ["Ártemis", "Afrodite", "Hera"],
+    answer: "Ártemis"
+  },
+  {
+    difficulty: "impossible",
+    question: "Em 'Saint Seiya Omega', qual é o nome do Cavaleiro de Bronze que representa a constelação de Lobo e possui habilidades de ninja?",
+    options: ["Haruto", "Ryuho", "Yuna"],
+    answer: "Haruto"
+  },
+  {
+    difficulty: "impossible",
+    question: "No 'Episódio G', qual Cavaleiro de Ouro enfrenta o Titã Jápeto e utiliza a técnica 'Excalibur'?",
+    options: ["Shura de Capricórnio", "Aiolia de Leão", "Camus de Aquário"],
+    answer: "Shura de Capricórnio"
+  },
+  {
+    difficulty: "impossible",
+    question: "Em 'The Lost Canvas', qual é o nome do Cavaleiro de Prata que é irmão gêmeo de Aspros de Gêmeos e possui uma personalidade sombria?",
+    options: ["Deuteros", "Sisyphus", "Regulus"],
+    answer: "Deuteros"
+  },
+  {
+    difficulty: "impossible",
+    question: "No mangá clássico, qual Cavaleiro de Ouro é responsável por guardar a Casa de Escorpião e utiliza a técnica 'Agulha Escarlate'?",
+    options: ["Milo", "Kardia", "Sonia"],
+    answer: "Milo"
+  },
+  {
+    difficulty: "impossible",
+    question: "Em 'Next Dimension', qual Cavaleiro de Ouro possui a habilidade de se comunicar com os mortos e é conhecido por sua sabedoria?",
+    options: ["Shijima de Virgem", "Ox de Touro", "Kaiser de Leão"],
+    answer: "Shijima de Virgem"
+  },
+  {
+    difficulty: "impossible",
+    question: "No filme 'A Lenda dos Defensores de Atena', qual é o nome da irmã de Abel que auxilia os Cavaleiros de Bronze em sua luta?",
+    options: ["Eris", "Athena", "Saori"],
+    answer: "Eris"
+  },
+  {
+    difficulty: "impossible",
+    question: "Em 'Saint Seiya Omega', qual é o nome do Cavaleiro de Ouro de Capricórnio que sucede Shura e possui uma espada sagrada?",
+    options: ["Genbu", "Ionia", "Fudo"],
+    answer: "Genbu"
+  },
+  {
+    difficulty: "impossible",
+    question: "No 'Episódio G', qual Cavaleiro de Ouro enfrenta o Titã Oceano e utiliza a técnica 'Cólera do Dragão'?",
+    options: ["Shura de Capricórnio", "Aiolia de Leão", "Aldebaran de Touro"],
+    answer: "Aldebaran de Touro"
+  },
+  {
+    difficulty: "impossible",
+    question: "Em 'The Lost Canvas Gaiden', qual Cavaleiro de Ouro é conhecido por sua habilidade de manipular o gelo e é amigo de infância de Kardia?",
+    options: ["Degel de Aquário", "El Cid de Capricórnio", "Manigoldo de Câncer"],
+    answer: "Degel de Aquário"
+  },
+  {
+    difficulty: "impossible",
+    question: "No mangá clássico, qual Cavaleiro de Ouro é responsável por guardar a Casa de Sagitário e é irmão de Aiolia?",
+    options: ["Aiolos", "Sisyphus", "Seiya"],
+    answer: "Aiolos"
+  },
+  {
+    difficulty: "impossible",
+    question: "Em 'Next Dimension', qual Cavaleiro de Ouro possui a habilidade de manipular a gravidade e é conhecido por sua força descomunal?",
+    options: ["Kaiser de Leão", "Ox de Touro", "Shijima de Virgem"],
+    answer: "Kaiser de Leão"
+  },
+  {
+    difficulty: "impossible",
+    question: "No filme 'Prólogo do Céu', qual é o nome do deus que Seiya enfrenta no final e que busca destruir a humanidade?",
+    options: ["Apolo", "Zeus", "Hades"],
+    answer: "Apolo"
   },
 ];

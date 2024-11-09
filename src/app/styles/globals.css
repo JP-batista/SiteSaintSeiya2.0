@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 /* Configuração do background padrão */
+
+
 body {
   background-image: url('https://i.pinimg.com/originals/84/1b/c0/841bc0ef61518645f58293d7b2167f57.png');
   background-size: cover;

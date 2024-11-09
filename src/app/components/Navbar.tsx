@@ -1,14 +1,18 @@
 import { useState, useRef } from 'react';
 import Link from 'next/link';
+import cavaleiros, { Cavaleiro } from '../data/skins';
 
 export default function Navbar({ onThemeChange }: { onThemeChange: (theme: string) => void }) {
   const themes = ['santuary', 'ruinas', 'asgard', 'relogio'];
   const [currentTheme, setCurrentTheme] = useState('santuary');
-  const [isDropdownOpen, setDropdownOpen] = useState(false); // Estado para o dropdown de explorar mais
-  const [isMenuOpen, setMenuOpen] = useState(false); // Estado para o menu mobile
-  const [isThemeDropdownOpen, setThemeDropdownOpen] = useState(false); // Estado para o dropdown de temas
-  const dropdownTimerRef = useRef<NodeJS.Timeout | null>(null); // Referência para o temporizador
-
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isThemeDropdownOpen, setThemeDropdownOpen] = useState(false);
+  const dropdownTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const [username, setUsername] = useState(() => localStorage.getItem('username') || 'Seiya de Pégaso');
+  const [selectedCavaleiro, setSelectedCavaleiro] = useState(
+    () => cavaleiros.find(c => c.name === localStorage.getItem('selectedCavaleiro')) || cavaleiros[0]
+  );
   // Função para selecionar o tema e fechar o dropdown ao clicar
   const selectTheme = (theme: string) => {
     setCurrentTheme(theme);
@@ -75,6 +79,7 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
           <Link href="/characters" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300" aria-label="Personagens">Personagens</Link>
           <Link href="/about" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300" aria-label="Sobre">Sobre</Link>
           <Link href="/hipermito" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300" aria-label="Hipermito">Hipermito</Link>
+          <Link href="/mangas" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300" aria-label="Hipermito">Mangás</Link>
 
           <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <button className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300" aria-label="Explorar Mais">
@@ -85,52 +90,62 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
                 isDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
               }`}
             >
-              <Link href="/mangas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Mangás">Mangás</Link>
-              <Link href="/animes" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Mangás">Anime</Link>
+              {/* Botão para seleção de tema */}
+              <div onMouseEnter={handleThemeMouseEnter} onMouseLeave={handleThemeMouseLeave} className="relative">
+                <button
+                  className="block w-full px-4 py-2 text-yellow-400 text-left hover:bg-gray-800 hover:text-yellow-300 transition-colors duration-300"
+                  aria-label="Escolher Tema"
+                >
+                  Escolher Tema
+                </button>
+                {isThemeDropdownOpen && (
+                  <div className="absolute left-full top-0 ml-0 w-48 bg-gray-900 shadow-lg rounded-lg">
+                    {themes.map((theme) => (
+                      <button
+                        key={theme}
+                        onClick={() => selectTheme(theme)}
+                        className={`block w-full text-left px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300 transition-colors duration-300 ${
+                          currentTheme === theme ? 'bg-gray-800' : ''
+                        }`}
+                      >
+                        {theme.charAt(0).toUpperCase() + theme.slice(1)}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <Link href="/animes" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Animes">Anime</Link>
               <Link href="/soundtrack" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Trilha Sonora">Trilha Sonora</Link>
               <Link href="/videos/battle-videos" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Vídeos de Batalhas">Vídeos de Batalhas</Link>
               <Link href="/timeline" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Linha do Tempo">Linha do Tempo</Link>
               <Link href="/quiz" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Quiz">Quiz</Link>
               <Link href="/videos/lost-canvas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Lost Canvas">Lost Canvas</Link>
               <Link href="/galeria" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Minha Galeria">Minha Galeria</Link>
-              <Link href="/game" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="DLE Saint Seiya">DLE Saint Seiya</Link>
-              <Link href="/teste" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Teste">Teste</Link>
+              <Link href="/game" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="DLE Saint Seiya">Saint SeiyaDLE</Link>
+              <Link href="/mapas/mapa-doze-casas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Mapa das Doze Casas">Mapa das Doze Casas</Link>
             </div>
           </div>
-          <Link href="/login" className="block py-2 md:py-0 hover:text-yellow-300 transition-colors duration-300" aria-label="Login">Login</Link>
         </nav>
 
-        {/* Dropdown para seleção de temas */}
-        <div
-          className="relative hidden md:block"
-          onMouseEnter={handleThemeMouseEnter}
-          onMouseLeave={handleThemeMouseLeave}
-        >
-          <button
-            className="bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300"
-            aria-label="Escolher Tema"
-          >
-            Escolher Tema
-          </button>
-
-          {isThemeDropdownOpen && (
-            <div className="absolute right-0 mt-2 w-48 bg-gray-900 shadow-lg rounded-lg">
-              {themes.map((theme) => (
-                <button
-                  key={theme}
-                  onClick={() => selectTheme(theme)}
-                  className={`block w-full text-left px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300 transition-colors duration-300 ${
-                    currentTheme === theme ? 'bg-gray-800' : ''
-                  }`}
-                >
-                  {theme.charAt(0).toUpperCase() + theme.slice(1)}
-                </button>
-              ))}
+        <div className="relative hidden md:flex items-center space-x-4">
+          {/* Foto e nome de perfil */}
+          <span className="text-lg md:text-2xl font-bold text-yellow-400">{username}</span>
+          <a href="/perfil">
+            <div className="flex items-center space-x-2">
+              <div
+                className="w-20 h-20 rounded-full bg-cover bg-center border-2 border-yellow-500 cursor-pointer"
+                style={{
+                  backgroundImage: `url(${selectedCavaleiro.banner})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: '88% center',
+                }}
+                aria-label="Foto de perfil"
+              ></div>
             </div>
-          )}
+          </a>
         </div>
       </div>
-
+      
       {isMenuOpen && (
         <nav className="md:hidden bg-gray-900 p-4 space-y-2">
           <Link href="/mangas" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Mangás">Mangás</Link>
@@ -142,7 +157,7 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
           <Link href="/videos/lost-canvas" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Lost Canvas">Lost Canvas</Link>
           <Link href="/galeria" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Minha Galeria">Minha Galeria</Link>
           <Link href="/hipermito" className="block py-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-300" aria-label="Hipermito">Hipermito</Link>
-
+          
           {/* Dropdown de temas no menu mobile */}
           <button
             onClick={() => setThemeDropdownOpen(!isThemeDropdownOpen)}

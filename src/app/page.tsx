@@ -56,7 +56,7 @@ export default function HomePage() {
                 alt="DLE Saint Seiya"
                 className="mx-auto w-24 h-auto mb-4"
               />
-              <h2 className="text-2xl font-bold">Jogo DLE Saint Seiya</h2>
+              <h2 className="text-2xl font-bold">Saint SeiyaDLE</h2>
               <p className="text-gray-300 mt-2">
                 Adivinhe os cavaleiros com base em dicas e características.
               </p>
@@ -334,5 +334,6 @@ export default function HomePage() {
         </div>
       </section>
     </div>
+    
   );
 }
