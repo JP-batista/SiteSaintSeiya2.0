@@ -30,7 +30,7 @@ export default function LoginPage() {
               </button>
             </Link>
             {/* Botão de login com Google */}
-            <button className="bg-white border border-gray-300 w-full py-4 rounded-lg flex items-center justify-center space-x-2 font-semibold hover:bg-gray-300 transition-colors duration-300">
+            <button className="bg-white border border-gray-300 w-full py-4 rounded-lg flex items-center justify-center space-x-2 font-semibold hover:bg-gray-300 transition-colors duration-300 text-black">
               <Image
                 src="/icons/google-logo.png"
                 alt="Google Logo"

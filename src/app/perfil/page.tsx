@@ -7,36 +7,53 @@ import Image from 'next/image';
 
 export default function ProfilePage() {
     const [isEditing, setIsEditing] = useState(false);
-    const [username, setUsername] = useState(() => localStorage.getItem('username') || 'Seiya de Pégaso');
-    const [email, setEmail] = useState(() => localStorage.getItem('email') || "seiya@cosmo.com");
-    const [bio, setBio] = useState(() => localStorage.getItem('bio') || "Cavaleiro de Bronze e protetor de Atena.");
-    const [notificationsEnabled, setNotificationsEnabled] = useState(
-        () => localStorage.getItem('notificationsEnabled') === 'true' || false
-    );
-    const [birthdate, setBirthdate] = useState(() => localStorage.getItem('birthdate') || ""); 
-    const [location, setLocation] = useState(() => localStorage.getItem('location') || ""); 
-    const [linkedin, setLinkedin] = useState(() => localStorage.getItem('linkedin') || ""); 
-    const [twitter, setTwitter] = useState(() => localStorage.getItem('twitter') || ""); 
-    const [instagram, setInstagram] = useState(() => localStorage.getItem('instagram') || ""); 
-    const [selectedCavaleiro, setSelectedCavaleiro] = useState(
-        () => cavaleiros.find(c => c.name === localStorage.getItem('selectedCavaleiro')) || cavaleiros[0]
-    );
-    const [achievements, setAchievements] = useState<string[]>(() => JSON.parse(localStorage.getItem('achievements') || '[]'));
-    const [completedDifficulties, setCompletedDifficulties] = useState<string[]>(() => JSON.parse(localStorage.getItem('completedDifficulties') || '[]'));
+    const [username, setUsername] = useState('Seiya de Pégaso');
+    const [email, setEmail] = useState("seiya@cosmo.com");
+    const [bio, setBio] = useState("Cavaleiro de Bronze e protetor de Atena.");
+    const [notificationsEnabled, setNotificationsEnabled] = useState(false);
+    const [birthdate, setBirthdate] = useState("");
+    const [location, setLocation] = useState("");
+    const [linkedin, setLinkedin] = useState("");
+    const [twitter, setTwitter] = useState("");
+    const [instagram, setInstagram] = useState("");
+    const [selectedCavaleiro, setSelectedCavaleiro] = useState(cavaleiros[0]);
+    const [achievements, setAchievements] = useState<string[]>([]);
+    const [completedDifficulties, setCompletedDifficulties] = useState<string[]>([]);
     const [isThemeSelectionOpen, setThemeSelectionOpen] = useState(false);
     const [quizProgress, setQuizProgress] = useState(0);
     const totalAchievements = 10; // Total de conquistas disponíveis
     const totalDifficulties = 4; // Facil, medio, dificil, impossivel
-    
 
     useEffect(() => {
+        const savedUsername = localStorage.getItem('username');
+        const savedEmail = localStorage.getItem('email');
+        const savedBio = localStorage.getItem('bio');
+        const savedBirthdate = localStorage.getItem('birthdate');
+        const savedLocation = localStorage.getItem('location');
+        const savedLinkedin = localStorage.getItem('linkedin');
+        const savedTwitter = localStorage.getItem('twitter');
+        const savedInstagram = localStorage.getItem('instagram');
+        const savedSelectedCavaleiro = localStorage.getItem('selectedCavaleiro');
+        const savedNotificationsEnabled = localStorage.getItem('notificationsEnabled') === 'true';
         const savedAchievements = localStorage.getItem('achievements');
         const savedCompletedDifficulties = localStorage.getItem('completedDifficulties');
-        
+
+        setUsername(savedUsername || 'Seiya de Pégaso');
+        setEmail(savedEmail || "seiya@cosmo.com");
+        setBio(savedBio || "Cavaleiro de Bronze e protetor de Atena.");
+        setBirthdate(savedBirthdate || "");
+        setLocation(savedLocation || "");
+        setLinkedin(savedLinkedin || "");
+        setTwitter(savedTwitter || "");
+        setInstagram(savedInstagram || "");
+        setSelectedCavaleiro(savedSelectedCavaleiro ? cavaleiros.find(c => c.name === savedSelectedCavaleiro) || cavaleiros[0] : cavaleiros[0]);
+        setNotificationsEnabled(savedNotificationsEnabled);
         setAchievements(savedAchievements ? JSON.parse(savedAchievements) : []);
         setCompletedDifficulties(savedCompletedDifficulties ? JSON.parse(savedCompletedDifficulties) : []);
         setQuizProgress((savedCompletedDifficulties ? JSON.parse(savedCompletedDifficulties).length : 0) / totalDifficulties * 100);
+    }, []);
 
+    useEffect(() => {
         localStorage.setItem('username', username);
         localStorage.setItem('email', email);
         localStorage.setItem('bio', bio);
@@ -53,7 +70,7 @@ export default function ProfilePage() {
   
     const handleEditToggle = () => setIsEditing(!isEditing);
     const handleSave = () => setIsEditing(false);
-    
+
     const handleThemeChange = (cavaleiro: Cavaleiro) => {
         setSelectedCavaleiro(cavaleiro);
         setThemeSelectionOpen(false);
