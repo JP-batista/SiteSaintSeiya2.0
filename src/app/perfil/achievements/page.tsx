@@ -51,22 +51,28 @@ export default function AchievementsPage() {
                 }`}
                 style={{ backgroundImage: `url(${achievement.skinImage})`, backgroundSize: 'cover', backgroundPosition: '75% center' }}
               >
-                <div className={`absolute inset-0 ${isUnlocked ? 'bg-opacity-20' : 'bg-gray-800 bg-opacity-60'} rounded-lg`}></div>
+                {/* Camada escura para manter a imagem com opacidade */}
+                <div className="absolute inset-0 bg-gray-800 bg-opacity-60 rounded-lg"></div>
                 
                 <div className="p-6 relative z-10">
                   <h3 className="text-2xl font-bold mb-2 text-yellow-300 flex items-center">
                     {isUnlocked ? '🏆' : '🔒'} {achievement.name}
                   </h3>
                   <p className="mb-4">{achievement.description}</p>
-                  <span 
-                    className={`inline-block px-3 py-1 rounded-full text-sm font-semibold 
-                      ${achievement.source === 'SaintSeiyaDLE' ? 'bg-purple-500 text-white' : 'bg-blue-500 text-white'}`}
-                  >
-                    {achievement.source === 'SaintSeiyaDLE' ? 'SaintSeiyaDLE' : 'Quiz'}
-                  </span>
-                  {isUnlocked && (
-                    <p className="mt-4 text-green-300 font-semibold">Conquistado!</p>
-                  )}
+                  
+                  <div className="flex items-center space-x-2">
+                    <span 
+                      className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
+                        achievement.source === 'SaintSeiyaDLE' ? 'bg-purple-500 text-white' : 'bg-blue-500 text-white'
+                      }`}
+                    >
+                      {achievement.source}
+                    </span>
+                    
+                    {isUnlocked && (
+                      <span className="text-green-300 font-semibold">Conquistado!</span>
+                    )}
+                  </div>
                 </div>
               </div>
             );
@@ -74,4 +80,4 @@ export default function AchievementsPage() {
         </div>
       </div>
     );
-  }
+}
