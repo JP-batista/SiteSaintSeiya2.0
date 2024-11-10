@@ -3149,8 +3149,7 @@ const characters = [
         saga: "Saintia Shô",
         imgSrc: "/dle/elda.jpg"
     }
-    
-  ];
-  
-  export default characters;
+];
+
+export default characters;
   
