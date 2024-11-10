@@ -1,3 +1,5 @@
+// src/app/game/page.tsx
+
 "use client";
 import { useState, useEffect } from "react";
 import characters from "../data/charactersDLE"; // Certifique-se de que os dados dos personagens estão aqui

@@ -336,12 +336,11 @@ export default function ProfilePage() {
                 )}
 
                 {/* Botão para ver mais detalhes das conquistas */}
-                <button
-                    onClick={() => alert("Em breve: detalhes das conquistas!")}
-                    className="mt-8 bg-gradient-to-br from-yellow-400 to-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105"
-                >
-                    Ver Detalhes das Conquistas
-                </button>
+                <Link href="/perfil/achievements">
+                    <button className="mt-8 bg-gradient-to-br from-yellow-400 to-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105">
+                        Detalhes das Conquistas
+                    </button>
+                </Link>
             </div>
         </div>
 
