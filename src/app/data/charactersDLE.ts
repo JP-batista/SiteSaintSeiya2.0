@@ -15,6 +15,20 @@ const characters = [
         saga: "Santuario",
         imgSrc: "/dle/seiya.jpg" 
     },
+    {
+        nome: "Shiryu de Dragão",
+        idade: "14",
+        altura: "1,72 m",
+        genero: "Masculino",
+        peso: "53 kg",
+        signo: "Libra",
+        localDeTreinamento: "Cinco Picos de Rozan, China",
+        patente: "Cavaleiro de Bronze",
+        exercito: "Exército de Athena",
+        saga: "Santuario",
+        imgSrc: "/dle/shiryu.jpg" 
+    },
+
     
   ];
   

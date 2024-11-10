@@ -17,7 +17,7 @@ type Character = {
   imgSrc: string;
 };
 
-type Achievement = "First Win" | "Win in 10 Attempts" | "Win in 7 Attempts" | "Win in 5 Attempts" | "Win in 3 Attempts" | "Win in 2 Attempt";
+type Achievement = "Primeira Vitória" | "Vitória em 10 Tentativas" | "Vitória em 7 Tentativas" | "Vitória em 5 Tentativas" | "Vitória em 3 Tentativas" | "Vitória em 1 Tentativa";
 
 export default function GamePage() {
   // Função auxiliar para salvar no localStorage
@@ -86,25 +86,25 @@ export default function GamePage() {
   const checkAchievements = () => {
     const newAchievements: Achievement[] = [];
 
-    if (!achievements.includes("First Win")) {
-      newAchievements.push("First Win");
+    if (!achievements.includes("Primeira Vitória")) {
+      newAchievements.push("Primeira Vitória");
     }
-    if (attempts.length <= 10 && !achievements.includes("Win in 10 Attempts")) {
-      newAchievements.push("Win in 10 Attempts");
+    if (attempts.length <= 10 && !achievements.includes("Vitória em 10 Tentativas")) {
+      newAchievements.push("Vitória em 10 Tentativas");
     }
-    if (attempts.length <= 7 && !achievements.includes("Win in 7 Attempts")) {
-      newAchievements.push("Win in 7 Attempts");
+    if (attempts.length <= 7 && !achievements.includes("Vitória em 7 Tentativas")) {
+      newAchievements.push("Vitória em 7 Tentativas");
     }
-    if (attempts.length <= 5 && !achievements.includes("Win in 5 Attempts")) {
-      newAchievements.push("Win in 5 Attempts");
+    if (attempts.length <= 5 && !achievements.includes("Vitória em 5 Tentativas")) {
+      newAchievements.push("Vitória em 5 Tentativas");
     }
-    if (attempts.length <= 3 && !achievements.includes("Win in 3 Attempts")) {
-      newAchievements.push("Win in 3 Attempts");
+    if (attempts.length <= 3 && !achievements.includes("Vitória em 3 Tentativas")) {
+      newAchievements.push("Vitória em 3 Tentativas");
     }
-    if (attempts.length <= 2 && !achievements.includes("Win in 2 Attempt")) {
-      newAchievements.push("Win in 2 Attempt");
+    if (attempts.length <= 2 && !achievements.includes("Vitória em 1 Tentativa")) {
+      newAchievements.push("Vitória em 1 Tentativa");
     }
-
+    
     if (newAchievements.length > 0) {
       setAchievements([...achievements, ...newAchievements]);
     }
