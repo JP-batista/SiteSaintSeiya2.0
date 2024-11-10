@@ -504,7 +504,6 @@ export const questions = [
     options: ['Mu de Áries', 'Aldebaran de Touro', 'Aioros de Sagitário'],
     answer: 'Mu de Áries',
   },
-
   {
     difficulty: 'hard',
     question: 'Quem foi o cavaleiro de ouro que lutou na Guerra Santa do século XVIII ao lado de Dohko de Libra?',
