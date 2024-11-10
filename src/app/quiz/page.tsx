@@ -94,8 +94,10 @@ export default function QuizPage() {
     <div className="min-h-screen p-8 text-white flex flex-col justify-center items-center ">
       {/* Card de Conquista Desbloqueada */}
       {showAchievement && (
-        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-yellow-400 to-yellow-600 text-gray-900 px-8 py-5 rounded-2xl shadow-2xl flex items-center space-x-3 animate-fade-in transition-opacity duration-300">
-          <img src="/icons/achievement-icon.png" alt="Achievement Icon" className="w-8 h-8" />
+        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-yellow-600 to-yellow-400  text-gray-900 px-8 py-5 rounded-2xl shadow-2xl flex items-center space-x-3 animate-fade-in transition-opacity duration-300">
+          <div className={`w-14 h-14 rounded-full border-2 flex items-center justify-center transition-transform duration-300 text-sm font-semibold 'border-yellow-500 text-yellow-400' group-hover:scale-105`}>
+            <span>🏆</span>
+          </div>
           <p className="text-lg font-bold">{showAchievement} desbloqueada!</p>
         </div>
       )}
