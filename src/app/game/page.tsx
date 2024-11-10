@@ -101,7 +101,7 @@ export default function GamePage() {
     if (attempts.length <= 3 && !achievements.includes("Vitória em 3 Tentativas")) {
       newAchievements.push("Vitória em 3 Tentativas");
     }
-    if (attempts.length < 2 && !achievements.includes("Vitória em 1 Tentativa")) {
+    if (attempts.length < 1 && !achievements.includes("Vitória em 1 Tentativa")) {
       newAchievements.push("Vitória em 1 Tentativa");
     }
     
