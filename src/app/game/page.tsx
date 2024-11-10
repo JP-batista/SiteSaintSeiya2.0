@@ -17,7 +17,7 @@ type Character = {
   imgSrc: string;
 };
 
-type Achievement = "First Win" | "Win in 10 Attempts" | "Win in 7 Attempts" | "Win in 5 Attempts" | "Win in 3 Attempts" | "Win in 1 Attempt";
+type Achievement = "First Win" | "Win in 10 Attempts" | "Win in 7 Attempts" | "Win in 5 Attempts" | "Win in 3 Attempts" | "Win in 2 Attempt";
 
 export default function GamePage() {
   // Função auxiliar para salvar no localStorage
@@ -101,8 +101,8 @@ export default function GamePage() {
     if (attempts.length <= 3 && !achievements.includes("Win in 3 Attempts")) {
       newAchievements.push("Win in 3 Attempts");
     }
-    if (attempts.length === 1 && !achievements.includes("Win in 1 Attempt")) {
-      newAchievements.push("Win in 1 Attempt");
+    if (attempts.length <= 2 && !achievements.includes("Win in 2 Attempt")) {
+      newAchievements.push("Win in 2 Attempt");
     }
 
     if (newAchievements.length > 0) {
