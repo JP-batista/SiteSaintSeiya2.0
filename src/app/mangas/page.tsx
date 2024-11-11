@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function MangasPage() {
   const mangas = [
     {
-      name: 'Cavaleiros do Zodíaco (Clássico)',
+      name: 'Cavaleiros do Zodíaco',
       description: 'O mangá clássico que deu origem à saga, acompanhando Seiya e os outros Cavaleiros de Bronze em suas aventuras.',
       image: '/capasMangaClassicoTanko/1.jpg',
       link: '/mangas/classico',
@@ -35,7 +35,7 @@ export default function MangasPage() {
       link: '/mangas/lost-canvas-gaiden',
     },
     {
-      name: 'Cavaleiros do Zodíaco (Kanzenban)',
+      name: 'Kanzenban',
       description: 'O mangá clássico que deu origem à saga, acompanhando Seiya e os outros Cavaleiros de Bronze em suas aventuras.',
       image: '/capasMangaClassicoKanzenban/1.jpg',
       link: '/mangas/Kanzenban',
@@ -50,16 +50,21 @@ export default function MangasPage() {
 
   return (
     <div className="min-h-screen p-8 text-white">
-      <h1 className="text-4xl font-extrabold text-yellow-500 mb-8 text-center">Mangás dos Cavaleiros do Zodíaco</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <h1 className="text-5xl font-extrabold text-center text-yellow-400 mb-12">Mangás dos Cavaleiros do Zodíaco</h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {mangas.map((manga) => (
-          <div key={manga.name} className="bg-gray-800 p-6 rounded-lg shadow-lg">
-            <img src={manga.image} alt={manga.name} className="w-full h-auto rounded-lg mb-4" />
-            <h3 className="text-2xl font-bold text-yellow-400 mb-4">{manga.name}</h3>
-            <p className="text-gray-300 mb-4">{manga.description}</p>
-            <Link href={manga.link} className="bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors duration-300">
-              Ver Mais
-            </Link>
+          <div key={manga.name} className="relative rounded-xl overflow-hidden shadow-2xl border-4 border-gray-700 hover:border-yellow-500 transform transition-all duration-300 hover:scale-105 bg-gray-900">
+            <div className="p-6 bg-gradient-to-t from-gray-800 via-gray-900 to-transparent text-center">
+              <img src={manga.image} alt={manga.name} className="mx-auto rounded-lg mb-4" style={{ maxHeight: '400px', width: 'auto' }} />
+              <h3 className="text-3xl font-bold text-yellow-300 mb-3">{manga.name}</h3>
+              <p className="text-gray-300 mb-6 text-sm">{manga.description}</p>
+              <Link href={manga.link}>
+                <button className="w-full bg-gradient-to-br from-yellow-400 to-yellow-600 text-gray-900 px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-2xl transform transition-transform duration-300">
+                  Ver Mais
+                </button>
+              </Link>
+            </div>
           </div>
         ))}
       </div>

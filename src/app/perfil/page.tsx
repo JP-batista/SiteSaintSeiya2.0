@@ -257,7 +257,7 @@ export default function ProfilePage() {
   
 
         {/* Progresso do Usuário */}
-        <div className="bg-gray-800 p-8 rounded-3xl shadow-lg mb-12 text-center relative overflow-hidden">
+        <div className="bg-gradient-to-br from-gray-900 via-black to-gray-800 p-8 rounded-3xl shadow-lg mb-12 text-center relative overflow-hidden">
             {/* Background decorativo */}
             <div className="absolute inset-0 opacity-25 bg-[url('/path/to/decorative-background.jpg')] bg-cover bg-center"></div>
             <div className="relative z-10">

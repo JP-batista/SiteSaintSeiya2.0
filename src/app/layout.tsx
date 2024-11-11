@@ -47,7 +47,9 @@ export default function RootLayout({
           pathname !== '/login/signup' && 
           pathname !== '/perfil' && 
           pathname !== '/quiz' && 
-          pathname !== '/mapas/mapa-doze-casas' && 
+          pathname !== '/mapas/mapa-doze-casas' &&
+          pathname !== '/perfil/achievements' &&  
+          pathname !== '/games' &&  
           <Header />
         }
         <div className="container mx-auto p-4">

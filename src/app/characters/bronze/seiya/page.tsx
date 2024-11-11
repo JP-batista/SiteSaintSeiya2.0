@@ -37,7 +37,33 @@ export default function SeiyaProfile() {
           </ul>
         </div>
       </div>
-
+      <div
+          className="relative w-full max-w-[calc(100%-3rem)] h-72 overflow-hidden rounded-3xl shadow-lg border-4 border-yellow-500 mx-auto mb-8"
+          style={{
+              backgroundImage: `url('/skins/banner-seiya1.jpg')`,
+              backgroundSize: 'cover',
+              backgroundPosition: "right",
+          }}
+        >
+      </div>
+      <div
+          className="relative w-full max-w-[calc(100%-3rem)] h-72 overflow-hidden rounded-3xl shadow-lg border-4 border-yellow-500 mx-auto mb-8"
+          style={{
+              backgroundImage: `url('/skins/banner-seiya3.jpg')`,
+              backgroundSize: 'cover',
+              backgroundPosition: "right",
+          }}
+        >
+      </div>
+      <div
+          className="relative w-full max-w-[calc(100%-3rem)] h-72 overflow-hidden rounded-3xl shadow-lg border-4 border-yellow-500 mx-auto mb-8"
+          style={{
+              backgroundImage: `url('/skins/banner-seiyadivino.jpg')`,
+              backgroundSize: 'cover',
+              backgroundPosition: "right",
+          }}
+        >
+      </div>
       {/* Galeria de Imagens */}
       <div className="mt-10">
         <h2 className="text-2xl font-bold mb-4">Galeria</h2>
@@ -58,6 +84,7 @@ export default function SeiyaProfile() {
           <img src="/cloth-schemes/athena-saints/pegasus-seiya-miracles.jpg" alt="Seiya" className="w-auto h-auto rounded-lg" />
         </div>
       </div>
+      
 
       {/* Rede de Relacionamentos */}
       <div className="mt-10">

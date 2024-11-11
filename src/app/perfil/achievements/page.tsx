@@ -1,9 +1,10 @@
-// src/app/achievements/page.tsx
+// src/app/perfil/achievements/page.tsx
 
 'use client';
 
 import { useEffect, useState } from 'react';
 import cavaleiros from '../../data/skins';
+import Link from 'next/link';
 
 type Achievement = {
   name: string;
@@ -76,6 +77,13 @@ export default function AchievementsPage() {
           );
         })}
       </div>
+        <div className="flex justify-center mt-8">
+            <Link href="/perfil">
+                <button className="bg-gradient-to-br from-yellow-400 to-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105">
+                    Voltar ao Perfil
+                </button>
+            </Link>
+        </div>
     </div>
   );
 }
