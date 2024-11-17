@@ -42,7 +42,7 @@ export default function RootLayout({
         }
         {
           pathname !== '/soundtrack' && 
-          pathname !== '/dle' && 
+          pathname !== '/SaintSeiyaDLE' && 
           pathname !== '/login' && 
           pathname !== '/login/signin' && 
           pathname !== '/login/signup' && 
