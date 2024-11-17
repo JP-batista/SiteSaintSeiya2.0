@@ -29,7 +29,7 @@ export default function QuizPage() {
   useEffect(() => {
     const savedAchievements = localStorage.getItem('achievements');
     const savedCompletedDifficulties = localStorage.getItem('completedDifficulties');
-    
+
     if (savedAchievements) {
       setAchievements(JSON.parse(savedAchievements));
     }
@@ -43,8 +43,8 @@ export default function QuizPage() {
       const updatedAchievements = [...achievements, achievement];
       setAchievements(updatedAchievements);
       localStorage.setItem('achievements', JSON.stringify(updatedAchievements));
-      setShowAchievement(achievement); 
-      setTimeout(() => setShowAchievement(null), 3000); 
+      setShowAchievement(achievement);
+      setTimeout(() => setShowAchievement(null), 3000);
     }
   };
 
@@ -55,7 +55,7 @@ export default function QuizPage() {
       (q) => q.difficulty === selectedDifficulty
     );
     const shuffledQuestions = [...filteredQuestions].sort(() => 0.5 - Math.random()).slice(0, 10);
-    
+
     setSelectedQuestions(shuffledQuestions);
     setQuizStarted(true);
     setCurrentQuestion(0);
@@ -65,58 +65,57 @@ export default function QuizPage() {
   const handleAnswer = (isCorrect: boolean) => {
     let newScore = score;
     if (isCorrect) {
-        newScore = score + 1;
-        setScore(newScore);
+      newScore = score + 1;
+      setScore(newScore);
 
-        if (achievementMilestones.includes(newScore)) {
-            saveAchievement(`Conquista: ${newScore} acertos`);
-        }
+      if (achievementMilestones.includes(newScore)) {
+        saveAchievement(`Conquista: ${newScore} acertos`);
+      }
     }
 
     if (currentQuestion + 1 < selectedQuestions.length) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       if (isCorrect && newScore === selectedQuestions.length) {
-          const updatedDifficulties = [...completedDifficulties, selectedDifficulty as string];
-          setCompletedDifficulties(updatedDifficulties);
-          localStorage.setItem('completedDifficulties', JSON.stringify(updatedDifficulties));
+        const updatedDifficulties = [...completedDifficulties, selectedDifficulty as string];
+        setCompletedDifficulties(updatedDifficulties);
+        localStorage.setItem('completedDifficulties', JSON.stringify(updatedDifficulties));
 
-          if (updatedDifficulties.length === difficulties.length) {
-              saveAchievement("Progresso Máximo!");
-          }
+        if (updatedDifficulties.length === difficulties.length) {
+          saveAchievement("Progresso Máximo!");
+        }
       }
       setTimeout(() => {
-          alert(`Parabéns! Você acertou ${newScore} de ${selectedQuestions.length}!`);
-          router.push('/perfil#conquistas');
+        alert(`Parabéns! Você acertou ${newScore} de ${selectedQuestions.length}!`);
+        router.push('/perfil#conquistas');
       }, 500);
     }
   };
 
   return (
-    <div className="min-h-screen p-8 text-white flex flex-col justify-center items-center ">
+    <div className="min-h-screen p-8 text-white flex flex-col justify-center items-center">
       {/* Card de Conquista Desbloqueada */}
       {showAchievement && (
-        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-yellow-600 to-yellow-400  text-gray-900 px-8 py-5 rounded-2xl shadow-2xl flex items-center space-x-3 animate-fade-in transition-opacity duration-300">
-          <div className={`w-14 h-14 rounded-full border-2 flex items-center justify-center transition-transform duration-300 text-sm font-semibold 'border-yellow-500 text-yellow-400' group-hover:scale-105`}>
-            <span>🏆</span>
-          </div>
-          <p className="text-lg font-bold">{showAchievement} desbloqueada!</p>
+        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-gray-900 px-6 py-4 rounded-lg shadow-lg text-center font-semibold animate-bounce">
+          🏆 {showAchievement} desbloqueada!
         </div>
       )}
 
       {!quizStarted ? (
-        <div className="text-center animate-fade-in">
-          <h1 className="text-5xl font-extrabold text-yellow-400 mb-10 animate-bounce">Desafio Cavaleiros do Zodíaco</h1>
+        <div className="text-center">
+          <h1 className="text-5xl font-extrabold text-yellow-400 mb-10">Desafio Cavaleiros do Zodíaco</h1>
           <p className="text-lg text-gray-300 mb-8">Selecione a dificuldade e teste seus conhecimentos!</p>
-          
-          <div className="flex flex-wrap justify-center gap-4 mb-6">
+
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
             {difficulties.map((difficulty) => (
               <button
                 key={difficulty}
                 onClick={() => setSelectedDifficulty(difficulty)}
-                className={`px-6 py-3 rounded-lg font-bold text-lg ${
-                  selectedDifficulty === difficulty ? "bg-yellow-600" : "bg-gray-700"
-                } text-gray-900 hover:bg-yellow-500 transition-colors`}
+                className={`px-6 py-3 rounded-md font-bold text-lg border-2 transition-transform ${
+                  selectedDifficulty === difficulty
+                    ? "bg-yellow-500 text-gray-900 border-yellow-500 scale-105"
+                    : "bg-gray-800 text-gray-300 border-gray-600 hover:border-yellow-500 hover:scale-105"
+                }`}
               >
                 {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}
               </button>
@@ -126,35 +125,33 @@ export default function QuizPage() {
           <button
             onClick={startQuiz}
             disabled={!selectedDifficulty}
-            className="bg-gradient-to-br from-yellow-500 to-yellow-700 text-gray-900 px-12 py-4 rounded-lg font-bold text-2xl hover:bg-yellow-600 transition-transform transform hover:scale-110 shadow-lg disabled:opacity-50"
+            className="px-12 py-4 bg-yellow-500 text-gray-900 rounded-lg font-bold text-xl hover:scale-105 transform transition-transform shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Começar o Quiz
           </button>
         </div>
       ) : (
-        <div className="w-full max-w-2xl bg-gray-800 p-8 rounded-3xl shadow-2xl relative animate-slide-in">
+        <div className="w-full max-w-3xl bg-gray-800 p-8 rounded-lg shadow-md">
           <h2 className="text-3xl font-bold text-yellow-400 mb-6 text-center">
             Pergunta {currentQuestion + 1} de {selectedQuestions.length}
           </h2>
-          <div className="bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 p-6 rounded-2xl mb-8 relative overflow-hidden shadow-lg">
-            <p className="text-xl text-white text-center mb-6 animate-pulse">
-              {selectedQuestions[currentQuestion].question}
-            </p>
-            <div className="grid grid-cols-1 gap-6">
+          <div className="bg-gray-700 p-6 rounded-md shadow-md mb-6">
+            <p className="text-xl text-white text-center mb-4">{selectedQuestions[currentQuestion].question}</p>
+            <div className="grid grid-cols-1 gap-4">
               {selectedQuestions[currentQuestion].options.map((option, index) => (
                 <button
                   key={index}
-                  className="block bg-gradient-to-r from-yellow-500 to-yellow-700 text-gray-900 px-6 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-600 transition-transform transform hover:scale-105 shadow-md"
                   onClick={() => handleAnswer(option === selectedQuestions[currentQuestion].answer)}
+                  className="bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-all transform hover:scale-105 shadow-sm"
                 >
                   {option}
                 </button>
               ))}
             </div>
           </div>
-          <div className="text-center mt-4">
-            <p className="text-lg text-white">
-              Pontuação Atual: <span className="font-bold text-yellow-400">{score}</span>
+          <div className="text-center">
+            <p className="text-lg">
+              Pontuação Atual: <span className="text-yellow-400 font-bold">{score}</span>
             </p>
           </div>
         </div>

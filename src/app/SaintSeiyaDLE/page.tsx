@@ -711,7 +711,7 @@ export default function GamePage() {
                   <img
                     src="/dle_feed/certo.png"
                     alt="Correto"
-                    className="w-full h-full rounded-lg object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <span className="text-sm text-white mt-2">Correto</span>
@@ -723,7 +723,7 @@ export default function GamePage() {
                   <img
                     src="/dle_feed/errado.png"
                     alt="Incorreto"
-                    className="w-full h-full rounded-lg object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <span className="text-sm text-white mt-2">Incorreto</span>
@@ -735,7 +735,7 @@ export default function GamePage() {
                   <img
                     src="/dle_feed/mais.png"
                     alt="Mais Alto"
-                    className="w-full h-full rounded-lg object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <span className="text-sm text-white mt-2">Mais alto</span>
@@ -747,7 +747,7 @@ export default function GamePage() {
                   <img
                     src="/dle_feed/menos.png"
                     alt="Mais Baixo"
-                    className="w-full h-full rounded-lg object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <span className="text-sm text-white mt-2">Mais baixo</span>
