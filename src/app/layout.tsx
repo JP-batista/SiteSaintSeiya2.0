@@ -42,7 +42,8 @@ export default function RootLayout({
         }
         {
           pathname !== '/soundtrack' && 
-          pathname !== '/game' && pathname !== '/login' && 
+          pathname !== '/dle' && 
+          pathname !== '/login' && 
           pathname !== '/login/signin' && 
           pathname !== '/login/signup' && 
           pathname !== '/perfil' && 

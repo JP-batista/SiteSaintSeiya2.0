@@ -13,7 +13,9 @@ const characters = [
         patente: "Cavaleiro de Bronze",
         exercito: "Exército de Athena",
         saga: "Santuario",
-        imgSrc: "/dle/seiya.jpg" 
+        imgSrc: "/dle/seiya.jpg",
+        dica1: "dica 1",
+        dica2: "dica 2"
     },
     {
         nome: "Shiryu de Dragão",
@@ -26,7 +28,9 @@ const characters = [
         patente: "Cavaleiro de Bronze",
         exercito: "Exército de Athena",
         saga: "Santuario",
-        imgSrc: "/dle/shiryu.jpg" 
+        imgSrc: "/dle/shiryu.jpg" ,
+        dica1: "dica 1",
+        dica2: "dica 2"
     },
     {
         nome: "Hyoga de Cisne",
@@ -39,7 +43,9 @@ const characters = [
         patente: "Cavaleiro de Bronze",
         exercito: "Exército de Athena",
         saga: "Santuario",          
-        imgSrc: "/dle/hyoga.jpg" 
+        imgSrc: "/dle/hyoga.jpg" ,
+        dica1: "dica 1",
+        dica2: "dica 2"
     },
     {
         nome: "Shun de Andrômeda",
@@ -52,7 +58,9 @@ const characters = [
         patente: "Cavaleiro de Bronze",
         exercito: "Exército de Athena",
         saga: "Santuario",
-        imgSrc: "/dle/shun.jpg" 
+        imgSrc: "/dle/shun.jpg" ,
+        dica1: "dica 1",
+        dica2: "dica 2"
     },
     {
         nome: "Ikki de Fênix",
@@ -65,7 +73,9 @@ const characters = [
         patente: "Cavaleiro de Bronze",
         exercito: "Exército de Athena",
         saga: "Santuario",
-        imgSrc: "/dle/ikki.jpg" 
+        imgSrc: "/dle/ikki.jpg" ,
+        dica1: "dica 1",
+        dica2: "dica 2"
     },
     {
         nome: "Jabu de Unicórnio",
@@ -78,7 +88,9 @@ const characters = [
         patente: "Cavaleiro de Bronze",
         exercito: "Exército de Athena",
         saga: "Santuario",
-        imgSrc: "/dle/jabu.jpg"
+        imgSrc: "/dle/jabu.jpg",
+        dica1: "dica 1",
+        dica2: "dica 2"
     },
     {
         nome: "Ichi de Hidra",
@@ -91,7 +103,9 @@ const characters = [
         patente: "Cavaleiro de Bronze",
         exercito: "Exército de Athena",
         saga: "Santuario",
-        imgSrc: "/dle/ichi.jpg"
+        imgSrc: "/dle/ichi.jpg",
+        dica1: "dica 1",
+        dica2: "dica 2"
     },
     {
         nome: "Nachi de Lobo",
@@ -104,7 +118,9 @@ const characters = [
         patente: "Cavaleiro de Bronze",
         exercito: "Exército de Athena",
         saga: "Santuario",
-        imgSrc: "/dle/nachi.jpg"
+        imgSrc: "/dle/nachi.jpg",
+        dica1: "dica 1",
+        dica2: "dica 2"
     },
     {
         nome: "Ban de Leão Menor",
@@ -117,7 +133,9 @@ const characters = [
         patente: "Cavaleiro de Bronze",
         exercito: "Exército de Athena",
         saga: "Santuario",
-        imgSrc: "/dle/ban.jpg"
+        imgSrc: "/dle/ban.jpg",
+        dica1: "dica 1",
+        dica2: "dica 2"
     },
     {
         nome: "Geki de Urso",
@@ -130,7 +148,9 @@ const characters = [
         patente: "Cavaleiro de Bronze",
         exercito: "Exército de Athena",
         saga: "Santuario",
-        imgSrc: "/dle/geki.jpg"
+        imgSrc: "/dle/geki.jpg",
+        dica1: "dica 1",
+        dica2: "dica 2"
     },
     {
         nome: "June de Camaleão",
@@ -143,7 +163,9 @@ const characters = [
         patente: "Cavaleira de Bronze",
         exercito: "Exército de Athena",
         saga: "Santuario",
-        imgSrc: "/dle/june.jpg"
+        imgSrc: "/dle/june.jpg",
+        dica1: "dica 1",
+        dica2: "dica 2"
     },
 
     //Cavaleiros de Prata Classicos

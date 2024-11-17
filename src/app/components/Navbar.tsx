@@ -142,7 +142,7 @@ export default function Navbar({ onThemeChange }: { onThemeChange: (theme: strin
               <Link href="/quiz" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Quiz">Quiz</Link>
               <Link href="/videos/lost-canvas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Lost Canvas">Lost Canvas</Link>
               <Link href="/galeria" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Minha Galeria">Minha Galeria</Link>
-              <Link href="/game" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="DLE Saint Seiya">Saint SeiyaDLE</Link>
+              <Link href="/dle" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="DLE Saint Seiya">Os Cavaleiros do ZodíacoDLE</Link>
               <Link href="/mapas/mapa-doze-casas" className="block px-4 py-2 text-yellow-400 hover:bg-gray-800 hover:text-yellow-300" aria-label="Mapa das Doze Casas">Mapa das Doze Casas</Link>
             </div>
           </div>
