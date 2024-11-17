@@ -350,16 +350,31 @@ export default function GamePage() {
   
   // Função para reiniciar o jogo
   const handleRestart = () => {
-    const randomCharacter =
-      characters.length > 0
-        ? characters[Math.floor(Math.random() * characters.length)]
-        : null;
-
+    const usedCharacters = loadFromLocalStorage("usedCharacters", []);
+    
+    // Obter personagens restantes
+    const remainingCharacters = characters.filter(
+      (char) => !usedCharacters.includes(char.nome)
+    );
+  
+    let randomCharacter;
+  
+    if (remainingCharacters.length > 0) {
+      // Escolher um personagem aleatório dos que ainda não foram usados
+      randomCharacter = remainingCharacters[Math.floor(Math.random() * remainingCharacters.length)];
+      // Atualizar lista de usados
+      saveToLocalStorage("usedCharacters", [...usedCharacters, randomCharacter.nome]);
+    } else {
+      // Todos os personagens foram usados, resetar e escolher novamente
+      randomCharacter = characters[Math.floor(Math.random() * characters.length)];
+      saveToLocalStorage("usedCharacters", [randomCharacter.nome]);
+    }
+  
     if (!randomCharacter) {
       alert("Nenhum personagem disponível para reiniciar o jogo.");
       return;
     }
-
+  
     setAttempts([]);
     setSelectedCharacter(randomCharacter);
     setInput("");
@@ -372,6 +387,7 @@ export default function GamePage() {
     localStorage.removeItem("selectedCharacter");
     localStorage.removeItem("attempts");
   };
+  
 
   useEffect(() => {
     try {
