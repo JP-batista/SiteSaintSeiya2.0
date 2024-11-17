@@ -23,7 +23,7 @@ export default function BronzeCharactersPage() {
             <div>
               <h2 className="text-2xl text-white font-bold">{char.name}</h2>
               <p className="text-gray-300 mt-2">{char.description}</p>
-              <Link href={/characters/bronze/${char.slug}} className="text-yellow-400 hover:text-yellow-500 mt-4 block">
+              <Link href={`/characters/bronze/${char.slug}`} className="text-yellow-400 hover:text-yellow-500 mt-4 block">
                 Leia mais
               </Link>
             </div>

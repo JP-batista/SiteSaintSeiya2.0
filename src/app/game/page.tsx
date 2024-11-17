@@ -3,6 +3,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import characters from "../data/charactersDLE"; // Certifique-se de que os dados dos personagens estão aqui
+import React from "react";
 
 // Definindo o tipo dos personagens para melhorar a tipagem
 type Character = {
@@ -50,6 +51,7 @@ export default function GamePage() {
     loadFromLocalStorage("attempts", [])
   );
   const [won, setWon] = useState<boolean>(false);
+  
   const [showAnswer, setShowAnswer] = useState<boolean>(false);
   const [suggestions, setSuggestions] = useState<Character[]>([]);
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
@@ -63,26 +65,29 @@ export default function GamePage() {
     loadFromLocalStorage("achievements", [])
   );
   
+  const [recentAchievement, setRecentAchievement] = useState<Achievement | null>(null);
+  
   // Função para comparar números como idade e peso
   const compareNumber = (value: number, target: number) => {
-    if (value === target) return "green"; // Valor igual
-    return value < target ? "up" : "down"; // Corrigido para exibir "up" quando o valor do personagem é menor
+    if (isNaN(value) || isNaN(target)) return "ignore";
+    if (value === target) return "green";
+    return value < target ? "up" : "down";
   };
 
   // Comparação de alturas (que são strings)
   const compareHeight = (value: string, target: string) => {
-    const val = parseHeight(value); // Converte a altura para número
-    const tgt = parseHeight(target); // Converte a altura alvo para número
-    if (isNaN(val) || isNaN(tgt)) return "ignore"; // Caso falte algum dado de altura
-    if (val === tgt) return "green"; // Altura igual
-    return val < tgt ? "up" : "down"; // Corrigido para exibir "up" quando o valor do personagem é menor
+    const val = parseHeight(value);
+    const tgt = parseHeight(target);
+    if (isNaN(val) || isNaN(tgt)) return "ignore";
+    if (val === tgt) return "green";
+    return val < tgt ? "up" : "down";
   };
 
   // Salva o personagem e tentativas no localStorage sempre que houver mudanças
   useEffect(() => {
     saveToLocalStorage("selectedCharacter", selectedCharacter);
     saveToLocalStorage("attempts", attempts);
-    saveToLocalStorage("achievements", achievements); // Salvar conquistas
+    saveToLocalStorage("achievements", achievements);
   }, [selectedCharacter, attempts, achievements]);
 
   const checkAchievements = () => {
@@ -106,10 +111,16 @@ export default function GamePage() {
     if (attempts.length < 1 && !achievements.includes("Vitória em 1 Tentativa")) {
       newAchievements.push("Vitória em 1 Tentativa");
     }
-    
+
     if (newAchievements.length > 0) {
       setAchievements([...achievements, ...newAchievements]);
+      setRecentAchievement(newAchievements[0]); // Exibe a primeira conquista desbloqueada
     }
+  };
+
+  // Função para fechar a notificação de conquista
+  const closeAchievementNotification = () => {
+    setRecentAchievement(null);
   };
   
   // Função que verifica se o personagem já foi tentado
@@ -223,12 +234,30 @@ export default function GamePage() {
     setInput("");
     setWon(false);
     setShowAnswer(false);
+    setRecentAchievement(null); // Limpar conquistas recentes
     localStorage.removeItem("selectedCharacter");
     localStorage.removeItem("attempts");
   };
 
+  useEffect(() => {
+    if (recentAchievement) {
+      const timeout = setTimeout(() => setRecentAchievement(null), 3000);
+      return () => clearTimeout(timeout); // Limpa o timeout ao desmontar ou atualizar
+    }
+  }, [recentAchievement]);
+
   return (
     <div className="min-h-screen text-white flex flex-col items-center justify-center p-6">
+      {/* Notificação de Conquista */}
+      {recentAchievement && (
+        <div
+          className="fixed top-10 right-10 bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg shadow-lg animate-bounce z-50"
+          onClick={closeAchievementNotification}
+        >
+          <p className="text-lg font-bold">Conquista Desbloqueada!</p>
+          <p className="text-sm">{recentAchievement}</p>
+        </div>
+      )}
       <h1 className="text-5xl font-bold mb-8 text-yellow-400">
         Adivinhe o Cavaleiro!
       </h1>
@@ -274,177 +303,180 @@ export default function GamePage() {
             </button>
           </form>
 
-          <div className="w-full max-w-3xl">
-            <h2 className="text-3xl mb-6 text-center">Tentativas</h2>
-            <div className="">
-              <table className="w-full text-left border-collapse table-auto bg-gray-700 rounded-lg shadow-lg">
-                <thead>
-                  <tr className="text-yellow-500 border-b-2 border-yellow-500">
-                    <th className="p-2">Personagem</th>
-                    <th className="p-2">Gênero</th>
-                    <th className="p-2">Idade</th>
-                    <th className="p-2">Altura</th>
-                    <th className="p-2">Peso</th>
-                    <th className="p-2">Signo</th>
-                    <th className="p-2">Patente</th>
-                    <th className="p-2">Exército</th>
-                    <th className="p-2">Treinamento</th>
-                    <th className="p-2">Saga</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {attempts.map((attempt, index) => (
-                    <tr key={index} className="border-b border-gray-600">
-                      <td className="p-2 flex flex-col items-center">
-                        <img
-                          src={attempt.imgSrc}
-                          alt={attempt.nome}
-                          className="w-24 h-auto rounded-lg mb-2"
-                        />
-                        <span>{attempt.nome}</span>
-                      </td>
-                      <td
-                        className={`p-2 ${
-                          attempt.genero === "green" ? "text-green-400" : "text-red-400"
-                        }`}
-                      >
-                        {attempt.genero === "green" ? (
-                          <span className="text-3xl">✔️</span>
-                        ) : (
-                          <span className="text-3xl">❌</span>
-                        )}
-                        <br />
-                        <span className="text-xs text-gray-400">
-                          {attempt.guessCharacter.genero}
-                        </span>
-                      </td>
-                      <td className={`p-2 ${attempt.idade}`}>
-                        {attempt.idade === "green" ? (
-                          <span className="text-3xl">✔️</span>
-                        ) : attempt.idade === "up" ? (
-                          <span className="text-3xl">🔼</span>
-                        ) : attempt.idade === "down" ? (
-                          <span className="text-3xl">🔽</span>
-                        ) : (
-                          <span className="text-3xl">❌</span>
-                        )}
-                        <br />
-                        <span className="text-xs text-gray-400">
-                          {attempt.guessCharacter.idade}
-                        </span>
-                      </td>
-                      <td className={`p-2 ${attempt.altura}`}>
-                        {attempt.altura === "green" ? (
-                          <span className="text-3xl">✔️</span>
-                        ) : attempt.altura === "up" ? (
-                          <span className="text-3xl">🔼</span>
-                        ) : attempt.altura === "down" ? (
-                          <span className="text-3xl">🔽</span>
-                        ) : (
-                          <span className="text-3xl">❌</span>
-                        )}
-                        <br />
-                        <span className="text-xs text-gray-400">
-                          {attempt.guessCharacter.altura}
-                        </span>
-                      </td>
-                      <td className={`p-2 ${attempt.peso}`}>
-                        {attempt.peso === "green" ? (
-                          <span className="text-3xl">✔️</span>
-                        ) : attempt.peso === "up" ? (
-                          <span className="text-3xl">🔼</span>
-                        ) : attempt.peso === "down" ? (
-                          <span className="text-3xl">🔽</span>
-                        ) : (
-                          <span className="text-3xl">❌</span>
-                        )}
-                        <br />
-                        <span className="text-xs text-gray-400">
-                          {attempt.guessCharacter.peso}
-                        </span>
-                      </td>
-                      <td
-                        className={`p-2 ${
-                          attempt.signo === "green" ? "text-green-400" : "text-red-400"
-                        }`}
-                      >
-                        {attempt.signo === "green" ? (
-                          <span className="text-3xl">✔️</span>
-                        ) : (
-                          <span className="text-3xl">❌</span>
-                        )}
-                        <br />
-                        <span className="text-xs text-gray-400">
-                          {attempt.guessCharacter.signo}
-                        </span>
-                      </td>
-                      <td
-                        className={`p-2 ${
-                          attempt.patente === "green" ? "text-green-400" : "text-red-400"
-                        }`}
-                      >
-                        {attempt.patente === "green" ? (
-                          <span className="text-3xl">✔️</span>
-                        ) : (
-                          <span className="text-3xl">❌</span>
-                        )}
-                        <br />
-                        <span className="text-xs text-gray-400">
-                          {attempt.guessCharacter.patente}
-                        </span>
-                      </td>
-                      <td
-                        className={`p-2 ${
-                          attempt.exercito === "green" ? "text-green-400" : "text-red-400"
-                        }`}
-                      >
-                        {attempt.exercito === "green" ? (
-                          <span className="text-3xl">✔️</span>
-                        ) : (
-                          <span className="text-3xl">❌</span>
-                        )}
-                        <br />
-                        <span className="text-xs text-gray-400">
-                          {attempt.guessCharacter.exercito}
-                        </span>
-                      </td>
-                      <td
-                        className={`p-2 ${
-                          attempt.localDeTreinamento === "green"
-                            ? "text-green-400"
-                            : "text-red-400"
-                        }`}
-                      >
-                        {attempt.localDeTreinamento === "green" ? (
-                          <span className="text-3xl">✔️</span>
-                        ) : (
-                          <span className="text-3xl">❌</span>
-                        )}
-                        <br />
-                        <span className="text-xs text-gray-400">
-                          {attempt.guessCharacter.localDeTreinamento}
-                        </span>
-                      </td>
-                      <td
-                        className={`p-2 ${
-                          attempt.saga === "green" ? "text-green-400" : "text-red-400"
-                        }`}
-                      >
-                        {attempt.saga === "green" ? (
-                          <span className="text-3xl">✔️</span>
-                        ) : (
-                          <span className="text-3xl">❌</span>
-                        )}
-                        <br />
-                        <span className="text-xs text-gray-400">
-                          {attempt.guessCharacter.saga}
-                        </span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+          <div className="w-full max-w-5xl grid grid-cols-10 gap-2 mt-8 bg-gray-800 p-4 rounded-lg shadow-lg">
+            {/* Títulos das Colunas */}
+            {[
+              "Personagem",
+              "Gênero",
+              "Idade",
+              "Altura",
+              "Peso",
+              "Signo",
+              "Patente",
+              "Exército",
+              "Treinamento",
+              "Saga",
+            ].map((header, headerIndex) => (
+              <div
+                key={headerIndex}
+                className="text-center text-yellow-400 font-bold border-b-2 border-yellow-500 pb-2 break-words uppercase"
+              >
+                {header}
+              </div>
+            ))}
+
+            {/* Tentativas */}
+            {attempts.map((attempt, index) => (
+              <React.Fragment key={index}>
+                {/* Personagem */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src={attempt.imgSrc}
+                    alt={attempt.nome}
+                    className="w-16 h-16 rounded-lg object-cover mb-2 border-2 border-gray-500 shadow-md"
+                  />
+                  <span className="text-xs text-gray-200 font-semibold text-center break-words">
+                    {attempt.nome}
+                  </span>
+                </div>
+
+                {/* Gênero */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src={attempt.genero === "green" ? "/dle_feed/certo.png" : "/dle_feed/errado.png"}
+                    alt="Feedback"
+                    className="w-16 h-16 rounded-lg object-cover mb-2 shadow-md"
+                  />
+                  <span className="text-xs text-gray-400 text-center break-words">
+                    {attempt.guessCharacter.genero}
+                  </span>
+                </div>
+
+                {/* Idade */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src={
+                      attempt.idade === "green"
+                        ? "/dle_feed/certo.png"
+                        : attempt.idade === "up"
+                        ? "/dle_feed/mais.png"
+                        : attempt.idade === "down"
+                        ? "/dle_feed/menos.png"
+                        : "/dle_feed/errado.png"
+                    }
+                    alt="Feedback"
+                    className="w-16 h-16 rounded-lg object-cover mb-2 shadow-md"
+                  />
+                  <span className="text-xs text-gray-400 text-center break-words">
+                    {attempt.guessCharacter.idade}
+                  </span>
+                </div>
+
+                {/* Altura */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src={
+                      attempt.altura === "green"
+                        ? "/dle_feed/certo.png"
+                        : attempt.altura === "up"
+                        ? "/dle_feed/mais.png"
+                        : attempt.altura === "down"
+                        ? "/dle_feed/menos.png"
+                        : "/dle_feed/errado.png"
+                    }
+                    alt="Feedback"
+                    className="w-16 h-16 rounded-lg object-cover mb-2 shadow-md"
+                  />
+                  <span className="text-xs text-gray-400 text-center break-words">
+                    {attempt.guessCharacter.altura}
+                  </span>
+                </div>
+
+                {/* Peso */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src={
+                      attempt.peso === "green"
+                        ? "/dle_feed/certo.png"
+                        : attempt.peso === "up"
+                        ? "/dle_feed/mais.png"
+                        : attempt.peso === "down"
+                        ? "/dle_feed/menos.png"
+                        : "/dle_feed/errado.png"
+                    }
+                    alt="Feedback"
+                    className="w-16 h-16 rounded-lg object-cover mb-2 shadow-md"
+                  />
+                  <span className="text-xs text-gray-400 text-center break-words">
+                    {attempt.guessCharacter.peso}
+                  </span>
+                </div>
+
+                {/* Signo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src={attempt.signo === "green" ? "/dle_feed/certo.png" : "/dle_feed/errado.png"}
+                    alt="Feedback"
+                    className="w-16 h-16 rounded-lg object-cover mb-2 shadow-md"
+                  />
+                  <span className="text-xs text-gray-400 text-center break-words">
+                    {attempt.guessCharacter.signo}
+                  </span>
+                </div>
+
+                {/* Patente */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src={attempt.patente === "green" ? "/dle_feed/certo.png" : "/dle_feed/errado.png"}
+                    alt="Feedback"
+                    className="w-16 h-16 rounded-lg object-cover mb-2 shadow-md"
+                  />
+                  <span className="text-xs text-gray-400 text-center break-words">
+                    {attempt.guessCharacter.patente}
+                  </span>
+                </div>
+
+                {/* Exército */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src={attempt.exercito === "green" ? "/dle_feed/certo.png" : "/dle_feed/errado.png"}
+                    alt="Feedback"
+                    className="w-16 h-16 rounded-lg object-cover mb-2 shadow-md"
+                  />
+                  <span className="text-xs text-gray-400 text-center break-words">
+                    {attempt.guessCharacter.exercito}
+                  </span>
+                </div>
+
+                {/* Treinamento */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src={
+                      attempt.localDeTreinamento === "green"
+                        ? "/dle_feed/certo.png"
+                        : "/dle_feed/errado.png"
+                    }
+                    alt="Feedback"
+                    className="w-16 h-16 rounded-lg object-cover mb-2 shadow-md"
+                  />
+                  <span className="text-xs text-gray-400 text-center break-words">
+                    {attempt.guessCharacter.localDeTreinamento}
+                  </span>
+                </div>
+
+                {/* Saga */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src={attempt.saga === "green" ? "/dle_feed/certo.png" : "/dle_feed/errado.png"}
+                    alt="Feedback"
+                    className="w-16 h-16 rounded-lg object-cover mb-2 shadow-md"
+                  />
+                  <span className="text-xs text-gray-400 text-center break-words">
+                    {attempt.guessCharacter.saga}
+                  </span>
+                </div>
+              </React.Fragment>
+            ))}
           </div>
           <div className="mt-6 bg-gray-800 p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-bold mb-4 text-center text-yellow-400">Indicadores</h3>
