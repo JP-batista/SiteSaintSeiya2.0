@@ -94,7 +94,7 @@ export default function ArmorGamePage() {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setInput(value);
-
+  
     if (value) {
       const normalizedValue = value
         .normalize("NFD")
@@ -106,12 +106,11 @@ export default function ArmorGamePage() {
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "")
             .includes(normalizedValue.toLowerCase()) &&
-          !testedArmors.some(
-            (testedArmor) =>
-              testedArmor.name.toLowerCase() === armor.name.toLowerCase()
+          !testedArmors.some((testedArmor: { name: string }) => 
+            testedArmor.name.toLowerCase() === armor.name.toLowerCase()
           )
       );
-
+  
       setSuggestions(filteredSuggestions);
       setHighlightedArmor(filteredSuggestions[0] || null); // Define a primeira armadura como destacada por padrão
       setShowDropdown(true);
@@ -121,6 +120,7 @@ export default function ArmorGamePage() {
       setShowDropdown(false);
     }
   };
+  
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
