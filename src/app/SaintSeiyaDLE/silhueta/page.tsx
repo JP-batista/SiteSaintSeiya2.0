@@ -5,7 +5,6 @@ import { armors } from "../../data/armors";
 
 export default function ArmorGamePage() {
   const [selectedArmor, setSelectedArmor] = useState(() =>
-    JSON.parse(localStorage.getItem("selectedArmor") || "null") ||
     armors[Math.floor(Math.random() * armors.length)]
   );
   const [zoomLevel, setZoomLevel] = useState(() =>
@@ -18,9 +17,12 @@ export default function ArmorGamePage() {
   const [revealed, setRevealed] = useState(() =>
     JSON.parse(localStorage.getItem("revealed") || "false")
   );
+  
+  
   const [testedArmors, setTestedArmors] = useState<
     { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string; isCorrect: boolean }[]
   >([]);
+  
   const [showDropdown, setShowDropdown] = useState(false);
 
   const [suggestions, setSuggestions] = useState<
@@ -30,10 +32,24 @@ export default function ArmorGamePage() {
     { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string } | null
   >(null);
   
+  
+  useEffect(() => {
+    const storedSelectedArmor = JSON.parse(localStorage.getItem("selectedArmor") || "null");
+    const storedZoomLevel = JSON.parse(localStorage.getItem("zoomLevel") || "200");
+    const storedAttempts = JSON.parse(localStorage.getItem("attempts") || "0");
+    const storedRevealed = JSON.parse(localStorage.getItem("revealed") || "false");
+    const storedTestedArmors = JSON.parse(localStorage.getItem("testedArmors") || "[]");
+
+    setSelectedArmor(storedSelectedArmor || armors[Math.floor(Math.random() * armors.length)]);
+    setZoomLevel(storedZoomLevel);
+    setAttempts(storedAttempts);
+    setRevealed(storedRevealed);
+    setTestedArmors(storedTestedArmors);
+  }, []);
 
   // Save game state to localStorage
   useEffect(() => {
-    localStorage.setItem("selectedArmor", JSON.stringify(selectedArmor));
+    if (selectedArmor) localStorage.setItem("selectedArmor", JSON.stringify(selectedArmor));
     localStorage.setItem("zoomLevel", JSON.stringify(zoomLevel));
     localStorage.setItem("attempts", JSON.stringify(attempts));
     localStorage.setItem("revealed", JSON.stringify(revealed));
