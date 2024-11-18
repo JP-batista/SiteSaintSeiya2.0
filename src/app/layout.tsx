@@ -51,6 +51,7 @@ export default function RootLayout({
           pathname !== '/mapas/mapa-doze-casas' &&
           pathname !== '/perfil/achievements' &&  
           pathname !== '/games' &&  
+          pathname !== '/SaintSeiyaDLE/silhueta' &&  
           <Header />
         }
         <div className="container mx-auto p-4">
