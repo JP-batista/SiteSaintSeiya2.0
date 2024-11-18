@@ -1,30 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { armors } from "../../data/armors";
 
 export default function ArmorGamePage() {
-  const isClient = typeof window !== "undefined";
-
-  const [selectedArmor, setSelectedArmor] = useState(() =>
-    isClient
-      ? JSON.parse(localStorage.getItem("selectedArmor") || "null") ||
-        armors[Math.floor(Math.random() * armors.length)]
-      : armors[Math.floor(Math.random() * armors.length)]
+  const [selectedArmor, setSelectedArmor] = useState(
+    armors[Math.floor(Math.random() * armors.length)]
   );
-  const [zoomLevel, setZoomLevel] = useState(() =>
-    isClient ? JSON.parse(localStorage.getItem("zoomLevel") || "200") : 200
-  );
+  const [zoomLevel, setZoomLevel] = useState(200); // Zoom inicial
   const [input, setInput] = useState("");
-  const [attempts, setAttempts] = useState(() =>
-    isClient ? JSON.parse(localStorage.getItem("attempts") || "0") : 0
-  );
-  const [revealed, setRevealed] = useState(() =>
-    isClient ? JSON.parse(localStorage.getItem("revealed") || "false") : false
-  );
-  const [testedArmors, setTestedArmors] = useState(() =>
-    isClient ? JSON.parse(localStorage.getItem("testedArmors") || "[]") : []
-  );
+  const [attempts, setAttempts] = useState(0);
+  const [revealed, setRevealed] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
 
   const [suggestions, setSuggestions] = useState<
@@ -34,16 +20,9 @@ export default function ArmorGamePage() {
     { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string } | null
   >(null);
 
-  // Save game state to localStorage
-  useEffect(() => {
-    if (isClient) {
-      localStorage.setItem("selectedArmor", JSON.stringify(selectedArmor));
-      localStorage.setItem("zoomLevel", JSON.stringify(zoomLevel));
-      localStorage.setItem("attempts", JSON.stringify(attempts));
-      localStorage.setItem("revealed", JSON.stringify(revealed));
-      localStorage.setItem("testedArmors", JSON.stringify(testedArmors));
-    }
-  }, [selectedArmor, zoomLevel, attempts, revealed, testedArmors]);
+  const [testedArmors, setTestedArmors] = useState<
+    { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string; isCorrect: boolean }[]
+  >([]);
 
   const handleGuess = (armor: {
     name: string;
@@ -54,7 +33,7 @@ export default function ArmorGamePage() {
     silhouetteImg: string;
     revealedImg: string;
   } | null) => {
-    if (!armor || input.trim() === "") return;
+    if (!armor || input.trim() === "") return; // Aqui você pode usar trim para validar o input final
   
     const guessedArmor = armor;
   
@@ -63,8 +42,7 @@ export default function ArmorGamePage() {
       isCorrect: guessedArmor.name === selectedArmor.name, // Marca se é a correta
     };
   
-    // Corrigido o tipo do `prev`
-    setTestedArmors((prev: typeof testedArmors) => [newTestedArmor, ...prev]);
+    setTestedArmors((prev) => [newTestedArmor, ...prev]); // Adiciona à pilha de testadas
   
     if (guessedArmor.name === selectedArmor.name) {
       setRevealed(true);
@@ -88,35 +66,29 @@ export default function ArmorGamePage() {
     setTestedArmors([]);
     setShowDropdown(false);
     setHighlightedArmor(null);
-
-    if (isClient) {
-      localStorage.removeItem("selectedArmor");
-      localStorage.removeItem("zoomLevel");
-      localStorage.removeItem("attempts");
-      localStorage.removeItem("revealed");
-      localStorage.removeItem("testedArmors");
-    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
+    const value = e.target.value; // Não use trim aqui para preservar espaços durante a digitação
     setInput(value);
   
     if (value) {
       const normalizedValue = value
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, ""); // Remove acentos
-      const filteredSuggestions = armors.filter(
-        (armor) =>
-          armor.name
-            .toLowerCase()
-            .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
-            .includes(normalizedValue.toLowerCase()) &&
-          !testedArmors.some((testedArmor: { name: string }) => 
-            testedArmor.name.toLowerCase() === armor.name.toLowerCase()
-          )
-      );
+      const filteredSuggestions = armors
+        .filter(
+          (armor) =>
+            armor.name
+              .toLowerCase()
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .includes(normalizedValue.toLowerCase()) &&
+            !testedArmors.some(
+              (testedArmor) =>
+                testedArmor.name.toLowerCase() === armor.name.toLowerCase()
+            )
+        )
   
       setSuggestions(filteredSuggestions);
       setHighlightedArmor(filteredSuggestions[0] || null); // Define a primeira armadura como destacada por padrão
@@ -132,10 +104,11 @@ export default function ArmorGamePage() {
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       if (highlightedArmor) {
-        handleGuess(highlightedArmor);
+        handleGuess(highlightedArmor); // Usa a armadura destacada para realizar a tentativa
       }
     }
   };
+  
 
   const handleSuggestionClick = (
     armor: {
@@ -148,9 +121,9 @@ export default function ArmorGamePage() {
       revealedImg: string;
     } | null
   ) => {
-    if (!armor) return;
+    if (!armor) return; // Garante que não executará se o armor for null
     setInput(armor.name);
-    setHighlightedArmor(armor);
+    setHighlightedArmor(armor); // Define a armadura clicada como destacada
     setShowDropdown(false);
   };
   
@@ -267,41 +240,27 @@ export default function ArmorGamePage() {
       {/* Cartões de tentativas */}
       <div className="mt-8 w-full max-w-2xl">
         {testedArmors.length > 0 && (
-        <div className="space-y-4">
-            {testedArmors.map(
-            (
-                armor: {
-                name: string;
-                category: string;
-                description: string;
-                knight: string;
-                saga: string;
-                silhouetteImg: string;
-                revealedImg: string;
-                isCorrect: boolean;
-                }
-            ) => (
-                <div
+          <div className="space-y-4">
+            {testedArmors.map((armor) => (
+              <div
                 key={armor.name}
                 className={`flex items-center px-6 py-4 rounded-lg shadow-lg ${
-                    armor.isCorrect ? "bg-green-500" : "bg-red-500"
+                  armor.isCorrect ? "bg-green-500" : "bg-red-500"
                 } text-white`}
-                >
+              >
                 <img
-                    src={armor.revealedImg}
-                    alt={armor.name}
-                    className="w-24 h-24 rounded-lg mr-4 object-contain shadow-sm"
+                  src={armor.revealedImg}
+                  alt={armor.name}
+                  className="w-24 h-24 rounded-lg mr-4 object-contain shadow-sm"
                 />
                 <div className="flex flex-col">
-                    <span className="text-lg font-bold">{armor.name}</span>
-                    <span className="text-sm">{armor.category}</span>
+                  <span className="text-lg font-bold">{armor.name}</span>
+                  <span className="text-sm">{armor.category}</span>
                 </div>
-                </div>
-            )
-            )}
-        </div>
+              </div>
+            ))}
+          </div>
         )}
-
       </div>
 
       {/* Botão de reinício */}
