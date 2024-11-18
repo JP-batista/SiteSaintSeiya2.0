@@ -18,9 +18,9 @@ export default function ArmorGamePage() {
   const [revealed, setRevealed] = useState(() =>
     JSON.parse(localStorage.getItem("revealed") || "false")
   );
-  const [testedArmors, setTestedArmors] = useState(() =>
-    JSON.parse(localStorage.getItem("testedArmors") || "[]")
-  );
+  const [testedArmors, setTestedArmors] = useState<
+    { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string; isCorrect: boolean }[]
+  >([]);
   const [showDropdown, setShowDropdown] = useState(false);
 
   const [suggestions, setSuggestions] = useState<
@@ -29,6 +29,7 @@ export default function ArmorGamePage() {
   const [highlightedArmor, setHighlightedArmor] = useState<
     { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string } | null
   >(null);
+  
 
   // Save game state to localStorage
   useEffect(() => {
@@ -52,24 +53,33 @@ export default function ArmorGamePage() {
 
     const guessedArmor = armor;
 
-    const newTestedArmor = {
-      ...guessedArmor,
-      isCorrect: guessedArmor.name === selectedArmor.name, // Marca se é a correta
-    };
+    const newTestedArmor: {
+        name: string;
+        category: string;
+        description: string;
+        knight: string;
+        saga: string;
+        silhouetteImg: string;
+        revealedImg: string;
+        isCorrect: boolean;
+      } = {
+        ...guessedArmor,
+        isCorrect: guessedArmor.name === selectedArmor.name,
+      };
 
-    setTestedArmors((prev) => [newTestedArmor, ...prev]); // Adiciona à pilha de testadas
+
+    setTestedArmors((prev: typeof testedArmors) => [newTestedArmor, ...prev]);    
 
     if (guessedArmor.name === selectedArmor.name) {
-      setRevealed(true);
-    }
-
-    setAttempts(attempts + 1);
-    setZoomLevel(Math.max(100, zoomLevel - 20)); // Reduz o zoom, mas não menos que 100%
-
-    setInput("");
-    setShowDropdown(false);
-    setHighlightedArmor(null);
-  };
+        setRevealed(true);
+      }
+      
+      setAttempts(attempts + 1);
+      setZoomLevel(Math.max(100, zoomLevel - 20));
+      setInput("");
+      setShowDropdown(false);
+      setHighlightedArmor(null);
+    };
 
   const restartGame = () => {
     const newArmor = armors[Math.floor(Math.random() * armors.length)];
