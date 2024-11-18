@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useEffect, useState } from "react";
@@ -5,6 +6,7 @@ import { armors } from "../../data/armors";
 
 export default function ArmorGamePage() {
   const [selectedArmor, setSelectedArmor] = useState(() =>
+    JSON.parse(localStorage.getItem("selectedArmor") || "null") ||
     armors[Math.floor(Math.random() * armors.length)]
   );
   const [zoomLevel, setZoomLevel] = useState(() =>
@@ -17,12 +19,9 @@ export default function ArmorGamePage() {
   const [revealed, setRevealed] = useState(() =>
     JSON.parse(localStorage.getItem("revealed") || "false")
   );
-  
-  
-  const [testedArmors, setTestedArmors] = useState<
-    { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string; isCorrect: boolean }[]
-  >([]);
-  
+  const [testedArmors, setTestedArmors] = useState(() =>
+    JSON.parse(localStorage.getItem("testedArmors") || "[]")
+  );
   const [showDropdown, setShowDropdown] = useState(false);
 
   const [suggestions, setSuggestions] = useState<
@@ -31,25 +30,10 @@ export default function ArmorGamePage() {
   const [highlightedArmor, setHighlightedArmor] = useState<
     { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string } | null
   >(null);
-  
-  
-  useEffect(() => {
-    const storedSelectedArmor = JSON.parse(localStorage.getItem("selectedArmor") || "null");
-    const storedZoomLevel = JSON.parse(localStorage.getItem("zoomLevel") || "200");
-    const storedAttempts = JSON.parse(localStorage.getItem("attempts") || "0");
-    const storedRevealed = JSON.parse(localStorage.getItem("revealed") || "false");
-    const storedTestedArmors = JSON.parse(localStorage.getItem("testedArmors") || "[]");
-
-    setSelectedArmor(storedSelectedArmor || armors[Math.floor(Math.random() * armors.length)]);
-    setZoomLevel(storedZoomLevel);
-    setAttempts(storedAttempts);
-    setRevealed(storedRevealed);
-    setTestedArmors(storedTestedArmors);
-  }, []);
 
   // Save game state to localStorage
   useEffect(() => {
-    if (selectedArmor) localStorage.setItem("selectedArmor", JSON.stringify(selectedArmor));
+    localStorage.setItem("selectedArmor", JSON.stringify(selectedArmor));
     localStorage.setItem("zoomLevel", JSON.stringify(zoomLevel));
     localStorage.setItem("attempts", JSON.stringify(attempts));
     localStorage.setItem("revealed", JSON.stringify(revealed));
@@ -66,37 +50,27 @@ export default function ArmorGamePage() {
     revealedImg: string;
   } | null) => {
     if (!armor || input.trim() === "") return;
-  
+
     const guessedArmor = armor;
-  
-    const newTestedArmor: {
-      name: string;
-      category: string;
-      description: string;
-      knight: string;
-      saga: string;
-      silhouetteImg: string;
-      revealedImg: string;
-      isCorrect: boolean;
-    } = {
+
+    const newTestedArmor = {
       ...guessedArmor,
-      isCorrect: guessedArmor.name === selectedArmor.name,
+      isCorrect: guessedArmor.name === selectedArmor.name, // Marca se é a correta
     };
-  
-    // Corrigido: adicionado tipo explícito em `prev`
-    setTestedArmors((prev: typeof testedArmors) => [newTestedArmor, ...prev]);
-  
+
+    setTestedArmors((prev) => [newTestedArmor, ...prev]); // Adiciona à pilha de testadas
+
     if (guessedArmor.name === selectedArmor.name) {
       setRevealed(true);
     }
-  
+
     setAttempts(attempts + 1);
-    setZoomLevel(Math.max(100, zoomLevel - 20));
+    setZoomLevel(Math.max(100, zoomLevel - 20)); // Reduz o zoom, mas não menos que 100%
+
     setInput("");
     setShowDropdown(false);
     setHighlightedArmor(null);
   };
-  
 
   const restartGame = () => {
     const newArmor = armors[Math.floor(Math.random() * armors.length)];
@@ -156,7 +130,7 @@ export default function ArmorGamePage() {
   };
 
   const handleSuggestionClick = (
-      armor: {
+    armor: {
       name: string;
       category: string;
       description: string;
