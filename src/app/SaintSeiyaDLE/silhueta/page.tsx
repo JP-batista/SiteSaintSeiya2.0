@@ -62,13 +62,13 @@ export default function ArmorGamePage() {
         silhouetteImg: string;
         revealedImg: string;
         isCorrect: boolean;
-      } = {
+    } = {
         ...guessedArmor,
         isCorrect: guessedArmor.name === selectedArmor.name,
-      };
+    };
 
 
-    setTestedArmors((prev: typeof testedArmors) => [newTestedArmor, ...prev]);    
+    setTestedArmors((prev: typeof testedArmors) => [newTestedArmor, ...prev]); // Adiciona à pilha de testadas
 
     if (guessedArmor.name === selectedArmor.name) {
         setRevealed(true);
@@ -139,7 +139,7 @@ export default function ArmorGamePage() {
   };
 
   const handleSuggestionClick = (
-    armor: {
+      armor: {
       name: string;
       category: string;
       description: string;
