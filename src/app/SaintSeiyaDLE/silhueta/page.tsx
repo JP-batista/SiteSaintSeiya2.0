@@ -50,36 +50,37 @@ export default function ArmorGamePage() {
     revealedImg: string;
   } | null) => {
     if (!armor || input.trim() === "") return;
-
+  
     const guessedArmor = armor;
-
+  
     const newTestedArmor: {
-        name: string;
-        category: string;
-        description: string;
-        knight: string;
-        saga: string;
-        silhouetteImg: string;
-        revealedImg: string;
-        isCorrect: boolean;
+      name: string;
+      category: string;
+      description: string;
+      knight: string;
+      saga: string;
+      silhouetteImg: string;
+      revealedImg: string;
+      isCorrect: boolean;
     } = {
-        ...guessedArmor,
-        isCorrect: guessedArmor.name === selectedArmor.name,
+      ...guessedArmor,
+      isCorrect: guessedArmor.name === selectedArmor.name,
     };
-
-
-    setTestedArmors((prev: typeof testedArmors) => [newTestedArmor, ...prev]); // Adiciona à pilha de testadas
-
+  
+    // Corrigido: adicionado tipo explícito em `prev`
+    setTestedArmors((prev: typeof testedArmors) => [newTestedArmor, ...prev]);
+  
     if (guessedArmor.name === selectedArmor.name) {
-        setRevealed(true);
-      }
-      
-      setAttempts(attempts + 1);
-      setZoomLevel(Math.max(100, zoomLevel - 20));
-      setInput("");
-      setShowDropdown(false);
-      setHighlightedArmor(null);
-    };
+      setRevealed(true);
+    }
+  
+    setAttempts(attempts + 1);
+    setZoomLevel(Math.max(100, zoomLevel - 20));
+    setInput("");
+    setShowDropdown(false);
+    setHighlightedArmor(null);
+  };
+  
 
   const restartGame = () => {
     const newArmor = armors[Math.floor(Math.random() * armors.length)];
