@@ -1,26 +1,29 @@
-
 "use client";
 
 import { useEffect, useState } from "react";
 import { armors } from "../../data/armors";
 
 export default function ArmorGamePage() {
+  const isClient = typeof window !== "undefined";
+
   const [selectedArmor, setSelectedArmor] = useState(() =>
-    JSON.parse(localStorage.getItem("selectedArmor") || "null") ||
-    armors[Math.floor(Math.random() * armors.length)]
+    isClient
+      ? JSON.parse(localStorage.getItem("selectedArmor") || "null") ||
+        armors[Math.floor(Math.random() * armors.length)]
+      : armors[Math.floor(Math.random() * armors.length)]
   );
   const [zoomLevel, setZoomLevel] = useState(() =>
-    JSON.parse(localStorage.getItem("zoomLevel") || "200")
+    isClient ? JSON.parse(localStorage.getItem("zoomLevel") || "200") : 200
   );
   const [input, setInput] = useState("");
   const [attempts, setAttempts] = useState(() =>
-    JSON.parse(localStorage.getItem("attempts") || "0")
+    isClient ? JSON.parse(localStorage.getItem("attempts") || "0") : 0
   );
   const [revealed, setRevealed] = useState(() =>
-    JSON.parse(localStorage.getItem("revealed") || "false")
+    isClient ? JSON.parse(localStorage.getItem("revealed") || "false") : false
   );
   const [testedArmors, setTestedArmors] = useState(() =>
-    JSON.parse(localStorage.getItem("testedArmors") || "[]")
+    isClient ? JSON.parse(localStorage.getItem("testedArmors") || "[]") : []
   );
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -33,11 +36,13 @@ export default function ArmorGamePage() {
 
   // Save game state to localStorage
   useEffect(() => {
-    localStorage.setItem("selectedArmor", JSON.stringify(selectedArmor));
-    localStorage.setItem("zoomLevel", JSON.stringify(zoomLevel));
-    localStorage.setItem("attempts", JSON.stringify(attempts));
-    localStorage.setItem("revealed", JSON.stringify(revealed));
-    localStorage.setItem("testedArmors", JSON.stringify(testedArmors));
+    if (isClient) {
+      localStorage.setItem("selectedArmor", JSON.stringify(selectedArmor));
+      localStorage.setItem("zoomLevel", JSON.stringify(zoomLevel));
+      localStorage.setItem("attempts", JSON.stringify(attempts));
+      localStorage.setItem("revealed", JSON.stringify(revealed));
+      localStorage.setItem("testedArmors", JSON.stringify(testedArmors));
+    }
   }, [selectedArmor, zoomLevel, attempts, revealed, testedArmors]);
 
   const handleGuess = (armor: {
@@ -54,24 +59,24 @@ export default function ArmorGamePage() {
     const guessedArmor = armor;
   
     const newTestedArmor = {
-      ...guessedArmor,
-      isCorrect: guessedArmor.name === selectedArmor.name, // Marca se é a correta
-    };
+        ...guessedArmor,
+        isCorrect: guessedArmor.name === selectedArmor.name, // Marca se é a correta
+      };
   
     // Adiciona à pilha de testadas com tipo explícito
-    setTestedArmors((prev: typeof testedArmors) => [newTestedArmor, ...prev]);
+    setTestedArmors((prev) => [newTestedArmor, ...prev]); // Adiciona à pilha de testadas
   
     if (guessedArmor.name === selectedArmor.name) {
-      setRevealed(true);
-    }
+        setRevealed(true);
+      }
   
-    setAttempts(attempts + 1);
-    setZoomLevel(Math.max(100, zoomLevel - 20)); // Reduz o zoom, mas não menos que 100%
+      setAttempts(attempts + 1);
+      setZoomLevel(Math.max(100, zoomLevel - 20)); // Reduz o zoom, mas não menos que 100%
   
-    setInput("");
-    setShowDropdown(false);
-    setHighlightedArmor(null);
-  };
+      setInput("");
+      setShowDropdown(false);
+      setHighlightedArmor(null);
+    };
 
   const restartGame = () => {
     const newArmor = armors[Math.floor(Math.random() * armors.length)];
@@ -84,11 +89,13 @@ export default function ArmorGamePage() {
     setShowDropdown(false);
     setHighlightedArmor(null);
 
-    localStorage.removeItem("selectedArmor");
-    localStorage.removeItem("zoomLevel");
-    localStorage.removeItem("attempts");
-    localStorage.removeItem("revealed");
-    localStorage.removeItem("testedArmors");
+    if (isClient) {
+      localStorage.removeItem("selectedArmor");
+      localStorage.removeItem("zoomLevel");
+      localStorage.removeItem("attempts");
+      localStorage.removeItem("revealed");
+      localStorage.removeItem("testedArmors");
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
