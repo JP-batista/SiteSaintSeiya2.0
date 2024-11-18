@@ -260,27 +260,41 @@ export default function ArmorGamePage() {
       {/* Cartões de tentativas */}
       <div className="mt-8 w-full max-w-2xl">
         {testedArmors.length > 0 && (
-          <div className="space-y-4">
-            {testedArmors.map((armor) => (
-              <div
+        <div className="space-y-4">
+            {testedArmors.map(
+            (
+                armor: {
+                name: string;
+                category: string;
+                description: string;
+                knight: string;
+                saga: string;
+                silhouetteImg: string;
+                revealedImg: string;
+                isCorrect: boolean;
+                }
+            ) => (
+                <div
                 key={armor.name}
                 className={`flex items-center px-6 py-4 rounded-lg shadow-lg ${
-                  armor.isCorrect ? "bg-green-500" : "bg-red-500"
+                    armor.isCorrect ? "bg-green-500" : "bg-red-500"
                 } text-white`}
-              >
+                >
                 <img
-                  src={armor.revealedImg}
-                  alt={armor.name}
-                  className="w-24 h-24 rounded-lg mr-4 object-contain shadow-sm"
+                    src={armor.revealedImg}
+                    alt={armor.name}
+                    className="w-24 h-24 rounded-lg mr-4 object-contain shadow-sm"
                 />
                 <div className="flex flex-col">
-                  <span className="text-lg font-bold">{armor.name}</span>
-                  <span className="text-sm">{armor.category}</span>
+                    <span className="text-lg font-bold">{armor.name}</span>
+                    <span className="text-sm">{armor.category}</span>
                 </div>
-              </div>
-            ))}
-          </div>
+                </div>
+            )
+            )}
+        </div>
         )}
+
       </div>
 
       {/* Botão de reinício */}
