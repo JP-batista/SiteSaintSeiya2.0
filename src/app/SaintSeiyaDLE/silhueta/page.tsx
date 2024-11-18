@@ -59,24 +59,24 @@ export default function ArmorGamePage() {
     const guessedArmor = armor;
   
     const newTestedArmor = {
-        ...guessedArmor,
-        isCorrect: guessedArmor.name === selectedArmor.name, // Marca se é a correta
-      };
+      ...guessedArmor,
+      isCorrect: guessedArmor.name === selectedArmor.name, // Marca se é a correta
+    };
   
-    // Adiciona à pilha de testadas com tipo explícito
-    setTestedArmors((prev) => [newTestedArmor, ...prev]); // Adiciona à pilha de testadas
+    // Corrigido o tipo do `prev`
+    setTestedArmors((prev: typeof testedArmors) => [newTestedArmor, ...prev]);
   
     if (guessedArmor.name === selectedArmor.name) {
-        setRevealed(true);
-      }
+      setRevealed(true);
+    }
   
-      setAttempts(attempts + 1);
-      setZoomLevel(Math.max(100, zoomLevel - 20)); // Reduz o zoom, mas não menos que 100%
+    setAttempts(attempts + 1);
+    setZoomLevel(Math.max(100, zoomLevel - 20)); // Reduz o zoom, mas não menos que 100%
   
-      setInput("");
-      setShowDropdown(false);
-      setHighlightedArmor(null);
-    };
+    setInput("");
+    setShowDropdown(false);
+    setHighlightedArmor(null);
+  };
 
   const restartGame = () => {
     const newArmor = armors[Math.floor(Math.random() * armors.length)];
