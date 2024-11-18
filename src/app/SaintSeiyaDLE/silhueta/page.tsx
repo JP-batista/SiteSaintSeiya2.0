@@ -50,23 +50,24 @@ export default function ArmorGamePage() {
     revealedImg: string;
   } | null) => {
     if (!armor || input.trim() === "") return;
-
+  
     const guessedArmor = armor;
-
+  
     const newTestedArmor = {
       ...guessedArmor,
       isCorrect: guessedArmor.name === selectedArmor.name, // Marca se é a correta
     };
-
-    setTestedArmors((prev) => [newTestedArmor, ...prev]); // Adiciona à pilha de testadas
-
+  
+    // Adiciona à pilha de testadas com tipo explícito
+    setTestedArmors((prev: typeof testedArmors) => [newTestedArmor, ...prev]);
+  
     if (guessedArmor.name === selectedArmor.name) {
       setRevealed(true);
     }
-
+  
     setAttempts(attempts + 1);
     setZoomLevel(Math.max(100, zoomLevel - 20)); // Reduz o zoom, mas não menos que 100%
-
+  
     setInput("");
     setShowDropdown(false);
     setHighlightedArmor(null);
