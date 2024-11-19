@@ -314,9 +314,12 @@ export default function GamePage() {
   // Função para filtrar personagens não tentados para o dropdown de sugestões
   const getFilteredSuggestions = (value: string) => {
     const normalizedValue = normalizeText(value);
+
+    // Filtrar personagens que começam com o texto digitado
     return characters.filter(
       (char: Character) =>
-        normalizeText(char.nome).includes(normalizedValue) && !isAlreadyTried(char.nome)
+        normalizeText(char.nome).startsWith(normalizedValue) && // Verifica se começa com o texto digitado
+        !isAlreadyTried(char.nome) // Verifica se já foi tentado
     );
   };
   
@@ -330,21 +333,20 @@ export default function GamePage() {
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value.trim();
+    const value = e.target.value.trim(); // Mantém espaços no início e fim apenas no processamento
     setInput(value);
-
+  
     if (value) {
       const filteredSuggestions = getFilteredSuggestions(value);
       setSuggestions(filteredSuggestions);
       setShowDropdown(true);
-      setSelectedSuggestion(filteredSuggestions[0] || null);
+      setSelectedSuggestion(filteredSuggestions[0] || null); // Destaca a primeira sugestão por padrão
     } else {
       setSuggestions([]);
       setShowDropdown(false);
       setSelectedSuggestion(null);
     }
-  }; 
-  
+  };  
 
   const handleSuggestionClick = (suggestion: Character) => {
     setInput(suggestion.nome); // Atualiza o valor do input com o nome do personagem clicado
