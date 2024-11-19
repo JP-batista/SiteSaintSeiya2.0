@@ -5,6 +5,19 @@ import { armors } from "../../data/armors";
 
 const isClient = typeof window !== "undefined";
 
+const MyComponent = () => {
+  const [data, setData] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const localData = localStorage.getItem('myKey');
+      setData(localData);
+    }
+  }, []);
+
+  return <div>{data}</div>;
+};
+
 export default function ArmorGamePage() {
   const [selectedArmor, setSelectedArmor] = useState(() => {
     if (typeof window !== "undefined") { // Certifica-se de que está rodando no cliente
