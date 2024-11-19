@@ -40,9 +40,7 @@ export default function ArmorGamePage() {
   const [suggestions, setSuggestions] = useState<Armor[]>([]);
   const [highlightedArmor, setHighlightedArmor] = useState<Armor | null>(null);
 
-  const [testedArmors, setTestedArmors] = useState<
-    { isCorrect: boolean } & Armor[]
-  >(() => {
+  const [testedArmors, setTestedArmors] = useState<(Armor & { isCorrect: boolean })[]>(() => {
     const savedTestedArmors = localStorage.getItem("testedArmors");
     return savedTestedArmors ? JSON.parse(savedTestedArmors) : [];
   });
@@ -61,11 +59,13 @@ export default function ArmorGamePage() {
   
     const guessedArmor = armor;
   
-    const newTestedArmor = {
+    // Criação do novo objeto para adicionar ao estado
+    const newTestedArmor: Armor & { isCorrect: boolean } = {
       ...guessedArmor,
       isCorrect: guessedArmor.name === selectedArmor.name,
     };
   
+    // Atualização do estado com a tipagem correta
     setTestedArmors((prev) => [newTestedArmor, ...prev]);
   
     if (guessedArmor.name === selectedArmor.name) {
@@ -79,6 +79,7 @@ export default function ArmorGamePage() {
     setShowDropdown(false);
     setHighlightedArmor(null);
   };
+  
 
   const restartGame = () => {
     const newArmor = armors[Math.floor(Math.random() * armors.length)];
