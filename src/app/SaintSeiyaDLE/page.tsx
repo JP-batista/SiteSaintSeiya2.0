@@ -71,7 +71,26 @@ export default function GamePage() {
   const [attempts, setAttempts] = useState<any[]>(() =>
     loadFromLocalStorage("attempts", [])
   );
-  const [won, setWon] = useState<boolean>(false);
+  const [won, setWon] = useState<boolean>(() =>
+    loadFromLocalStorage("won", false)
+  );
+
+  // Atualize o localStorage sempre que o estado `won` mudar
+  useEffect(() => {
+    saveToLocalStorage("won", won);
+  }, [won]);
+
+  useEffect(() => {
+    const savedWon = loadFromLocalStorage("won", false);
+    const savedCharacter = loadFromLocalStorage("selectedCharacter", null);
+  
+    // Se o jogo já foi vencido, mantenha o estado de vitória
+    if (savedWon && savedCharacter) {
+      setWon(true);
+      setSelectedCharacter(savedCharacter); // Garante que o personagem correto seja mantido
+    }
+  }, []);
+
   const [showAnswer, setShowAnswer] = useState<boolean>(false);
   const [suggestions, setSuggestions] = useState<Character[]>([]);
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
@@ -378,7 +397,7 @@ export default function GamePage() {
     setAttempts([]);
     setSelectedCharacter(randomCharacter);
     setInput("");
-    setWon(false);
+    setWon(false); // Resetar o estado de vitória
     setShowAnswer(false);
     setShowHint1(false);
     setShowHint2(false);
@@ -386,7 +405,9 @@ export default function GamePage() {
     setDica2(null);
     localStorage.removeItem("selectedCharacter");
     localStorage.removeItem("attempts");
+    localStorage.removeItem("won"); // Limpa o estado salvo de vitória
   };
+  
   
 
   useEffect(() => {
