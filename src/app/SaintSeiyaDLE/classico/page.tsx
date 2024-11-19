@@ -1027,19 +1027,6 @@ export default function GamePage() {
           </div>
         </div>
       )}
-      <button
-        onClick={() => alert(`Personagem atual: ${selectedCharacter.nome}`)}
-        style={{
-          position: "fixed",
-          bottom: "10px",
-          right: "10px",
-          width: "20px",
-          height: "20px",
-          opacity: 0,
-          cursor: "pointer",
-        }}
-        aria-label="Mostrar Personagem Atual"
-      />
     </div>
   );
 }
