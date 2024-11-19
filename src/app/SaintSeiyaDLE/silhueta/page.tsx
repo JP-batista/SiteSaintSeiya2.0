@@ -41,7 +41,7 @@ export default function ArmorGamePage() {
   const [selectedArmor, setSelectedArmor] = useState(
     initialGameState?.selectedArmor || armors[Math.floor(Math.random() * armors.length)]
   );
-  const [zoomLevel, setZoomLevel] = useState(200); // Zoom inicial
+  const [zoomLevel, setZoomLevel] = useState(200);
   const [input, setInput] = useState("");
   const [attempts, setAttempts] = useState(initialGameState?.attempts || 0);
   const [revealed, setRevealed] = useState(initialGameState?.revealed || false);
