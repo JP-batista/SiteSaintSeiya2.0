@@ -7,7 +7,20 @@ export default function ArmorGamePage() {
   const loadGameFromLocalStorage = () => {
     try {
       const storedGame = localStorage.getItem("armorGame");
-      return storedGame ? JSON.parse(storedGame) : null;
+      const gameData = storedGame ? JSON.parse(storedGame) : null;
+
+      if (gameData && gameData.selectedArmor) {
+        const validArmor = armors.find(
+          (armor) => armor.name === gameData.selectedArmor.name
+        );
+        if (validArmor) {
+          gameData.selectedArmor = validArmor;
+        } else {
+          gameData.selectedArmor = armors[Math.floor(Math.random() * armors.length)];
+        }
+      }
+
+      return gameData;
     } catch (error) {
       console.error("Error loading game from localStorage:", error);
       return null;
