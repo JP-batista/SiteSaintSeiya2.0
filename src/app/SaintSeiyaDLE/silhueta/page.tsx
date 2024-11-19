@@ -4,10 +4,20 @@ import { useState, useEffect } from "react";
 import { armors } from "../../data/armors";
 
 export default function ArmorGamePage() {
-
+  const [selectedArmor, setSelectedArmor] = useState(() => {
+    const savedArmor = localStorage.getItem("selectedArmor");
+    return savedArmor ? JSON.parse(savedArmor) : armors[Math.floor(Math.random() * armors.length)];
+  });
+  const [zoomLevel, setZoomLevel] = useState(200); // Zoom inicial
   const [input, setInput] = useState("");
-
-
+  const [attempts, setAttempts] = useState<number>(() => {
+    const savedAttempts = localStorage.getItem("attempts");
+    return savedAttempts ? JSON.parse(savedAttempts) : 0;
+  });
+  const [revealed, setRevealed] = useState<boolean>(() => {
+    const savedRevealed = localStorage.getItem("revealed");
+    return savedRevealed ? JSON.parse(savedRevealed) : false;
+  });
   const [showDropdown, setShowDropdown] = useState(false);
 
   const [suggestions, setSuggestions] = useState<
@@ -17,17 +27,13 @@ export default function ArmorGamePage() {
     { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string } | null
   >(null);
 
+  const [testedArmors, setTestedArmors] = useState<
+    { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string; isCorrect: boolean }[]
+  >(() => {
+    const savedTestedArmors = localStorage.getItem("testedArmors");
+    return savedTestedArmors ? JSON.parse(savedTestedArmors) : [];
+  });
 
-
-  const [selectedArmor, setSelectedArmor] = useState(() => 
-    loadFromLocalStorage("selectedArmor", armors[Math.floor(Math.random() * armors.length)])
-  );
-  const [testedArmors, setTestedArmors] = useState(() => 
-    loadFromLocalStorage("testedArmors", [])
-  );
-  const [attempts, setAttempts] = useState(() => loadFromLocalStorage("attempts", 0));
-  const [revealed, setRevealed] = useState(() => loadFromLocalStorage("revealed", false));
-  const [zoomLevel, setZoomLevel] = useState(() => loadFromLocalStorage("zoomLevel", 200));
   
 
   // Atualiza o localStorage sempre que os estados mudarem
@@ -70,57 +76,44 @@ export default function ArmorGamePage() {
     revealedImg: string;
   } | null) => {
     if (!armor || input.trim() === "") return;
-  
+
     const guessedArmor = armor;
-  
+
     const newTestedArmor = {
       ...guessedArmor,
       isCorrect: guessedArmor.name === selectedArmor.name,
     };
-  
-    setTestedArmors((prev) => {
-      const updatedTestedArmors = [newTestedArmor, ...prev];
-      saveToLocalStorage("testedArmors", updatedTestedArmors);
-      return updatedTestedArmors;
-    });
-  
+
+    setTestedArmors((prev) => [newTestedArmor, ...prev]);
+
     if (guessedArmor.name === selectedArmor.name) {
       setRevealed(true);
-      saveToLocalStorage("revealed", true);
     }
-  
-    setAttempts((prev) => {
-      const updatedAttempts = prev + 1;
-      saveToLocalStorage("attempts", updatedAttempts);
-      return updatedAttempts;
-    });
-  
-    setZoomLevel((prev) => {
-      const updatedZoom = Math.max(100, prev - 20);
-      saveToLocalStorage("zoomLevel", updatedZoom);
-      return updatedZoom;
-    });
-  
+
+    setAttempts((prev) => prev + 1);
+    setZoomLevel((prev) => Math.max(100, prev - 20));
+
     setInput("");
     setShowDropdown(false);
     setHighlightedArmor(null);
   };
-  
+
   const restartGame = () => {
     const newArmor = armors[Math.floor(Math.random() * armors.length)];
     setSelectedArmor(newArmor);
-    saveToLocalStorage("selectedArmor", newArmor);
     setZoomLevel(200);
-    saveToLocalStorage("zoomLevel", 200);
     setInput("");
     setAttempts(0);
-    saveToLocalStorage("attempts", 0);
     setRevealed(false);
-    saveToLocalStorage("revealed", false);
     setTestedArmors([]);
-    saveToLocalStorage("testedArmors", []);
     setShowDropdown(false);
     setHighlightedArmor(null);
+
+    // Limpa o localStorage para um novo jogo
+    localStorage.removeItem("selectedArmor");
+    localStorage.removeItem("attempts");
+    localStorage.removeItem("revealed");
+    localStorage.removeItem("testedArmors");
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
