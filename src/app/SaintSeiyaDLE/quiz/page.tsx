@@ -3,7 +3,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { questions } from '../data/questions';
+import { questions } from '../../data/questions';
 
 type Question = {
   difficulty: string;
