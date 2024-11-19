@@ -1,76 +1,28 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { armors } from "../../data/armors";
 
 export default function ArmorGamePage() {
-  // Salvar e carregar do localStorage
-  const saveToLocalStorage = (key: string, value: any) => {
-    if (typeof window !== "undefined") {
-      try {
-        localStorage.setItem(key, JSON.stringify(value));
-      } catch (error) {
-        console.error(`Erro ao salvar no localStorage: ${key}`, error);
-      }
-    }
-  };
-
-  const loadFromLocalStorage = (key: string, defaultValue: any) => {
-    if (typeof window !== "undefined") {
-      try {
-        const saved = localStorage.getItem(key);
-        return saved ? JSON.parse(saved) : defaultValue;
-      } catch {
-        return defaultValue;
-      }
-    }
-    return defaultValue;
-  };
-
-  // Estados
-  const [selectedArmor, setSelectedArmor] = useState(() =>
-    loadFromLocalStorage(
-      "selectedArmor",
-      armors[Math.floor(Math.random() * armors.length)]
-    )
+  const [selectedArmor, setSelectedArmor] = useState(
+    armors[Math.floor(Math.random() * armors.length)]
   );
-
-  const [zoomLevel, setZoomLevel] = useState(() =>
-    loadFromLocalStorage("zoomLevel", 200)
-  );
-
-  const [input, setInput] = useState<string>("");
-  const [attempts, setAttempts] = useState<number>(() =>
-    loadFromLocalStorage("attempts", 0)
-  );
-
-  const [revealed, setRevealed] = useState<boolean>(() =>
-    loadFromLocalStorage("revealed", false)
-  );
-
-  const [showDropdown, setShowDropdown] = useState<boolean>(false);
+  const [zoomLevel, setZoomLevel] = useState(200); // Zoom inicial
+  const [input, setInput] = useState("");
+  const [attempts, setAttempts] = useState(0);
+  const [revealed, setRevealed] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   const [suggestions, setSuggestions] = useState<
     { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string }[]
   >([]);
-
   const [highlightedArmor, setHighlightedArmor] = useState<
     { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string } | null
   >(null);
 
   const [testedArmors, setTestedArmors] = useState<
     { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string; isCorrect: boolean }[]
-  >(() => loadFromLocalStorage("testedArmors", []));
-
-  
-  // Sincronizar estados com o localStorage
-  useEffect(() => {
-    saveToLocalStorage("selectedArmor", selectedArmor);
-    saveToLocalStorage("zoomLevel", zoomLevel);
-    saveToLocalStorage("attempts", attempts);
-    saveToLocalStorage("revealed", revealed);
-    saveToLocalStorage("testedArmors", testedArmors);
-  }, [selectedArmor, zoomLevel, attempts, revealed, testedArmors]);
+  >([]);
 
   const handleGuess = (armor: {
     name: string;
@@ -81,24 +33,24 @@ export default function ArmorGamePage() {
     silhouetteImg: string;
     revealedImg: string;
   } | null) => {
-    if (!armor || input.trim() === "") return;
-
+    if (!armor || input.trim() === "") return; // Aqui você pode usar trim para validar o input final
+  
     const guessedArmor = armor;
-
+  
     const newTestedArmor = {
       ...guessedArmor,
-      isCorrect: guessedArmor.name === selectedArmor.name,
+      isCorrect: guessedArmor.name === selectedArmor.name, // Marca se é a correta
     };
-
-    setTestedArmors((prev: typeof testedArmors) => [newTestedArmor, ...prev]);
-
+  
+    setTestedArmors((prev) => [newTestedArmor, ...prev]); // Adiciona à pilha de testadas
+  
     if (guessedArmor.name === selectedArmor.name) {
       setRevealed(true);
     }
-
-    setAttempts((prev: number) => prev + 1);
-    setZoomLevel((prev: number) => Math.max(100, prev - 20));
-
+  
+    setAttempts(attempts + 1);
+    setZoomLevel(Math.max(100, zoomLevel - 20)); // Reduz o zoom, mas não menos que 100%
+  
     setInput("");
     setShowDropdown(false);
     setHighlightedArmor(null);
@@ -117,28 +69,29 @@ export default function ArmorGamePage() {
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
+    const value = e.target.value; // Não use trim aqui para preservar espaços durante a digitação
     setInput(value);
-
+  
     if (value) {
       const normalizedValue = value
         .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "");
-      const filteredSuggestions = armors.filter(
-        (armor) =>
-          armor.name
-            .toLowerCase()
-            .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
-            .startsWith(normalizedValue.toLowerCase()) &&
-          !testedArmors.some(
-            (testedArmor) =>
-              testedArmor.name.toLowerCase() === armor.name.toLowerCase()
-          )
-      );
-
+        .replace(/[\u0300-\u036f]/g, ""); // Remove acentos
+      const filteredSuggestions = armors
+        .filter(
+          (armor) =>
+            armor.name
+              .toLowerCase()
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .includes(normalizedValue.toLowerCase()) &&
+            !testedArmors.some(
+              (testedArmor) =>
+                testedArmor.name.toLowerCase() === armor.name.toLowerCase()
+            )
+        )
+  
       setSuggestions(filteredSuggestions);
-      setHighlightedArmor(filteredSuggestions[0] || null);
+      setHighlightedArmor(filteredSuggestions[0] || null); // Define a primeira armadura como destacada por padrão
       setShowDropdown(true);
     } else {
       setSuggestions([]);
@@ -146,14 +99,16 @@ export default function ArmorGamePage() {
       setShowDropdown(false);
     }
   };
+  
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       if (highlightedArmor) {
-        handleGuess(highlightedArmor);
+        handleGuess(highlightedArmor); // Usa a armadura destacada para realizar a tentativa
       }
     }
   };
+  
 
   const handleSuggestionClick = (
     armor: {
@@ -166,9 +121,9 @@ export default function ArmorGamePage() {
       revealedImg: string;
     } | null
   ) => {
-    if (!armor) return;
+    if (!armor) return; // Garante que não executará se o armor for null
     setInput(armor.name);
-    setHighlightedArmor(armor);
+    setHighlightedArmor(armor); // Define a armadura clicada como destacada
     setShowDropdown(false);
   };
   
