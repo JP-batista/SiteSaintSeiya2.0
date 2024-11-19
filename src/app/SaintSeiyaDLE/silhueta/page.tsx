@@ -3,11 +3,23 @@
 import { useState, useEffect } from "react";
 import { armors } from "../../data/armors";
 
+const isClient = typeof window !== "undefined";
+
 export default function ArmorGamePage() {
   const [selectedArmor, setSelectedArmor] = useState(() => {
-    const savedArmor = localStorage.getItem("selectedArmor");
-    return savedArmor ? JSON.parse(savedArmor) : armors[Math.floor(Math.random() * armors.length)];
+    if (typeof window !== "undefined") { // Certifica-se de que está rodando no cliente
+      const savedArmor = localStorage.getItem("selectedArmor");
+      return savedArmor ? JSON.parse(savedArmor) : armors[Math.floor(Math.random() * armors.length)];
+    }
+    return armors[Math.floor(Math.random() * armors.length)];
   });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") { // Certifica-se de que está rodando no cliente
+      localStorage.setItem("selectedArmor", JSON.stringify(selectedArmor));
+    }
+  }, [selectedArmor]);
+  
   const [zoomLevel, setZoomLevel] = useState(200); // Zoom inicial
   const [input, setInput] = useState("");
   const [attempts, setAttempts] = useState<number>(() => {
@@ -21,8 +33,9 @@ export default function ArmorGamePage() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const [suggestions, setSuggestions] = useState<
-    { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string }[]
+  { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string }[]
   >([]);
+
   const [highlightedArmor, setHighlightedArmor] = useState<
     { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string } | null
   >(null);
@@ -30,11 +43,18 @@ export default function ArmorGamePage() {
   const [testedArmors, setTestedArmors] = useState<
     { name: string; category: string; description: string; knight: string; saga: string; silhouetteImg: string; revealedImg: string; isCorrect: boolean }[]
   >(() => {
-    const savedTestedArmors = localStorage.getItem("testedArmors");
-    return savedTestedArmors ? JSON.parse(savedTestedArmors) : [];
+    if (typeof window !== "undefined") { // Certifica-se de que está rodando no cliente
+      const savedTestedArmors = localStorage.getItem("testedArmors");
+      return savedTestedArmors ? JSON.parse(savedTestedArmors) : [];
+    }
+    return [];
   });
 
-  
+  useEffect(() => {
+    if (typeof window !== "undefined") { // Certifica-se de que está rodando no cliente
+      localStorage.setItem("testedArmors", JSON.stringify(testedArmors));
+    }
+  }, [testedArmors]);
 
   // Atualiza o localStorage sempre que os estados mudarem
   useEffect(() => {
@@ -108,13 +128,13 @@ export default function ArmorGamePage() {
     setTestedArmors([]);
     setShowDropdown(false);
     setHighlightedArmor(null);
-
-    // Limpa o localStorage para um novo jogo
-    localStorage.removeItem("selectedArmor");
-    localStorage.removeItem("attempts");
-    localStorage.removeItem("revealed");
-    localStorage.removeItem("testedArmors");
+  
+    if (typeof window !== "undefined") { // Certifica-se de que está rodando no cliente
+      localStorage.removeItem("testedArmors");
+      localStorage.setItem("selectedArmor", JSON.stringify(newArmor));
+    }
   };
+  
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
