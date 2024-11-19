@@ -3,32 +3,51 @@
 import { useEffect, useState } from "react";
 import { armors } from "../../data/armors";
 
+// Tipo para representar uma armadura
+type Armor = {
+  name: string;
+  category: string;
+  description: string;
+  knight: string;
+  saga: string;
+  silhouetteImg: string;
+  revealedImg: string;
+};
+
 export default function ArmorGamePage() {
-  const [selectedArmor, setSelectedArmor] = useState(() => {
+  const [selectedArmor, setSelectedArmor] = useState<Armor>(() => {
     const savedArmor = localStorage.getItem("selectedArmor");
     return savedArmor ? JSON.parse(savedArmor) : armors[Math.floor(Math.random() * armors.length)];
   });
-  const [zoomLevel, setZoomLevel] = useState(() => {
+
+  const [zoomLevel, setZoomLevel] = useState<number>(() => {
     const savedZoomLevel = localStorage.getItem("zoomLevel");
     return savedZoomLevel ? parseInt(savedZoomLevel, 10) : 200;
   });
-  const [input, setInput] = useState("");
-  const [attempts, setAttempts] = useState(() => {
+
+  const [input, setInput] = useState<string>("");
+  const [attempts, setAttempts] = useState<number>(() => {
     const savedAttempts = localStorage.getItem("attempts");
     return savedAttempts ? parseInt(savedAttempts, 10) : 0;
   });
-  const [revealed, setRevealed] = useState(() => {
+
+  const [revealed, setRevealed] = useState<boolean>(() => {
     const savedRevealed = localStorage.getItem("revealed");
     return savedRevealed ? JSON.parse(savedRevealed) : false;
   });
-  const [showDropdown, setShowDropdown] = useState(false);
-  const [suggestions, setSuggestions] = useState([]);
-  const [highlightedArmor, setHighlightedArmor] = useState(null);
-  const [testedArmors, setTestedArmors] = useState(() => {
+
+  const [showDropdown, setShowDropdown] = useState<boolean>(false);
+  const [suggestions, setSuggestions] = useState<Armor[]>([]);
+  const [highlightedArmor, setHighlightedArmor] = useState<Armor | null>(null);
+
+  const [testedArmors, setTestedArmors] = useState<
+    { isCorrect: boolean } & Armor[]
+  >(() => {
     const savedTestedArmors = localStorage.getItem("testedArmors");
     return savedTestedArmors ? JSON.parse(savedTestedArmors) : [];
   });
 
+  // Salva os dados no localStorage sempre que eles mudarem
   useEffect(() => {
     localStorage.setItem("selectedArmor", JSON.stringify(selectedArmor));
     localStorage.setItem("zoomLevel", zoomLevel.toString());
@@ -37,25 +56,25 @@ export default function ArmorGamePage() {
     localStorage.setItem("testedArmors", JSON.stringify(testedArmors));
   }, [selectedArmor, zoomLevel, attempts, revealed, testedArmors]);
 
-  const handleGuess = (armor) => {
+  const handleGuess = (armor: Armor) => {
     if (!armor || input.trim() === "") return;
-
+  
     const guessedArmor = armor;
-
+  
     const newTestedArmor = {
       ...guessedArmor,
       isCorrect: guessedArmor.name === selectedArmor.name,
     };
-
+  
     setTestedArmors((prev) => [newTestedArmor, ...prev]);
-
+  
     if (guessedArmor.name === selectedArmor.name) {
       setRevealed(true);
     }
-
+  
     setAttempts((prev) => prev + 1);
     setZoomLevel((prev) => Math.max(100, prev - 20));
-
+  
     setInput("");
     setShowDropdown(false);
     setHighlightedArmor(null);
@@ -73,7 +92,7 @@ export default function ArmorGamePage() {
     setHighlightedArmor(null);
   };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setInput(value);
 
@@ -103,24 +122,21 @@ export default function ArmorGamePage() {
       setShowDropdown(false);
     }
   };
-  
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       if (highlightedArmor) {
         handleGuess(highlightedArmor);
       }
     }
   };
-  
 
-  const handleSuggestionClick = (armor) => {
+  const handleSuggestionClick = (armor: Armor) => {
     if (!armor) return;
     setInput(armor.name);
     setHighlightedArmor(armor);
     setShowDropdown(false);
   };
-  
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center text-white p-6">
