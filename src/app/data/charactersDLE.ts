@@ -2095,7 +2095,7 @@ const characters = [
         peso: "49 kg",
         signo: "Aquário",
         localDeTreinamento: "Ilhas do Norte",
-        patente: "Cavaleira de Bronze",
+        patente: "Cavaleiro de Bronze",
         exercito: "Exército de Athena",
         saga: "Omega",
         imgSrc: "/dle/yuna.jpg",
