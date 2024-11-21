@@ -1,7 +1,7 @@
 // src/app/game/page.tsx
 
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef} from "react";
 import characters from "../../data/charactersDLE"; // Certifique-se de que os dados dos personagens estão aqui
 import React from "react";
 
@@ -55,6 +55,9 @@ export default function GamePage() {
     return defaultValue;
   };
 
+  // Adicionar referência para a seção das características
+  const characteristicsRef = useRef<HTMLDivElement | null>(null);
+
   const [selectedSuggestion, setSelectedSuggestion] = useState<Character | null>(null);
 
   const [showHint1, setShowHint1] = useState<boolean>(false);
@@ -66,6 +69,7 @@ export default function GamePage() {
       characters.length > 0 ? characters[Math.floor(Math.random() * characters.length)] : null
     )
   );
+  
   
   const [input, setInput] = useState<string>("");
   const [attempts, setAttempts] = useState<any[]>(() =>
@@ -232,11 +236,14 @@ export default function GamePage() {
     const comparison = {
       nome: guess.nome,
       idade: compareAge(guess.idade, selectedCharacter.idade),
-      altura: compareHeight(guess.altura, selectedCharacter.altura), // Atualizado para usar compareHeight
+      altura: compareHeight(guess.altura, selectedCharacter.altura),
       peso: compareWeight(guess.peso, selectedCharacter.peso),
       genero: guess.genero === selectedCharacter.genero ? "green" : "red",
       signo: guess.signo === selectedCharacter.signo ? "green" : "red",
-      localDeTreinamento: guess.localDeTreinamento === selectedCharacter.localDeTreinamento ? "green" : "red",
+      localDeTreinamento:
+        guess.localDeTreinamento === selectedCharacter.localDeTreinamento
+          ? "green"
+          : "red",
       patente: guess.patente === selectedCharacter.patente ? "green" : "red",
       exercito: guess.exercito === selectedCharacter.exercito ? "green" : "red",
       saga: guess.saga === selectedCharacter.saga ? "green" : "red",
@@ -247,6 +254,10 @@ export default function GamePage() {
     if (correct) {
       setWon(true);
       checkAchievements();
+      // Rolar automaticamente para a seção das características
+      setTimeout(() => {
+        characteristicsRef.current?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
     }
   
     setAttempts([comparison, ...attempts]);
@@ -510,7 +521,7 @@ export default function GamePage() {
         <>
           <form
             onSubmit={handleSubmit}
-            className="flex items-center space-x-4 mb-8" // Altera para "items-center" e "space-x-4" para alinhar horizontalmente
+            className="flex items-center space-x-4 mb-8"
           >
             <div className="relative w-full max-w-md">
               <input
@@ -532,7 +543,7 @@ export default function GamePage() {
                       <img
                         src={suggestion.imgSrc}
                         alt={suggestion.nome}
-                        className="w-10 h-10 rounded-lg mr-2" // Imagem quadrada levemente arredondada e maior
+                        className="w-10 h-10 rounded-lg mr-2" 
                       />
                       <span>{suggestion.nome}</span>
                     </li>
@@ -789,54 +800,6 @@ export default function GamePage() {
         </>
       ) : (
         <div className="text-center">
-          <h2 className="text-4xl text-green-400 mb-4">
-            {showAnswer ? "Você desistiu!" : "Parabéns! Você acertou!"}
-          </h2>
-          <p className="text-2xl mb-4">
-            O personagem era {selectedCharacter.nome}!
-          </p>
-
-          <div className="flex flex-col items-center">
-            <img
-              src={selectedCharacter.imgSrc}
-              alt={selectedCharacter.nome}
-              className="w-40 h-40 rounded-lg mb-2" // Imagem quadrada com bordas arredondadas e maior na tela de vitória
-            />
-            <div className="mt-4 bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
-              <p>
-                <strong>Nome:</strong> {selectedCharacter.nome}
-              </p>
-              <p>
-                <strong>Idade:</strong> {selectedCharacter.idade}
-              </p>
-              <p>
-                <strong>Altura:</strong> {selectedCharacter.altura}
-              </p>
-              <p>
-                <strong>Gênero:</strong> {selectedCharacter.genero}
-              </p>
-              <p>
-                <strong>Peso:</strong> {selectedCharacter.peso}
-              </p>
-              <p>
-                <strong>Signo:</strong> {selectedCharacter.signo}
-              </p>
-              <p>
-                <strong>Local de Treinamento:</strong>{" "}
-                {selectedCharacter.localDeTreinamento}
-              </p>
-              <p>
-                <strong>Patente:</strong> {selectedCharacter.patente}
-              </p>
-              <p>
-                <strong>Exército:</strong> {selectedCharacter.exercito}
-              </p>
-              <p>
-                <strong>Saga:</strong> {selectedCharacter.saga}
-              </p>
-            </div>
-          </div>
-
           {/* Mostrar todas as tentativas e o total */}
           <div className="mt-8 w-full max-w-5xl grid grid-cols-10 gap-2 bg-gray-800 p-4 rounded-lg shadow-lg">
             {/* Títulos das Colunas */}
@@ -1013,11 +976,132 @@ export default function GamePage() {
               </React.Fragment>
             ))}  
           </div>
+
+          <div ref={characteristicsRef} className="mt-8 bg-gray-800 text-gray-100 p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
+            <h2 className="text-4xl text-green-400 mb-4">
+              {showAnswer ? "Você desistiu!" : "Parabéns! Você acertou!"}
+            </h2>
+            <p className="text-2xl mb-4">
+              O personagem era:
+            </p>
+
+            <div className="flex flex-col items-center">
+              <img
+                src={selectedCharacter.imgSrc}
+                alt={selectedCharacter.nome}
+                className="w-auto h-40 rounded-lg mb-2" // Imagem quadrada com bordas arredondadas e maior na tela de vitória
+              />
+              <p className="text-2xl mb-4">
+                <strong>{selectedCharacter.nome}!</strong>
+              </p>
+              <p className="text-md font-semibold mb-4">
+                Número de tentativas: <span className="font-bold text-yellow-400">{attempts.length}</span>
+              </p>
+              <button
+                className="bg-red-600 text-white px-4 py-2 rounded-md font-bold text-sm hover:bg-red-700 transition duration-300 mb-4"
+                onClick={() => alert('Estatísticas ainda não implementadas.')}
+              >
+                📊 Estatísticas
+              </button>
+              <div className="mt-6">
+                <h3 className="text-lg font-bold mb-2 text-gray-100">Próximo modo:</h3>
+                  <div className="flex flex-col items-center space-y-4">
+                    {/* Detalhe do próximo modo */}
+                    <div
+                      className="flex items-center space-x-4 cursor-pointer group w-[380px]"
+                      onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"} // Redireciona para o modo "Silhouette"
+                    >
+                      <div className="w-22 h-22 bg-gray-800 rounded-full flex items-center justify-center border-4 border-gray-700 shadow-lg group-hover:border-yellow-500 transition duration-300">
+                        <img
+                          src="/dle_feed/silhouette_icon.png"
+                          alt="Advinhe as Silhuetas"
+                          className="w-20 h-20 object-contain"
+                        />
+                      </div>
+                      <div className="bg-gray-800 border-2 border-gray-700 p-4 rounded-lg shadow-lg flex-1 group-hover:border-yellow-500 transition duration-300 h-20 flex flex-col justify-center">
+                        <h3 className="text-xl font-bold text-yellow-400 group-hover:text-yellow-300">
+                          Advinhe as Silhuetas
+                        </h3>
+                        <p className="text-gray-300 text-sm">Adivinhe a armadura pela silhueta</p>
+                      </div>
+                    </div>
+
+                    <div className="gap-2 bg-gray-800 flex items-center justify-center ">
+                    {/* Botão 1 */}
+                    <div className="relative group ">
+                      <button
+                        className="w-16 h-16 bg-transparent focus:outline-none "
+                        onClick={handleRestart}
+                      >
+                        <img
+                          src="/dle_feed/classic_icon.png"
+                          alt="Modo Classic"
+                          className="border-2 border-yellow-500 rounded-full w-full h-full object-contain rounded-full transition-transform duration-300 group-hover:scale-110"
+                        />
+                      </button>
+                      <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Modo Classic
+                      </div>
+                    </div>
+
+                      {/* Botão 4 */}
+                      <div className="relative group">
+                        <button
+                          className="w-16 h-16 bg-transparent focus:outline-none"
+                          onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"}
+                        >
+                          <img
+                            src="/dle_feed/silhouette_icon.png"
+                            alt="Modo Silhouette"
+                            className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+                          />
+                        </button>
+                        <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          Silhuetas
+                        </div>
+                      </div>
+                    
+                      {/* Botão 2 */}
+                      <div className="relative group">
+                        <button
+                          className="w-16 h-16 bg-transparent focus:outline-none"
+                          onClick={() => window.location.href = "/SaintSeiyaDLE/quiz"}
+                        >
+                          <img
+                            src="/dle_feed/quiz_icon.png"
+                            alt="Modo Quiz"
+                            className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+                          />
+                        </button>
+                        <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          Quiz
+                        </div>
+                      </div>
+
+                      {/* Botão 3 */}
+                      <div className="relative group">
+                        <button
+                          className="w-16 h-16 bg-transparent focus:outline-none"
+                          onClick={() => window.location.href = "/SaintSeiyaDLE/affinity"}
+                        >
+                          <img
+                            src="/dle_feed/affinity_icon.png"
+                            alt="Modo Affinity"
+                            className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+                          />
+                        </button>
+                        <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          Teste de Afinidade
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
           {/* Adiciona o total de tentativas e o botão de reinício */}
           <div className="col-span-10 text-center">
-            <p className="mt-4 text-center text-lg text-white">
-              Total de Tentativas: {attempts.length}
-            </p>
             <button
               onClick={handleRestart}
               className="bg-yellow-500 text-gray-900 px-6 py-2 mt-6 rounded-lg font-bold text-xl hover:bg-yellow-600 transition-all duration-300"
@@ -1027,6 +1111,21 @@ export default function GamePage() {
           </div>
         </div>
       )}
+      {/* !won && (
+        <button
+          onClick={() => alert(`Personagem atual: ${selectedCharacter.nome}`)}
+          style={{
+            position: "fixed",
+            bottom: "10px",
+            right: "10px",
+            width: "20px",
+            height: "20px",
+            opacity: 0,
+            cursor: "pointer",
+          }}
+          aria-label="Mostrar Personagem Atual"
+        />
+      )*/}
     </div>
   );
 }

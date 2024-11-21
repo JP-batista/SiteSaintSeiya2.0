@@ -1,6 +1,8 @@
+// src/app/data/armors.ts
+
 export const armors = [
     {
-        name: "Armadura de Pégaso V1",
+        name: "Pégaso V1",
         category: "Bronze",
         description: "A primeira versão da lendária armadura de Pégaso.",
         knight: "Seiya de Pégaso",
@@ -9,7 +11,7 @@ export const armors = [
         revealedImg: "/silhuetas/pegaso_v1.png",
     },
     {
-        name: "Armadura de Pégaso V2",
+        name: "Pégaso V2",
         category: "Bronze",
         description: "A segunda versão da armadura de Pégaso, reformada após as lutas no Santuário.",
         knight: "Seiya de Pégaso",
@@ -18,7 +20,7 @@ export const armors = [
         revealedImg: "/silhuetas/pegaso_v2.png",
     },
     {
-        name: "Armadura de Pégaso V3",
+        name: "Pégaso V3",
         category: "Bronze",
         description: "A terceira versão da armadura de Pégaso, mais resistente e poderosa.",
         knight: "Seiya de Pégaso",
@@ -27,7 +29,7 @@ export const armors = [
         revealedImg: "/silhuetas/pegaso_v3.png",
     },
     {
-        name: "Armadura de Dragão V1",
+        name: "Dragão V1",
         category: "Bronze",
         description: "",
         knight: "",
@@ -36,7 +38,7 @@ export const armors = [
         revealedImg: "/silhuetas/dragao_v1.png",
     },
     {
-        name: "Armadura de Dragão V2",
+        name: "Dragão V2",
         category: "Bronze",
         description: "",
         knight: "",
@@ -45,7 +47,7 @@ export const armors = [
         revealedImg: "/silhuetas/dragao_v2.png",
     },
     {
-        name: "Armadura de Dragão V3",
+        name: "Dragão V3",
         category: "Bronze",
         description: "",
         knight: "",
@@ -57,7 +59,7 @@ export const armors = [
 
     
     {
-        name: "Armadura de Cisne V1",
+        name: "Cisne V1",
         category: "Bronze",
         description: "",
         knight: "",
@@ -66,7 +68,7 @@ export const armors = [
         revealedImg: "/silhuetas/cisne_v1.png",
     },
     {
-        name: "Armadura de Cisne V2",
+        name: "Cisne V2",
         category: "Bronze",
         description: "",
         knight: "",
@@ -75,7 +77,7 @@ export const armors = [
         revealedImg: "/silhuetas/cisne_v2.png",
     },
     {
-        name: "Armadura de Cisne V3",
+        name: "Cisne V3",
         category: "Bronze",
         description: "",
         knight: "",
@@ -85,7 +87,7 @@ export const armors = [
     },
 
     {
-        name: "Armadura de Andromeda V1",
+        name: "Andromeda V1",
         category: "Bronze",
         description: "",
         knight: "",
@@ -94,7 +96,7 @@ export const armors = [
         revealedImg: "/silhuetas/andromeda_v1.png",
     },
     {
-        name: "Armadura de Andromeda V2",
+        name: "Andromeda V2",
         category: "Bronze",
         description: "",
         knight: "",
@@ -103,7 +105,7 @@ export const armors = [
         revealedImg: "/silhuetas/andromeda_v2.png",
     },
     {
-        name: "Armadura de Andromeda V3",
+        name: "Andromeda V3",
         category: "Bronze",
         description: "",
         knight: "",
@@ -113,7 +115,7 @@ export const armors = [
     },
 
     {
-        name: "Armadura de Fenix V1",
+        name: "Fenix V1",
         category: "Bronze",
         description: "",
         knight: "",
@@ -122,7 +124,7 @@ export const armors = [
         revealedImg: "/silhuetas/fenix_v1.png",
     },
     {
-        name: "Armadura de Fenix V2",
+        name: "Fenix V2",
         category: "Bronze",
         description: "",
         knight: "",
@@ -131,7 +133,7 @@ export const armors = [
         revealedImg: "/silhuetas/fenix_v2.png",
     },
     {
-        name: "Armadura de Fenix V3",
+        name: "Fenix V3",
         category: "Bronze",
         description: "",
         knight: "",
@@ -142,7 +144,7 @@ export const armors = [
 
     
     {
-        name: "Armadura Divina de Pégaso",
+        name: "Pégaso Divina",
         category: "Divina",
         description: "",
         knight: "",
@@ -151,7 +153,7 @@ export const armors = [
         revealedImg: "/silhuetas/pegaso_divina.png",
     },
     {
-        name: "Armadura Divina de Dragão",
+        name: "Dragão Divina",
         category: "Divina",
         description: "",
         knight: "",
@@ -160,7 +162,7 @@ export const armors = [
         revealedImg: "/silhuetas/dragao_divina.png",
     },
     {
-        name: "Armadura Divina de Cisne",
+        name: " Divina",
         category: "Divina",
         description: "",
         knight: "",
@@ -169,7 +171,7 @@ export const armors = [
         revealedImg: "/silhuetas/cisne_divina.png",
     },
     {
-        name: "Armadura Divina de Andromeda",
+        name: "Andromeda Divina",
         category: "Divina",
         description: "",
         knight: "",
@@ -178,7 +180,7 @@ export const armors = [
         revealedImg: "/silhuetas/andromeda_divina.png",
     },
     {
-        name: "Armadura Divina de Fenix",
+        name: "Fenix Divina",
         category: "Divina",
         description: "",
         knight: "",
@@ -189,7 +191,7 @@ export const armors = [
 
     
     {
-        name: "Armadura de Aries",
+        name: "Aries",
         category: "Ouro",
         description: "",
         knight: "",
@@ -198,7 +200,7 @@ export const armors = [
         revealedImg: "/silhuetas/aries.png",
     },
     {
-        name: "Armadura de Touro",
+        name:"Touro",
         category: "Ouro",
         description: "",
         knight: "",
@@ -207,7 +209,7 @@ export const armors = [
         revealedImg: "/silhuetas/touro.png",
     },
     {
-        name: "Armadura de Gemeos",
+        name: "Gemeos",
         category: "Ouro",
         description: "",
         knight: "",
@@ -216,7 +218,7 @@ export const armors = [
         revealedImg: "/silhuetas/gemeos.png",
     },
     {
-        name: "Armadura de Cancer",
+        name: "Cancer",
         category: "Ouro",
         description: "",
         knight: "",
@@ -225,7 +227,7 @@ export const armors = [
         revealedImg: "/silhuetas/cancer.png",
     },
     {
-        name: "Armadura de Leão",
+        name: "Leão",
         category: "Ouro",
         description: "",
         knight: "",
@@ -234,7 +236,7 @@ export const armors = [
         revealedImg: "/silhuetas/leao.png",
     },
     {
-        name: "Armadura de Virgem",
+        name: "Virgem",
         category: "Ouro",
         description: "",
         knight: "",
@@ -243,7 +245,7 @@ export const armors = [
         revealedImg: "/silhuetas/virgem.png",
     },
     {
-        name: "Armadura de Libra",
+        name: "Libra",
         category: "Ouro",
         description: "",
         knight: "",
@@ -252,7 +254,7 @@ export const armors = [
         revealedImg: "/silhuetas/libra.png",
     },
     {
-        name: "Armadura de Escorpião",
+        name: "Escorpião",
         category: "Ouro",
         description: "",
         knight: "",
@@ -261,7 +263,7 @@ export const armors = [
         revealedImg: "/silhuetas/escorpiao.png",
     },
     {
-        name: "Armadura de Sagitario",
+        name: "Sagitario",
         category: "Ouro",
         description: "",
         knight: "",
@@ -270,7 +272,7 @@ export const armors = [
         revealedImg: "/silhuetas/sagitario.png",
     },
     {
-        name: "Armadura de Capricornio",
+        name: "Capricornio",
         category: "Ouro",
         description: "",
         knight: "",
@@ -279,7 +281,7 @@ export const armors = [
         revealedImg: "/silhuetas/capricornio.png",
     },
     {
-        name: "Armadura de Aquario",
+        name: "Aquario",
         category: "Ouro",
         description: "",
         knight: "",
@@ -288,7 +290,7 @@ export const armors = [
         revealedImg: "/silhuetas/aquario.png",
     },
     {
-        name: "Armadura de Peixes",
+        name: "Peixes",
         category: "Ouro",
         description: "",
         knight: "",
