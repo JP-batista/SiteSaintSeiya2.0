@@ -2,6 +2,11 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { armors } from "../../data/armors";
+import {
+  saveToLocalStorage,
+  loadFromLocalStorage,
+  removeFromLocalStorage,
+} from "../../utils/localStorageUtils";
 
 type Armor = {
   name: string;
@@ -23,19 +28,25 @@ export default function SilhuetaGamePage() {
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
   const [zoomLevel, setZoomLevel] = useState<number>(3);
   const [showOriginalZoom, setShowOriginalZoom] = useState<boolean>(false);
-  const [selectedArmor, setSelectedArmor] = useState<Armor | null>(null);
-  const [attempts, setAttempts] = useState<string[]>([]);
+
+  const [selectedArmor, setSelectedArmor] = useState<Armor | null>(() =>
+    loadFromLocalStorage<Armor>("selectedArmor", null)
+  );
+  const [attempts, setAttempts] = useState<string[]>(() =>
+    loadFromLocalStorage<string[]>("attempts", [])
+  );
   const [testedArmors, setTestedArmors] = useState<
     Array<{ name: string; category: string; revealedImg: string; isCorrect: boolean }>
-  >([]);
-  const [won, setWon] = useState<boolean>(false);
-  const [usedArmors, setUsedArmors] = useState<Armor[]>([]);
+  >(() =>
+    loadFromLocalStorage<
+      Array<{ name: string; category: string; revealedImg: string; isCorrect: boolean }>
+    >("testedArmors", [])
+  );
+  const [won, setWon] = useState<boolean>(() => loadFromLocalStorage<boolean>("won", false));
+  const [usedArmors, setUsedArmors] = useState<Armor[]>(() =>
+    loadFromLocalStorage<Armor[]>("usedArmors", [])
+  );
   const [showAnswer, setShowAnswer] = useState<boolean>(false);
-
-  const handleGiveUp = () => {
-    setWon(true); // Exibe o resultado
-    setShowAnswer(true); // Sinaliza que foi uma desistência
-  };
 
 
   
@@ -45,10 +56,10 @@ export default function SilhuetaGamePage() {
         (armor) => !usedArmors.some((used) => used.name === armor.name)
       );
 
-      // Reset usedArmors if all armors have been used
       if (availableArmors.length === 0) {
         availableArmors = armors;
         setUsedArmors([]);
+        removeFromLocalStorage("usedArmors");
       }
 
       const randomArmor =
@@ -57,15 +68,16 @@ export default function SilhuetaGamePage() {
       setUsedArmors([...usedArmors, randomArmor]);
     };
 
-    initializeGame();
+    if (!selectedArmor) {
+      initializeGame();
+    }
   }, []);
 
   useEffect(() => {
-    const maxZoomLevel = 3; // Nível inicial do zoom
-    const minZoomLevel = 1; // Nível mínimo do zoom
-    const maxAttempts = 20; // Número de tentativas para alcançar o zoom mínimo
+    const maxZoomLevel = 3;
+    const minZoomLevel = 1;
+    const maxAttempts = 20;
 
-    // Calcula o zoom de forma mais gradual
     const newZoomLevel = Math.max(
       minZoomLevel,
       maxZoomLevel - (maxZoomLevel - minZoomLevel) * (attempts.length / maxAttempts)
@@ -74,6 +86,14 @@ export default function SilhuetaGamePage() {
     setZoomLevel(newZoomLevel);
   }, [attempts]);
 
+  useEffect(() => {
+    saveToLocalStorage("selectedArmor", selectedArmor);
+    saveToLocalStorage("attempts", attempts);
+    saveToLocalStorage("testedArmors", testedArmors);
+    saveToLocalStorage("usedArmors", usedArmors);
+    saveToLocalStorage("won", won);
+  }, [selectedArmor, attempts, testedArmors, usedArmors, won]);
+
   const getFilteredSuggestions = (value: string) => {
     const normalizedValue = normalizeString(value);
     return armors.filter((armor) => {
@@ -81,11 +101,18 @@ export default function SilhuetaGamePage() {
       return (
         normalizedArmorName.startsWith(normalizedValue) &&
         !testedArmors.some(
-          (tested) =>
-            normalizeString(tested.name) === normalizedArmorName
+          (tested) => normalizeString(tested.name) === normalizedArmorName
         )
       );
     });
+  };
+  
+
+  const normalizeString = (str: string): string => {
+    return str
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
   };
   
 
@@ -111,13 +138,7 @@ export default function SilhuetaGamePage() {
     setShowDropdown(false);
   };
 
-  const normalizeString = (str: string): string => {
-    return str
-      .normalize("NFD") // Normaliza para decompor acentos
-      .replace(/[\u0300-\u036f]/g, "") // Remove os diacríticos
-      .toLowerCase(); // Converte para minúsculas
-  };
-  
+
   
   
 
@@ -139,7 +160,6 @@ export default function SilhuetaGamePage() {
     e.preventDefault();
 
     if (!input.trim() || !selectedSuggestion) {
-      alert("Selecione ou digite um nome de armadura válido!");
       return;
     }
 
@@ -169,7 +189,7 @@ export default function SilhuetaGamePage() {
     const correct = normalizeString(guess.name) === normalizeString(selectedArmor.name);
 
     if (correct) {
-      setShowAnswer(false); // Reseta o estado para garantir que "Você acertou" seja exibido
+      setShowAnswer(false);
       setWon(true);
       setTimeout(() => {
         characteristicsRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -197,10 +217,10 @@ export default function SilhuetaGamePage() {
       (armor) => !usedArmors.some((used) => used.name === armor.name)
     );
 
-    // Reset usedArmors if all armors have been used
     if (availableArmors.length === 0) {
       availableArmors = armors;
       setUsedArmors([]);
+      removeFromLocalStorage("usedArmors");
     }
 
     const randomArmor =
@@ -215,10 +235,100 @@ export default function SilhuetaGamePage() {
     setInput("");
     setShowDropdown(false);
     setSelectedSuggestion(null);
+    removeFromLocalStorage("selectedArmor");
+    removeFromLocalStorage("attempts");
+    removeFromLocalStorage("testedArmors");
+    removeFromLocalStorage("won");
+  };
+
+  const handleGiveUp = () => {
+    setWon(true);
+    setShowAnswer(true);
   };
 
   return (
     <div className="min-h-screen text-white flex flex-col items-center justify-center p-6">
+
+      <div className="flex justify-center items-center mb-2">
+        <img
+          src="/dle_feed/logo_dle.png"
+          alt="Logo Os Cavaleiros do Zodíaco"
+          className="w-auto h-52 hover:scale-105 transition-transform duration-500 ease-in-out"
+        />
+      </div>
+
+      <div className="mb-4">
+        <div className="gap-4 flex items-center justify-center ">
+          {/* Botão 1 */}
+          <div className="relative group ">
+            <button
+              className="w-16 h-16 bg-transparent focus:outline-none "
+              onClick={handleRestart}
+            >
+              <img
+                src="/dle_feed/classic_icon.png"
+                alt="Modo Classic"
+                className="border-2 border-yellow-500 rounded-full w-full h-full object-contain rounded-full transition-transform duration-300 group-hover:scale-110"
+              />
+            </button>
+            <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Modo Classic
+            </div>
+          </div>
+
+          {/* Botão 4 */}
+          <div className="relative group">
+            <button
+              className="w-16 h-16 bg-transparent focus:outline-none"
+              onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"}
+            >
+              <img
+                src="/dle_feed/silhouette_icon.png"
+                alt="Modo Silhouette"
+                className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+              />
+            </button>
+            <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Silhuetas
+            </div>
+          </div>
+        
+          {/* Botão 2 */}
+          <div className="relative group">
+            <button
+              className="w-16 h-16 bg-transparent focus:outline-none"
+              onClick={() => window.location.href = "/SaintSeiyaDLE/quiz"}
+            >
+              <img
+                src="/dle_feed/quiz_icon.png"
+                alt="Modo Quiz"
+                className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+              />
+            </button>
+            <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Quiz
+            </div>
+          </div>
+
+          {/* Botão 3 */}
+          <div className="relative group">
+            <button
+              className="w-16 h-16 bg-transparent focus:outline-none"
+              onClick={() => window.location.href = "/SaintSeiyaDLE/affinity"}
+            >
+              <img
+                src="/dle_feed/affinity_icon.png"
+                alt="Modo Affinity"
+                className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+              />
+            </button>
+            <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Teste de Afinidade
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="relative bg-gray-800 text-white p-4 rounded-2xl shadow-lg w-[360px] mb-8 ">
         <h3 className="text-xl font-bold text-center mb-4 text-yellow-400 tracking-wide">
             De que Armadura é esta silhueta?
@@ -578,7 +688,7 @@ export default function SilhuetaGamePage() {
             Jogar Novamente
         </button>
       )}
-    { /*!won && selectedArmor && (
+    { !won && selectedArmor && (
         <button
             onClick={() => alert(`Armadurda atual: ${selectedArmor.name}`)}
             style={{
@@ -592,7 +702,7 @@ export default function SilhuetaGamePage() {
             }}
             aria-label="Mostrar Personagem Atual"
         />
-      )*/}
+      )}
     </div>
   );
 }

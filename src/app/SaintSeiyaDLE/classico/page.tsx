@@ -224,7 +224,6 @@ export default function GamePage() {
     e.preventDefault();
   
     if (!input.trim() || !selectedSuggestion) {
-      alert("Selecione ou digite um personagem válido!");
       return;
     }
   
@@ -469,13 +468,113 @@ export default function GamePage() {
           <p className="text-sm">{recentAchievement}</p>
         </div>
       )}
-      <div className="flex justify-center items-center mb-8">
+      <div className="flex justify-center items-center mb-2">
         <img
           src="/dle_feed/logo_dle.png"
           alt="Logo Os Cavaleiros do Zodíaco"
           className="w-auto h-52 hover:scale-105 transition-transform duration-500 ease-in-out"
         />
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className="mb-4">
+        <div className="gap-4 flex items-center justify-center ">
+          {/* Botão 1 */}
+          <div className="relative group ">
+            <button
+              className="w-16 h-16 bg-transparent focus:outline-none "
+              onClick={handleRestart}
+            >
+              <img
+                src="/dle_feed/classic_icon.png"
+                alt="Modo Classic"
+                className="border-2 border-yellow-500 rounded-full w-full h-full object-contain rounded-full transition-transform duration-300 group-hover:scale-110"
+              />
+            </button>
+            <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Modo Classic
+            </div>
+          </div>
+
+          {/* Botão 4 */}
+          <div className="relative group">
+            <button
+              className="w-16 h-16 bg-transparent focus:outline-none"
+              onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"}
+            >
+              <img
+                src="/dle_feed/silhouette_icon.png"
+                alt="Modo Silhouette"
+                className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+              />
+            </button>
+            <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Silhuetas
+            </div>
+          </div>
+        
+          {/* Botão 2 */}
+          <div className="relative group">
+            <button
+              className="w-16 h-16 bg-transparent focus:outline-none"
+              onClick={() => window.location.href = "/SaintSeiyaDLE/quiz"}
+            >
+              <img
+                src="/dle_feed/quiz_icon.png"
+                alt="Modo Quiz"
+                className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+              />
+            </button>
+            <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Quiz
+            </div>
+          </div>
+
+          {/* Botão 3 */}
+          <div className="relative group">
+            <button
+              className="w-16 h-16 bg-transparent focus:outline-none"
+              onClick={() => window.location.href = "/SaintSeiyaDLE/affinity"}
+            >
+              <img
+                src="/dle_feed/affinity_icon.png"
+                alt="Modo Affinity"
+                className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+              />
+            </button>
+            <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Teste de Afinidade
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <div className="w-full max-w-md bg-gray-800 text-white rounded-lg shadow-lg p-4 mb-6">
         <h3 className="text-xl font-bold text-center mb-4 text-yellow-400 tracking-wide">
@@ -760,59 +859,161 @@ export default function GamePage() {
               </React.Fragment>
             ))}
           </div>
-          <div className="mt-6 bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold mb-4 text-center text-yellow-400">Indicadores</h3>
-            <div className="flex items-center justify-around space-x-4">
-              
-              {/* Indicador - Correto */}
-              <div className="flex flex-col items-center">
-                <div className="w-10 h-10 flex items-center justify-center rounded-lg">
-                  <img
-                    src="/dle_feed/certo.png"
-                    alt="Correto"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <span className="text-sm text-white mt-2">Correto</span>
-              </div>
+          
 
-              {/* Indicador - Incorreto */}
-              <div className="flex flex-col items-center">
-                <div className="w-10 h-10 flex items-center justify-center rounded-lg">
-                  <img
-                    src="/dle_feed/errado.png"
-                    alt="Incorreto"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <span className="text-sm text-white mt-2">Incorreto</span>
-              </div>
 
-              {/* Indicador - Mais Alto */}
-              <div className="flex flex-col items-center">
-                <div className="w-10 h-10 flex items-center justify-center rounded-lg">
-                  <img
-                    src="/dle_feed/mais.png"
-                    alt="Mais Alto"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <span className="text-sm text-white mt-2">Mais alto</span>
-              </div>
+          <div ref={characteristicsRef} className="mt-8 bg-gray-800 text-gray-100 p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
+              <div className="flex flex-col items-center space-y-4">
 
-              {/* Indicador - Mais Baixo */}
-              <div className="flex flex-col items-center">
-                <div className="w-10 h-10 flex items-center justify-center rounded-lg">
-                  <img
-                    src="/dle_feed/menos.png"
-                    alt="Mais Baixo"
-                    className="w-full h-full object-contain"
-                  />
+                <h3 className="text-xl font-bold mb-4 text-center text-yellow-400">Indicadores</h3>
+                <div className="flex items-center justify-around space-x-4">
+                  
+                  {/* Indicador - Correto */}
+                  <div className="flex flex-col items-center">
+                    <div className="w-10 h-10 flex items-center justify-center rounded-lg">
+                      <img
+                        src="/dle_feed/certo.png"
+                        alt="Correto"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <span className="text-sm text-white mt-2">Correto</span>
+                  </div>
+
+                  {/* Indicador - Incorreto */}
+                  <div className="flex flex-col items-center">
+                    <div className="w-10 h-10 flex items-center justify-center rounded-lg">
+                      <img
+                        src="/dle_feed/errado.png"
+                        alt="Incorreto"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <span className="text-sm text-white mt-2">Incorreto</span>
+                  </div>
+
+                  {/* Indicador - Mais Alto */}
+                  <div className="flex flex-col items-center">
+                    <div className="w-10 h-10 flex items-center justify-center rounded-lg">
+                      <img
+                        src="/dle_feed/mais.png"
+                        alt="Mais Alto"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <span className="text-sm text-white mt-2">Mais alto</span>
+                  </div>
+
+                  {/* Indicador - Mais Baixo */}
+                  <div className="flex flex-col items-center">
+                    <div className="w-10 h-10 flex items-center justify-center rounded-lg">
+                      <img
+                        src="/dle_feed/menos.png"
+                        alt="Mais Baixo"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <span className="text-sm text-white mt-2">Mais baixo</span>
+                  </div>
                 </div>
-                <span className="text-sm text-white mt-2">Mais baixo</span>
+
+
+                <h3 className="text-lg font-bold mb-2 text-gray-100">Próximo modo:</h3>
+
+                <div
+                  className="flex items-center space-x-4 cursor-pointer group w-[380px]"
+                  onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"} // Redireciona para o modo "Silhouette"
+                >
+                  <div className="w-22 h-22 bg-gray-800 rounded-full flex items-center justify-center border-4 border-gray-700 shadow-lg group-hover:border-yellow-500 transition duration-300">
+                    <img
+                      src="/dle_feed/silhouette_icon.png"
+                      alt="Advinhe as Silhuetas"
+                      className="w-20 h-20 object-contain"
+                    />
+                  </div>
+                  <div className="bg-gray-800 border-2 border-gray-700 p-4 rounded-lg shadow-lg flex-1 group-hover:border-yellow-500 transition duration-300 h-20 flex flex-col justify-center">
+                    <h3 className="text-xl font-bold text-yellow-400 group-hover:text-yellow-300">
+                      Advinhe as Silhuetas
+                    </h3>
+                    <p className="text-gray-300 text-sm">Adivinhe a armadura pela silhueta</p>
+                  </div>
+                </div>
+
+                <div className="gap-2 bg-gray-800 flex items-center justify-center ">
+                {/* Botão 1 */}
+                <div className="relative group ">
+                  <button
+                    className="w-16 h-16 bg-transparent focus:outline-none "
+                    onClick={handleRestart}
+                  >
+                    <img
+                      src="/dle_feed/classic_icon.png"
+                      alt="Modo Classic"
+                      className="border-2 border-yellow-500 rounded-full w-full h-full object-contain rounded-full transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </button>
+                  <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Modo Classic
+                  </div>
+                </div>
+
+                  {/* Botão 4 */}
+                  <div className="relative group">
+                    <button
+                      className="w-16 h-16 bg-transparent focus:outline-none"
+                      onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"}
+                    >
+                      <img
+                        src="/dle_feed/silhouette_icon.png"
+                        alt="Modo Silhouette"
+                        className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </button>
+                    <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Silhuetas
+                    </div>
+                  </div>
+                
+                  {/* Botão 2 */}
+                  <div className="relative group">
+                    <button
+                      className="w-16 h-16 bg-transparent focus:outline-none"
+                      onClick={() => window.location.href = "/SaintSeiyaDLE/quiz"}
+                    >
+                      <img
+                        src="/dle_feed/quiz_icon.png"
+                        alt="Modo Quiz"
+                        className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </button>
+                    <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Quiz
+                    </div>
+                  </div>
+
+                  {/* Botão 3 */}
+                  <div className="relative group">
+                    <button
+                      className="w-16 h-16 bg-transparent focus:outline-none"
+                      onClick={() => window.location.href = "/SaintSeiyaDLE/affinity"}
+                    >
+                      <img
+                        src="/dle_feed/affinity_icon.png"
+                        alt="Modo Affinity"
+                        className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </button>
+                    <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Teste de Afinidade
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+
+
+
+
           
           {/* Botão de desistência no final da página */}
           <button
@@ -1136,7 +1337,7 @@ export default function GamePage() {
           </div>
         </div>
       )}
-      {/* !won && (
+      { !won && (
         <button
           onClick={() => alert(`Personagem atual: ${selectedCharacter.nome}`)}
           style={{
@@ -1150,7 +1351,7 @@ export default function GamePage() {
           }}
           aria-label="Mostrar Personagem Atual"
         />
-      )*/}
+      )}
     </div>
   );
 }

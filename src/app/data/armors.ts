@@ -162,7 +162,7 @@ export const armors = [
         revealedImg: "/silhuetas/dragao_divina.png",
     },
     {
-        name: " Divina",
+        name: "Cisne Divina",
         category: "Divina",
         description: "",
         knight: "",
