@@ -29,8 +29,8 @@ export default function SilhuetaGamePage() {
   const [zoomLevel, setZoomLevel] = useState<number>(3);
   const [showOriginalZoom, setShowOriginalZoom] = useState<boolean>(false);
 
-  const [selectedArmor, setSelectedArmor] = useState<Armor | null>(() =>
-    loadFromLocalStorage<Armor>("selectedArmor", null)
+  const [selectedArmor, setSelectedArmor] = useState<Armor | null>(
+    () => loadFromLocalStorage<Armor | null>("selectedArmor", null)
   );
   const [attempts, setAttempts] = useState<string[]>(() =>
     loadFromLocalStorage<string[]>("attempts", [])
