@@ -55,6 +55,7 @@ export default function RootLayout({
           pathname !== '/SaintSeiyaDLE/classico' &&   
           pathname !== '/SaintSeiyaDLE/affinity' && 
           pathname !== '/SaintSeiyaDLE/teste' &&   
+          pathname !== '/OsCavaleirosDoZodiacoDLE/silhueta' &&   
           <Header />
         }
         <div className="container mx-auto p-4">

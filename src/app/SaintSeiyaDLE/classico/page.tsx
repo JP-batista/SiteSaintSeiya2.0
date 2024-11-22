@@ -514,7 +514,7 @@ export default function GamePage() {
           <div className="relative group">
             <button
               className="w-16 h-16 bg-transparent focus:outline-none"
-              onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"}
+              onClick={() => window.location.href = "/OsCavaleirosDoZodiacoDLE/silhueta"}
             >
               <img
                 src="/dle_feed/silhouette_icon.png"
@@ -922,7 +922,7 @@ export default function GamePage() {
 
                 <div
                   className="flex items-center space-x-4 cursor-pointer group w-[380px]"
-                  onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"} // Redireciona para o modo "Silhouette"
+                  onClick={() => window.location.href = "/OsCavaleirosDoZodiacoDLE/silhueta"} // Redireciona para o modo "Silhouette"
                 >
                   <div className="w-22 h-22 bg-gray-800 rounded-full flex items-center justify-center border-4 border-gray-700 shadow-lg group-hover:border-yellow-500 transition duration-300">
                     <img
@@ -961,7 +961,7 @@ export default function GamePage() {
                   <div className="relative group">
                     <button
                       className="w-16 h-16 bg-transparent focus:outline-none"
-                      onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"}
+                      onClick={() => window.location.href = "/OsCavaleirosDoZodiacoDLE/silhueta"}
                     >
                       <img
                         src="/dle_feed/silhouette_icon.png"
@@ -1235,7 +1235,7 @@ export default function GamePage() {
                     {/* Detalhe do próximo modo */}
                     <div
                       className="flex items-center space-x-4 cursor-pointer group w-[380px]"
-                      onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"} // Redireciona para o modo "Silhouette"
+                      onClick={() => window.location.href = "/OsCavaleirosDoZodiacoDLE/silhueta"} // Redireciona para o modo "Silhouette"
                     >
                       <div className="w-22 h-22 bg-gray-800 rounded-full flex items-center justify-center border-4 border-gray-700 shadow-lg group-hover:border-yellow-500 transition duration-300">
                         <img
@@ -1274,7 +1274,7 @@ export default function GamePage() {
                       <div className="relative group">
                         <button
                           className="w-16 h-16 bg-transparent focus:outline-none"
-                          onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"}
+                          onClick={() => window.location.href = "/OsCavaleirosDoZodiacoDLE/silhueta"}
                         >
                           <img
                             src="/dle_feed/silhouette_icon.png"
