@@ -14,28 +14,6 @@ type Armor = {
 };
 
 export default function SilhuetaGamePage() {
-  const saveToLocalStorage = (key: string, value: any) => {
-    if (typeof window !== "undefined") {
-      try {
-        localStorage.setItem(key, JSON.stringify(value));
-      } catch (error) {
-        console.error(`Erro ao salvar no localStorage: ${key}`, error);
-      }
-    }
-  };
-
-  const loadFromLocalStorage = (key: string, defaultValue: any) => {
-    if (typeof window !== "undefined") {
-      try {
-        const saved = localStorage.getItem(key);
-        return saved ? JSON.parse(saved) : defaultValue;
-      } catch {
-        return defaultValue;
-      }
-    }
-    return defaultValue;
-  };
-
   // Adicionar referência para a seção das características
   const characteristicsRef = useRef<HTMLDivElement | null>(null);
 
@@ -46,82 +24,53 @@ export default function SilhuetaGamePage() {
   const [zoomLevel, setZoomLevel] = useState<number>(3);
   const [showOriginalZoom, setShowOriginalZoom] = useState<boolean>(false);
   const [selectedArmor, setSelectedArmor] = useState<Armor | null>(null);
-  const [attempts, setAttempts] = useState<any[]>(() =>
-    loadFromLocalStorage("attempts", [])
-  );
+  const [attempts, setAttempts] = useState<string[]>([]);
   const [testedArmors, setTestedArmors] = useState<
     Array<{ name: string; category: string; revealedImg: string; isCorrect: boolean }>
-  >(() => loadFromLocalStorage("testedArmors", []));
-  const [won, setWon] = useState<boolean>(() =>
-    loadFromLocalStorage("won", false)
-  );
+  >([]);
+  const [won, setWon] = useState<boolean>(false);
+  const [usedArmors, setUsedArmors] = useState<Armor[]>([]);
+  const [showAnswer, setShowAnswer] = useState<boolean>(false);
 
   const handleGiveUp = () => {
     setWon(true); // Exibe o resultado
     setShowAnswer(true); // Sinaliza que foi uma desistência
   };
 
-  const [usedArmors, setUsedArmors] = useState<Armor[]>(() =>
-    loadFromLocalStorage("usedArmors", [])
-  );
-  
-  const [showAnswer, setShowAnswer] = useState<boolean>(false);
 
   
   useEffect(() => {
-    const savedArmor = loadFromLocalStorage("selectedArmor", null);
-    const savedAttempts = loadFromLocalStorage("attempts", []);
-    const savedTestedArmors = loadFromLocalStorage("testedArmors", []);
-    const savedWon = loadFromLocalStorage("won", false);
-    const savedUsedArmors: Armor[] = loadFromLocalStorage("usedArmors", []); // Adicionado o tipo aqui
-  
-    if (savedArmor) {
-      setSelectedArmor(savedArmor);
-    } else {
+    const initializeGame = () => {
       let availableArmors = armors.filter(
-        (armor) => !savedUsedArmors.some((used) => used.name === armor.name) // Sem erro agora
+        (armor) => !usedArmors.some((used) => used.name === armor.name)
       );
-  
+
       // Reset usedArmors if all armors have been used
       if (availableArmors.length === 0) {
         availableArmors = armors;
-        saveToLocalStorage("usedArmors", []);
+        setUsedArmors([]);
       }
-  
+
       const randomArmor =
         availableArmors[Math.floor(Math.random() * availableArmors.length)];
       setSelectedArmor(randomArmor);
-      setUsedArmors([...savedUsedArmors, randomArmor]);
-      saveToLocalStorage("selectedArmor", randomArmor);
-      saveToLocalStorage("usedArmors", [...savedUsedArmors, randomArmor]);
-    }
-  
-    setAttempts(savedAttempts);
-    setTestedArmors(savedTestedArmors);
-    setWon(savedWon);
-  }, []);
-  
+      setUsedArmors([...usedArmors, randomArmor]);
+    };
 
-  useEffect(() => {
-    if (selectedArmor) {
-      saveToLocalStorage("selectedArmor", selectedArmor);
-    }
-    saveToLocalStorage("attempts", attempts);
-    saveToLocalStorage("testedArmors", testedArmors);
-    saveToLocalStorage("won", won);
-  }, [selectedArmor, attempts, testedArmors, won]);
+    initializeGame();
+  }, []);
 
   useEffect(() => {
     const maxZoomLevel = 3; // Nível inicial do zoom
     const minZoomLevel = 1; // Nível mínimo do zoom
     const maxAttempts = 20; // Número de tentativas para alcançar o zoom mínimo
-  
+
     // Calcula o zoom de forma mais gradual
     const newZoomLevel = Math.max(
       minZoomLevel,
       maxZoomLevel - (maxZoomLevel - minZoomLevel) * (attempts.length / maxAttempts)
     );
-  
+
     setZoomLevel(newZoomLevel);
   }, [attempts]);
 
@@ -143,7 +92,7 @@ export default function SilhuetaGamePage() {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setInput(value);
-  
+
     if (value) {
       const filteredSuggestions = getFilteredSuggestions(value);
       setSuggestions(filteredSuggestions);
@@ -188,26 +137,26 @@ export default function SilhuetaGamePage() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-  
+
     if (!input.trim() || !selectedSuggestion) {
       alert("Selecione ou digite um nome de armadura válido!");
       return;
     }
-  
+
     const guess = armors.find(
       (armor) => normalizeString(armor.name) === normalizeString(selectedSuggestion.name)
     );
-  
+
     if (!guess) {
       alert("Armadura não encontrada!");
       return;
     }
-  
+
     if (!selectedArmor) {
       alert("Erro interno: Armadura selecionada inválida.");
       return;
     }
-  
+
     if (
       testedArmors.some(
         (tested) => normalizeString(tested.name) === normalizeString(selectedSuggestion.name)
@@ -216,9 +165,9 @@ export default function SilhuetaGamePage() {
       alert("Você já tentou essa armadura!");
       return;
     }
-  
+
     const correct = normalizeString(guess.name) === normalizeString(selectedArmor.name);
-  
+
     if (correct) {
       setShowAnswer(false); // Reseta o estado para garantir que "Você acertou" seja exibido
       setWon(true);
@@ -226,14 +175,14 @@ export default function SilhuetaGamePage() {
         characteristicsRef.current?.scrollIntoView({ behavior: "smooth" });
       }, 300);
     }
-  
+
     const newTestedArmor = {
       name: guess.name,
       category: guess.category,
       revealedImg: guess.revealedImg,
       isCorrect: correct,
     };
-  
+
     setTestedArmors([newTestedArmor, ...testedArmors]);
     setAttempts([guess.name, ...attempts]);
     setInput("");
@@ -247,21 +196,18 @@ export default function SilhuetaGamePage() {
     let availableArmors = armors.filter(
       (armor) => !usedArmors.some((used) => used.name === armor.name)
     );
-  
+
     // Reset usedArmors if all armors have been used
     if (availableArmors.length === 0) {
       availableArmors = armors;
       setUsedArmors([]);
-      saveToLocalStorage("usedArmors", []);
     }
-  
+
     const randomArmor =
       availableArmors[Math.floor(Math.random() * availableArmors.length)];
     setSelectedArmor(randomArmor);
     setUsedArmors([...usedArmors, randomArmor]);
-    saveToLocalStorage("selectedArmor", randomArmor);
-    saveToLocalStorage("usedArmors", [...usedArmors, randomArmor]);
-  
+
     setAttempts([]);
     setTestedArmors([]);
     setWon(false);
@@ -269,10 +215,6 @@ export default function SilhuetaGamePage() {
     setInput("");
     setShowDropdown(false);
     setSelectedSuggestion(null);
-  
-    saveToLocalStorage("attempts", []);
-    saveToLocalStorage("testedArmors", []);
-    saveToLocalStorage("won", false);
   };
 
   return (

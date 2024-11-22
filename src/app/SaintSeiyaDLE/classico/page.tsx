@@ -41,6 +41,7 @@ export default function GamePage() {
       }
     }
   };
+  
 
   // Função auxiliar para carregar do localStorage
   const loadFromLocalStorage = (key: string, defaultValue: any) => {
@@ -48,7 +49,8 @@ export default function GamePage() {
       try {
         const saved = localStorage.getItem(key);
         return saved ? JSON.parse(saved) : defaultValue;
-      } catch {
+      } catch (error) {
+        console.error(`Erro ao carregar ${key} do localStorage`, error);
         return defaultValue;
       }
     }
@@ -94,6 +96,20 @@ export default function GamePage() {
       setSelectedCharacter(savedCharacter); // Garante que o personagem correto seja mantido
     }
   }, []);
+
+  useEffect(() => {
+    const savedCharacter = loadFromLocalStorage("selectedCharacter", null);
+  
+    if (!savedCharacter && characters.length > 0) {
+      const randomCharacter =
+        characters[Math.floor(Math.random() * characters.length)];
+      setSelectedCharacter(randomCharacter);
+      saveToLocalStorage("selectedCharacter", randomCharacter);
+    } else if (savedCharacter) {
+      setSelectedCharacter(savedCharacter);
+    }
+  }, []);
+  
 
   const [showAnswer, setShowAnswer] = useState<boolean>(false);
   const [suggestions, setSuggestions] = useState<Character[]>([]);
@@ -383,8 +399,7 @@ export default function GamePage() {
   // Função para reiniciar o jogo
   const handleRestart = () => {
     const usedCharacters = loadFromLocalStorage("usedCharacters", []);
-    
-    // Obter personagens restantes
+  
     const remainingCharacters = characters.filter(
       (char) => !usedCharacters.includes(char.nome)
     );
@@ -392,12 +407,10 @@ export default function GamePage() {
     let randomCharacter;
   
     if (remainingCharacters.length > 0) {
-      // Escolher um personagem aleatório dos que ainda não foram usados
-      randomCharacter = remainingCharacters[Math.floor(Math.random() * remainingCharacters.length)];
-      // Atualizar lista de usados
+      randomCharacter =
+        remainingCharacters[Math.floor(Math.random() * remainingCharacters.length)];
       saveToLocalStorage("usedCharacters", [...usedCharacters, randomCharacter.nome]);
     } else {
-      // Todos os personagens foram usados, resetar e escolher novamente
       randomCharacter = characters[Math.floor(Math.random() * characters.length)];
       saveToLocalStorage("usedCharacters", [randomCharacter.nome]);
     }
@@ -410,7 +423,7 @@ export default function GamePage() {
     setAttempts([]);
     setSelectedCharacter(randomCharacter);
     setInput("");
-    setWon(false); // Resetar o estado de vitória
+    setWon(false);
     setShowAnswer(false);
     setShowHint1(false);
     setShowHint2(false);
@@ -418,8 +431,18 @@ export default function GamePage() {
     setDica2(null);
     localStorage.removeItem("selectedCharacter");
     localStorage.removeItem("attempts");
-    localStorage.removeItem("won"); // Limpa o estado salvo de vitória
+    localStorage.removeItem("won");
   };
+
+  useEffect(() => {
+    console.log("Estado inicial carregado", {
+      selectedCharacter,
+      attempts,
+      won,
+      achievements,
+    });
+  }, []);
+  
   
   
 
@@ -535,18 +558,20 @@ export default function GamePage() {
               {showDropdown && suggestions.length > 0 && (
                 <ul className="absolute left-0 right-0 mt-2 bg-gray-700 border border-gray-500 rounded-md shadow-lg max-h-60 overflow-y-auto z-10">
                   {suggestions.map((suggestion) => (
-                    <li
-                      key={suggestion.nome}
-                      className="flex items-center p-2 hover:bg-gray-600 cursor-pointer"
-                      onClick={() => handleSuggestionClick(suggestion)}
-                    >
-                      <img
-                        src={suggestion.imgSrc}
-                        alt={suggestion.nome}
-                        className="w-10 h-10 rounded-lg mr-2" 
-                      />
-                      <span>{suggestion.nome}</span>
-                    </li>
+                    suggestion && (
+                      <li
+                        key={suggestion.nome}
+                        className="flex items-center p-2 hover:bg-gray-600 cursor-pointer"
+                        onClick={() => handleSuggestionClick(suggestion)}
+                      >
+                        <img
+                          src={suggestion.imgSrc || "/default-image.png"}
+                          alt={suggestion.nome || "Sem nome"}
+                          className="w-10 h-10 rounded-lg mr-2"
+                        />
+                        <span>{suggestion.nome || "Desconhecido"}</span>
+                      </li>
+                    )
                   ))}
                 </ul>
               )}
