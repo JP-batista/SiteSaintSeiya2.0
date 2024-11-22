@@ -3,9 +3,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { armors } from "../../data/armors";
 import {
-  saveToLocalStorage,
-  loadFromLocalStorage,
-  removeFromLocalStorage,
+  salvarToLocalStorage,
+  carregarFromLocalStorage,
+  removerFromLocalStorage,
 } from "../../utils/localStorageUtils";
 
 type Armor = {
@@ -30,21 +30,21 @@ export default function SilhuetaGamePage() {
   const [showOriginalZoom, setShowOriginalZoom] = useState<boolean>(false);
 
   const [selectedArmor, setSelectedArmor] = useState<Armor | null>(
-    () => loadFromLocalStorage<Armor | null>("selectedArmor", null)
+    () => carregarFromLocalStorage<Armor | null>("selectedArmor", null)
   );
   const [attempts, setAttempts] = useState<string[]>(() =>
-    loadFromLocalStorage<string[]>("attempts", [])
+    carregarFromLocalStorage<string[]>("attempts", [])
   );
   const [testedArmors, setTestedArmors] = useState<
     Array<{ name: string; category: string; revealedImg: string; isCorrect: boolean }>
   >(() =>
-    loadFromLocalStorage<
+    carregarFromLocalStorage<
       Array<{ name: string; category: string; revealedImg: string; isCorrect: boolean }>
     >("testedArmors", [])
   );
-  const [won, setWon] = useState<boolean>(() => loadFromLocalStorage<boolean>("won", false));
+  const [won, setWon] = useState<boolean>(() => carregarFromLocalStorage<boolean>("won", false));
   const [usedArmors, setUsedArmors] = useState<Armor[]>(() =>
-    loadFromLocalStorage<Armor[]>("usedArmors", [])
+    carregarFromLocalStorage<Armor[]>("usedArmors", [])
   );
   const [showAnswer, setShowAnswer] = useState<boolean>(false);
 
@@ -59,7 +59,7 @@ export default function SilhuetaGamePage() {
       if (availableArmors.length === 0) {
         availableArmors = armors;
         setUsedArmors([]);
-        removeFromLocalStorage("usedArmors");
+        removerFromLocalStorage("usedArmors");
       }
 
       const randomArmor =
@@ -87,11 +87,11 @@ export default function SilhuetaGamePage() {
   }, [attempts]);
 
   useEffect(() => {
-    saveToLocalStorage("selectedArmor", selectedArmor);
-    saveToLocalStorage("attempts", attempts);
-    saveToLocalStorage("testedArmors", testedArmors);
-    saveToLocalStorage("usedArmors", usedArmors);
-    saveToLocalStorage("won", won);
+    salvarToLocalStorage("selectedArmor", selectedArmor);
+    salvarToLocalStorage("attempts", attempts);
+    salvarToLocalStorage("testedArmors", testedArmors);
+    salvarToLocalStorage("usedArmors", usedArmors);
+    salvarToLocalStorage("won", won);
   }, [selectedArmor, attempts, testedArmors, usedArmors, won]);
 
   const getFilteredSuggestions = (value: string) => {
@@ -220,7 +220,7 @@ export default function SilhuetaGamePage() {
     if (availableArmors.length === 0) {
       availableArmors = armors;
       setUsedArmors([]);
-      removeFromLocalStorage("usedArmors");
+      removerFromLocalStorage("usedArmors");
     }
 
     const randomArmor =
@@ -235,10 +235,10 @@ export default function SilhuetaGamePage() {
     setInput("");
     setShowDropdown(false);
     setSelectedSuggestion(null);
-    removeFromLocalStorage("selectedArmor");
-    removeFromLocalStorage("attempts");
-    removeFromLocalStorage("testedArmors");
-    removeFromLocalStorage("won");
+    removerFromLocalStorage("selectedArmor");
+    removerFromLocalStorage("attempts");
+    removerFromLocalStorage("testedArmors");
+    removerFromLocalStorage("won");
   };
 
   const handleGiveUp = () => {
