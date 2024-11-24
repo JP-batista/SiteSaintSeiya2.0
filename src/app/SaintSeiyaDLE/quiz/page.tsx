@@ -90,12 +90,8 @@ export default function QuizPage() {
       const updatedAchievements = [...savedAchievements, achievement];
       setAchievements(updatedAchievements);
       localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(updatedAchievements));
-      setShowAchievement(achievement);
-      setTimeout(() => setShowAchievement(null), 3000);
     }
   };
-
-
 
   useEffect(() => {
     const savedAchievements = JSON.parse(localStorage.getItem(ACHIEVEMENTS_KEY) || '[]');
@@ -492,11 +488,13 @@ export default function QuizPage() {
             </p>
 
             {/* Conquistas desbloqueadas nesta partida */}
-            {showAchievement && (
+            {achievements.length > 0 && (
               <div className="mt-6">
                 <h3 className="text-lg font-bold text-yellow-400 mb-2">Conquistas desbloqueadas:</h3>
                 <ul className="list-disc list-inside text-gray-300">
-                  <li>🏆 {showAchievement}</li>
+                  {achievements.map((achievement, index) => (
+                    <li key={index}>🏆 {achievement}</li>
+                  ))}
                 </ul>
               </div>
             )}
