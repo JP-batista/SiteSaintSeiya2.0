@@ -31,10 +31,10 @@ export default function QuizPage() {
   const [selectedQuestions, setSelectedQuestions] = useState<Question[]>(() =>
     carregarFromLocalStorage('selectedQuestions', [], LOCAL_STORAGE_PREFIX)
   );
-  const [achievements, setAchievements] = useState<string[]>(() =>
-    carregarFromLocalStorage('achievements', [], LOCAL_STORAGE_PREFIX)
-  );
+  const [achievements, setAchievements] = useState<string[]>([]);
+
   const [showAchievement, setShowAchievement] = useState<string | null>(null);
+  
   const [selectedDifficulty, setSelectedDifficulty] = useState<string | null>(
     () => carregarFromLocalStorage('selectedDifficulty', null, LOCAL_STORAGE_PREFIX)
   );
@@ -49,17 +49,17 @@ export default function QuizPage() {
   const characteristicsRef = useRef<HTMLDivElement | null>(null);
 
   const achievementMilestones = [3, 5, 10];
-  const difficulties = ['easy', 'medium', 'hard', 'impossible'];
+  const difficulties = ["easy", "medium", "hard", "impossible"];
 
+  
   useEffect(() => {
+    // Atualizar o localStorage sempre que os estados principais mudarem
     salvarToLocalStorage('quizStarted', quizStarted, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('currentQuestion', currentQuestion, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('score', score, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('selectedQuestions', selectedQuestions, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('selectedDifficulty', selectedDifficulty, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('won', won, LOCAL_STORAGE_PREFIX);
-    salvarToLocalStorage('achievements', achievements, LOCAL_STORAGE_PREFIX);
-    salvarToLocalStorage('completedDifficulties', completedDifficulties, LOCAL_STORAGE_PREFIX);
   }, [
     quizStarted,
     currentQuestion,
@@ -67,20 +67,32 @@ export default function QuizPage() {
     selectedQuestions,
     selectedDifficulty,
     won,
-    achievements,
-    completedDifficulties,
   ]);
+
+  useEffect(() => {
+    const savedAchievements = localStorage.getItem('achievements');
+    const savedCompletedDifficulties = localStorage.getItem('completedDifficulties');
+
+    if (savedAchievements) {
+      setAchievements(JSON.parse(savedAchievements));
+    }
+    if (savedCompletedDifficulties) {
+      setCompletedDifficulties(JSON.parse(savedCompletedDifficulties));
+    }
+  }, []);
 
   const saveAchievement = (achievement: string) => {
     if (!achievements.includes(achievement)) {
       const updatedAchievements = [...achievements, achievement];
       setAchievements(updatedAchievements);
-      salvarToLocalStorage('achievements', updatedAchievements, LOCAL_STORAGE_PREFIX);
+      localStorage.setItem('achievements', JSON.stringify(updatedAchievements));
       setShowAchievement(achievement);
       setTimeout(() => setShowAchievement(null), 3000);
     }
   };
 
+  
+  
   const startQuiz = () => {
     if (!selectedDifficulty) return;
 
@@ -97,13 +109,14 @@ export default function QuizPage() {
     setScore(0);
     setWon(false);
 
+    // Salvar o estado inicial do quiz
     salvarToLocalStorage('selectedQuestions', shuffledQuestions, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('quizStarted', true, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('currentQuestion', 0, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('score', 0, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('won', false, LOCAL_STORAGE_PREFIX);
   };
-
+  
   const handleAnswer = (isCorrect: boolean) => {
     let newScore = score;
     if (isCorrect) {
@@ -151,24 +164,18 @@ export default function QuizPage() {
     setSelectedQuestions([]);
     setWon(false);
 
+    // Remover os dados do estado anterior
     removerFromLocalStorage('quizStarted', LOCAL_STORAGE_PREFIX);
     removerFromLocalStorage('currentQuestion', LOCAL_STORAGE_PREFIX);
     removerFromLocalStorage('score', LOCAL_STORAGE_PREFIX);
     removerFromLocalStorage('selectedQuestions', LOCAL_STORAGE_PREFIX);
     removerFromLocalStorage('selectedDifficulty', LOCAL_STORAGE_PREFIX);
     removerFromLocalStorage('won', LOCAL_STORAGE_PREFIX);
-    removerFromLocalStorage('achievements', LOCAL_STORAGE_PREFIX);
-    removerFromLocalStorage('completedDifficulties', LOCAL_STORAGE_PREFIX);
   };
 
   return (
     <div className="min-h-screen p-8 text-white flex flex-col justify-center items-center">
-      {/* Card de Conquista Desbloqueada */}
-      {showAchievement && (
-        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-gray-900 px-6 py-4 rounded-lg shadow-lg text-center font-semibold animate-bounce">
-          🏆 {showAchievement} desbloqueada!
-        </div>
-      )}
+
       <div className="flex justify-center items-center mb-2">
         <img
           src="/dle_feed/logo_dle.png"
