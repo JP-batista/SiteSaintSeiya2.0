@@ -286,33 +286,33 @@ export default function GamePage() {
   const checkAchievements = () => {
     const savedAchievements = JSON.parse(localStorage.getItem(ACHIEVEMENTS_KEY) || '[]');
     const newAchievements: Achievement[] = [];
-
-    if (!savedAchievements.includes("Primeira Vitória")) {
-        newAchievements.push("Primeira Vitória");
+  
+    if (!savedAchievements.includes('Primeira Vitória')) {
+      newAchievements.push('Primeira Vitória');
     }
-    if (attempts.length <= 10 && !savedAchievements.includes("Vitória em 10 Tentativas")) {
-        newAchievements.push("Vitória em 10 Tentativas");
+    if (attempts.length <= 10 && !savedAchievements.includes('Vitória em 10 Tentativas')) {
+      newAchievements.push('Vitória em 10 Tentativas');
     }
-    if (attempts.length <= 7 && !savedAchievements.includes("Vitória em 7 Tentativas")) {
-        newAchievements.push("Vitória em 7 Tentativas");
+    if (attempts.length <= 7 && !savedAchievements.includes('Vitória em 7 Tentativas')) {
+      newAchievements.push('Vitória em 7 Tentativas');
     }
-    if (attempts.length <= 5 && !savedAchievements.includes("Vitória em 5 Tentativas")) {
-        newAchievements.push("Vitória em 5 Tentativas");
+    if (attempts.length <= 5 && !savedAchievements.includes('Vitória em 5 Tentativas')) {
+      newAchievements.push('Vitória em 5 Tentativas');
     }
-    if (attempts.length <= 3 && !savedAchievements.includes("Vitória em 3 Tentativas")) {
-        newAchievements.push("Vitória em 3 Tentativas");
+    if (attempts.length <= 3 && !savedAchievements.includes('Vitória em 3 Tentativas')) {
+      newAchievements.push('Vitória em 3 Tentativas');
     }
-    if (attempts.length < 1 && !savedAchievements.includes("Vitória em 1 Tentativa")) {
-        newAchievements.push("Vitória em 1 Tentativa");
+    if (attempts.length === 1 && !savedAchievements.includes('Vitória em 1 Tentativa')) {
+      newAchievements.push('Vitória em 1 Tentativa');
     }
-
+  
     if (newAchievements.length > 0) {
-        const updatedAchievements = [...savedAchievements, ...newAchievements];
-        setAchievements(updatedAchievements);
-        localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(updatedAchievements));
-        setRecentAchievement(newAchievements[0]);
+      const updatedAchievements = [...savedAchievements, ...newAchievements];
+      setAchievements(updatedAchievements);
+      localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(updatedAchievements));
+      setRecentAchievement(newAchievements[0]);
     }
-};
+  };
 
   // Função para fechar a notificação de conquista
   const closeAchievementNotification = () => {

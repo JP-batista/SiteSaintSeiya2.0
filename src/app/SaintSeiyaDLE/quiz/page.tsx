@@ -81,17 +81,24 @@ export default function QuizPage() {
     }
   }, []);
 
+  const ACHIEVEMENTS_KEY = 'global_achievements'; // Chave compartilhada para conquistas
+
   const saveAchievement = (achievement: string) => {
-    if (!achievements.includes(achievement)) {
-      const updatedAchievements = [...achievements, achievement];
+    const savedAchievements = JSON.parse(localStorage.getItem(ACHIEVEMENTS_KEY) || '[]');
+  
+    if (!savedAchievements.includes(achievement)) {
+      const updatedAchievements = [...savedAchievements, achievement];
       setAchievements(updatedAchievements);
-      localStorage.setItem('achievements', JSON.stringify(updatedAchievements));
+      localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(updatedAchievements));
       setShowAchievement(achievement);
       setTimeout(() => setShowAchievement(null), 3000);
     }
   };
 
-  
+  useEffect(() => {
+    const savedAchievements = JSON.parse(localStorage.getItem(ACHIEVEMENTS_KEY) || '[]');
+    setAchievements(savedAchievements);
+  }, []);
   
   const startQuiz = () => {
     if (!selectedDifficulty) return;
