@@ -56,6 +56,26 @@ export default function ProfilePage() {
     }, []);
 
     useEffect(() => {
+        const savedAchievements = localStorage.getItem(ACHIEVEMENTS_KEY);
+        const savedCompletedDifficulties = localStorage.getItem(
+          'global_completed_difficulties'
+        );
+      
+        setAchievements(savedAchievements ? JSON.parse(savedAchievements) : []);
+        setCompletedDifficulties(
+          savedCompletedDifficulties ? JSON.parse(savedCompletedDifficulties) : []
+        );
+      
+        // Calcula a progressão de quizzes completos com base nas dificuldades concluídas
+        const progress =
+          (savedCompletedDifficulties
+            ? JSON.parse(savedCompletedDifficulties).length
+            : 0) / totalDifficulties;
+        setQuizProgress(progress * 100);
+      }, []);
+      
+
+    useEffect(() => {
         localStorage.setItem('username', username);
         localStorage.setItem('email', email);
         localStorage.setItem('bio', bio);
@@ -266,14 +286,16 @@ export default function ProfilePage() {
                 <h2 className="text-4xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 p-2">Progresso</h2>
 
                 {/* Barra de progresso de quizzes completos */}
-                <p className="text-lg mb-3 font-semibold text-gray-300">Quiz Completos</p>
-                <div className="w-full bg-gray-700 rounded-full h-6 shadow-inner overflow-hidden mb-8 relative">
-                    <div
-                        className="bg-gradient-to-r from-yellow-400 to-yellow-600 h-full rounded-full transition-all duration-500"
-                        style={{ width: `${quizProgress}%` }}
-                    ></div>
+                <p className="text-lg mb-3 font-semibold text-gray-300">
+                Quiz Completos
+                </p>
+                    <div className="w-full bg-gray-700 rounded-full h-6 shadow-inner overflow-hidden mb-8 relative">
+                        <div
+                            className="bg-gradient-to-r from-yellow-400 to-yellow-600 h-full rounded-full transition-all duration-500"
+                            style={{ width: `${quizProgress}%` }}
+                        ></div>
                     <span className="absolute right-4 top-1/2 transform -translate-y-1/2 text-sm font-bold text-gray-100 animate-pulse">
-                        {quizProgress}%
+                        {quizProgress.toFixed(0)}%
                     </span>
                 </div>
 

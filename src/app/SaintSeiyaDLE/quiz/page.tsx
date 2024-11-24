@@ -95,6 +95,8 @@ export default function QuizPage() {
     }
   };
 
+
+
   useEffect(() => {
     const savedAchievements = JSON.parse(localStorage.getItem(ACHIEVEMENTS_KEY) || '[]');
     setAchievements(savedAchievements);
@@ -123,47 +125,59 @@ export default function QuizPage() {
     salvarToLocalStorage('score', 0, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('won', false, LOCAL_STORAGE_PREFIX);
   };
+
+  const COMPLETED_DIFFICULTIES_KEY = 'global_completed_difficulties'; // Chave global para dificuldades concluídas
   
   const handleAnswer = (isCorrect: boolean) => {
     let newScore = score;
     if (isCorrect) {
       newScore = score + 1;
       setScore(newScore);
-
+  
       if (achievementMilestones.includes(newScore)) {
         saveAchievement(`Conquista: ${newScore} acertos`);
       }
     }
-
+  
     if (currentQuestion + 1 < selectedQuestions.length) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
+      // Atualizar dificuldades concluídas
       if (isCorrect && newScore === selectedQuestions.length) {
         const updatedDifficulties = [
           ...completedDifficulties,
           selectedDifficulty as string,
         ];
-        setCompletedDifficulties(updatedDifficulties);
-        salvarToLocalStorage(
-          'completedDifficulties',
-          updatedDifficulties,
-          LOCAL_STORAGE_PREFIX
+        const uniqueDifficulties = Array.from(new Set(updatedDifficulties));
+        setCompletedDifficulties(uniqueDifficulties);
+  
+        // Salvar globalmente
+        localStorage.setItem(
+          COMPLETED_DIFFICULTIES_KEY,
+          JSON.stringify(uniqueDifficulties)
         );
-
-        if (updatedDifficulties.length === difficulties.length) {
+  
+        if (uniqueDifficulties.length === difficulties.length) {
           saveAchievement('Progresso Máximo!');
         }
       }
-
+  
       setWon(true);
       salvarToLocalStorage('won', true, LOCAL_STORAGE_PREFIX);
-
+  
       setTimeout(() => {
         characteristicsRef.current?.scrollIntoView({ behavior: 'smooth' });
       }, 500);
     }
   };
 
+  useEffect(() => {
+    const savedCompletedDifficulties = JSON.parse(
+      localStorage.getItem(COMPLETED_DIFFICULTIES_KEY) || '[]'
+    );
+    setCompletedDifficulties(savedCompletedDifficulties);
+  }, []);
+  
   const handleRestart = () => {
     setQuizStarted(false);
     setCurrentQuestion(0);
@@ -182,7 +196,12 @@ export default function QuizPage() {
 
   return (
     <div className="min-h-screen p-8 text-white flex flex-col justify-center items-center">
-
+      {/* Card de Conquista Desbloqueada */}
+      {showAchievement && (
+        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-gray-900 px-6 py-4 rounded-lg shadow-lg text-center font-semibold animate-bounce">
+          🏆 {showAchievement} desbloqueada!
+        </div>
+      )}
       <div className="flex justify-center items-center mb-2">
         <img
           src="/dle_feed/logo_dle.png"
@@ -303,28 +322,26 @@ export default function QuizPage() {
           </button>      
           <div className="mt-8 bg-gray-800 text-gray-100 p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
             <div className="mt-6">
-              <h3 className="text-lg font-bold mb-2 text-gray-100">Próximo modo:</h3>
+                <h3 className="text-lg font-bold mb-2 text-gray-100">Próximo modo:</h3>
                 <div className="flex flex-col items-center space-y-4">
-                  {/* Detalhe do próximo modo */}
                   <div
                     className="flex items-center space-x-4 cursor-pointer group w-[380px]"
-                    onClick={() => window.location.href = "/SaintSeiyaDLE/classico"} // Redireciona para o modo "Silhouette"
+                    onClick={() => window.location.href = "/SaintSeiyaDLE/affinity"}
                   >
                     <div className="w-22 h-22 bg-gray-800 rounded-full flex items-center justify-center border-4 border-gray-700 shadow-lg group-hover:border-yellow-500 transition duration-300">
                       <img
-                        src="/dle_feed/quiz_icon.png"
-                        alt="qUIZ"
+                        src="/dle_feed/affinity_icon.png"
+                        alt="Quiz"
                         className="w-20 h-20 object-contain"
                       />
                     </div>
                     <div className="bg-gray-800 border-2 border-gray-700 p-4 rounded-lg shadow-lg flex-1 group-hover:border-yellow-500 transition duration-300 h-20 flex flex-col justify-center">
                       <h3 className="text-xl font-bold text-yellow-400 group-hover:text-yellow-300">
-                        Quiz Saint Seiya
+                        Teste de Afinidade
                       </h3>
-                      <p className="text-gray-300 text-sm">Acerte as Perguntas Sobre CDZ</p>
+                      <p className="text-gray-300 text-sm">Descubra qual Cavaleiro você seria!</p>
                     </div>
                   </div>
-
                   <div className="gap-2 bg-gray-800 flex items-center justify-center ">
                   {/* Botão 1 */}
                   <div className="relative group ">
@@ -352,8 +369,8 @@ export default function QuizPage() {
                         <img
                           src="/dle_feed/silhouette_icon.png"
                           alt="Modo Silhouette"
-                          className="border-2 border-yellow-500 rounded-full w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                        />
+                          className=" w-full h-full object-contain rounded-full transition-transform duration-300 group-hover:scale-110"
+                          />
                       </button>
                       <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         Silhuetas
@@ -369,7 +386,7 @@ export default function QuizPage() {
                         <img
                           src="/dle_feed/quiz_icon.png"
                           alt="Modo Quiz"
-                          className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+                          className="border-2 border-yellow-500 rounded-full w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
                         />
                       </button>
                       <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -502,7 +519,7 @@ export default function QuizPage() {
                     <h3 className="text-xl font-bold text-yellow-400 group-hover:text-yellow-300">
                       Teste de Afinidade
                     </h3>
-                    <p className="text-gray-300 text-sm">Descubra qual Cavaleiro voçê seria!</p>
+                    <p className="text-gray-300 text-sm">Descubra qual Cavaleiro você seria!</p>
                   </div>
                 </div>
               </div>
