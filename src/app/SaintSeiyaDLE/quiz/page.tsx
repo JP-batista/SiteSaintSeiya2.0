@@ -70,7 +70,7 @@ export default function QuizPage() {
   ]);
 
   useEffect(() => {
-    const savedAchievements = localStorage.getItem('achievements');
+    const savedAchievements = localStorage.getItem(ACHIEVEMENTS_KEY);
     const savedCompletedDifficulties = localStorage.getItem('completedDifficulties');
 
     if (savedAchievements) {
