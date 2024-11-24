@@ -1,9 +1,14 @@
-// src/app/game/page.tsx
+// src/app/SaintSeiyaDLE/classico/page.tsx
 
 "use client";
 import { useState, useEffect, useRef} from "react";
 import characters from "../../data/charactersDLE"; // Certifique-se de que os dados dos personagens estão aqui
 import React from "react";
+import {
+  salvarToLocalStorage,
+  carregarFromLocalStorage,
+  removerFromLocalStorage,
+} from "../../utils/localStorageUtils";
 
 // Definindo o tipo dos personagens para melhorar a tipagem
 type Character = {
@@ -30,32 +35,19 @@ type Achievement =
   | "Vitória em 3 Tentativas"
   | "Vitória em 1 Tentativa";
 
-export default function GamePage() {
-  // Função auxiliar para salvar no localStorage
-  const saveToLocalStorage = (key: string, value: any) => {
-    if (typeof window !== "undefined") {
-      try {
-        localStorage.setItem(key, JSON.stringify(value));
-      } catch (error) {
-        console.error(`Erro ao salvar no localStorage: ${key}`, error);
-      }
-    }
-  };
   
+export default function GamePage() {
+  const prefix = "classic_";
 
   // Função auxiliar para carregar do localStorage
-  const loadFromLocalStorage = (key: string, defaultValue: any) => {
-    if (typeof window !== "undefined") {
-      try {
-        const saved = localStorage.getItem(key);
-        return saved ? JSON.parse(saved) : defaultValue;
-      } catch (error) {
-        console.error(`Erro ao carregar ${key} do localStorage`, error);
-        return defaultValue;
-      }
-    }
-    return defaultValue;
-  };
+  const loadFromLocalStorage = (key: string, defaultValue: any) =>
+    carregarFromLocalStorage(key, defaultValue, prefix);
+
+  // Função auxiliar para salvar no localStorage
+  const saveToLocalStorage = (key: string, value: any) =>
+    salvarToLocalStorage(key, value, prefix);
+
+  // Use `saveToLocalStorage` e `loadFromLocalStorage` em todos os lugares no jogo clássico.
 
   // Adicionar referência para a seção das características
   const characteristicsRef = useRef<HTMLDivElement | null>(null);
@@ -497,7 +489,7 @@ export default function GamePage() {
           <div className="relative group ">
             <button
               className="w-16 h-16 bg-transparent focus:outline-none "
-              onClick={handleRestart}
+              onClick={() => window.location.href = "/SaintSeiyaDLE/classico"}
             >
               <img
                 src="/dle_feed/classic_icon.png"
@@ -514,7 +506,7 @@ export default function GamePage() {
           <div className="relative group">
             <button
               className="w-16 h-16 bg-transparent focus:outline-none"
-              onClick={() => window.location.href = "/OsCavaleirosDoZodiacoDLE/silhueta"}
+              onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"}
             >
               <img
                 src="/dle_feed/silhouette_icon.png"
@@ -922,7 +914,7 @@ export default function GamePage() {
 
                 <div
                   className="flex items-center space-x-4 cursor-pointer group w-[380px]"
-                  onClick={() => window.location.href = "/OsCavaleirosDoZodiacoDLE/silhueta"} // Redireciona para o modo "Silhouette"
+                  onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"} // Redireciona para o modo "Silhouette"
                 >
                   <div className="w-22 h-22 bg-gray-800 rounded-full flex items-center justify-center border-4 border-gray-700 shadow-lg group-hover:border-yellow-500 transition duration-300">
                     <img
@@ -944,7 +936,7 @@ export default function GamePage() {
                 <div className="relative group ">
                   <button
                     className="w-16 h-16 bg-transparent focus:outline-none "
-                    onClick={handleRestart}
+                    onClick={() => window.location.href = "/SaintSeiyaDLE/classico"}
                   >
                     <img
                       src="/dle_feed/classic_icon.png"
@@ -953,7 +945,7 @@ export default function GamePage() {
                     />
                   </button>
                   <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    Modo Classic
+                    Modo Classico
                   </div>
                 </div>
 
@@ -961,7 +953,7 @@ export default function GamePage() {
                   <div className="relative group">
                     <button
                       className="w-16 h-16 bg-transparent focus:outline-none"
-                      onClick={() => window.location.href = "/OsCavaleirosDoZodiacoDLE/silhueta"}
+                      onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"}
                     >
                       <img
                         src="/dle_feed/silhouette_icon.png"
@@ -1235,7 +1227,7 @@ export default function GamePage() {
                     {/* Detalhe do próximo modo */}
                     <div
                       className="flex items-center space-x-4 cursor-pointer group w-[380px]"
-                      onClick={() => window.location.href = "/OsCavaleirosDoZodiacoDLE/silhueta"} // Redireciona para o modo "Silhouette"
+                      onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"} // Redireciona para o modo "Silhouette"
                     >
                       <div className="w-22 h-22 bg-gray-800 rounded-full flex items-center justify-center border-4 border-gray-700 shadow-lg group-hover:border-yellow-500 transition duration-300">
                         <img
@@ -1274,7 +1266,7 @@ export default function GamePage() {
                       <div className="relative group">
                         <button
                           className="w-16 h-16 bg-transparent focus:outline-none"
-                          onClick={() => window.location.href = "/OsCavaleirosDoZodiacoDLE/silhueta"}
+                          onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"}
                         >
                           <img
                             src="/dle_feed/silhouette_icon.png"

@@ -1,3 +1,5 @@
+// src/app/SaintSeiyaDLE/silhueta/page.tsx
+
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
@@ -19,6 +21,19 @@ type Armor = {
 };
 
 export default function SilhuetaGamePage() {
+  const prefix = "silhouette_";
+
+  // Função auxiliar para carregar do localStorage
+  const loadFromLocalStorage = (key: string, defaultValue: any) =>
+    carregarFromLocalStorage(key, defaultValue, prefix);
+
+  // Função auxiliar para salvar no localStorage
+  const saveToLocalStorage = (key: string, value: any) =>
+    salvarToLocalStorage(key, value, prefix);
+
+  // Use `saveToLocalStorage` e `loadFromLocalStorage` em todos os lugares no jogo de silhuetas.
+
+
   // Adicionar referência para a seção das características
   const characteristicsRef = useRef<HTMLDivElement | null>(null);
 
@@ -263,12 +278,12 @@ export default function SilhuetaGamePage() {
           <div className="relative group ">
             <button
               className="w-16 h-16 bg-transparent focus:outline-none "
-              onClick={handleRestart}
+              onClick={() => window.location.href = "/SaintSeiyaDLE/classico"}
             >
               <img
                 src="/dle_feed/classic_icon.png"
                 alt="Modo Classic"
-                className="border-2 border-yellow-500 rounded-full w-full h-full object-contain rounded-full transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
               />
             </button>
             <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -280,12 +295,12 @@ export default function SilhuetaGamePage() {
           <div className="relative group">
             <button
               className="w-16 h-16 bg-transparent focus:outline-none"
-              onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"}
+              onClick={handleRestart}
             >
               <img
                 src="/dle_feed/silhouette_icon.png"
                 alt="Modo Silhouette"
-                className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+                className="border-2 border-yellow-500 rounded-full w-full h-full object-contain rounded-full transition-transform duration-300 group-hover:scale-110"
               />
             </button>
             <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
