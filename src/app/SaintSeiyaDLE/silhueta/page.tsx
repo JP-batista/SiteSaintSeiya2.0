@@ -464,7 +464,7 @@ export default function SilhuetaGamePage() {
       {/* Exibição das características detalhadas */}
       {!won && selectedArmor && (
         <div ref={characteristicsRef} className="text-center">
-         <div className="mt-8 bg-gray-800 text-gray-100 p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
+          <div className="mt-8 bg-gray-800 text-gray-100 p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
             <div className="mt-6">
               <h3 className="text-lg font-bold mb-2 text-gray-100">Próximo modo:</h3>
                 <div className="flex flex-col items-center space-y-4">

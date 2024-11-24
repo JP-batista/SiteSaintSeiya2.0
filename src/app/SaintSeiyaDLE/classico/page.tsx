@@ -467,22 +467,6 @@ export default function GamePage() {
           className="w-auto h-52 hover:scale-105 transition-transform duration-500 ease-in-out"
         />
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div className="mb-4">
         <div className="gap-4 flex items-center justify-center ">
           {/* Botão 1 */}
@@ -554,20 +538,6 @@ export default function GamePage() {
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div className="w-full max-w-md bg-gray-800 text-white rounded-lg shadow-lg p-4 mb-6">
         <h3 className="text-xl font-bold text-center mb-4 text-yellow-400 tracking-wide">
           Adivinha qual é a personagem de<br></br>Saint Seiya

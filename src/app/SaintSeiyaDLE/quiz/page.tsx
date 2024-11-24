@@ -52,13 +52,14 @@ export default function QuizPage() {
   const difficulties = ['easy', 'medium', 'hard', 'impossible'];
 
   useEffect(() => {
-    // Atualizar o localStorage sempre que os estados principais mudarem
     salvarToLocalStorage('quizStarted', quizStarted, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('currentQuestion', currentQuestion, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('score', score, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('selectedQuestions', selectedQuestions, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('selectedDifficulty', selectedDifficulty, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('won', won, LOCAL_STORAGE_PREFIX);
+    salvarToLocalStorage('achievements', achievements, LOCAL_STORAGE_PREFIX);
+    salvarToLocalStorage('completedDifficulties', completedDifficulties, LOCAL_STORAGE_PREFIX);
   }, [
     quizStarted,
     currentQuestion,
@@ -66,6 +67,8 @@ export default function QuizPage() {
     selectedQuestions,
     selectedDifficulty,
     won,
+    achievements,
+    completedDifficulties,
   ]);
 
   const saveAchievement = (achievement: string) => {
@@ -94,7 +97,6 @@ export default function QuizPage() {
     setScore(0);
     setWon(false);
 
-    // Salvar o estado inicial do quiz
     salvarToLocalStorage('selectedQuestions', shuffledQuestions, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('quizStarted', true, LOCAL_STORAGE_PREFIX);
     salvarToLocalStorage('currentQuestion', 0, LOCAL_STORAGE_PREFIX);
@@ -149,18 +151,24 @@ export default function QuizPage() {
     setSelectedQuestions([]);
     setWon(false);
 
-    // Remover os dados do estado anterior
     removerFromLocalStorage('quizStarted', LOCAL_STORAGE_PREFIX);
     removerFromLocalStorage('currentQuestion', LOCAL_STORAGE_PREFIX);
     removerFromLocalStorage('score', LOCAL_STORAGE_PREFIX);
     removerFromLocalStorage('selectedQuestions', LOCAL_STORAGE_PREFIX);
     removerFromLocalStorage('selectedDifficulty', LOCAL_STORAGE_PREFIX);
     removerFromLocalStorage('won', LOCAL_STORAGE_PREFIX);
+    removerFromLocalStorage('achievements', LOCAL_STORAGE_PREFIX);
+    removerFromLocalStorage('completedDifficulties', LOCAL_STORAGE_PREFIX);
   };
 
   return (
     <div className="min-h-screen p-8 text-white flex flex-col justify-center items-center">
-
+      {/* Card de Conquista Desbloqueada */}
+      {showAchievement && (
+        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-gray-900 px-6 py-4 rounded-lg shadow-lg text-center font-semibold animate-bounce">
+          🏆 {showAchievement} desbloqueada!
+        </div>
+      )}
       <div className="flex justify-center items-center mb-2">
         <img
           src="/dle_feed/logo_dle.png"
@@ -169,38 +177,212 @@ export default function QuizPage() {
         />
       </div>
 
+      <div className="mb-4">
+        <div className="gap-4 flex items-center justify-center ">
+          {/* Botão 1 */}
+          <div className="relative group ">
+            <button
+              className="w-16 h-16 bg-transparent focus:outline-none "
+              onClick={() => window.location.href = "/SaintSeiyaDLE/classico"}
+            >
+              <img
+                src="/dle_feed/classic_icon.png"
+                alt="Modo Classic"
+                className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+              />
+            </button>
+            <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Modo Classic
+            </div>
+          </div>
+
+          {/* Botão 4 */}
+          <div className="relative group">
+            <button
+              className="w-16 h-16 bg-transparent focus:outline-none"
+              onClick={handleRestart}
+            >
+              <img
+                src="/dle_feed/silhouette_icon.png"
+                alt="Modo Silhouette"
+                className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+              />
+            </button>
+            <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Silhuetas
+            </div>
+          </div>
+        
+          {/* Botão 2 */}
+          <div className="relative group">
+            <button
+              className="w-16 h-16 bg-transparent focus:outline-none"
+              onClick={() => window.location.href = "/SaintSeiyaDLE/quiz"}
+            >
+              <img
+                src="/dle_feed/quiz_icon.png"
+                alt="Modo Quiz"
+                className="border-2 border-yellow-500 rounded-full w-full h-full object-contain rounded-full transition-transform duration-300 group-hover:scale-110"
+              />
+            </button>
+            <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Quiz
+            </div>
+          </div>
+
+          {/* Botão 3 */}
+          <div className="relative group">
+            <button
+              className="w-16 h-16 bg-transparent focus:outline-none"
+              onClick={() => window.location.href = "/SaintSeiyaDLE/affinity"}
+            >
+              <img
+                src="/dle_feed/affinity_icon.png"
+                alt="Modo Affinity"
+                className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+              />
+            </button>
+            <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Teste de Afinidade
+            </div>
+          </div>
+        </div>
+      </div>
+
       {!quizStarted && !won ? (
         <div className="text-center">
-          <h1 className="text-5xl font-extrabold text-yellow-400 mb-10">
+          <h1 className="text-5xl font-extrabold text-yellow-400 mb-6 drop-shadow-md animate-pulse">
             Desafio Cavaleiros do Zodíaco
           </h1>
           <p className="text-lg text-gray-300 mb-8">
-            Selecione a dificuldade e teste seus conhecimentos!
+            Escolha sua dificuldade e desafie seus conhecimentos!
           </p>
-
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
+        
+          <div className="flex flex-wrap justify-center gap-6 mb-8">
             {difficulties.map((difficulty) => (
               <button
                 key={difficulty}
                 onClick={() => setSelectedDifficulty(difficulty)}
-                className={`px-6 py-3 rounded-md font-bold text-lg border-2 transition-transform ${
+                className={`relative group px-6 py-3 rounded-md font-bold text-lg border-2 transition-transform duration-300 ${
                   selectedDifficulty === difficulty
-                    ? 'bg-yellow-500 text-gray-900 border-yellow-500 scale-105'
+                    ? 'bg-yellow-500 text-gray-900 border-yellow-500 scale-110 shadow-lg'
                     : 'bg-gray-800 text-gray-300 border-gray-600 hover:border-yellow-500 hover:scale-105'
                 }`}
               >
+                <span className="absolute inset-0 bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 opacity-0 group-hover:opacity-20 rounded-md transition-opacity duration-300"></span>
                 {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}
               </button>
             ))}
           </div>
-
+        
           <button
             onClick={startQuiz}
             disabled={!selectedDifficulty}
-            className="px-12 py-4 bg-yellow-500 text-gray-900 rounded-lg font-bold text-xl hover:scale-105 transform transition-transform shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
+            className={`relative px-12 py-4 rounded-lg font-bold text-xl shadow-lg transform transition-all duration-300 ${
+              selectedDifficulty
+                ? 'bg-yellow-500 text-gray-900 hover:scale-110 hover:shadow-2xl'
+                : 'bg-gray-800 text-gray-500 cursor-not-allowed'
+            }`}
           >
+            <span className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-yellow-600 opacity-0 hover:opacity-20 rounded-lg transition-opacity duration-300"></span>
             Começar o Quiz
-          </button>
+          </button>      
+          <div className="mt-8 bg-gray-800 text-gray-100 p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
+            <div className="mt-6">
+              <h3 className="text-lg font-bold mb-2 text-gray-100">Próximo modo:</h3>
+                <div className="flex flex-col items-center space-y-4">
+                  {/* Detalhe do próximo modo */}
+                  <div
+                    className="flex items-center space-x-4 cursor-pointer group w-[380px]"
+                    onClick={() => window.location.href = "/SaintSeiyaDLE/classico"} // Redireciona para o modo "Silhouette"
+                  >
+                    <div className="w-22 h-22 bg-gray-800 rounded-full flex items-center justify-center border-4 border-gray-700 shadow-lg group-hover:border-yellow-500 transition duration-300">
+                      <img
+                        src="/dle_feed/quiz_icon.png"
+                        alt="qUIZ"
+                        className="w-20 h-20 object-contain"
+                      />
+                    </div>
+                    <div className="bg-gray-800 border-2 border-gray-700 p-4 rounded-lg shadow-lg flex-1 group-hover:border-yellow-500 transition duration-300 h-20 flex flex-col justify-center">
+                      <h3 className="text-xl font-bold text-yellow-400 group-hover:text-yellow-300">
+                        Quiz Saint Seiya
+                      </h3>
+                      <p className="text-gray-300 text-sm">Acerte as Perguntas Sobre CDZ</p>
+                    </div>
+                  </div>
+
+                  <div className="gap-2 bg-gray-800 flex items-center justify-center ">
+                  {/* Botão 1 */}
+                  <div className="relative group ">
+                    <button
+                      className="w-16 h-16 bg-transparent focus:outline-none "
+                      onClick={() => window.location.href =  "/SaintSeiyaDLE/classico"}
+                    >
+                      <img
+                        src="/dle_feed/classic_icon.png"
+                        alt="Modo Classic"
+                        className=" w-full h-full object-contain rounded-full transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </button>
+                    <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Modo Classic
+                    </div>
+                  </div>
+                  
+                    {/* Botão 4 */}
+                    <div className="relative group">
+                      <button
+                        className="w-16 h-16 bg-transparent focus:outline-none"
+                        onClick={handleRestart}
+                      >
+                        <img
+                          src="/dle_feed/silhouette_icon.png"
+                          alt="Modo Silhouette"
+                          className="border-2 border-yellow-500 rounded-full w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                        />
+                      </button>
+                      <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Silhuetas
+                      </div>
+                    </div>
+
+                    {/* Botão 2 */}
+                    <div className="relative group">
+                      <button
+                        className="w-16 h-16 bg-transparent focus:outline-none"
+                        onClick={() => window.location.href = "/SaintSeiyaDLE/quiz"}
+                      >
+                        <img
+                          src="/dle_feed/quiz_icon.png"
+                          alt="Modo Quiz"
+                          className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+                        />
+                      </button>
+                      <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Quiz
+                      </div>
+                    </div>
+
+                    {/* Botão 3 */}
+                    <div className="relative group">
+                      <button
+                        className="w-16 h-16 bg-transparent focus:outline-none"
+                        onClick={() => window.location.href = "/SaintSeiyaDLE/affinity"}
+                      >
+                        <img
+                          src="/dle_feed/affinity_icon.png"
+                          alt="Modo Affinity"
+                          className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+                        />
+                      </button>
+                      <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Teste de Afinidade
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
       ) : !won ? (
         <div className="w-full max-w-3xl bg-gray-800 p-8 rounded-lg shadow-md">
@@ -233,7 +415,48 @@ export default function QuizPage() {
           </div>
         </div>
       ) : (
-        <div ref={characteristicsRef} className="text-center">
+        <div ref={characteristicsRef} className="text-center">     
+          {/* Lista de perguntas respondidas */}
+          <div className="mt-6">
+            <h3 className="text-lg font-bold mb-2 text-yellow-400">Resumo do Quiz:</h3>
+            <ul className="space-y-4 text-left">
+              {selectedQuestions.map((q, index) => (
+                <li key={index} className="bg-gray-700 p-4 rounded-md shadow-md">
+                  <p className="text-lg font-semibold text-gray-200">
+                    {index + 1}. {q.question}
+                  </p>
+                  {q.options.map((option, optIndex) => {
+                    const isSelected = option === selectedQuestions[index].answer;
+                    const isCorrect = option === q.answer;
+                    return (
+                      <p
+                        key={optIndex}
+                        className={`mt-1 px-3 py-1 rounded-md font-medium ${
+                          isCorrect
+                            ? 'bg-green-500 text-gray-900'
+                            : isSelected
+                            ? 'bg-red-500 text-gray-900'
+                            : 'bg-gray-800 text-gray-400'
+                        }`}
+                      >
+                        {isCorrect ? '✅ ' : isSelected ? '❌ ' : ''} {option}
+                      </p>
+                    );
+                  })}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Conquistas desbloqueadas nesta partida */}
+          {showAchievement && (
+            <div className="mt-6">
+              <h3 className="text-lg font-bold text-yellow-400 mb-2">Conquistas desbloqueadas:</h3>
+              <ul className="list-disc list-inside text-gray-300">
+                <li>🏆 {showAchievement}</li>
+              </ul>
+            </div>
+          )}
           <div className="mt-8 bg-gray-800 text-gray-100 p-6 rounded-lg shadow-lg text-center max-w-md mx-auto animate-fade-in">
             <h2 className="text-4xl text-green-400 mb-4">
               {score === selectedQuestions.length 
