@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import cavaleiros, { Cavaleiro } from '../data/skins'; // Importando temas de cavaleiros e interface
+import cavaleiros, { Cavaleiro } from '../data/skins';
 import Image from 'next/image';
+
+const ACHIEVEMENTS_KEY = 'global_achievements'; // Chave única para conquistas
 
 export default function ProfilePage() {
     const [isEditing, setIsEditing] = useState(false);
@@ -35,7 +37,7 @@ export default function ProfilePage() {
         const savedInstagram = localStorage.getItem('instagram');
         const savedSelectedCavaleiro = localStorage.getItem('selectedCavaleiro');
         const savedNotificationsEnabled = localStorage.getItem('notificationsEnabled') === 'true';
-        const savedAchievements = localStorage.getItem('achievements');
+        const savedAchievements = localStorage.getItem(ACHIEVEMENTS_KEY);
         const savedCompletedDifficulties = localStorage.getItem('completedDifficulties');
 
         setUsername(savedUsername || 'Seiya de Pégaso');
@@ -50,7 +52,7 @@ export default function ProfilePage() {
         setNotificationsEnabled(savedNotificationsEnabled);
         setAchievements(savedAchievements ? JSON.parse(savedAchievements) : []);
         setCompletedDifficulties(savedCompletedDifficulties ? JSON.parse(savedCompletedDifficulties) : []);
-        setQuizProgress((savedCompletedDifficulties ? JSON.parse(savedCompletedDifficulties).length : 0) / totalDifficulties * 100);
+        setQuizProgress((savedCompletedDifficulties ? JSON.parse(savedCompletedDifficulties).length : 0) / totalAchievements * 100);
     }, []);
 
     useEffect(() => {
@@ -64,7 +66,7 @@ export default function ProfilePage() {
         localStorage.setItem('instagram', instagram);
         localStorage.setItem('selectedCavaleiro', selectedCavaleiro.name);
         localStorage.setItem('notificationsEnabled', notificationsEnabled.toString());
-        localStorage.setItem('achievements', JSON.stringify(achievements));
+        localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(achievements));
     }, [username, email, bio, birthdate, location, linkedin, twitter, instagram, selectedCavaleiro, notificationsEnabled, achievements]);
 
   
