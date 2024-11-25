@@ -5,7 +5,8 @@ import Link from 'next/link';
 import cavaleiros, { Cavaleiro } from '../data/skins';
 import Image from 'next/image';
 
-const ACHIEVEMENTS_KEY = 'global_achievements'; // Chave única para conquistas
+const ACHIEVEMENTS_KEY = 'global_achievements';
+const TOTAL_ACHIEVEMENTS = 14; // Total atualizado com conquistas da silhueta
 
 export default function ProfilePage() {
     const [isEditing, setIsEditing] = useState(false);
@@ -39,6 +40,9 @@ export default function ProfilePage() {
         const savedNotificationsEnabled = localStorage.getItem('notificationsEnabled') === 'true';
         const savedAchievements = localStorage.getItem(ACHIEVEMENTS_KEY);
         const savedCompletedDifficulties = localStorage.getItem('completedDifficulties');
+        if (savedAchievements) {
+            setAchievements(JSON.parse(savedAchievements));
+        }
 
         setUsername(savedUsername || 'Seiya de Pégaso');
         setEmail(savedEmail || "seiya@cosmo.com");
@@ -54,7 +58,7 @@ export default function ProfilePage() {
         setCompletedDifficulties(savedCompletedDifficulties ? JSON.parse(savedCompletedDifficulties) : []);
         setQuizProgress((savedCompletedDifficulties ? JSON.parse(savedCompletedDifficulties).length : 0) / totalAchievements * 100);
     }, []);
-
+      
     useEffect(() => {
         const savedAchievements = localStorage.getItem(ACHIEVEMENTS_KEY);
         const savedCompletedDifficulties = localStorage.getItem(
@@ -74,7 +78,11 @@ export default function ProfilePage() {
         setQuizProgress(progress * 100);
       }, []);
       
-
+    useEffect(() => {
+        // Cálculo de progresso (baseado no número total de conquistas desbloqueadas)
+        setQuizProgress((achievements.length / TOTAL_ACHIEVEMENTS) * 100);
+    }, [achievements]);
+      
     useEffect(() => {
         localStorage.setItem('username', username);
         localStorage.setItem('email', email);
@@ -283,7 +291,9 @@ export default function ProfilePage() {
             {/* Background decorativo */}
             <div className="absolute inset-0 opacity-25 bg-[url('/path/to/decorative-background.jpg')] bg-cover bg-center"></div>
             <div className="relative z-10">
-                <h2 className="text-4xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 p-2">Progresso</h2>
+                <h2 className="text-4xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 p-2">
+                Progresso
+                </h2>
 
                 {/* Barra de progresso de quizzes completos */}
                 <p className="text-lg mb-3 font-semibold text-gray-300">
@@ -299,74 +309,56 @@ export default function ProfilePage() {
                     </span>
                 </div>
 
-                <p className="text-lg font-semibold text-gray-300 mb-5">
-                    Conquistas Desbloqueadas: {achievements.length}/{totalAchievements}
-                </p>
-
                 {/* Barra de progresso de conquistas */}
+                <p className="text-lg font-semibold text-gray-300 mb-3">
+                Conquistas Desbloqueadas: {achievements.length}/{TOTAL_ACHIEVEMENTS}
+                </p>
                 <div className="w-full bg-gray-700 rounded-full h-6 shadow-inner overflow-hidden mb-8 relative">
-                    <div
-                        className="bg-gradient-to-r from-green-400 via-yellow-400 to-yellow-500 h-full rounded-full transition-all duration-500"
-                        style={{ width: `${(achievements.length / totalAchievements) * 100}%` }}
-                    ></div>
-                    <span className="absolute right-4 top-1/2 transform -translate-y-1/2 text-sm font-bold text-gray-100 animate-pulse">
-                        {Math.round((achievements.length / totalAchievements) * 100)}%
-                    </span>
+                <div
+                    className="bg-gradient-to-r from-green-400 via-yellow-400 to-yellow-500 h-full rounded-full transition-all duration-500"
+                    style={{ width: `${(achievements.length / TOTAL_ACHIEVEMENTS) * 100}%` }}
+                ></div>
+                <span className="absolute right-4 top-1/2 transform -translate-y-1/2 text-sm font-bold text-gray-100 animate-pulse">
+                    {Math.round((achievements.length / TOTAL_ACHIEVEMENTS) * 100)}%
+                </span>
                 </div>
 
                 {/* Conquistas Desbloqueadas */}
                 <div className="flex justify-center flex-wrap space-x-4 mt-4">
-                    {Array.from({ length: totalAchievements }).map((_, idx) => (
-                        <div key={idx} className="relative group flex flex-col items-center space-y-1">
-                            <div
-                                className={`w-14 h-14 rounded-full border-2 flex items-center justify-center transition-transform duration-300 text-sm font-semibold ${
-                                    idx < achievements.length
-                                        ? 'border-yellow-500 text-yellow-400'
-                                        : 'border-gray-500 text-gray-400 opacity-50'
-                                } group-hover:scale-105`}
-                            >
-                                {idx < achievements.length ? (
-                                    <span>🏆</span>
-                                ) : (
-                                    <span>🔒</span>
-                                )}
-                            </div>
-                            {/* Nome da conquista e tooltip */}
-                            <div className="text-xs font-bold text-gray-200 mt-2">
-                                {idx < achievements.length
-                                    ? `Conquista ${idx + 1}`
-                                    : `Bloqueada`}
-                            </div>
-                            {idx < achievements.length && (
-                                <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gray-900 text-xs text-yellow-300 p-2 rounded-lg shadow-lg w-36 text-center">
-                                    {achievements[idx]}
-                                </div>
-                            )}
-                        </div>
-                    ))}
-                </div>
-
-                {/* Conquista especial "Progresso Máximo!" */}
-                {achievements.includes("Progresso Máximo!") && (
-                    <div className="relative group flex flex-col items-center space-y-2 mt-8 animate-bounce">
-                        <div className="w-16 h-16 rounded-full border-4 border-green-400 flex items-center justify-center text-green-400 text-lg font-semibold transition-transform duration-300 group-hover:scale-110 shadow-xl">
-                            🏆
-                        </div>
-                        <div className="text-xs font-bold text-gray-200 mt-2">Progresso Máximo!</div>
-                        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gray-900 text-xs text-green-300 p-3 rounded-lg shadow-xl w-40 text-center">
-                            Todas as dificuldades concluídas com sucesso!
-                        </div>
+                {Array.from({ length: TOTAL_ACHIEVEMENTS }).map((_, idx) => (
+                    <div key={idx} className="relative group flex flex-col items-center space-y-1">
+                    <div
+                        className={`w-14 h-14 rounded-full border-2 flex items-center justify-center transition-transform duration-300 text-sm font-semibold ${
+                        idx < achievements.length
+                            ? 'border-yellow-500 text-yellow-400'
+                            : 'border-gray-500 text-gray-400 opacity-50'
+                        } group-hover:scale-105`}
+                    >
+                        {idx < achievements.length ? <span>🏆</span> : <span>🔒</span>}
                     </div>
-                )}
+                    {/* Nome da conquista e tooltip */}
+                    <div className="text-xs font-bold text-gray-200 mt-2">
+                        {idx < achievements.length
+                        ? `Conquista ${idx + 1}`
+                        : `Bloqueada`}
+                    </div>
+                    {idx < achievements.length && (
+                        <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gray-900 text-xs text-yellow-300 p-2 rounded-lg shadow-lg w-36 text-center">
+                        {achievements[idx]}
+                        </div>
+                    )}
+                    </div>
+                ))}
+                </div>
 
                 {/* Botão para ver mais detalhes das conquistas */}
                 <Link href="/perfil/achievements">
-                    <button className="mt-8 bg-gradient-to-br from-yellow-400 to-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105">
-                        Detalhes das Conquistas
-                    </button>
+                <button className="mt-8 bg-gradient-to-br from-yellow-400 to-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105">
+                    Detalhes das Conquistas
+                </button>
                 </Link>
             </div>
-        </div>
+            </div>
 
         {/* Seleção de Tema (Banner e Skin) */}
         <div className="bg-gray-800 p-8 rounded-xl shadow-lg mb-12">

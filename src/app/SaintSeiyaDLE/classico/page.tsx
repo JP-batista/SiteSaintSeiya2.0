@@ -438,9 +438,6 @@ export default function GamePage() {
       achievements,
     });
   }, []);
-  
-  
-  
 
   useEffect(() => {
     try {

@@ -1,5 +1,3 @@
-// src/app/perfil/achievements/page.tsx
-
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -20,10 +18,14 @@ const allAchievements: Achievement[] = [
   { name: 'Vitória em 5 Tentativas', description: 'Complete o jogo com no máximo 5 tentativas.', source: 'SaintSeiyaDLE', skinImage: cavaleiros[4].banner },
   { name: 'Vitória em 3 Tentativas', description: 'Complete o jogo com no máximo 3 tentativas.', source: 'SaintSeiyaDLE', skinImage: cavaleiros[6].banner },
   { name: 'Vitória em 1 Tentativa', description: 'Complete o jogo em apenas 1 tentativa.', source: 'SaintSeiyaDLE', skinImage: cavaleiros[7].banner },
-  { name: 'Conquista: 3 acertos', description: 'Acerte 3 respostas corretas no quiz.', source: 'Quiz', skinImage: cavaleiros[9].banner },
-  { name: 'Conquista: 5 acertos', description: 'Acerte 5 respostas corretas no quiz.', source: 'Quiz', skinImage: cavaleiros[10].banner },
-  { name: 'Conquista: 10 acertos', description: 'Acerte 10 respostas corretas no quiz.', source: 'Quiz', skinImage: cavaleiros[12].banner },
-  { name: 'Progresso Máximo!', description: 'Complete todas as dificuldades no quiz.', source: 'Quiz', skinImage: cavaleiros[13].banner },
+  { name: 'Primeira Vitória no Silhuetas', description: 'Acertou a silhueta pela primeira vez.', source: 'Silhuetas', skinImage: cavaleiros[9].banner },
+  { name: '5 Vitórias no Silhuetas', description: 'Acertou 5 silhuetas no total.', source: 'Silhuetas', skinImage: cavaleiros[10].banner },
+  { name: '10 Vitórias no Silhuetas', description: 'Acertou 10 silhuetas no total.', source: 'Silhuetas', skinImage: cavaleiros[12].banner },
+  { name: 'Progresso Máximo no Silhuetas', description: 'Concluiu todas as conquistas do modo Silhuetas.', source: 'Silhuetas', skinImage: cavaleiros[13].banner },
+  { name: 'Conquista: 3 acertos', description: 'Acerte 3 respostas corretas no quiz.', source: 'Quiz', skinImage: cavaleiros[15].banner },
+  { name: 'Conquista: 5 acertos', description: 'Acerte 5 respostas corretas no quiz.', source: 'Quiz', skinImage: cavaleiros[16].banner },
+  { name: 'Conquista: 10 acertos', description: 'Acerte 10 respostas corretas no quiz.', source: 'Quiz', skinImage: cavaleiros[17].banner },
+  { name: 'Progresso Máximo!', description: 'Complete todas as dificuldades no quiz.', source: 'Quiz', skinImage: cavaleiros[18].banner },
 ];
 
 export default function AchievementsPage() {
@@ -64,7 +66,9 @@ export default function AchievementsPage() {
                 
                 <span 
                   className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
-                    achievement.source === 'SaintSeiyaDLE' ? 'bg-purple-500 text-white' : 'bg-blue-500 text-white'
+                    achievement.source === 'SaintSeiyaDLE' ? 'bg-purple-500 text-white' : 
+                    achievement.source === 'Silhuetas' ? 'bg-red-500 text-white' : 
+                    'bg-blue-500 text-white'
                   }`}
                 >
                   {achievement.source}
@@ -77,13 +81,14 @@ export default function AchievementsPage() {
           );
         })}
       </div>
-        <div className="flex justify-center mt-8">
-            <Link href="/perfil">
-                <button className="bg-gradient-to-br from-yellow-400 to-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105">
-                    Voltar ao Perfil
-                </button>
-            </Link>
-        </div>
+      
+      <div className="flex justify-center mt-8">
+        <Link href="/perfil">
+          <button className="bg-gradient-to-br from-yellow-400 to-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105">
+            Voltar ao Perfil
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }

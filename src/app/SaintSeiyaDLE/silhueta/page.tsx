@@ -10,6 +10,8 @@ import {
   removerFromLocalStorage,
 } from "../../utils/localStorageUtils";
 
+const ACHIEVEMENTS_KEY = 'global_achievements'; // Chave para salvar conquistas no localStorage
+
 type Armor = {
   name: string;
   category: string;
@@ -62,9 +64,11 @@ export default function SilhuetaGamePage() {
     carregarFromLocalStorage<Armor[]>("usedArmors", [])
   );
   const [showAnswer, setShowAnswer] = useState<boolean>(false);
+  const [achievements, setAchievements] = useState<string[]>(() =>
+    JSON.parse(localStorage.getItem(ACHIEVEMENTS_KEY) || '[]')
+  );
 
 
-  
   useEffect(() => {
     const initializeGame = () => {
       let availableArmors = armors.filter(
@@ -107,7 +111,28 @@ export default function SilhuetaGamePage() {
     salvarToLocalStorage("testedArmors", testedArmors);
     salvarToLocalStorage("usedArmors", usedArmors);
     salvarToLocalStorage("won", won);
-  }, [selectedArmor, attempts, testedArmors, usedArmors, won]);
+    localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(achievements));
+  }, [selectedArmor, attempts, testedArmors, usedArmors, won, achievements]);
+
+  const handleAchievements = (attemptsCount: number, firstTimeWin: boolean) => {
+    const newAchievements = [...achievements];
+
+    if (!newAchievements.includes("Primeira Vitória") && firstTimeWin) {
+      newAchievements.push("Primeira Vitória");
+    }
+    if (!newAchievements.includes("Acertou em 10 Tentativas") && attemptsCount <= 10) {
+      newAchievements.push("Acertou em 10 Tentativas");
+    }
+    if (!newAchievements.includes("Acertou em 5 Tentativas") && attemptsCount <= 5) {
+      newAchievements.push("Acertou em 5 Tentativas");
+    }
+    if (!newAchievements.includes("Acertou de Primeira") && attemptsCount === 1) {
+      newAchievements.push("Acertou de Primeira");
+    }
+
+    localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(newAchievements));
+    setAchievements(newAchievements);
+  };
 
   const getFilteredSuggestions = (value: string) => {
     const normalizedValue = normalizeString(value);
@@ -122,7 +147,6 @@ export default function SilhuetaGamePage() {
     });
   };
   
-
   const normalizeString = (str: string): string => {
     return str
       .normalize("NFD")
@@ -130,7 +154,6 @@ export default function SilhuetaGamePage() {
       .toLowerCase();
   };
   
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setInput(value);
@@ -153,10 +176,6 @@ export default function SilhuetaGamePage() {
     setShowDropdown(false);
   };
 
-
-  
-  
-
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "ArrowDown" && suggestions.length > 0) {
       const currentIndex = suggestions.findIndex((s) => s === selectedSuggestion);
@@ -173,60 +192,66 @@ export default function SilhuetaGamePage() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+  
     if (!input.trim() || !selectedSuggestion) {
+      alert("Por favor, insira o nome de uma armadura.");
       return;
     }
-
+  
     const guess = armors.find(
       (armor) => normalizeString(armor.name) === normalizeString(selectedSuggestion.name)
     );
-
+  
     if (!guess) {
       alert("Armadura não encontrada!");
       return;
     }
-
+  
     if (!selectedArmor) {
       alert("Erro interno: Armadura selecionada inválida.");
       return;
     }
-
-    if (
-      testedArmors.some(
-        (tested) => normalizeString(tested.name) === normalizeString(selectedSuggestion.name)
-      )
-    ) {
+  
+    const alreadyTested = testedArmors.some(
+      (tested) => normalizeString(tested.name) === normalizeString(guess.name)
+    );
+  
+    if (alreadyTested) {
       alert("Você já tentou essa armadura!");
       return;
     }
-
-    const correct = normalizeString(guess.name) === normalizeString(selectedArmor.name);
-
-    if (correct) {
-      setShowAnswer(false);
-      setWon(true);
-      setTimeout(() => {
-        characteristicsRef.current?.scrollIntoView({ behavior: "smooth" });
-      }, 300);
-    }
-
+  
+    const isCorrect = normalizeString(guess.name) === normalizeString(selectedArmor.name);
+  
     const newTestedArmor = {
       name: guess.name,
       category: guess.category,
       revealedImg: guess.revealedImg,
-      isCorrect: correct,
+      isCorrect,
     };
-
+  
     setTestedArmors([newTestedArmor, ...testedArmors]);
     setAttempts([guess.name, ...attempts]);
+  
+    if (isCorrect) {
+      setShowAnswer(false);
+      setWon(true);
+      handleAchievements(attempts.length + 1, testedArmors.length === 0);
+  
+      setTimeout(() => {
+        characteristicsRef.current?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    } else {
+      alert("Resposta errada! Tente novamente.");
+    }
+  
+    // Limpar entrada e sugestões após a tentativa
     setInput("");
     setSuggestions([]);
     setShowDropdown(false);
     setSelectedSuggestion(null);
-  };
+  };  
   
-
   const handleRestart = () => {
     let availableArmors = armors.filter(
       (armor) => !usedArmors.some((used) => used.name === armor.name)
@@ -246,7 +271,6 @@ export default function SilhuetaGamePage() {
     setAttempts([]);
     setTestedArmors([]);
     setWon(false);
-    setZoomLevel(3);
     setInput("");
     setShowDropdown(false);
     setSelectedSuggestion(null);
@@ -255,7 +279,7 @@ export default function SilhuetaGamePage() {
     removerFromLocalStorage("testedArmors");
     removerFromLocalStorage("won");
   };
-
+  
   const handleGiveUp = () => {
     setWon(true);
     setShowAnswer(true);
@@ -264,7 +288,7 @@ export default function SilhuetaGamePage() {
   return (
     <div className="min-h-screen text-white flex flex-col items-center justify-center p-6">
 
-      <div className="flex justify-center items-center mb-2">
+<div className="flex justify-center items-center mb-2">
         <img
           src="/dle_feed/logo_dle.png"
           alt="Logo Os Cavaleiros do Zodíaco"
@@ -295,7 +319,7 @@ export default function SilhuetaGamePage() {
           <div className="relative group">
             <button
               className="w-16 h-16 bg-transparent focus:outline-none"
-              onClick={handleRestart}
+              onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"}
             >
               <img
                 src="/dle_feed/silhouette_icon.png"
@@ -505,60 +529,60 @@ export default function SilhuetaGamePage() {
                       Modo Classic
                     </div>
                   </div>
-                  
-                    {/* Botão 4 */}
-                    <div className="relative group">
-                      <button
-                        className="w-16 h-16 bg-transparent focus:outline-none"
-                        onClick={handleRestart}
-                      >
-                        <img
-                          src="/dle_feed/silhouette_icon.png"
-                          alt="Modo Silhouette"
-                          className="border-2 border-yellow-500 rounded-full w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                        />
-                      </button>
-                      <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        Silhuetas
-                      </div>
+                
+                  {/* Botão 4 */}
+                  <div className="relative group">
+                    <button
+                      className="w-16 h-16 bg-transparent focus:outline-none"
+                      onClick={handleRestart}
+                    >
+                      <img
+                        src="/dle_feed/silhouette_icon.png"
+                        alt="Modo Silhouette"
+                        className="border-2 border-yellow-500 rounded-full w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </button>
+                    <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Silhuetas
                     </div>
+                  </div>
 
-                    {/* Botão 2 */}
-                    <div className="relative group">
-                      <button
-                        className="w-16 h-16 bg-transparent focus:outline-none"
-                        onClick={() => window.location.href = "/SaintSeiyaDLE/quiz"}
-                      >
-                        <img
-                          src="/dle_feed/quiz_icon.png"
-                          alt="Modo Quiz"
-                          className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
-                        />
-                      </button>
-                      <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        Quiz
-                      </div>
+                  {/* Botão 2 */}
+                  <div className="relative group">
+                    <button
+                      className="w-16 h-16 bg-transparent focus:outline-none"
+                      onClick={() => window.location.href = "/SaintSeiyaDLE/quiz"}
+                    >
+                      <img
+                        src="/dle_feed/quiz_icon.png"
+                        alt="Modo Quiz"
+                        className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </button>
+                    <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Quiz
                     </div>
+                  </div>
 
-                    {/* Botão 3 */}
-                    <div className="relative group">
-                      <button
-                        className="w-16 h-16 bg-transparent focus:outline-none"
-                        onClick={() => window.location.href = "/SaintSeiyaDLE/affinity"}
-                      >
-                        <img
-                          src="/dle_feed/affinity_icon.png"
-                          alt="Modo Affinity"
-                          className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
-                        />
-                      </button>
-                      <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        Teste de Afinidade
-                      </div>
+                  {/* Botão 3 */}
+                  <div className="relative group">
+                    <button
+                      className="w-16 h-16 bg-transparent focus:outline-none"
+                      onClick={() => window.location.href = "/SaintSeiyaDLE/affinity"}
+                    >
+                      <img
+                        src="/dle_feed/affinity_icon.png"
+                        alt="Modo Affinity"
+                        className="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </button>
+                    <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Teste de Afinidade
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
           </div>
         </div>
       )}

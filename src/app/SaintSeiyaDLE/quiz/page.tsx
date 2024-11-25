@@ -1,3 +1,5 @@
+// src/app/SaintSeiyaDLE/quiz/page.tsx
+
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
@@ -50,6 +52,8 @@ export default function QuizPage() {
 
   const achievementMilestones = [3, 5, 10];
   const difficulties = ["easy", "medium", "hard", "impossible"];
+
+  const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]); // Respostas escolhidas pelo usuário
 
   
   useEffect(() => {
@@ -124,8 +128,10 @@ export default function QuizPage() {
 
   const COMPLETED_DIFFICULTIES_KEY = 'global_completed_difficulties'; // Chave global para dificuldades concluídas
   
-  const handleAnswer = (isCorrect: boolean) => {
+  const handleAnswer = (isCorrect: boolean, selectedOption: string) => {
     let newScore = score;
+    setSelectedAnswers((prev) => [...prev, selectedOption]); // Salvar a resposta escolhida
+  
     if (isCorrect) {
       newScore = score + 1;
       setScore(newScore);
@@ -166,6 +172,7 @@ export default function QuizPage() {
       }, 500);
     }
   };
+  
 
   useEffect(() => {
     const savedCompletedDifficulties = JSON.parse(
@@ -229,7 +236,7 @@ export default function QuizPage() {
           <div className="relative group">
             <button
               className="w-16 h-16 bg-transparent focus:outline-none"
-              onClick={handleRestart}
+              onClick={() => window.location.href = "/SaintSeiyaDLE/silhueta"}
             >
               <img
                 src="/dle_feed/silhouette_icon.png"
@@ -360,7 +367,7 @@ export default function QuizPage() {
                     <div className="relative group">
                       <button
                         className="w-16 h-16 bg-transparent focus:outline-none"
-                        onClick={handleRestart}
+                        onClick={() => window.location.href =  "/SaintSeiyaDLE/silhueta"}
                       >
                         <img
                           src="/dle_feed/silhouette_icon.png"
@@ -421,18 +428,18 @@ export default function QuizPage() {
               {selectedQuestions[currentQuestion].question}
             </p>
             <div className="grid grid-cols-1 gap-4">
-              {selectedQuestions[currentQuestion].options.map((option, index) => (
-                <button
-                  key={index}
-                  onClick={() =>
-                    handleAnswer(option === selectedQuestions[currentQuestion].answer)
-                  }
-                  className="bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-all transform hover:scale-105 shadow-sm"
-                >
-                  {option}
-                </button>
-              ))}
-            </div>
+            {selectedQuestions[currentQuestion].options.map((option, index) => (
+              <button
+                key={index}
+                onClick={() =>
+                  handleAnswer(option === selectedQuestions[currentQuestion].answer, option)
+                }
+                className="bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-all transform hover:scale-105 shadow-sm"
+              >
+                {option}
+              </button>
+            ))}
+          </div>
           </div>
           <div className="text-center">
             <p className="text-lg">
@@ -447,34 +454,44 @@ export default function QuizPage() {
           <div className="mt-6">
             <h3 className="text-lg font-bold mb-2 text-yellow-400">Resumo do Quiz:</h3>
             <ul className="space-y-4 text-left">
-              {selectedQuestions.map((q, index) => (
-                <li key={index} className="bg-gray-700 p-4 rounded-md shadow-md">
-                  <p className="text-lg font-semibold text-gray-200">
-                    {index + 1}. {q.question}
-                  </p>
-                  {q.options.map((option, optIndex) => {
-                    const isSelected = option === selectedQuestions[index].answer;
-                    const isCorrect = option === q.answer;
-                    return (
-                      <p
-                        key={optIndex}
-                        className={`mt-1 px-3 py-1 rounded-md font-medium ${
-                          isCorrect
-                            ? 'bg-green-500 text-gray-900'
+              {selectedQuestions.map((q, index) => {
+                const correctAnswer = q.answer; // Resposta correta
+                const userAnswer = selectedAnswers[index]; // Resposta do usuário
+
+                return (
+                  <li key={index} className="bg-gray-700 p-4 rounded-md shadow-md">
+                    <p className="text-lg font-semibold text-gray-200">
+                      {index + 1}. {q.question}
+                    </p>
+                    {q.options.map((option, optIndex) => {
+                      const isCorrect = option === correctAnswer; // Verifica se é a resposta correta
+                      const isSelected = option === userAnswer; // Verifica se foi a resposta marcada
+
+                      return (
+                        <p
+                          key={optIndex}
+                          className={`mt-1 px-3 py-1 rounded-md font-medium ${
+                            isCorrect
+                              ? 'bg-green-500 text-gray-900' // Resposta correta
+                              : isSelected
+                              ? 'bg-red-500 text-gray-900' // Resposta marcada errada
+                              : 'bg-gray-800 text-gray-400' // Outras opções
+                          }`}
+                        >
+                          {isCorrect
+                            ? '' // Indicador para a resposta correta
                             : isSelected
-                            ? 'bg-red-500 text-gray-900'
-                            : 'bg-gray-800 text-gray-400'
-                        }`}
-                      >
-                        {isCorrect ? '✅ ' : isSelected ? '❌ ' : ''} {option}
-                      </p>
-                    );
-                  })}
-                </li>
-              ))}
+                            ? '' // Indicador para a resposta marcada errada
+                            : ''}{' '}
+                          {option}
+                        </p>
+                      );
+                    })}
+                  </li>
+                );
+              })}
             </ul>
           </div>
-
           <div ref={characteristicsRef}  className="mt-8 bg-gray-800 text-gray-100 p-6 rounded-lg shadow-lg text-center max-w-md mx-auto animate-fade-in">
             <h2 className="text-4xl text-green-400 mb-4">
               {score === selectedQuestions.length 
