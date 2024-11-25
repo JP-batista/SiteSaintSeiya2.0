@@ -70,53 +70,74 @@ export default function SilhuetaGamePage() {
 
 
   useEffect(() => {
-    const initializeGame = () => {
-      let availableArmors = armors.filter(
-        (armor) => !usedArmors.some((used) => used.name === armor.name)
-      );
-
-      if (availableArmors.length === 0) {
-        availableArmors = armors;
-        setUsedArmors([]);
-        removerFromLocalStorage("usedArmors");
+    if (typeof window !== "undefined") {
+      const initializeGame = () => {
+        const savedUsedArmors = carregarFromLocalStorage<Armor[]>("usedArmors", []);
+        const availableArmors = armors.filter(
+          (armor) => !savedUsedArmors.some((used) => used.name === armor.name)
+        );
+  
+        if (availableArmors.length === 0) {
+          setUsedArmors([]);
+          removerFromLocalStorage("usedArmors");
+          setSelectedArmor(armors[Math.floor(Math.random() * armors.length)]);
+        } else {
+          const randomArmor =
+            availableArmors[Math.floor(Math.random() * availableArmors.length)];
+          setUsedArmors([...savedUsedArmors, randomArmor]);
+          setSelectedArmor(randomArmor);
+        }
+      };
+  
+      const savedSelectedArmor = carregarFromLocalStorage<Armor | null>("selectedArmor", null);
+      const savedAttempts = carregarFromLocalStorage<string[]>("attempts", []);
+      const savedTestedArmors = carregarFromLocalStorage<
+        Array<{ name: string; category: string; revealedImg: string; isCorrect: boolean }>
+      >("testedArmors", []);
+      const savedWon = carregarFromLocalStorage<boolean>("won", false);
+      const savedAchievements = carregarFromLocalStorage<string[]>(ACHIEVEMENTS_KEY, []);
+  
+      setSelectedArmor(savedSelectedArmor);
+      setAttempts(savedAttempts);
+      setTestedArmors(savedTestedArmors);
+      setWon(savedWon);
+      setAchievements(savedAchievements);
+  
+      if (!savedSelectedArmor) {
+        initializeGame();
       }
-
-      const randomArmor =
-        availableArmors[Math.floor(Math.random() * availableArmors.length)];
-      setSelectedArmor(randomArmor);
-      setUsedArmors([...usedArmors, randomArmor]);
-    };
-
-    if (!selectedArmor) {
-      initializeGame();
     }
   }, []);
 
   useEffect(() => {
-    const maxZoomLevel = 3;
-    const minZoomLevel = 1;
-    const maxAttempts = 20;
-
-    const newZoomLevel = Math.max(
-      minZoomLevel,
-      maxZoomLevel - (maxZoomLevel - minZoomLevel) * (attempts.length / maxAttempts)
-    );
-
-    setZoomLevel(newZoomLevel);
+    if (typeof window !== "undefined") {
+      const maxZoomLevel = 3;
+      const minZoomLevel = 1;
+      const maxAttempts = 20;
+  
+      const newZoomLevel = Math.max(
+        minZoomLevel,
+        maxZoomLevel - (maxZoomLevel - minZoomLevel) * (attempts.length / maxAttempts)
+      );
+  
+      setZoomLevel(newZoomLevel);
+    }
   }, [attempts]);
 
   useEffect(() => {
-    salvarToLocalStorage("selectedArmor", selectedArmor);
-    salvarToLocalStorage("attempts", attempts);
-    salvarToLocalStorage("testedArmors", testedArmors);
-    salvarToLocalStorage("usedArmors", usedArmors);
-    salvarToLocalStorage("won", won);
-    localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(achievements));
+    if (typeof window !== "undefined") {
+      salvarToLocalStorage("selectedArmor", selectedArmor);
+      salvarToLocalStorage("attempts", attempts);
+      salvarToLocalStorage("testedArmors", testedArmors);
+      salvarToLocalStorage("usedArmors", usedArmors);
+      salvarToLocalStorage("won", won);
+      localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(achievements));
+    }
   }, [selectedArmor, attempts, testedArmors, usedArmors, won, achievements]);
 
   const handleAchievements = (attemptsCount: number, firstTimeWin: boolean) => {
     const newAchievements = [...achievements];
-
+  
     if (!newAchievements.includes("Primeira Vitória") && firstTimeWin) {
       newAchievements.push("Primeira Vitória");
     }
@@ -129,8 +150,10 @@ export default function SilhuetaGamePage() {
     if (!newAchievements.includes("Acertou de Primeira") && attemptsCount === 1) {
       newAchievements.push("Acertou de Primeira");
     }
-
-    localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(newAchievements));
+  
+    if (typeof window !== "undefined") {
+      localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(newAchievements));
+    }
     setAchievements(newAchievements);
   };
 
@@ -288,7 +311,7 @@ export default function SilhuetaGamePage() {
   return (
     <div className="min-h-screen text-white flex flex-col items-center justify-center p-6">
 
-<div className="flex justify-center items-center mb-2">
+      <div className="flex justify-center items-center mb-2">
         <img
           src="/dle_feed/logo_dle.png"
           alt="Logo Os Cavaleiros do Zodíaco"
