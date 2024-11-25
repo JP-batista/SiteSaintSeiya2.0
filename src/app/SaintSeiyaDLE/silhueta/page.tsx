@@ -10,8 +10,6 @@ import {
   removerFromLocalStorage,
 } from "../../utils/localStorageUtils";
 
-const ACHIEVEMENTS_KEY = 'global_achievements'; // Chave para salvar conquistas no localStorage
-
 type Armor = {
   name: string;
   category: string;
@@ -21,6 +19,8 @@ type Armor = {
   silhouetteImg: string;
   revealedImg: string;
 };
+
+const ACHIEVEMENTS_KEY = "silhouette_achievements";
 
 export default function SilhuetaGamePage() {
   const prefix = "silhouette_";
@@ -64,97 +64,79 @@ export default function SilhuetaGamePage() {
     carregarFromLocalStorage<Armor[]>("usedArmors", [])
   );
   const [showAnswer, setShowAnswer] = useState<boolean>(false);
+
+  // Estado para gerenciar conquistas
   const [achievements, setAchievements] = useState<string[]>(() =>
-    JSON.parse(localStorage.getItem(ACHIEVEMENTS_KEY) || '[]')
+    carregarFromLocalStorage<string[]>(ACHIEVEMENTS_KEY, [])
   );
-
-
+  
+  // Inicializar o jogo
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const initializeGame = () => {
-        const savedUsedArmors = carregarFromLocalStorage<Armor[]>("usedArmors", []);
-        const availableArmors = armors.filter(
-          (armor) => !savedUsedArmors.some((used) => used.name === armor.name)
-        );
-  
-        if (availableArmors.length === 0) {
-          setUsedArmors([]);
-          removerFromLocalStorage("usedArmors");
-          setSelectedArmor(armors[Math.floor(Math.random() * armors.length)]);
-        } else {
-          const randomArmor =
-            availableArmors[Math.floor(Math.random() * availableArmors.length)];
-          setUsedArmors([...savedUsedArmors, randomArmor]);
-          setSelectedArmor(randomArmor);
-        }
-      };
-  
-      const savedSelectedArmor = carregarFromLocalStorage<Armor | null>("selectedArmor", null);
-      const savedAttempts = carregarFromLocalStorage<string[]>("attempts", []);
-      const savedTestedArmors = carregarFromLocalStorage<
-        Array<{ name: string; category: string; revealedImg: string; isCorrect: boolean }>
-      >("testedArmors", []);
-      const savedWon = carregarFromLocalStorage<boolean>("won", false);
-      const savedAchievements = carregarFromLocalStorage<string[]>(ACHIEVEMENTS_KEY, []);
-  
-      setSelectedArmor(savedSelectedArmor);
-      setAttempts(savedAttempts);
-      setTestedArmors(savedTestedArmors);
-      setWon(savedWon);
-      setAchievements(savedAchievements);
-  
-      if (!savedSelectedArmor) {
-        initializeGame();
+    const initializeGame = () => {
+      let availableArmors = armors.filter(
+        (armor) => !usedArmors.some((used) => used.name === armor.name)
+      );
+
+      if (availableArmors.length === 0) {
+        availableArmors = armors;
+        setUsedArmors([]);
+        removerFromLocalStorage("usedArmors");
       }
+
+      const randomArmor =
+        availableArmors[Math.floor(Math.random() * availableArmors.length)];
+      setSelectedArmor(randomArmor);
+      setUsedArmors([...usedArmors, randomArmor]);
+    };
+
+    if (!selectedArmor) {
+      initializeGame();
     }
   }, []);
 
+  // Ajustar o nível de zoom com base nas tentativas
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const maxZoomLevel = 3;
-      const minZoomLevel = 1;
-      const maxAttempts = 20;
-  
-      const newZoomLevel = Math.max(
-        minZoomLevel,
-        maxZoomLevel - (maxZoomLevel - minZoomLevel) * (attempts.length / maxAttempts)
-      );
-  
-      setZoomLevel(newZoomLevel);
-    }
+    const maxZoomLevel = 3;
+    const minZoomLevel = 1;
+    const maxAttempts = 20;
+
+    const newZoomLevel = Math.max(
+      minZoomLevel,
+      maxZoomLevel - (maxZoomLevel - minZoomLevel) * (attempts.length / maxAttempts)
+    );
+
+    setZoomLevel(newZoomLevel);
   }, [attempts]);
 
+  // Salvar estados no localStorage
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      salvarToLocalStorage("selectedArmor", selectedArmor);
-      salvarToLocalStorage("attempts", attempts);
-      salvarToLocalStorage("testedArmors", testedArmors);
-      salvarToLocalStorage("usedArmors", usedArmors);
-      salvarToLocalStorage("won", won);
-      localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(achievements));
-    }
+    salvarToLocalStorage("selectedArmor", selectedArmor);
+    salvarToLocalStorage("attempts", attempts);
+    salvarToLocalStorage("testedArmors", testedArmors);
+    salvarToLocalStorage("usedArmors", usedArmors);
+    salvarToLocalStorage("won", won);
+    salvarToLocalStorage(ACHIEVEMENTS_KEY, achievements);
   }, [selectedArmor, attempts, testedArmors, usedArmors, won, achievements]);
 
-  const handleAchievements = (attemptsCount: number, firstTimeWin: boolean) => {
-    const newAchievements = [...achievements];
-  
-    if (!newAchievements.includes("Primeira Vitória") && firstTimeWin) {
-      newAchievements.push("Primeira Vitória");
+  // Função para gerenciar conquistas
+  const handleAchievements = (attemptsCount: number, isFirstWin: boolean) => {
+    const updatedAchievements = [...achievements];
+
+    if (!updatedAchievements.includes("Primeira Vitória") && isFirstWin) {
+      updatedAchievements.push("Primeira Vitória");
     }
-    if (!newAchievements.includes("Acertou em 10 Tentativas") && attemptsCount <= 10) {
-      newAchievements.push("Acertou em 10 Tentativas");
+    if (!updatedAchievements.includes("Acertou em 10 Tentativas") && attemptsCount <= 10) {
+      updatedAchievements.push("Acertou em 10 Tentativas");
     }
-    if (!newAchievements.includes("Acertou em 5 Tentativas") && attemptsCount <= 5) {
-      newAchievements.push("Acertou em 5 Tentativas");
+    if (!updatedAchievements.includes("Acertou em 5 Tentativas") && attemptsCount <= 5) {
+      updatedAchievements.push("Acertou em 5 Tentativas");
     }
-    if (!newAchievements.includes("Acertou de Primeira") && attemptsCount === 1) {
-      newAchievements.push("Acertou de Primeira");
+    if (!updatedAchievements.includes("Acertou de Primeira") && attemptsCount === 1) {
+      updatedAchievements.push("Acertou de Primeira");
     }
-  
-    if (typeof window !== "undefined") {
-      localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(newAchievements));
-    }
-    setAchievements(newAchievements);
+
+    setAchievements(updatedAchievements);
+    salvarToLocalStorage(ACHIEVEMENTS_KEY, updatedAchievements);
   };
 
   const getFilteredSuggestions = (value: string) => {
@@ -170,6 +152,7 @@ export default function SilhuetaGamePage() {
     });
   };
   
+
   const normalizeString = (str: string): string => {
     return str
       .normalize("NFD")
@@ -177,6 +160,7 @@ export default function SilhuetaGamePage() {
       .toLowerCase();
   };
   
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setInput(value);
@@ -199,6 +183,10 @@ export default function SilhuetaGamePage() {
     setShowDropdown(false);
   };
 
+
+  
+  
+
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "ArrowDown" && suggestions.length > 0) {
       const currentIndex = suggestions.findIndex((s) => s === selectedSuggestion);
@@ -215,66 +203,64 @@ export default function SilhuetaGamePage() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-  
+
     if (!input.trim() || !selectedSuggestion) {
-      alert("Por favor, insira o nome de uma armadura.");
       return;
     }
-  
+
     const guess = armors.find(
       (armor) => normalizeString(armor.name) === normalizeString(selectedSuggestion.name)
     );
-  
+
     if (!guess) {
       alert("Armadura não encontrada!");
       return;
     }
-  
+
     if (!selectedArmor) {
       alert("Erro interno: Armadura selecionada inválida.");
       return;
     }
-  
-    const alreadyTested = testedArmors.some(
-      (tested) => normalizeString(tested.name) === normalizeString(guess.name)
-    );
-  
-    if (alreadyTested) {
+
+    if (
+      testedArmors.some(
+        (tested) => normalizeString(tested.name) === normalizeString(selectedSuggestion.name)
+      )
+    ) {
       alert("Você já tentou essa armadura!");
       return;
     }
-  
-    const isCorrect = normalizeString(guess.name) === normalizeString(selectedArmor.name);
-  
+
+    const correct = normalizeString(guess.name) === normalizeString(selectedArmor.name);
+
+    if (correct) {
+      setShowAnswer(false);
+      setWon(true);
+
+      // Atualizar conquistas ao ganhar
+      handleAchievements(attempts.length + 1, testedArmors.length === 0);
+
+      setTimeout(() => {
+        characteristicsRef.current?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+
     const newTestedArmor = {
       name: guess.name,
       category: guess.category,
       revealedImg: guess.revealedImg,
-      isCorrect,
+      isCorrect: correct,
     };
-  
+
     setTestedArmors([newTestedArmor, ...testedArmors]);
     setAttempts([guess.name, ...attempts]);
-  
-    if (isCorrect) {
-      setShowAnswer(false);
-      setWon(true);
-      handleAchievements(attempts.length + 1, testedArmors.length === 0);
-  
-      setTimeout(() => {
-        characteristicsRef.current?.scrollIntoView({ behavior: "smooth" });
-      }, 300);
-    } else {
-      alert("Resposta errada! Tente novamente.");
-    }
-  
-    // Limpar entrada e sugestões após a tentativa
     setInput("");
     setSuggestions([]);
     setShowDropdown(false);
     setSelectedSuggestion(null);
-  };  
+  };
   
+
   const handleRestart = () => {
     let availableArmors = armors.filter(
       (armor) => !usedArmors.some((used) => used.name === armor.name)
@@ -294,6 +280,7 @@ export default function SilhuetaGamePage() {
     setAttempts([]);
     setTestedArmors([]);
     setWon(false);
+    setZoomLevel(3);
     setInput("");
     setShowDropdown(false);
     setSelectedSuggestion(null);
@@ -303,6 +290,7 @@ export default function SilhuetaGamePage() {
     removerFromLocalStorage("won");
   };
   
+
   const handleGiveUp = () => {
     setWon(true);
     setShowAnswer(true);
