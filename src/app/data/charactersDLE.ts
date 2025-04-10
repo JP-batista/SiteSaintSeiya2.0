@@ -632,7 +632,7 @@ const characters = [
         localDeTreinamento: "Groenlândia",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
-        saga: "Santuario",
+        saga: "Santuário",
         imgSrc: "/dle/afrodite.jpg",
         Dica1: "Suas armas são flores letais",
         Dica2: "Guarda a última Casa do Zodíaco"
@@ -765,7 +765,7 @@ const characters = [
         dica2: "Usa uma máscara que oculta seu rosto."
     },
     
-    //Guerreiros do Santuario
+    //Guerreiros do Santuário
 
     {
         nome: "Docrates",
@@ -903,7 +903,7 @@ const characters = [
         localDeTreinamento: "Japão",
         patente: "Cavaleiro de Aço",
         exercito: "Exército de Athena",
-        saga: "Santuario",
+        saga: "Santuário",
         imgSrc: "/dle/sho.jpg",
         dica1: "Seu nome significa 'voar' em japonês.",
         dica2: "Sua armadura é associada ao elemento ar."
@@ -918,7 +918,7 @@ const characters = [
         localDeTreinamento: "Japão",
         patente: "Cavaleiro de Aço",
         exercito: "Exército de Athena",
-        saga: "Santuario",
+        saga: "Santuário",
         imgSrc: "/dle/daichi.jpg",
         dica1: "Seu nome significa 'terra' em japonês.",
         dica2: "Sua armadura é associada ao elemento terra."
@@ -933,7 +933,7 @@ const characters = [
         localDeTreinamento: "Japão",
         patente: "Cavaleiro de Aço",
         exercito: "Exército de Athena",
-        saga: "Santuario",
+        saga: "Santuário",
         imgSrc: "/dle/ushio.jpg",
         dica1: "Seu nome significa 'maré' em japonês.",
         dica2: "Sua armadura é associada ao elemento água."
