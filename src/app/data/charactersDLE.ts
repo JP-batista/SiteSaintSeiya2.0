@@ -617,7 +617,7 @@ const characters = [
         localDeTreinamento: "Sibéria",
         patente: "Cavaleiro de Ouro",
         exercito: "Exército de Athena",
-        saga: "Santuario",
+        saga: "Santuário",
         imgSrc: "/dle/camus.jpg",
         Dica1: "Mestre do frio absoluto",
         Dica2: "Treinou um Cavaleiro de Bronze na Sibéria"
