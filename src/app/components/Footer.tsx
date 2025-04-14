@@ -17,6 +17,9 @@ export default function Footer() {
             <a href="https://www.instagram.com/jp_batista20/" target="_blank" className="ml-2 text-yellow-500 hover:text-yellow-400">
               Instagram
             </a>
+              <a www.linkedin.com/in/joao-pedro-ribeiro-batista-araujo-1583b1332">
+              Linkedin
+            </a>
           </p>
           <p className="mt-4 text-xs text-gray-400">
             As informações contidas neste site são de domínio público e fazem parte do universo da série Saint Seiya. 
