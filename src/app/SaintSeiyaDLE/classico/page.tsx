@@ -412,10 +412,11 @@ export default function GamePage() {
     } else if (e.key === "ArrowUp" && suggestions.length > 0) {
       const currentIndex = suggestions.findIndex((s) => s === selectedSuggestion);
       const prevIndex = (currentIndex - 1 + suggestions.length) % suggestions.length;
-      setSelectedSuggestion(suggestions[prevIndex]);getFilteredSuggestions 
+      setSelectedSuggestion(suggestions[prevIndex]);
       setInput(suggestions[prevIndex].nome);
     }
-  };  
+  };
+   
   
   // Função para reiniciar o jogo
   const handleRestart = () => {
