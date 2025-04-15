@@ -4,6 +4,7 @@ const characters = [
     // Cavaleiros de Bronze Clássico
     {
         nome: "Seiya de Pégaso",
+        titulo: "Cavaleiro de Pégaso",
         idade: "13",
         altura: "1,65 m",
         genero: "Masculino",
@@ -16,9 +17,10 @@ const characters = [
         imgSrc: "/dle/seiya.jpg",
         dica1: "Participou de um torneio para conquistar uma armadura dourada.",
         dica2: "Seu golpe principal é inspirado em corpos celestes."
-    },
-    {
+      },
+      {
         nome: "Shiryu de Dragão",
+        titulo: "Cavaleiro de Dragão",
         idade: "14",
         altura: "1,72 m",
         genero: "Masculino",
@@ -31,9 +33,10 @@ const characters = [
         imgSrc: "/dle/shiryu.jpg",
         dica1: "Possui uma tatuagem que desaparece em situações críticas.",
         dica2: "Seu mestre é um dos cavaleiros mais antigos e respeitados."
-    },
-    {
+      },
+      {
         nome: "Hyoga de Cisne",
+        titulo: "Cavaleiro de Cisne",
         idade: "14",
         altura: "1,73 m",
         genero: "Masculino",
@@ -46,9 +49,10 @@ const characters = [
         imgSrc: "/dle/hyoga.jpg",
         dica1: "Visita frequentemente um local submerso no gelo.",
         dica2: "Sua técnica principal é inspirada em uma ave polar."
-    },
-    {
+      },
+      {
         nome: "Shun de Andrômeda",
+        titulo: "Cavaleiro de Andrômeda",
         idade: "13",
         altura: "1,65 m",
         genero: "Masculino",
@@ -61,9 +65,10 @@ const characters = [
         imgSrc: "/dle/shun.jpg",
         dica1: "Foi treinado em uma ilha perigosa.",
         dica2: "Utiliza correntes com múltiplas funções em combate."
-    },
-    {
+      },
+      {
         nome: "Ikki de Fênix",
+        titulo: "Cavaleiro de Fênix",
         idade: "15",
         altura: "1,75 m",
         genero: "Masculino",
@@ -76,9 +81,10 @@ const characters = [
         imgSrc: "/dle/ikki.jpg",
         dica1: "Ressurge após cada derrota.",
         dica2: "Liderou um grupo de cavaleiros renegados."
-    },
-    {
+      },
+      {
         nome: "Jabu de Unicórnio",
+        titulo: "Cavaleiro de Unicórnio",
         idade: "13",
         altura: "1,65 m",
         genero: "Masculino",
@@ -91,9 +97,10 @@ const characters = [
         imgSrc: "/dle/jabu.jpg",
         dica1: "Este cavaleiro possui uma técnica que remete a um animal mitológico com um único chifre.",
         dica2: "Ele foi derrotado por Shun de Andrômeda na Guerra Galáctica."
-    },
-    {
+      },
+      {
         nome: "Ichi de Hidra",
+        titulo: "Cavaleiro de Hidra",
         idade: "14",
         altura: "1,78 m",
         genero: "Masculino",
@@ -106,9 +113,10 @@ const characters = [
         imgSrc: "/dle/ichi.jpg",
         dica1: "Suas técnicas envolvem o uso de veneno.",
         dica2: "Foi derrotado por Hyoga de Cisne na Guerra Galáctica."
-    },
-    {
+      },
+      {
         nome: "Nachi de Lobo",
+        titulo: "Cavaleiro de Lobo",
         idade: "14",
         altura: "1,72 m",
         genero: "Masculino",
@@ -121,9 +129,10 @@ const characters = [
         imgSrc: "/dle/nachi.jpg",
         dica1: "Este cavaleiro tem uma técnica que remete a um uivo.",
         dica2: "Foi derrotado por Ikki de Fênix na Guerra Galáctica."
-    },
-    {
+      },
+      {
         nome: "Ban de Leão Menor",
+        titulo: "Cavaleiro de Leão Menor",
         idade: "15",
         altura: "1,80 m",
         genero: "Masculino",
@@ -136,9 +145,10 @@ const characters = [
         imgSrc: "/dle/ban.jpg",
         dica1: "Sua técnica principal é inspirada em um felino de menor porte.",
         dica2: "Foi derrotado por Jabu de Unicórnio na Guerra Galáctica."
-    },
-    {
+      },
+      {
         nome: "Geki de Urso",
+        titulo: "Cavaleiro de Urso",
         idade: "15",
         altura: "2,20 m",
         genero: "Masculino",
@@ -151,9 +161,10 @@ const characters = [
         imgSrc: "/dle/geki.jpg",
         dica1: "Este cavaleiro é conhecido por sua força bruta e técnicas de agarramento.",
         dica2: "Foi derrotado por Seiya de Pégaso na Guerra Galáctica."
-    },
-    {
+      },
+      {
         nome: "June de Camaleão",
+        titulo: "Cavaleiro de Camaleão",
         idade: "14",
         altura: "1,67 m",
         genero: "Feminino",
@@ -166,12 +177,13 @@ const characters = [
         imgSrc: "/dle/june.jpg",
         dica1: "Ela treinou na mesma ilha que Shun de Andrômeda.",
         dica2: "Possui técnicas que envolvem camuflagem e uso de uma corrente."
-    },
+      },
 
 
     //Cavaleiros de Prata Classicos
     {
         nome: "Shina de Ofiúco",
+        titulo: "Cavaleira de Ofiúco",
         idade: "16",
         altura: "1,67 m",
         genero: "Feminino",
@@ -184,9 +196,10 @@ const characters = [
         imgSrc: "/dle/shina.jpg",
         dica1: "Amazona que inicialmente perseguia Seiya.",
         dica2: "Desenvolveu sentimentos pelo Cavaleiro de Pégaso."
-    },
-    {
+      },
+      {
         nome: "Misty de Lagarto",
+        titulo: "Cavaleiro de Lagarto",
         idade: "16",
         altura: "1,83 m",
         genero: "Masculino",
@@ -199,9 +212,10 @@ const characters = [
         imgSrc: "/dle/misty.jpg",
         dica1: "Cavaleiro que subestimou Seiya e foi derrotado.",
         dica2: "Conhecido por sua vaidade e confiança excessiva."
-    },
-    {
+      },
+      {
         nome: "Babel de Centauro",
+        titulo: "Cavaleiro de Centauro",
         idade: "17",
         altura: "1,85 m",
         genero: "Masculino",
@@ -214,9 +228,10 @@ const characters = [
         imgSrc: "/dle/babel.jpg",
         dica1: "Utiliza chamas em suas técnicas de combate.",
         dica2: "Enfrentou os Cavaleiros de Bronze no Coliseu."
-    },
-    {
+      },
+      {
         nome: "Capella de Auriga",
+        titulo: "Cavaleiro de Auriga",
         idade: "17",
         altura: "1,85 m",
         genero: "Masculino",
@@ -229,9 +244,10 @@ const characters = [
         imgSrc: "/dle/capella.jpg",
         dica1: "Emprega discos cortantes como arma principal.",
         dica2: "Foi derrotado por Ikki de Fênix."
-    },
-    {
+      },
+      {
         nome: "Dante de Cérbero",
+        titulo: "Cavaleiro de Cérbero",
         idade: "17",
         altura: "1,88 m",
         genero: "Masculino",
@@ -244,9 +260,10 @@ const characters = [
         imgSrc: "/dle/dante.jpg",
         dica1: "Utiliza correntes pesadas em combate.",
         dica2: "Enfrentou Seiya e Shun em uma floresta."
-    },
-    {
+      },
+      {
         nome: "Jamian de Corvo",
+        titulo: "Cavaleiro de Corvo",
         idade: "18",
         altura: "1,80 m",
         genero: "Masculino",
@@ -259,9 +276,10 @@ const characters = [
         imgSrc: "/dle/jamian.jpg",
         dica1: "Comanda um grupo de corvos em suas batalhas.",
         dica2: "Tentou sequestrar Saori Kido."
-    },
-    {
+      },
+      {
         nome: "Asterion de Cães de Caça",
+        titulo: "Cavaleiro de Cães de Caça",
         idade: "18",
         altura: "1,87 m",
         genero: "Masculino",
@@ -274,9 +292,10 @@ const characters = [
         imgSrc: "/dle/asterion.jpg",
         dica1: "Possui a habilidade de ler mentes.",
         dica2: "Foi derrotado por Marin de Águia."
-    },
-    {
+      },
+      {
         nome: "Moses de Baleia",
+        titulo: "Cavaleiro de Baleia",
         idade: "17",
         altura: "2,05 m",
         genero: "Masculino",
@@ -289,9 +308,10 @@ const characters = [
         imgSrc: "/dle/moses.jpg",
         dica1: "Conhecido por sua força física descomunal.",
         dica2: "Enfrentou Seiya e Marin em uma praia."
-    },
-    {
+      },
+      {
         nome: "Algol de Perseu",
+        titulo: "Cavaleiro de Perseu",
         idade: "17",
         altura: "1,87 m",
         genero: "Masculino",
@@ -304,9 +324,10 @@ const characters = [
         imgSrc: "/dle/algol.jpg",
         dica1: "Seu escudo pode transformar inimigos em pedra.",
         dica2: "Foi derrotado por Shiryu de Dragão."
-    },
-    {
+      },
+      {
         nome: "Dio de Mosca",
+        titulo: "Cavaleiro de Mosca",
         idade: "17",
         altura: "1,85 m",
         genero: "Masculino",
@@ -317,10 +338,11 @@ const characters = [
         exercito: "Exército de Athena",
         saga: "Santuário",
         imgSrc: "/dle/dio.jpg",
-        dica1: "Conhecido por sua velocidade em combate.",
-    },
-    {
+        dica1: "Conhecido por sua velocidade em combate."
+      },
+      {
         nome: "Sirius de Cão Maior",
+        titulo: "Cavaleiro de Cão Maior",
         idade: "17",
         altura: "1,89 m",
         genero: "Masculino",
@@ -333,9 +355,10 @@ const characters = [
         imgSrc: "/dle/sirius.jpg",
         dica1: "Liderou uma missão ao lado de Dio e Algethi.",
         dica2: "Derrotado por Seiya de Pégaso."
-    },
-    {
+      },
+      {
         nome: "Algethi de Hércules",
+        titulo: "Cavaleiro de Hércules",
         idade: "18",
         altura: "2,25 m",
         genero: "Masculino",
@@ -348,9 +371,10 @@ const characters = [
         imgSrc: "/dle/algheti.jpg",
         dica1: "Conhecido por sua força descomunal.",
         dica2: "Enfrentou Seiya de Pégaso e foi derrotado."
-    },
-    {
+      },
+      {
         nome: "Shiva de Pavão",
+        titulo: "Cavaleiro de Pavão",
         idade: "17",
         altura: "1,78 m",
         genero: "Masculino",
@@ -363,9 +387,10 @@ const characters = [
         imgSrc: "/dle/shiva.jpg",
         dica1: "Discípulo de Shaka de Virgem.",
         dica2: "Lutou contra Ikki de Fênix ao lado de Ágora."
-    },
-    {
+      },
+      {
         nome: "Ágora de Lótus",
+        titulo: "Cavaleiro de Lótus",
         idade: "17",
         altura: "1,78 m",
         genero: "Masculino",
@@ -378,9 +403,10 @@ const characters = [
         imgSrc: "/dle/agora.jpg",
         dica1: "Discípulo de Shaka de Virgem.",
         dica2: "Lutou contra Ikki de Fênix ao lado de Shiva."
-    },
-    {
+      },
+      {
         nome: "Albion (Daidaros) de Cefeu",
+        titulo: "Cavaleiro de Cefeu",
         idade: "18",
         altura: "1,85 m",
         genero: "Masculino",
@@ -393,9 +419,10 @@ const characters = [
         imgSrc: "/dle/albion.jpg",
         dica1: "Mestre de Shun de Andrômeda.",
         dica2: "Assassinado por Milo de Escorpião."
-    },
-    {
+      },
+      {
         nome: "Marin de Águia",
+        titulo: "Cavaleira de Águia",
         idade: "16",
         altura: "1,67 m",
         genero: "Feminino",
@@ -408,9 +435,10 @@ const characters = [
         imgSrc: "/dle/marin.jpg",
         dica1: "Mestre de Seiya de Pégaso.",
         dica2: "Suspeita-se que seja a irmã de Seiya."
-    },
-    {
+      },
+      {
         nome: "Aracne de Tarântula",
+        titulo: "Cavaleiro de Tarântula",
         idade: "17",
         altura: "1,80 m",
         genero: "Masculino",
@@ -423,9 +451,10 @@ const characters = [
         imgSrc: "/dle/aracne.jpg",
         dica1: "Tentou matar Seiya em uma caverna.",
         dica2: "Derrotado por Seiya de Pégaso."
-    },
-    {
+      },
+      {
         nome: "Tremy de Flecha (Sagita)",
+        titulo: "Cavaleiro de Flecha",
         idade: "Desconhecida",
         altura: "1,80 m",
         genero: "Masculino",
@@ -438,9 +467,10 @@ const characters = [
         imgSrc: "/dle/tremy.jpg",
         dica1: "Atirou uma flecha em Saori Kido.",
         dica2: "Derrotado por Seiya de Pégaso."
-    },
-    {
+      },
+      {
         nome: "Orfeu de Lira",
+        titulo: "Cavaleiro de Lira",
         idade: "20",
         altura: "1,72 m",
         genero: "Masculino",
@@ -453,12 +483,13 @@ const characters = [
         imgSrc: "/dle/orfeu.jpg",
         dica1: "Músico que encantou até Hades.",
         dica2: "Sacrificou-se para ajudar Seiya e seus amigos."
-    },
+      },
 
     //Cavaleiros de Ouro Classicos
 
     {
         nome: "Mu de Áries",
+        titulo: "Cavaleiro de Áries",
         idade: "20",
         altura: "1,82 m",
         genero: "Masculino",
@@ -471,9 +502,10 @@ const characters = [
         imgSrc: "/dle/mu.jpg",
         dica1: "Único capaz de reparar armaduras.",
         dica2: "Discípulo de Shion."
-    },
-    {
+      },
+      {
         nome: "Aldebaran de Touro",
+        titulo: "Cavaleiro de Touro",
         idade: "20",
         altura: "2,10 m",
         genero: "Masculino",
@@ -486,9 +518,10 @@ const characters = [
         imgSrc: "/dle/aldebaran.jpg",
         dica1: "Possui uma técnica que lembra uma estrela.",
         dica2: "Enfrentou Seiya na Casa de Touro."
-    },
-    {
+      },
+      {
         nome: "Saga de Gêmeos",
+        titulo: "Cavaleiro de Gêmeos",
         idade: "28",
         altura: "1,88 m",
         genero: "Masculino",
@@ -501,9 +534,10 @@ const characters = [
         imgSrc: "/dle/saga.jpg",
         dica1: "Duas personalidades em um só corpo.",
         dica2: "Usurpou o posto de Grande Mestre."
-    },
-    {
+      },
+      {
         nome: "Máscara da Morte de Câncer",
+        titulo: "Cavaleiro de Câncer",
         idade: "23",
         altura: "1,84 m",
         genero: "Masculino",
@@ -516,9 +550,10 @@ const characters = [
         imgSrc: "/dle/mascaradamorte.jpg",
         dica1: "Decora sua casa com rostos de vítimas.",
         dica2: "Enfrentou Shiryu na Casa de Câncer."
-    },
-    {
+      },
+      {
         nome: "Aiolia de Leão",
+        titulo: "Cavaleiro de Leão",
         idade: "20",
         altura: "1,85 m",
         genero: "Masculino",
@@ -531,9 +566,10 @@ const characters = [
         imgSrc: "/dle/aiolia.jpg",
         dica1: "Irmão mais novo de um Cavaleiro de Ouro.",
         dica2: "Conhecido por sua velocidade e força."
-    },
-    {
+      },
+      {
         nome: "Shaka de Virgem",
+        titulo: "Cavaleiro de Virgem",
         idade: "20",
         altura: "1,82 m",
         genero: "Masculino",
@@ -546,9 +582,10 @@ const characters = [
         imgSrc: "/dle/shaka.jpg",
         dica1: "Considerado o homem mais próximo de Deus.",
         dica2: "Luta frequentemente de olhos fechados."
-    },
-    {
+      },
+      {
         nome: "Dohko de Libra (Clássico)",
+        titulo: "Cavaleiro de Libra",
         idade: "261",
         altura: "1,40 m",
         genero: "Masculino",
@@ -561,9 +598,10 @@ const characters = [
         imgSrc: "/dle/mestreanciao.jpg",
         dica1: "Sobreviveu à última Guerra Santa.",
         dica2: "Mestre de Shiryu de Dragão."
-    },
-    {
+      },
+      {
         nome: "Milo de Escorpião",
+        titulo: "Cavaleiro de Escorpião",
         idade: "20",
         altura: "1,85 m",
         genero: "Masculino",
@@ -576,9 +614,10 @@ const characters = [
         imgSrc: "/dle/milo.jpg",
         dica1: "Sua técnica principal envolve agulhas.",
         dica2: "Enfrentou Hyoga na Casa de Escorpião."
-    },
-    {
+      },
+      {
         nome: "Aiolos de Sagitário",
+        titulo: "Cavaleiro de Sagitário",
         idade: "14",
         altura: "1,87 m",
         genero: "Masculino",
@@ -591,9 +630,10 @@ const characters = [
         imgSrc: "/dle/aiolos.jpg",
         dica1: "Salvou a reencarnação de Athena.",
         dica2: "Irmão mais velho de Aiolia."
-    },
-    {
+      },
+      {
         nome: "Shura de Capricórnio",
+        titulo: "Cavaleiro de Capricórnio",
         idade: "23",
         altura: "1,86 m",
         genero: "Masculino",
@@ -606,9 +646,10 @@ const characters = [
         imgSrc: "/dle/shura.jpg",
         dica1: "Sua técnica principal é uma espada invisível.",
         dica2: "Enfrentou Shiryu na Casa de Capricórnio."
-    },
-    {
+      },
+      {
         nome: "Camus de Aquário",
+        titulo: "Cavaleiro de Aquário",
         idade: "20",
         altura: "1,84 m",
         genero: "Masculino",
@@ -619,11 +660,12 @@ const characters = [
         exercito: "Exército de Athena",
         saga: "Santuário",
         imgSrc: "/dle/camus.jpg",
-        Dica1: "Mestre do frio absoluto",
-        Dica2: "Treinou um Cavaleiro de Bronze na Sibéria"
-    },
-    {
+        dica1: "Mestre do frio absoluto",
+        dica2: "Treinou um Cavaleiro de Bronze na Sibéria"
+      },
+      {
         nome: "Afrodite de Peixes",
+        titulo: "Cavaleiro de Peixes",
         idade: "22",
         altura: "1,83 m",
         genero: "Masculino",
@@ -634,14 +676,15 @@ const characters = [
         exercito: "Exército de Athena",
         saga: "Santuário",
         imgSrc: "/dle/afrodite.jpg",
-        Dica1: "Suas armas são flores letais",
-        Dica2: "Guarda a última Casa do Zodíaco"
-    },
+        dica1: "Suas armas são flores letais",
+        dica2: "Guarda a última Casa do Zodíaco"
+      },
 
     //Deusa Athena 
 
     {
         nome: "Athena",
+        titulo: "Deusa da Sabedoria e da Guerra",
         idade: "Imortal",
         altura: "1,70 m",
         genero: "Feminino",
@@ -661,6 +704,7 @@ const characters = [
 
     {
         nome: "Kenuma de Pégaso Negro",
+        titulo: "Cavaleiro Pégaso Negro",
         idade: "13",
         altura: "1,65 m",
         genero: "Masculino",
@@ -673,9 +717,10 @@ const characters = [
         imgSrc: "/dle/kenuma.jpg",
         dica1: "Reflexo sombrio do Cavaleiro de Pégaso.",
         dica2: "Enfrentou Seiya na Caverna dos Ventos."
-    },
-    {
+      },
+      {
         nome: "Shinadekuro de Dragão Negro",
+        titulo: "Cavaleiro Dragão Negro",
         idade: "14",
         altura: "1,72 m",
         genero: "Masculino",
@@ -688,9 +733,10 @@ const characters = [
         imgSrc: "/dle/shinadekuro.jpg",
         dica1: "Espelho obscuro do Cavaleiro de Dragão.",
         dica2: "Possui um irmão cego que o auxilia."
-    },
-    {
+      },
+      {
         nome: "Jid de Cisne Negro",
+        titulo: "Cavaleiro Cisne Negro",
         idade: "14",
         altura: "1,70 m",
         genero: "Masculino",
@@ -703,9 +749,10 @@ const characters = [
         imgSrc: "/dle/jid.jpg",
         dica1: "Contraparte sombria do Cavaleiro de Cisne.",
         dica2: "Enfrentou Hyoga em uma batalha gélida."
-    },
-    {
+      },
+      {
         nome: "Andrômeda Negro",
+        titulo: "Cavaleiro Andrômeda Negro",
         idade: "14",
         altura: "1,65 m",
         genero: "Masculino",
@@ -718,9 +765,10 @@ const characters = [
         imgSrc: "/dle/andromedanegro.jpg",
         dica1: "Sombra do Cavaleiro de Andrômeda.",
         dica2: "Utiliza correntes similares às de Shun."
-    },
-    {
+      },
+      {
         nome: "Ritahoa de Fênix Negro",
+        titulo: "Cavaleiro Fênix Negro",
         idade: "15",
         altura: "1,75 m",
         genero: "Masculino",
@@ -733,9 +781,10 @@ const characters = [
         imgSrc: "/dle/ritahoa.jpg",
         dica1: "Reflexo obscuro do Cavaleiro de Fênix.",
         dica2: "Serviu como sombra de Ikki."
-    },
-    {
+      },
+      {
         nome: "Jango",
+        titulo: "Líder dos Cavaleiros Negros",
         idade: "18",
         altura: "1,80 m",
         genero: "Masculino",
@@ -748,9 +797,10 @@ const characters = [
         imgSrc: "/dle/jango.jpg",
         dica1: "Líder dos Cavaleiros Negros.",
         dica2: "Desafiou Ikki pelo controle da Ilha da Rainha da Morte."
-    },
-    {
+      },
+      {
         nome: "Guilty",
+        titulo: "Mestre da Ilha da Rainha da Morte",
         idade: "Desconhecida",
         altura: "1,92 m",
         genero: "Masculino",
@@ -763,7 +813,8 @@ const characters = [
         imgSrc: "/dle/guilty.jpg",
         dica1: "Mestre de Ikki na Ilha da Rainha da Morte.",
         dica2: "Usa uma máscara que oculta seu rosto."
-    },
+      },
+      
     
     //Guerreiros do Santuário
 
@@ -781,8 +832,8 @@ const characters = [
         imgSrc: "/dle/docrates.jpg",
         dica1: "Enviado para recuperar a Armadura de Sagitário.",
         dica2: "Irmão mais velho de Cassios."
-    },
-    {
+      },
+      {
         nome: "Spartan",
         idade: "Desconhecida",
         altura: "1,85 m",
@@ -796,8 +847,8 @@ const characters = [
         imgSrc: "/dle/spartan.jpg",
         dica1: "Possui habilidades telecinéticas.",
         dica2: "Acompanhou Shaina e Algol em uma missão."
-    },
-    {
+      },
+      {
         nome: "Gigas",
         idade: "Desconhecida",
         altura: "1,88 m",
@@ -811,8 +862,8 @@ const characters = [
         imgSrc: "/dle/gigas.jpg",
         dica1: "Oficial de ordem chefe do Santuário.",
         dica2: "Conselheiro do Grande Mestre."
-    },
-    {
+      },
+      {
         nome: "Phaeton",
         idade: "Desconhecida",
         altura: "1,90 m",
@@ -826,7 +877,7 @@ const characters = [
         imgSrc: "/dle/phaeton.jpg",
         dica1: "Assumiu o posto de Chefe do Estado-Maior após o desaparecimento de Gigas.",
         dica2: "Enviou assassinos do Santuário para eliminar os Cavaleiros de Bronze."
-    },
+      },
 
     //Cavaleiros Fantasmas
 
@@ -844,9 +895,10 @@ const characters = [
         imgSrc: "/dle/geist.jpg",
         dica1: "Lidera os Cavaleiros Fantasmas na Ilha do Diabo.",
         dica2: "Única mulher entre os Cavaleiros Fantasmas."
-    },
-    {
+      },
+      {
         nome: "Serpente Marinha",
+        titulo: "Cavaleiro de Serpente Marinha",
         idade: "15",
         altura: "1,80 m",
         genero: "Masculino",
@@ -859,9 +911,10 @@ const characters = [
         imgSrc: "/dle/serpentemarina.jpg",
         dica1: "Seu nome remete a uma criatura mitológica aquática.",
         dica2: "Enfrenta os Cavaleiros de Bronze ao lado de Geist."
-    },
-    {
+      },
+      {
         nome: "Medusa",
+        titulo: "Cavaleiro de Medusa",
         idade: "15",
         altura: "1,85 m",
         genero: "Masculino",
@@ -874,9 +927,10 @@ const characters = [
         imgSrc: "/dle/medusa.jpg",
         dica1: "Seu nome faz referência a um monstro da mitologia grega.",
         dica2: "Utiliza um golpe que paralisa seus oponentes."
-    },
-    {
+      },
+      {
         nome: "Golfinho",
+        titulo: "Cavaleiro de Golfinho",
         idade: "14",
         altura: "1,77 m",
         genero: "Masculino",
@@ -889,12 +943,14 @@ const characters = [
         imgSrc: "/dle/chama.jpg",
         dica1: "Seu nome alude a um animal marinho amigável.",
         dica2: "Participa do ataque liderado por Geist."
-    },
+      },
+      
     
     //Cavaleiros de Aço
 
     {
         nome: "Sho de Céu",
+        titulo: "Cavaleiro de Aço do Céu",
         idade: "15",
         altura: "1,68 m",
         genero: "Masculino",
@@ -907,9 +963,10 @@ const characters = [
         imgSrc: "/dle/sho.jpg",
         dica1: "Seu nome significa 'voar' em japonês.",
         dica2: "Sua armadura é associada ao elemento ar."
-    },
-    {
+      },
+      {
         nome: "Daichi de Terra",
+        titulo: "Cavaleiro de Aço da Terra",
         idade: "14",
         altura: "1,62 m",
         genero: "Masculino",
@@ -922,9 +979,10 @@ const characters = [
         imgSrc: "/dle/daichi.jpg",
         dica1: "Seu nome significa 'terra' em japonês.",
         dica2: "Sua armadura é associada ao elemento terra."
-    },
-    {
+      },
+      {
         nome: "Ushô de Mar",
+        titulo: "Cavaleiro de Aço do Mar",
         idade: "14",
         altura: "1,66 m",
         genero: "Masculino",
@@ -937,12 +995,13 @@ const characters = [
         imgSrc: "/dle/ushio.jpg",
         dica1: "Seu nome significa 'maré' em japonês.",
         dica2: "Sua armadura é associada ao elemento água."
-    },
+      },      
 
     //Guerreiros Deuses de Asgard
 
     {
         nome: "Siegfried de Dubhe",
+        titulo: "Guerreiro Deus de Dubhe",
         idade: "Desconhecida",
         altura: "1,97 m",
         genero: "Masculino",
@@ -955,9 +1014,10 @@ const characters = [
         imgSrc: "/dle/siegfried.jpg",
         dica1: "Sua força é comparada à de um dragão lendário.",
         dica2: "Sacrificou-se para proteger Hilda."
-    },
-    {
+      },
+      {
         nome: "Hagen de Merak",
+        titulo: "Guerreiro Deus de Merak",
         idade: "Desconhecida",
         altura: "1,88 m",
         genero: "Masculino",
@@ -970,9 +1030,10 @@ const characters = [
         imgSrc: "/dle/hagen.jpg",
         dica1: "Possui poderes relacionados ao fogo e ao gelo.",
         dica2: "Nutre sentimentos por Freya."
-    },
-    {
+      },
+      {
         nome: "Thor de Phecda",
+        titulo: "Guerreiro Deus de Phecda",
         idade: "Desconhecida",
         altura: "2,25 m",
         genero: "Masculino",
@@ -985,9 +1046,10 @@ const characters = [
         imgSrc: "/dle/thor.jpg",
         dica1: "Empunha um martelo gigantesco como arma.",
         dica2: "É o maior e mais forte entre os Guerreiros Deuses."
-    },
-    {
+      },
+      {
         nome: "Fenrir de Alioth",
+        titulo: "Guerreiro Deus de Alioth",
         idade: "Desconhecida",
         altura: "1,90 m",
         genero: "Masculino",
@@ -1000,9 +1062,10 @@ const characters = [
         imgSrc: "/dle/fenrir.jpg",
         dica1: "Foi criado por lobos após perder sua família.",
         dica2: "Luta ao lado de uma matilha de lobos."
-    },
-    {
+      },
+      {
         nome: "Mime de Benetnasch",
+        titulo: "Guerreiro Deus de Benetnasch",
         idade: "Desconhecida",
         altura: "1,85 m",
         genero: "Masculino",
@@ -1015,9 +1078,10 @@ const characters = [
         imgSrc: "/dle/mime.jpg",
         dica1: "Toca harpa e usa música como arma.",
         dica2: "Seu passado é marcado por traições e rancor."
-    },
-    {
+      },
+      {
         nome: "Alberich de Megrez",
+        titulo: "Guerreiro Deus de Megrez",
         idade: "Desconhecida",
         altura: "1,80 m",
         genero: "Masculino",
@@ -1030,9 +1094,10 @@ const characters = [
         imgSrc: "/dle/alberich.jpg",
         dica1: "É o mais astuto entre os Guerreiros Deuses.",
         dica2: "Usa uma espada encantada como arma."
-    },
-    {
+      },
+      {
         nome: "Shido de Mizar",
+        titulo: "Guerreiro Deus de Mizar",
         idade: "Desconhecida",
         altura: "1,82 m",
         genero: "Masculino",
@@ -1045,9 +1110,10 @@ const characters = [
         imgSrc: "/dle/syd.jpg",
         dica1: "Tem um irmão gêmeo que vive na sombra.",
         dica2: "É o Guerreiro Deus associado à estrela Mizar."
-    },
-    {
+      },
+      {
         nome: "Bado de Alcor",
+        titulo: "Guerreiro Deus de Alcor",
         idade: "Desconhecida",
         altura: "1,82 m",
         genero: "Masculino",
@@ -1060,9 +1126,10 @@ const characters = [
         imgSrc: "/dle/bud.jpg",
         dica1: "É a contraparte sombria de Shido de Mizar.",
         dica2: "Luta por razões diferentes das de seu irmão."
-    },
-    {
+      },
+      {
         nome: "Hilda de Polaris",
+        titulo: "Sacerdotisa de Polaris",
         idade: "17",
         altura: "1,70 m",
         genero: "Feminino",
@@ -1075,8 +1142,8 @@ const characters = [
         imgSrc: "/dle/hilda.jpg",
         dica1: "Foi corrompida pelo Anel de Nibelungo.",
         dica2: "É a líder espiritual de Asgard."
-    },
-    {
+      },
+      {
         nome: "Freya",
         idade: "15",
         altura: "1,65 m",
@@ -1090,12 +1157,13 @@ const characters = [
         imgSrc: "/dle/freya.jpg",
         dica1: "Irmã mais nova de Hilda.",
         dica2: "Ajudou os Cavaleiros de Bronze contra os Guerreiros Deuses."
-    },
+      },      
 
     //Marinas de Poseidon Classico
 
     {
         nome: "Baian de Cavalo Marinho",
+        titulo: "Marina de Cavalo Marinho",
         idade: "18",
         altura: "1,88 m",
         genero: "Masculino",
@@ -1111,6 +1179,7 @@ const characters = [
     },
     {
         nome: "Io de Scylla",
+        titulo: "Marina de Scylla",
         idade: "17",
         altura: "1,81 m",
         genero: "Masculino",
@@ -1126,6 +1195,7 @@ const characters = [
     },
     {
         nome: "Krishna de Chrysaor",
+        titulo: "Marina de Chrysaor",
         idade: "19",
         altura: "1,89 m",
         genero: "Masculino",
@@ -1141,6 +1211,7 @@ const characters = [
     },
     {
         nome: "Kassa de Lymnades",
+        titulo: "Marina de Lymnades",
         idade: "18",
         altura: "1,75 m",
         genero: "Masculino",
@@ -1156,6 +1227,7 @@ const characters = [
     },
     {
         nome: "Isaac de Kraken",
+        titulo: "Marina de Kraken",
         idade: "15",
         altura: "1,80 m",
         genero: "Masculino",
@@ -1171,6 +1243,7 @@ const characters = [
     },
     {
         nome: "Sorento de Sirene",
+        titulo: "Marina de Sirene",
         idade: "16",
         altura: "1,78 m",
         genero: "Masculino",
@@ -1186,6 +1259,7 @@ const characters = [
     },
     {
         nome: "Kanon de Dragão Marinho",
+        titulo: "Marina de Dragão Marinho",
         idade: "28",
         altura: "1,88 m",
         genero: "Masculino",
@@ -1201,6 +1275,7 @@ const characters = [
     },
     {
         nome: "Tetis de Sereia",
+        titulo: "Marina de Sereia",
         idade: "16",
         altura: "1,67 m",
         genero: "Feminino",
@@ -1219,6 +1294,7 @@ const characters = [
 
     {
         nome: "Poseidon",
+        titulo: "Deus dos Mares",
         idade: "Imortal",
         altura: "1,88 m",
         genero: "Masculino",
@@ -1237,6 +1313,7 @@ const characters = [
 
     {
         nome: "Radamanthys de Wyvern",
+        titulo: "Espectro de Wyvern",
         idade: "23",
         altura: "1,89 m",
         genero: "Masculino",
@@ -1252,6 +1329,7 @@ const characters = [
     },
     {
         nome: "Minos de Griffon",
+        titulo: "Espectro de Griffon",
         idade: "24",
         altura: "1,92 m",
         genero: "Masculino",
@@ -1267,6 +1345,7 @@ const characters = [
     },
     {
         nome: "Aiacos de Garuda",
+        titulo: "Espectro de Garuda",
         idade: "22",
         altura: "1,85 m",
         genero: "Masculino",
@@ -1282,6 +1361,7 @@ const characters = [
     },
     {
         nome: "Niobe de Deep",
+        titulo: "Espectro de Deep",
         idade: "21",
         altura: "1,80 m",
         genero: "Masculino",
@@ -1297,6 +1377,7 @@ const characters = [
     },
     {
         nome: "Myu de Papillon (Borboleta)",
+        titulo: "Espectro de Papillon",
         idade: "19",
         altura: "1,80 m",
         genero: "Masculino",
@@ -1312,6 +1393,7 @@ const characters = [
     },
     {
         nome: "Giganto de Ciclope",
+        titulo: "Espectro de Ciclope",
         idade: "24",
         altura: "2,40 m",
         genero: "Masculino",
@@ -1327,6 +1409,7 @@ const characters = [
     },
     {
         nome: "Laimi de Verme",
+        titulo: "Espectro de Verme",
         idade: "23",
         altura: "1,70 m",
         genero: "Masculino",
@@ -1342,6 +1425,7 @@ const characters = [
     },
     {
         nome: "Zelos de Sapo",
+        titulo: "Espectro de Sapo",
         idade: "21",
         altura: "1,68 m",
         genero: "Masculino",
@@ -1357,6 +1441,7 @@ const characters = [
     },
     {
         nome: "Kiew (Cube) de Durahan",
+        titulo: "Espectro de Durahan",
         idade: "25",
         altura: "1,85 m",
         genero: "Masculino",
@@ -1372,6 +1457,7 @@ const characters = [
     },
     {
         nome: "Ox de Górgona",
+        titulo: "Espectro de Górgona",
         idade: "26",
         altura: "1,92 m",
         genero: "Masculino",
@@ -1387,6 +1473,7 @@ const characters = [
     },
     {
         nome: "Miles de Elfo",
+        titulo: "Espectro de Elfo",
         idade: "24",
         altura: "1,78 m",
         genero: "Masculino",
@@ -1402,6 +1489,7 @@ const characters = [
     },
     {
         nome: "Caronte de Aqueronte",
+        titulo: "Espectro de Aqueronte",
         idade: "30",
         altura: "1,90 m",
         genero: "Masculino",
@@ -1417,6 +1505,7 @@ const characters = [
     },
     {
         nome: "Lune de Balron",
+        titulo: "Espectro de Balron",
         idade: "22",
         altura: "1,85 m",
         genero: "Masculino",
@@ -1432,6 +1521,7 @@ const characters = [
     },
     {
         nome: "Faraó de Esfinge",
+        titulo: "Espectro de Esfinge",
         idade: "20",
         altura: "1,78 m",
         genero: "Masculino",
@@ -1447,6 +1537,7 @@ const characters = [
     },
     {
         nome: "Iwan de Troll",
+        titulo: "Espectro de Troll",
         idade: "26",
         altura: "2,30 m",
         genero: "Masculino",
@@ -1462,6 +1553,7 @@ const characters = [
     },
     {
         nome: "Rock de Golem",
+        titulo: "Espectro de Golem",
         idade: "25",
         altura: "2,50 m",
         genero: "Masculino",
@@ -1477,6 +1569,7 @@ const characters = [
     },
     {
         nome: "Flégias de Lycaon",
+        titulo: "Espectro de Lycaon",
         idade: "22",
         altura: "1,90 m",
         genero: "Masculino",
@@ -1492,6 +1585,7 @@ const characters = [
     },
     {
         nome: "Stand de Besouro Mortal",
+        titulo: "Espectro de Besouro Mortal",
         idade: "20",
         altura: "1,70 m",
         genero: "Masculino",
@@ -1507,6 +1601,7 @@ const characters = [
     },
     {
         nome: "Gordon de Minotauro",
+        titulo: "Espectro de Minotauro",
         idade: "25",
         altura: "2,30 m",
         genero: "Masculino",
@@ -1522,6 +1617,7 @@ const characters = [
     },
     {
         nome: "Queen de Mandrágora (Alraune)",
+        titulo: "Espectro de Mandrágora",
         idade: "22",
         altura: "1,90 m",
         genero: "Masculino",
@@ -1537,6 +1633,7 @@ const characters = [
     },
     {
         nome: "Sylphid de Basilisco",
+        titulo: "Espectro de Basilisco",
         idade: "21",
         altura: "1,90 m",
         genero: "Masculino",
@@ -1552,6 +1649,7 @@ const characters = [
     },
     {
         nome: "Valentine de Harpia",
+        titulo: "Espectro de Harpia",
         idade: "23",
         altura: "1,80 m",
         genero: "Masculino",
@@ -1582,6 +1680,7 @@ const characters = [
     },
     {
         nome: "Hypnos",
+        titulo: "Deus do Sono",
         idade: "Imortal",
         altura: "1,88 m",
         genero: "Masculino",
@@ -1597,6 +1696,7 @@ const characters = [
     },
     {
         nome: "Thanatos",
+        titulo: "Deus da Morte",
         idade: "Imortal",
         altura: "1,90 m",
         genero: "Masculino",
@@ -1612,6 +1712,7 @@ const characters = [
     },
     {
         nome: "Hades",
+        titulo: "Deus do Inferno",
         idade: "Imortal",
         altura: "1,84 m",
         genero: "Masculino",
@@ -1630,6 +1731,7 @@ const characters = [
 
     {
         nome: "Shion de Áries (Lost Canvas)",
+        titulo: "Cavaleiro de Áries",
         idade: "18",
         altura: "1,85 m",
         genero: "Masculino",
@@ -1645,6 +1747,7 @@ const characters = [
     },
     {
         nome: "Hasgard de Touro",
+        titulo: "Cavaleiro de Touro",
         idade: "29",
         altura: "2,10 m",
         genero: "Masculino",
@@ -1660,6 +1763,7 @@ const characters = [
     },
     {
         nome: "Defteros de Gêmeos",
+        titulo: "Cavaleiro de Gêmeos",
         idade: "20",
         altura: "1,88 m",
         genero: "Masculino",
@@ -1675,6 +1779,7 @@ const characters = [
     },
     {
         nome: "Aspros de Gêmeos",
+        titulo: "Cavaleiro de Gêmeos",
         idade: "20",
         altura: "1,88 m",
         genero: "Masculino",
@@ -1690,6 +1795,7 @@ const characters = [
     },
     {
         nome: "Manigold de Câncer",
+        titulo: "Cavaleiro de Câncer",
         idade: "23",
         altura: "1,85 m",
         genero: "Masculino",
@@ -1705,6 +1811,7 @@ const characters = [
     },
     {
         nome: "Regulus de Leão",
+        titulo: "Cavaleiro de Leão",
         idade: "15",
         altura: "1,78 m",
         genero: "Masculino",
@@ -1720,6 +1827,7 @@ const characters = [
     },
     {
         nome: "Asmita de Virgem",
+        titulo: "Cavaleiro de Virgem",
         idade: "20",
         altura: "1,86 m",
         genero: "Masculino",
@@ -1735,6 +1843,7 @@ const characters = [
     },
     {
         nome: "Dohko de Libra (Lost Canvas)",
+        titulo: "Cavaleiro de Libra",
         idade: "18",
         altura: "1,70 m",
         genero: "Masculino",
@@ -1750,6 +1859,7 @@ const characters = [
     },
     {
         nome: "Kardia de Escorpião",
+        titulo: "Cavaleiro de Escorpião",
         idade: "18",
         altura: "1,84 m",
         genero: "Masculino",
@@ -1765,6 +1875,7 @@ const characters = [
     },
     {
         nome: "Sísifo de Sagitário",
+        titulo: "Cavaleiro de Sagitário",
         idade: "23",
         altura: "1,87 m",
         genero: "Masculino",
@@ -1780,6 +1891,7 @@ const characters = [
     },
     {
         nome: "El Cid de Capricórnio",
+        titulo: "Cavaleiro de Capricórnio",
         idade: "23",
         altura: "1,87 m",
         genero: "Masculino",
@@ -1795,6 +1907,7 @@ const characters = [
     },
     {
         nome: "Dégel de Aquário",
+        titulo: "Cavaleiro de Aquário",
         idade: "22",
         altura: "1,84 m",
         genero: "Masculino",
@@ -1810,6 +1923,7 @@ const characters = [
     },
     {
         nome: "Albafica de Peixes",
+        titulo: "Cavaleiro de Peixes",
         idade: "22",
         altura: "1,83 m",
         genero: "Masculino",
@@ -1828,6 +1942,7 @@ const characters = [
 
     {
         nome: "Tenma de Pégaso",
+        titulo: "Cavaleiro de Pégaso",
         idade: "15",
         altura: "1,65 m",
         genero: "Masculino",
@@ -1843,6 +1958,7 @@ const characters = [
     },
     {
         nome: "Yato de Unicórnio",
+        titulo: "Cavaleiro de Unicórnio",
         idade: "16",
         altura: "1,68 m",
         genero: "Masculino",
@@ -1858,6 +1974,7 @@ const characters = [
     },
     {
         nome: "Yuzuriha de Grou",
+        titulo: "Cavaleiro de Grou",
         idade: "17",
         altura: "1,70 m",
         genero: "Feminino",
@@ -1873,6 +1990,7 @@ const characters = [
     },
     {
         nome: "Hakurei de Altar",
+        titulo: "Cavaleiro de Altar",
         idade: "265",
         altura: "1,65 m",
         genero: "Masculino",
@@ -1890,7 +2008,8 @@ const characters = [
     //Cavaleiros de Ouro Next Dimension
 
     {
-        nome: "Shion de Áries (Next Dimension)",
+        nome: "Shion de Áries (Next Dimension)", 
+        titulo: "Cavaleiro de Áries",
         idade: "18",
         altura: "1,85 m",
         genero: "Masculino",
@@ -1906,6 +2025,7 @@ const characters = [
     },
     {
         nome: "Ox de Touro",
+        titulo: "Cavaleiro de Touro",
         idade: "20",
         altura: "2,10 m",
         genero: "Masculino",
@@ -1921,6 +2041,7 @@ const characters = [
     },
     {
         nome: "Cain de Gêmeos",
+        titulo: "Cavaleiro de Gêmeos",
         idade: "23",
         altura: "1,87 m",
         genero: "Masculino",
@@ -1936,6 +2057,7 @@ const characters = [
     },
     {
         nome: "Abel de Gêmeos",
+        titulo: "Cavaleiro de Gêmeos",
         idade: "23",
         altura: "1,87 m",
         genero: "Masculino",
@@ -1951,6 +2073,7 @@ const characters = [
     },
     {
         nome: "Contador da Morte de Câncer",
+        titulo: "Cavaleiro de Câncer",
         idade: "25",
         altura: "1,82 m",
         genero: "Masculino",
@@ -1966,6 +2089,7 @@ const characters = [
     },
     {
         nome: "Kaiser de Leão",
+        titulo: "Cavaleiro de Leão",
         idade: "19",
         altura: "1,85 m",
         genero: "Masculino",
@@ -1980,7 +2104,8 @@ const characters = [
         dica2: "Protege seu território com um leão ao seu lado."
     },
     {
-        nome: "Shijima de Virgem",
+        nome: "Shijima de Virgem", 
+        titulo: "Cavaleiro de Virgem",
         idade: "20",
         altura: "1,82 m",
         genero: "Masculino",
@@ -1995,7 +2120,8 @@ const characters = [
         dica2: "Sua técnica combina força mental e espiritual."
     },
     {
-        nome: "Dohko de Libra (Next Dimension)",
+        nome: "Dohko de Libra (Next Dimension)", 
+        titulo: "Cavaleiro de Libra",
         idade: "18",
         altura: "1,70 m",
         genero: "Masculino",
@@ -2011,6 +2137,7 @@ const characters = [
     },
     {
         nome: "Izo de Capricórnio",
+        titulo: "Cavaleiro de Capricórnio",
         idade: "20",
         altura: "1,85 m",
         genero: "Masculino",
@@ -2026,6 +2153,7 @@ const characters = [
     },
     {
         nome: "Mystoria de Aquário",
+        titulo: "Cavaleiro de Aquário",
         idade: "21",
         altura: "1,85 m",
         genero: "Masculino",
@@ -2041,6 +2169,7 @@ const characters = [
     },
     {
         nome: "Cardinale de Peixes",
+        titulo: "Cavaleiro de Peixes",
         idade: "23",
         altura: "1,84 m",
         genero: "Masculino",
@@ -2059,6 +2188,7 @@ const characters = [
 
     {
         nome: "Kouga de Pégaso",
+        titulo: "Cavaleiro de Pégaso",
         idade: "13",
         altura: "1,65 m",
         genero: "Masculino",
@@ -2074,6 +2204,7 @@ const characters = [
     },
     {
         nome: "Souma de Leão Menor",
+        titulo: "Cavaleiro de Leão Menor",
         idade: "14",
         altura: "1,70 m",
         genero: "Masculino",
@@ -2089,6 +2220,7 @@ const characters = [
     },
     {
         nome: "Yuna de Águia",
+        titulo: "Cavaleira de Águia",
         idade: "14",
         altura: "1,64 m",
         genero: "Feminino",
@@ -2104,6 +2236,7 @@ const characters = [
     },
     {
         nome: "Ryuho de Dragão",
+        titulo: "Cavaleiro de Dragão",
         idade: "12",
         altura: "1,55 m",
         genero: "Masculino",
@@ -2119,6 +2252,7 @@ const characters = [
     },
     {
         nome: "Haruto de Lobo",
+        titulo: "Cavaleiro de Lobo",
         idade: "15",
         altura: "1,70 m",
         genero: "Masculino",
@@ -2134,6 +2268,7 @@ const characters = [
     },
     {
         nome: "Eden de Órion",
+        titulo: "Cavaleiro de Órion",
         idade: "15",
         altura: "1,75 m",
         genero: "Masculino",
@@ -2149,6 +2284,7 @@ const characters = [
     },
     {
         nome: "Subaru de Cavalo Menor",
+        titulo: "Cavaleiro de Cavalo Menor",
         idade: "13",
         altura: "1,60 m",
         genero: "Masculino",
@@ -2168,6 +2304,7 @@ const characters = [
 
     {
         nome: "Shiryu de Libra",
+        titulo: "Cavaleiro de Libra",
         idade: "29",
         altura: "1,72 m",
         genero: "Masculino",
@@ -2183,6 +2320,7 @@ const characters = [
     },
     {
         nome: "Kiki de Áries",
+        titulo: "Cavaleiro de Áries",
         idade: "20",
         altura: "1,75 m",
         genero: "Masculino",
@@ -2198,6 +2336,7 @@ const characters = [
     },
     {
         nome: "Harbinger de Touro",
+        titulo: "Cavaleiro de Touro",
         idade: "25",
         altura: "1,95 m",
         genero: "Masculino",
@@ -2213,6 +2352,7 @@ const characters = [
     },
     {
         nome: "Paradox de Gêmeos",
+        titulo: "Cavaleira de Gêmeos",
         idade: "19",
         altura: "1,75 m",
         genero: "Feminino",
@@ -2228,6 +2368,7 @@ const characters = [
     },
     {
         nome: "Schiller de Câncer",
+        titulo: "Cavaleiro de Câncer",
         idade: "23",
         altura: "1,85 m",
         genero: "Masculino",
@@ -2243,6 +2384,7 @@ const characters = [
     },
     {
         nome: "Micenas de Leão",
+        titulo: "Cavaleiro de Leão",
         idade: "27",
         altura: "1,90 m",
         genero: "Masculino",
@@ -2258,6 +2400,7 @@ const characters = [
     },
     {
         nome: "Fudou de Virgem",
+        titulo: "Cavaleiro de Virgem",
         idade: "25",
         altura: "1,82 m",
         genero: "Masculino",
@@ -2273,6 +2416,7 @@ const characters = [
     },
     {
         nome: "Gembu de Libra",
+        titulo: "Cavaleiro de Libra",
         idade: "28",
         altura: "1,87 m",
         genero: "Masculino",
@@ -2288,6 +2432,7 @@ const characters = [
     },
     {
         nome: "Sonia de Escorpião",
+        titulo: "Cavaleira de Escorpião",
         idade: "17",
         altura: "1,72 m",
         genero: "Feminino",
@@ -2303,6 +2448,7 @@ const characters = [
     },
     {
         nome: "Seiya de Sagitário",
+        titulo: "Cavaleiro de Sagitário",
         idade: "29",
         altura: "1,75 m",
         genero: "Masculino",
@@ -2318,6 +2464,7 @@ const characters = [
     },
     {
         nome: "Ionia de Capricórnio",
+        titulo: "Cavaleiro de Capricórnio",
         idade: "500",
         altura: "1,85 m",
         genero: "Masculino",
@@ -2333,6 +2480,7 @@ const characters = [
     },
     {
         nome: "Tokisada de Aquário",
+        titulo: "Cavaleiro de Aquário",
         idade: "22",
         altura: "1,85 m",
         genero: "Masculino",
@@ -2348,6 +2496,7 @@ const characters = [
     },
     {
         nome: "Amor de Peixes",
+        titulo: "Cavaleiro de Peixes",
         idade: "20",
         altura: "1,87 m",
         genero: "Masculino",
@@ -2366,6 +2515,7 @@ const characters = [
 
     {
         nome: "Marte",
+        titulo: "Deus da Guerra",
         idade: "Imortal",
         altura: "1,95 m",
         genero: "Masculino",
@@ -2384,6 +2534,7 @@ const characters = [
     
     {
         nome: "Pallas",
+        titulo: "Deusa da Tragédia",
         idade: "Imortal",
         altura: "1,65 m",
         genero: "Feminino",
@@ -2399,6 +2550,7 @@ const characters = [
     },
     {
         nome: "Saturno",
+        titulo: "Deus do Tempo",
         idade: "Imortal",
         altura: "1,90 m",
         genero: "Masculino",
@@ -2414,6 +2566,7 @@ const characters = [
     },
     {
         nome: "Titan",
+        titulo: "Pallasito de Primeira Classe",
         idade: "Desconhecida",
         altura: "1,90 m",
         genero: "Masculino",
@@ -2429,6 +2582,7 @@ const characters = [
     },
     {
         nome: "Hyperion",
+        titulo: "Pallasito de Primeira Classe",
         idade: "Desconhecida",
         altura: "1,98 m",
         genero: "Masculino",
@@ -2444,6 +2598,7 @@ const characters = [
     },
     {
         nome: "Gallia",
+        titulo: "Pallasito de Primeira Classe",
         idade: "Desconhecida",
         altura: "1,77 m",
         genero: "Feminino",
@@ -2459,6 +2614,7 @@ const characters = [
     },
     {
         nome: "Aegir",
+        titulo: "Pallasito de Primeira Classe",
         idade: "Desconhecida",
         altura: "1,85 m",
         genero: "Masculino",
@@ -2477,6 +2633,7 @@ const characters = [
 
     {
         nome: "Artemis",
+        titulo: "Deusa da Lua",
         idade: "Imortal",
         altura: "1,75 m",
         genero: "Feminino",
@@ -2492,6 +2649,7 @@ const characters = [
     },
     {
         nome: "Apolo",
+        titulo: "Deus do Sol",
         idade: "Imortal",
         altura: "1,88 m",
         genero: "Masculino",
@@ -2555,6 +2713,7 @@ const characters = [
 
     {
         nome: "Shoko de Cavalo Menor",
+        titulo: "Saintia de Cavalo Menor",
         idade: "14",
         altura: "1,60 m",
         genero: "Feminino",
@@ -2570,6 +2729,7 @@ const characters = [
     },
     {
         nome: "Kyoko de Cavalo Menor",
+        titulo: "Saintia de Cavalo Menor",
         idade: "16",
         altura: "1,65 m",
         genero: "Feminino",
@@ -2585,6 +2745,7 @@ const characters = [
     },
     {
         nome: "Mii de Golfinho",
+        titulo: "Saintia de Golfinho",
         idade: "16",
         altura: "1,65 m",
         genero: "Feminino",
@@ -2600,6 +2761,7 @@ const characters = [
     },
     {
         nome: "Xiaoling de Ursa Menor",
+        titulo: "Saintia de Ursa Menor",
         idade: "12",
         altura: "1,48 m",
         genero: "Feminino",
@@ -2615,6 +2777,7 @@ const characters = [
     },
     {
         nome: "Katya de Coroa Boreal",
+        titulo: "Saintia de Coroa Boreal",
         idade: "18",
         altura: "1,70 m",
         genero: "Feminino",
@@ -2630,6 +2793,7 @@ const characters = [
     },
     {
         nome: "Elda de Cassiopeia",
+        titulo: "Saintia de Cassiopeia",
         idade: "17",
         altura: "1,68 m",
         genero: "Feminino",

@@ -13,6 +13,7 @@ import {
 // Definindo o tipo dos personagens para melhorar a tipagem
 type Character = {
   nome: string;
+  titulo?: string;
   idade: string;
   altura: string;
   genero: string;
@@ -337,15 +338,39 @@ export default function GamePage() {
   // Função para filtrar personagens não tentados para o dropdown de sugestões
   const getFilteredSuggestions = (value: string) => {
     const normalizedValue = normalizeText(value);
-
-    // Filtrar personagens que começam com o texto digitado
-    return characters.filter(
-      (char: Character) =>
-        normalizeText(char.nome).startsWith(normalizedValue) && // Verifica se começa com o texto digitado
-        !isAlreadyTried(char.nome) // Verifica se já foi tentado
-    );
-  };
   
+    // 1. Busca por nome primeiro
+    const nameMatches = characters.filter(
+      (char: Character) =>
+        normalizeText(char.nome).startsWith(normalizedValue) &&
+        !isAlreadyTried(char.nome)
+    );
+  
+    if (nameMatches.length > 0) {
+      return nameMatches;
+    }
+  
+    // 2. Depois tenta pela patente
+    const patenteMatches = characters.filter(
+      (char: Character) =>
+        normalizeText(char.patente).includes(normalizedValue) &&
+        !isAlreadyTried(char.nome)
+    );
+  
+    if (patenteMatches.length > 0) {
+      return patenteMatches;
+    }
+  
+    // 3. Por fim, tenta pelo título
+    const titleMatches = characters.filter(
+      (char: Character) =>
+        char.titulo &&
+        normalizeText(char.titulo).includes(normalizedValue) &&
+        !isAlreadyTried(char.nome)
+    );
+  
+    return titleMatches;
+  };
 
   // Função para desistir do jogo
   const handleGiveUp = () => {
@@ -387,7 +412,7 @@ export default function GamePage() {
     } else if (e.key === "ArrowUp" && suggestions.length > 0) {
       const currentIndex = suggestions.findIndex((s) => s === selectedSuggestion);
       const prevIndex = (currentIndex - 1 + suggestions.length) % suggestions.length;
-      setSelectedSuggestion(suggestions[prevIndex]);
+      setSelectedSuggestion(suggestions[prevIndex]);getFilteredSuggestions 
       setInput(suggestions[prevIndex].nome);
     }
   };  
@@ -632,10 +657,14 @@ export default function GamePage() {
                           alt={suggestion.nome || "Sem nome"}
                           className="w-10 h-10 rounded-lg mr-2"
                         />
-                        <span>{suggestion.nome || "Desconhecido"}</span>
+                        <div className="flex flex-col">
+                          <span className="font-semibold">{suggestion.nome || "Desconhecido"}</span>
+                          <span className="text-xs text-gray-400 italic">{suggestion.titulo || "Sem titulo"}</span>
+                        </div>
                       </li>
                     )
                   ))}
+
                 </ul>
               )}
             </div>
