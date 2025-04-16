@@ -338,14 +338,40 @@ export default function GamePage() {
   // Função para filtrar personagens não tentados para o dropdown de sugestões
   const getFilteredSuggestions = (value: string) => {
     const normalizedValue = normalizeText(value);
-
-    // Filtrar personagens que começam com o texto digitado
-    return characters.filter(
+  
+    // 1. Busca por nome
+    const nameMatches = characters.filter(
       (char: Character) =>
-        normalizeText(char.nome).startsWith(normalizedValue) && // Verifica se começa com o texto digitado
-        !isAlreadyTried(char.nome) // Verifica se já foi tentado
+        normalizeText(char.nome).startsWith(normalizedValue) &&
+        !isAlreadyTried(char.nome)
     );
+  
+    if (nameMatches.length > 0) {
+      return nameMatches;
+    }
+  
+    // 2. Busca por patente (ouro, prata, bronze, espectro, marina)
+    const patenteMatches = characters.filter(
+      (char: Character) =>
+        normalizeText(char.patente).includes(normalizedValue) &&
+        !isAlreadyTried(char.nome)
+    );
+  
+    if (patenteMatches.length > 0) {
+      return patenteMatches;
+    }
+  
+    // 3. Busca por título
+    const titleMatches = characters.filter(
+      (char: Character) =>
+        char.titulo &&
+        normalizeText(char.titulo).includes(normalizedValue) &&
+        !isAlreadyTried(char.nome)
+    );
+  
+    return titleMatches;
   };
+  
   
 
   // Função para desistir do jogo
