@@ -13,6 +13,7 @@ import {
 // Definindo o tipo dos personagens para melhorar a tipagem
 type Character = {
   nome: string;
+  titulo?: string;
   idade: string;
   altura: string;
   genero: string;
@@ -632,7 +633,10 @@ export default function GamePage() {
                           alt={suggestion.nome || "Sem nome"}
                           className="w-10 h-10 rounded-lg mr-2"
                         />
-                        <span>{suggestion.nome || "Desconhecido"}</span>
+                        <div className="flex flex-col">
+                          <span className="font-semibold">{suggestion.nome || "Desconhecido"}</span>
+                          <span className="text-xs text-gray-400 italic">{suggestion.titulo || "Sem titulo"}</span>
+                        </div>
                       </li>
                     )
                   ))}
