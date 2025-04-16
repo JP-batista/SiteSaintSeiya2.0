@@ -357,7 +357,7 @@ export default function GamePage() {
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value.trim(); // Mantém espaços no início e fim apenas no processamento
+    const value = e.target.value; // Mantém espaços no início e fim apenas no processamento
     setInput(value);
   
     if (value) {
